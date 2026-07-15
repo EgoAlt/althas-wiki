@@ -253,6 +253,41 @@ def render(title, marker_block, body):
     return "\n".join(fm_lines) + "\n\n" + body
 
 
+SUMMARY_RE = re.compile(r"^\*\*Summary\*\*:\s*(.+)$")
+
+
+def extract_summary(body):
+    for line in body.splitlines():
+        m = SUMMARY_RE.match(line.strip())
+        if m:
+            return m.group(1).strip()
+    return None
+
+
+def write_folder_indexes(written_dests):
+    """For every synced page that's the sole eponymous occupant of its own
+    subfolder (locations/armada/armada.md), write a sibling index.md so the
+    Quartz folder page shows a real description instead of a bare listing
+    that just repeats the folder name (Armada > Armada)."""
+    made = []
+    for dest in written_dests:
+        folder = dest.parent
+        if folder.name != dest.stem:
+            continue
+        index_dest = folder / "index.md"
+        summary = extract_summary(dest.read_text())
+        if not summary:
+            continue
+        title = None
+        for fm_line in dest.read_text().splitlines():
+            if fm_line.startswith("title:"):
+                title = fm_line[len("title:"):].strip()
+                break
+        index_dest.write_text(render(title or dest.stem, None, summary + "\n"))
+        made.append(str(index_dest.relative_to(CONTENT_DIR)))
+    return made
+
+
 def sync_page(src_name, dest_rel):
     src = ONTOS_SETTING / src_name
     text = src.read_text()
@@ -284,11 +319,18 @@ def main():
                 removed.append(str(dest.relative_to(CONTENT_DIR)))
             continue
         dest = sync_page(src_name, dest_rel)
-        written.append(str(dest.relative_to(CONTENT_DIR)))
+        written.append(dest)
+
+    folder_indexes = write_folder_indexes(written)
 
     print(f"Synced {len(written)} page(s) from Ontos:")
-    for w in sorted(written):
+    for w in sorted(str(d.relative_to(CONTENT_DIR)) for d in written):
         print(f"  {w}")
+
+    if folder_indexes:
+        print(f"\nWrote {len(folder_indexes)} folder description page(s):")
+        for w in sorted(folder_indexes):
+            print(f"  {w}")
 
     if removed:
         print(f"\nRemoved {len(removed)} page(s) no longer in scope (not yet shared beyond the PDF):")
