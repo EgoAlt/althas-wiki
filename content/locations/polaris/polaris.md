@@ -6,7 +6,7 @@ marker:
       colour: "#5b8dd6"
 ---
 
-**Summary**: A magocratic nation of scholars and mages who broke off from Hilltop, ruled by a Triumvirate of Archmages.
+**Summary**: A magocratic nation of scholars and mages who broke off from Hilltop.
 
 ---
 
@@ -14,16 +14,8 @@ A nation of scholars and mages who broke off from Hilltop to pursue arcane ambit
 
 See [[althas]] for the full history and the Giants' role in Polaris society.
 
-## Governance: the Triumvirate of Archmages
-
-Polaris is ruled by a Triumvirate of Archmages.
-
 ## Related pages
 
 - [[althas]]
 - [[voldaen|Voldaen]]
 - [[jesthaen|Jesthaen]]
-- [[draconis|Draconis]]
-- [[hesper|Hesper]]
-- [[izar|Izar]]
-- [[rastaban|Rastaban]]

@@ -22,45 +22,20 @@ Player-facing reference wiki for the *Ut Supra Sic Infra* campaign, set in the w
 ## Locations
 
 - [[hilltop|Hilltop]]: holy seat of the Holy See, devastated by the Ophanim
-- [[hilltop-night-zone|The Hilltop night zone]]: the permanently dark region around the Ophanim's corpse
 
-- [[drinmery|Drinmery]]: city in Jesthaen, home of the Convent of Saint Trefan
-- [[convent-of-saint-trefan|Convent of Saint Trefan]]: convent in Drinmery, home of Rosestripe
-- [[crater-lake|The crater lake]]: Divine Age crater at Althas's center, site of the Reborn Inquisition's rite
 
 ## Factions
 
 - [[the-holy-see|The Holy See]]: divine regent authority governing the faith from Hilltop
-- [[canton-of-inquisition|Canton of Inquisition]]: the Holy See's inquisitorial arm, split by schism
-- [[draconis|Draconis]]: mountaintop community of giants who refused Polaris's betrayal
 
 ## Concepts
 
 - [[the-ophanim|The Ophanim]]: the angelic being that devastated Hilltop in 330 VR
 
-- [[faeries|Faeries]]: ancestry lore, origin theory, and their role as message carriers
-- [[the-one-above|The One Above]]: god of Splendor, source of Miracles, still alive but has left Althas
+- [[the-one-above|The One Above]]: still alive but has left Althas
+
 - [[the-ones-below|The ones below]]: the gods the One Above fought in the Divine Age, sealed away
-- [[splendor-magic|Splendor magic]]: incantation-based magic as a favor granted, not generated
-- [[codex-magic|Codex magic]]: seal-drawn magic that tears into a parallel dimension
-- [[miracles|Miracles]]: hereditary gifts from the One Above
 
-- [[holy-relics|Holy Relics]]: Divine Age relics usable only by Miracle-holders
-
-## Player characters
-
-- [[uriel-kenan|Uriel Kenan]]: Reborn Inquisitor of a dead Hilltop house
-- [[rosestripe|Rosestripe]]: faerie messenger of the Convent of Saint Trefan
-- [[rastaban|Rastaban]]: Giant wizard, framed for killing his archmage teacher in Polaris
-
-## NPCs
-
-- [[guilmore-fleming|Guilmore Fleming]]: Count ruling Drinmery
-- [[immanuel-greene|Immanuel Greene]]: Lord profiting from the looming war
-- [[hesper|Hesper]]: archmage of Polaris's Triumvirate, Rastaban's teacher, vanished
-- [[izar|Izar]]: Hesper's son, blamed Rastaban for her disappearance
-- [[thuban|Thuban]]: founder and former leader of Draconis
-- [[eltanin|Eltanin]]: current leader of Draconis, Rastaban's brother
 
 ## History (Voldaen)
 
