@@ -18,7 +18,4 @@ His death was not the end of the crisis, only its start. Valthis was assassinate
 - [[orsian-voldis|Orsian Voldis]]
 - [[aldric-voldis|Aldric Voldis]]
 - [[valis-voldis|Valis Voldis]]
-- [[miracles|Miracles]]
-- [[hilltop-night-zone|The Hilltop night zone]]
-- [[holy-relics|Holy Relics]]
 - [[kingslayer|The Kingslayer]]

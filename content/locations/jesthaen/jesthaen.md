@@ -10,7 +10,7 @@ marker:
 
 ---
 
-The newest nation of Althas, born from the Voldis Succession Crisis in [[voldaen|Voldaen]]: a workers' and anti-monarchist rebellion that became a full revolution, then a republic. Supported by [[polaris|Polaris]] and [[armada|Armada]] during the war; the Jesthaen Treaty ended active combat in 358 VR, though the peace remains tenuous. Its cities include [[drinmery|Drinmery]], home to House Fleming and the [[convent-of-saint-trefan|Convent of Saint Trefan]].
+The newest nation of Althas, born from the Voldis Succession Crisis in [[voldaen|Voldaen]]: a workers' and anti-monarchist rebellion that became a full revolution, then a republic. Supported by [[polaris|Polaris]] and [[armada|Armada]] during the war; the Jesthaen Treaty ended active combat in 358 VR, though the peace remains tenuous.
 
 See [[althas]] for the full history.
 
@@ -20,4 +20,3 @@ See [[althas]] for the full history.
 - [[voldaen|Voldaen]]
 - [[polaris|Polaris]]
 - [[armada|Armada]]
-- [[drinmery|Drinmery]]

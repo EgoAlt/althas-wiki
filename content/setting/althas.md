@@ -70,7 +70,7 @@ All communities are available across nations, but some have unique aspects withi
 |---|---|
 | Clanks | Recent addition to Althas; first prototypes from Polaris labs and Hilltop's sacred workshops. Sentient Clanks are rare, controversial, and politically dangerous: Hilltop calls them holy instruments of the One Above, Polaris calls the "awakening" claim theft of a reproducible arcane process. |
 | Faeries | Insectoid Faeries live in old forests. Angelic Faeries serve the Holy See as messengers and peacekeepers, trusted to carry confessions, treaties, and last rites in peace, and accusations, surrender terms, and the names of the dead in war. |
-| Giants | Native to northern Polaris. Once respected as builders and guardians; in modern magocratic Polaris, treated as a lowly working class due to limited arcane aptitude, despite Polaris' industrial rise being built on Giant labor. The giants who refused that role after Polaris was built formed [[draconis|Draconis]] instead. |
+| Giants | Native to northern Polaris. Once respected as builders and guardians; in modern magocratic Polaris, treated as a lowly working class due to limited arcane aptitude, despite Polaris' industrial rise being built on Giant labor. |
 | Infernis | Banned from most settlements for their supposed association with the Ones Below. Travel in caravans trading goods, news, and rumors, making them invaluable (if rarely trusted) informants for nobles, priests, generals, and spies. Armada is the one nation where they're sometimes tolerated. |
 
 ## Player Principles
@@ -104,6 +104,3 @@ All communities are available across nations, but some have unique aspects withi
 - [[orsian-voldis|Orsian Voldis]]
 - [[aldric-voldis|Aldric Voldis]]
 - [[valis-voldis|Valis Voldis]]
-- [[draconis|Draconis]]
-
-<span style="background-color:#D2ECD0; color:#020309; padding:2px 8px; border-radius:3px; font-size:0.85em;">🤖 Ontos Vault Operator, last edited: 2026-07-11T16:30:00Z</span>

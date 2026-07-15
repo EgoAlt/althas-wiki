@@ -14,15 +14,9 @@ After the Divine Age, the One Above established their seat at what is now called
 
 In 330 VR, [[the-ophanim|the Ophanim]] landed in central Hilltop, rendering much of it uninhabitable and forcing the Holy See and its refugees to relocate to central Althas. The merchant lords of Hilltop's trade cities used the chaos to declare independence as [[armada|Armada]]. Hilltop later sent aid to [[voldaen|Voldaen]] during the [[jesthaen|Jesthaen]] rebellion.
 
-Before the Ophanim's descent, Hilltop was home to old elven noble houses that fused nobility with holy office, relic-keepers and confessors as much as lords. [[uriel-kenan|Uriel Kenan]]'s family was one of them, and it was destroyed along with the rest of the ruin.
-
-Not every house left. See [[hilltop-night-zone|the Hilltop night zone]] for what became of Hilltop's people, and its nobility, after the Ophanim died rather than merely landing.
-
 ## Related pages
 
 - [[althas]]
 - [[the-ophanim|The Ophanim]]
-- [[hilltop-night-zone|The Hilltop night zone]]
 - [[the-holy-see|The Holy See]]
 - [[armada|Armada]]
-- [[uriel-kenan|Uriel Kenan]]

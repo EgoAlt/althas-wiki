@@ -122,6 +122,39 @@ NOT_YET_PUBLIC = {
     "old-blood.md",
 }
 
+# Pages with content that survives the gm-only/gm-notes strip, but that
+# Lucas has decided shouldn't be on the frontend right now for a different
+# reason: only material grounded in the shared player-facing PDF ("Ut Supra
+# Sic Infra (v1.1).pdf") is currently in scope for the public site, plus
+# nothing at all about the three PCs or material drawn from player-submitted
+# session-zero documents. Distinct from NOT_YET_PUBLIC (nothing left after
+# stripping) and from [!gm-only] (an in-world secret not yet revealed in
+# play) — these pages may well be common knowledge at the table already,
+# they're just not yet part of the shared written reference material.
+# Revisit once Lucas expands what's officially shared beyond the PDF.
+NOT_YET_SHARED = {
+    "rastaban.md",
+    "rosestripe.md",
+    "uriel-kenan.md",
+    "eltanin.md",
+    "guilmore-fleming.md",
+    "hesper.md",
+    "immanuel-greene.md",
+    "izar.md",
+    "thuban.md",
+    "crater-lake.md",
+    "draconis.md",
+    "convent-of-saint-trefan.md",
+    "drinmery.md",
+    "hilltop-night-zone.md",
+    "canton-of-inquisition.md",
+    "codex-magic.md",
+    "splendor-magic.md",
+    "miracles.md",
+    "holy-relics.md",
+    "faeries.md",
+}
+
 CALLOUT_START_RE = re.compile(r"^>\s*\[!(gm-only|gm-notes)\]", re.IGNORECASE)
 HEADING_RE = re.compile(r"^#{1,6}\s")
 FRONTMATTER_RE = re.compile(r"^---\n(.*?\n)---\n?", re.DOTALL)
@@ -242,7 +275,14 @@ def sync_page(src_name, dest_rel):
 
 def main():
     written = []
+    removed = []
     for src_name, dest_rel in PAGE_MAP.items():
+        if src_name in NOT_YET_SHARED:
+            dest = CONTENT_DIR / dest_rel
+            if dest.exists():
+                dest.unlink()
+                removed.append(str(dest.relative_to(CONTENT_DIR)))
+            continue
         dest = sync_page(src_name, dest_rel)
         written.append(str(dest.relative_to(CONTENT_DIR)))
 
@@ -250,8 +290,17 @@ def main():
     for w in sorted(written):
         print(f"  {w}")
 
+    if removed:
+        print(f"\nRemoved {len(removed)} page(s) no longer in scope (not yet shared beyond the PDF):")
+        for w in sorted(removed):
+            print(f"  {w}")
+
     print(f"\nNot yet public (no content survives once GM-only material is stripped):")
     for name in sorted(NOT_YET_PUBLIC):
+        print(f"  {name}")
+
+    print(f"\nNot yet shared beyond the PDF (held back from the frontend for now):")
+    for name in sorted(NOT_YET_SHARED):
         print(f"  {name}")
     return 0
 
