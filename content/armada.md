@@ -1,7 +1,7 @@
 ---
 title: Armada
 marker:
-    - coordinates: "1900, 900"
+    - coordinates: "695, 2520"
       icon: lucide-anchor
       colour: "#4b8f8c"
 ---
