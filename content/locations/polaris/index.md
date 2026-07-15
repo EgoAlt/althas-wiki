@@ -6,13 +6,21 @@ marker:
       colour: "#5b8dd6"
 ---
 
-**Summary**: A magocratic nation of scholars and mages who broke off from Hilltop.
+**Summary**: A magocratic nation of scholars and mages who broke off from Hilltop, ruled by a Triumvirate of Archmages. Its industrial rise was built on Giant labor.
 
 ---
 
 A nation of scholars and mages who broke off from Hilltop to pursue arcane ambition. Home to the continent's magic academies (Loreborne communities) and a magocratic industrial rise built on Giant labor. Rival of [[voldaen|Voldaen]], supported the [[jesthaen|Jesthaen]] rebels.
 
 See [[althas]] for the full history and the Giants' role in Polaris society.
+
+## Governance: the Triumvirate of Archmages
+
+Polaris is ruled by a Triumvirate of Archmages.
+
+## The Giants of Polaris
+
+Polaris's prosperity was built on Giant labor, yet in the modern magocracy, where arcane aptitude largely determines status, giants are treated as a lowly working class: hauling stone for academies they cannot attend and operating machinery designed by mages who will never enter their workshops.
 
 ## Related pages
 
