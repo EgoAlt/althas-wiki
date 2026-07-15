@@ -19,4 +19,3 @@ During the Divine Age, [[the-one-above|the One Above]] granted Miracles to peopl
 - [[valis-voldis|Valis Voldis]]
 - [[aldric-voldis|Aldric Voldis]]
 - [[the-one-above|The One Above]]
-- [[ophanim-heresies|Ophanim Heresies]]: the structurally opposite, heretical counterpart

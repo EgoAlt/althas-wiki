@@ -20,7 +20,6 @@ Player-facing reference wiki for the *Ut Supra Sic Infra* campaign, set in the w
 ## Locations
 
 - [[hilltop|Hilltop]]: holy seat of the Holy See, devastated by the Ophanim
-- [[hilltop-night-zone|The Hilltop night zone]]: the permanently dark region around the Ophanim's corpse (working title)
 - [[drinmery|Drinmery]]: city in Jesthaen, home of the Convent of Saint Trefan
 - [[convent-of-saint-trefan|Convent of Saint Trefan]]: convent in Drinmery, home of Rosestripe
 - [[crater-lake|The crater lake]]: Divine Age crater at Althas's center, site of the Reborn Inquisition's rite
@@ -29,8 +28,6 @@ Player-facing reference wiki for the *Ut Supra Sic Infra* campaign, set in the w
 
 - [[the-holy-see|The Holy See]]: divine regent authority governing the faith from Hilltop
 - [[canton-of-inquisition|Canton of Inquisition]]: the Holy See's inquisitorial arm, split by schism
-- [[the-co-existers|The Co-Existers]]: cult in the Hilltop night zone who believe the Ophanim was sent to cleanse the world (working title)
-- [[the-fallen-houses|The Fallen Houses]]: Hilltop's ancient noble houses, corrupted into leeches/vampires (working title)
 - [[draconis|Draconis]]: mountaintop community of giants who refused Polaris's betrayal
 
 ## Concepts
@@ -41,9 +38,7 @@ Player-facing reference wiki for the *Ut Supra Sic Infra* campaign, set in the w
 - [[the-ones-below|The ones below]]: the gods the One Above fought in the Divine Age, sealed away
 - [[splendor-magic|Splendor magic]]: incantation-based magic as a favor granted, not generated
 - [[codex-magic|Codex magic]]: seal-drawn magic that tears into a parallel dimension
-- [[sage-magic|Sage magic]]: tentative mushroom-folk ancestry and cordyceps-zombie threat
 - [[miracles|Miracles]]: hereditary gifts from the One Above
-- [[ophanim-heresies|Ophanim Heresies]]: reality-breaking powers tied to an Ophanim, heretical gifts from the ones below
 - [[holy-relics|Holy Relics]]: Divine Age relics usable only by Miracle-holders, Fire Emblem/Shardblade-inspired
 
 ## Player characters
