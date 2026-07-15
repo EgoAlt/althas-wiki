@@ -44,6 +44,14 @@ Player-facing reference wiki for the *Ut Supra Sic Infra* campaign, set in the w
 
 - [[holy-relics|Holy Relics]]: Divine Age relics usable only by Miracle-holders
 
+## Player characters
+
+- [[rastaban|Rastaban]]: Loreborne Giant, School of Knowledge Wizard. Appearance and mechanics only, campaign hasn't started yet.
+
+## NPCs
+
+- [[hesper|Hesper]]: archmage of Polaris's Triumvirate, Rastaban's teacher, killed by a giant during her final duel with Izar, sparking riots
+
 ## History (Voldaen)
 
 - [[edrion-voldis|Edrion Voldis]], [[valthis-voldis|Valthis Voldis]], [[orsian-voldis|Orsian Voldis]], [[aldric-voldis|Aldric Voldis]], [[valis-voldis|Valis Voldis]]: the Voldis Succession Crisis cast

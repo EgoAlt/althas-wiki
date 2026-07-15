@@ -150,12 +150,10 @@ NOT_YET_PUBLIC = {
 # they're just not yet part of the shared written reference material.
 # Revisit once Lucas expands what's officially shared beyond the PDF.
 NOT_YET_SHARED = {
-    "rastaban.md",
     "rosestripe.md",
     "uriel-kenan.md",
     "eltanin.md",
     "guilmore-fleming.md",
-    "hesper.md",
     "immanuel-greene.md",
     "izar.md",
     "thuban.md",
