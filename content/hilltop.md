@@ -22,8 +22,6 @@ Not every house left...
 
 - [[althas]]
 - [[the-ophanim|The Ophanim]]
-- [[hilltop-night-zone|The Hilltop night zone]]
-- [[the-co-existers|The Co-Existers]]
 - [[the-holy-see|The Holy See]]
 - [[armada|Armada]]
 - [[uriel-kenan|Uriel Kenan]]
