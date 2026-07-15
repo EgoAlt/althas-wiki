@@ -16,8 +16,6 @@ In 330 VR, [[the-ophanim|the Ophanim]] landed in central Hilltop, rendering much
 
 Before the Ophanim's descent, Hilltop was home to old elven noble houses that fused nobility with holy office, relic-keepers and confessors as much as lords. [[uriel-kenan|Uriel Kenan]]'s family was one of them, and it was destroyed along with the rest of the ruin.
 
-Not every house left...
-
 ## Related pages
 
 - [[althas]]
@@ -25,4 +23,3 @@ Not every house left...
 - [[the-holy-see|The Holy See]]
 - [[armada|Armada]]
 - [[uriel-kenan|Uriel Kenan]]
-</content>

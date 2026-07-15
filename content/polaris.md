@@ -24,8 +24,6 @@ Polaris is ruled by a Triumvirate of Archmages. [[hesper|Hesper]], one of the th
 
 The exact center of the city, where its first stone was laid, is treated as a site of some significance: the city was reputedly built without instruments, no plans, no stone ever misplaced or adjusted.
 
-<!-- Expand as the campaign develops: the Triumvirate's other members, current tensions with neighboring nations. -->
-
 ## Related pages
 
 - [[althas]]
@@ -35,4 +33,3 @@ The exact center of the city, where its first stone was laid, is treated as a si
 - [[hesper|Hesper]]
 - [[izar|Izar]]
 - [[rastaban|Rastaban]]
-</content>

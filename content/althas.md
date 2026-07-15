@@ -2,11 +2,9 @@
 title: Althas
 ---
 
-**Summary**: The homebrew "Five Banners Burning" campaign frame for the Daggerheart campaign, set on the fractured continent of Althas, five years after a nation-spanning war.
+**Summary**: The homebrew campaign frame for the Daggerheart campaign, set on the fractured continent of Althas, five years after a nation-spanning war.
 
 ---
-
-Homebrew remix of the Daggerheart "Five Banners Burning" campaign frame.
 
 ## The Pitch
 
@@ -22,10 +20,6 @@ Ancient, Daunting, Grimdark, Ominous, Political, Sweeping, Terrifying, Tragic.
 ## Themes
 
 Apocalypse, Corruption, Divided Loyalties, The Nature of Power, The Price of Ambition, Redemption, Survival.
-
-## Touchstones
-
-A Song of Ice and Fire, Anúna, Attack on Titan, Berserk, Blasphemous, Castlevania, Neon Genesis Evangelion.
 
 ## Brief History
 
@@ -92,9 +86,6 @@ All communities are available across nations, but some have unique aspects withi
 - How do you decide who to protect and uplift with limited resources?
 - How do you manage divided loyalties without betraying someone, including yourself?
 
-> [!tip] Session use
-> Reread the Brief History and the Voldis succession crisis before any session touching Voldaen, Jesthaen politics, or the Ophanim.
-
 ## Related pages
 
 - [[voldaen|Voldaen]]
@@ -110,4 +101,3 @@ All communities are available across nations, but some have unique aspects withi
 - [[aldric-voldis|Aldric Voldis]]
 - [[valis-voldis|Valis Voldis]]
 - [[draconis|Draconis]]
-</content>

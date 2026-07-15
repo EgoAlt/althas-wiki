@@ -14,8 +14,6 @@ The newest nation of Althas, born from the Voldis Succession Crisis in [[voldaen
 
 See [[althas]] for the full history.
 
-<!-- Expand as the campaign develops: the Republic's government structure, key figures, current tensions with Voldaen. -->
-
 ## Related pages
 
 - [[althas]]
@@ -23,4 +21,3 @@ See [[althas]] for the full history.
 - [[polaris|Polaris]]
 - [[armada|Armada]]
 - [[drinmery|Drinmery]]
-</content>

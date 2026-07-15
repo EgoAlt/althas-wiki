@@ -2,7 +2,7 @@
 title: Rastaban
 ---
 
-**Summary**: Player character. A [[draconis|Draconis]] giant, wizard of the School of Knowledge, serving penal labor for the church after being framed for killing his archmage teacher, Hesper.
+**Summary**: Player character. A [[draconis|Draconis]] giant, wizard of the School of Knowledge, serving penal labor for the church after his archmage teacher, Hesper, disappeared.
 
 > [!note] Player character
 > Rastaban ("Ras") is a PC, not an NPC.

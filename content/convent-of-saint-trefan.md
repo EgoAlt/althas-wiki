@@ -22,4 +22,3 @@ The convent is currently under threat: a letter intercepted by Rosestripe reveal
 - [[rosestripe|Rosestripe]]
 - [[faeries|Faeries]]
 - [[immanuel-greene|Immanuel Greene]]
-</content>

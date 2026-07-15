@@ -10,7 +10,7 @@ She had a son, [[izar|Izar]], a mage who periodically challenged her for her Tri
 
 ## Disappearance
 
-Izar came again to challenge her, this time unnaturally powerful and fast, changed by something unexplained (possibly his wand). Hesper vanished during the fight, her house left in shambles. What actually happened to her is not established in the source material: nothing confirms she's actually dead.
+Izar came again to challenge her, this time unnaturally powerful and fast, changed by something unexplained (possibly his wand). Hesper vanished during the fight, her house left in shambles. What actually happened to her afterward is unknown.
 
 ## Related pages
 

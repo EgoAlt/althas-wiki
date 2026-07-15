@@ -14,7 +14,6 @@ The oldest nation of Althas, a proud monarchy of ancient bloodlines ruled by the
 
 Currently ruled by [[valis-voldis|Valis Voldis]] following the Voldis Succession Crisis, the event that ultimately birthed Jesthaen as a breakaway republic. See [[althas]] for the full history.
 
-<!-- Expand as the campaign develops: key NPCs, court factions, current tensions with neighboring nations. -->
 
 ## Related pages
 
