@@ -28,7 +28,7 @@ TOC_LINE_RE = re.compile(r"^(\s*-\s*)\[\[([^\]|#]+)(\|([^\]]+))?\]\](\s*:.*)?\s*
 
 def find_broken(existing):
     broken = []
-    for md_file in sorted(CONTENT_DIR.glob("*.md")):
+    for md_file in sorted(CONTENT_DIR.rglob("*.md")):
         for lineno, line in enumerate(md_file.read_text().splitlines(), 1):
             for match in LINK_RE.finditer(line):
                 target = match.group(1).strip()
@@ -62,7 +62,7 @@ def fix_file(md_file, existing):
 
 def main():
     fix = "--fix" in sys.argv
-    existing = {p.stem for p in CONTENT_DIR.glob("*.md")}
+    existing = {p.stem for p in CONTENT_DIR.rglob("*.md")}
     broken = find_broken(existing)
 
     if not broken:
@@ -72,21 +72,21 @@ def main():
     if not fix:
         print(f"Found {len(broken)} broken wikilink(s):\n")
         for md_file, lineno, target in broken:
-            print(f"  {md_file.name}:{lineno} -> [[{target}]]")
+            print(f"  {md_file.relative_to(CONTENT_DIR)}:{lineno} -> [[{target}]]")
         return 0
 
     affected_files = sorted({md_file for md_file, _, _ in broken})
     print(f"Found {len(broken)} broken wikilink(s) across {len(affected_files)} file(s), fixing:\n")
     for md_file in affected_files:
         for lineno, action, original in fix_file(md_file, existing):
-            print(f"  {md_file.name}:{lineno} -> {action}")
+            print(f"  {md_file.relative_to(CONTENT_DIR)}:{lineno} -> {action}")
             print(f"      was: {original}")
 
     remaining = find_broken(existing)
     if remaining:
         print(f"\n{len(remaining)} broken wikilink(s) could not be auto-fixed, needs a manual look:")
         for md_file, lineno, target in remaining:
-            print(f"  {md_file.name}:{lineno} -> [[{target}]]")
+            print(f"  {md_file.relative_to(CONTENT_DIR)}:{lineno} -> [[{target}]]")
     else:
         print("\nAll broken wikilinks resolved.")
     return 0
