@@ -20,5 +20,3 @@ Two source systems supply the actual grammar of how a seal works, and they combi
 ## Related pages
 
 - [[splendor-magic|Splendor magic]]: the deliberately contrasted domain
-- [[the-ones-below|The ones below]]: sealed by Codex's dead god's power
-- [[the-ophanim|The Ophanim]]: the established Shard-mantle pattern this reuses
