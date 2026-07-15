@@ -2,6 +2,8 @@
 title: Althas
 ---
 
+# Ut Supra Sic Infra Wiki
+
 Player-facing reference wiki for the *Ut Supra Sic Infra* campaign, set in the world of Althas.
 
 - [[map|Interactive Map]]
@@ -20,6 +22,8 @@ Player-facing reference wiki for the *Ut Supra Sic Infra* campaign, set in the w
 ## Locations
 
 - [[hilltop|Hilltop]]: holy seat of the Holy See, devastated by the Ophanim
+- [[hilltop-night-zone|The Hilltop night zone]]: the permanently dark region around the Ophanim's corpse
+
 - [[drinmery|Drinmery]]: city in Jesthaen, home of the Convent of Saint Trefan
 - [[convent-of-saint-trefan|Convent of Saint Trefan]]: convent in Drinmery, home of Rosestripe
 - [[crater-lake|The crater lake]]: Divine Age crater at Althas's center, site of the Reborn Inquisition's rite
@@ -33,12 +37,14 @@ Player-facing reference wiki for the *Ut Supra Sic Infra* campaign, set in the w
 ## Concepts
 
 - [[the-ophanim|The Ophanim]]: the angelic being that devastated Hilltop in 330 VR
+
 - [[faeries|Faeries]]: ancestry lore, origin theory, and their role as message carriers
 - [[the-one-above|The One Above]]: god of Splendor, source of Miracles, still alive but has left Althas
 - [[the-ones-below|The ones below]]: the gods the One Above fought in the Divine Age, sealed away
 - [[splendor-magic|Splendor magic]]: incantation-based magic as a favor granted, not generated
 - [[codex-magic|Codex magic]]: seal-drawn magic that tears into a parallel dimension
 - [[miracles|Miracles]]: hereditary gifts from the One Above
+
 - [[holy-relics|Holy Relics]]: Divine Age relics usable only by Miracle-holders
 
 ## Player characters
@@ -59,4 +65,4 @@ Player-facing reference wiki for the *Ut Supra Sic Infra* campaign, set in the w
 ## History (Voldaen)
 
 - [[edrion-voldis|Edrion Voldis]], [[valthis-voldis|Valthis Voldis]], [[orsian-voldis|Orsian Voldis]], [[aldric-voldis|Aldric Voldis]], [[valis-voldis|Valis Voldis]]: the Voldis Succession Crisis cast
-- Valthis Voldis's killer, remembered only as "the Kingslayer," has never been identified.
+- [[kingslayer|The Kingslayer]]: unidentified killer of Valthis Voldis, tavern legend in Voldaen

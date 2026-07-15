@@ -1,5 +1,5 @@
 ---
-title: "The Ophanim"
+title: The Ophanim
 ---
 
 **Summary**: The angelic being that descended on [[hilltop|Hilltop]] in 330 VR and was slain a year later by the Five Heroes. Its arrival and death reshaped the continent's politics and its faith, and left the land around its corpse permanently, unnaturally dark.
@@ -8,14 +8,11 @@ title: "The Ophanim"
 
 In 330 VR, the Ophanim landed in central Hilltop, instantly rendering much of the region uninhabitable. [[the-holy-see|The Holy See]] and its refugees relocated to central Althas, and each of the five nations mobilized a force to bring it down before its influence spread further. Seizing the moment, the merchant lords of the south declared the trade cities of Hilltop an independent nation: [[armada|Armada]]. In 331 VR, the Ophanim was brought down by the Five Heroes, among them [[edrion-voldis|Edrion Voldis]] of [[voldaen|Voldaen]] and Saint Cassio of the Holy See, both of whom perished in the fighting; [[aldric-voldis|Aldric Voldis]] fought and survived.
 
-The Ophanim's arrival broke the Church's certainty in itself. Within [[canton-of-inquisition|the Canton of Inquisition]], a radical movement rose from that shock, arguing that mercy had made the faithful weak and that sin could no longer simply be confessed, it had to be drowned, erased, and remade. That movement became the Reborn Inquisition.
-
-The Orthodox Canton teaches that mortal eyes should be covered before angels, holding blindness as reverence and fear as humility. The Reborn reject this as heresy.
-
 ## Related pages
 
 - [[althas]]
 - [[hilltop|Hilltop]]
+- [[hilltop-night-zone|The Hilltop night zone]]
 - [[canton-of-inquisition|Canton of Inquisition]]
 - [[uriel-kenan|Uriel Kenan]]
 - [[the-holy-see|The Holy See]]
@@ -26,3 +23,4 @@ The Orthodox Canton teaches that mortal eyes should be covered before angels, ho
 - [[codex-magic|Codex magic]]
 - [[the-one-above|The One Above]]
 - [[the-ones-below|The ones below]]
+- [[kingslayer|The Kingslayer]]

@@ -1,15 +1,16 @@
 ---
-title: "The Ones Below"
+title: The Ones Below
 ---
 
-**Summary**: The gods [[the-one-above|the One Above]] fought during the Divine Age, sealed away ("in hell, or below") since.
+**Summary**: The gods [[the-one-above|the One Above]] fought during the Divine Age, sealed away since.
 
 ---
 
-During the Divine Age, [[the-one-above|the One Above]] fought a war against the ones below, casting them down and sealing them away at its end.
+During the Divine Age, [[the-one-above|the One Above]] fought a war against the ones below.
 
 ## Related pages
 
 - [[the-one-above|The One Above]]
+- [[codex-magic|Codex magic]]
 - [[the-ophanim|The Ophanim]]
 - [[miracles|Miracles]]
