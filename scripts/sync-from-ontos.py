@@ -159,16 +159,10 @@ NOT_YET_SHARED = {
     "immanuel-greene.md",
     "izar.md",
     "thuban.md",
-    "crater-lake.md",
     "draconis.md",
     "convent-of-saint-trefan.md",
     "drinmery.md",
     "hilltop-night-zone.md",
-    "canton-of-inquisition.md",
-    "codex-magic.md",
-    "splendor-magic.md",
-    "miracles.md",
-    "holy-relics.md",
     "faeries.md",
 }
 

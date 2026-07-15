@@ -10,10 +10,13 @@ Claimed authority over [[hilltop|Hilltop]] after the One Above departed, becomin
 
 Ratified the Jesthaen Treaty in 358 VR, ending active combat in the [[jesthaen|Jesthaen]] rebellion.
 
+Commands [[canton-of-inquisition|the Canton of Inquisition]] as its investigative and judicial arm, an arrangement now strained by the Canton's internal schism.
+
 ## Related pages
 
 - [[althas]]
 - [[hilltop|Hilltop]]
 - [[the-ophanim|The Ophanim]]
+- [[canton-of-inquisition|Canton of Inquisition]]
 - [[jesthaen|Jesthaen]]
 - [[voldaen|Voldaen]]

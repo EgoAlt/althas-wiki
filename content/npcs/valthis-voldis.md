@@ -16,4 +16,5 @@ His killer, still called "the Kingslayer" in Voldaen taverns, has never been ide
 - [[voldaen|Voldaen]]
 - [[edrion-voldis|Edrion Voldis]]
 - [[orsian-voldis|Orsian Voldis]]
+- [[miracles|Miracles]]
 - [[kingslayer|The Kingslayer]]

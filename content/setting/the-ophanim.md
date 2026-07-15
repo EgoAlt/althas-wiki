@@ -12,10 +12,13 @@ In 330 VR, the Ophanim landed in central Hilltop, instantly rendering much of th
 
 - [[althas]]
 - [[hilltop|Hilltop]]
+- [[canton-of-inquisition|Canton of Inquisition]]
 - [[the-holy-see|The Holy See]]
 - [[edrion-voldis|Edrion Voldis]]
 - [[aldric-voldis|Aldric Voldis]]
 - [[armada|Armada]]
+- [[splendor-magic|Splendor magic]]
+- [[codex-magic|Codex magic]]
 - [[the-one-above|The One Above]]
 - [[the-ones-below|The ones below]]
 - [[kingslayer|The Kingslayer]]
