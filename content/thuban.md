@@ -10,7 +10,7 @@ After the giants who built [[polaris|Polaris]] were turned away from the city th
 
 His two sons split that philosophy down the middle. [[eltanin|Eltanin]] absorbed it completely, stoic, strong, calm, exactly like his father. [[rastaban|Rastaban]] never accepted that Polaris and its magic weren't the giants' birthright, and grew bolder rather than more resigned as he got older. When both sons turned 17, Thuban retired and passed his mantle to Eltanin; Rastaban left for Polaris the same year.
 
-What became of Thuban afterward isn't stated in the source. Ras's player has raised the possibility that he could be dead by the time Ras returns to Draconis, flagged explicitly as their own speculation, not a decided story beat.
+What became of Thuban afterward isn't stated.
 
 ## Related pages
 
@@ -18,4 +18,3 @@ What became of Thuban afterward isn't stated in the source. Ras's player has rai
 - [[eltanin|Eltanin]]
 - [[rastaban|Rastaban]]
 - [[polaris|Polaris]]
-</content>

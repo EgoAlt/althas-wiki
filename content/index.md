@@ -39,7 +39,7 @@ Player-facing reference wiki for the *Ut Supra Sic Infra* campaign, set in the w
 - [[splendor-magic|Splendor magic]]: incantation-based magic as a favor granted, not generated
 - [[codex-magic|Codex magic]]: seal-drawn magic that tears into a parallel dimension
 - [[miracles|Miracles]]: hereditary gifts from the One Above
-- [[holy-relics|Holy Relics]]: Divine Age relics usable only by Miracle-holders, Fire Emblem/Shardblade-inspired
+- [[holy-relics|Holy Relics]]: Divine Age relics usable only by Miracle-holders
 
 ## Player characters
 

@@ -12,7 +12,7 @@ Edrion's will named Aldric regent should [[valthis-voldis|Valthis Voldis]] die b
 
 When Orsian died heirless in 348 VR, the southern nobles answered the capital's succession claim for [[valis-voldis|Valis Voldis]] by calling for Aldric's return. That standoff, joined by anti-monarchists and reformists asking whether the House of Voldis should survive at all, is what fractured into the revolution that founded [[jesthaen|Jesthaen]].
 
-See [[miracles|Miracles]] for what actually makes House Voldis so powerful: hoarded, hereditary gifts rather than mere longevity or training. Whether Aldric himself carries any is not yet decided.
+See [[miracles|Miracles]] for what actually makes House Voldis so powerful: hoarded, hereditary gifts rather than mere longevity or training. Whether Aldric himself carries any remains unknown.
 
 ## Related pages
 

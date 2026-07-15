@@ -14,11 +14,11 @@ For generations, isolated giant communities in northern Althas lived simply: hun
 
 When it was finished, the giants who built it were turned away at the gate. The old promises were ignored or forgotten; they were given a permanent lowly, non-magical underclass status instead, and told to be grateful they weren't arrested for trespassing on what they'd just built.
 
-They returned to the mountains to conditions worse than before, having spent too many resources building a city that rejected them. Fights broke out over the little that was left; many died, others gave up and accepted Polaris's underclass role rather than starve. The giants who remained united under [[thuban|Thuban]], forming Draconis, and some still nurse open resentment toward Polaris's magocracy, though how widespread that sentiment runs isn't established.
+They returned to the mountains to conditions worse than before, having spent too many resources building a city that rejected them. Fights broke out over the little that was left; many died, others gave up and accepted Polaris's underclass role rather than starve. The giants who remained united under [[thuban|Thuban]], forming Draconis, and some still nurse open resentment toward Polaris's magocracy.
 
-Thuban's rule was built on radical minimalism: eat less, hunt less, build less, live less. It held, on the surface, but not everyone accepted it: his son [[rastaban|Rastaban]] left for Polaris at 17 to claim the giants' birthright to the city and its magic, while his other son [[eltanin|Eltanin]] inherited Thuban's mantle and his philosophy whole.
+Thuban's rule was built on radical minimalism: eat less, hunt less, build less, live less. It held, on the surface, but not everyone accepted it: his son [[rastaban|Rastaban]] left for Polaris at 17, while his other son [[eltanin|Eltanin]] inherited Thuban's mantle and his philosophy whole.
 
-Giants native to this region also appear in Polaris proper as the city's working underclass, per [[althas|the campaign's own ancestries table]]; Draconis represents the giants who stayed independent of that arrangement instead.
+Giants native to this region also appear in Polaris proper as the city's working underclass; Draconis represents the giants who stayed independent of that arrangement instead.
 
 ## Related pages
 
@@ -27,4 +27,3 @@ Giants native to this region also appear in Polaris proper as the city's working
 - [[rastaban|Rastaban]]
 - [[polaris|Polaris]]
 - [[althas]]
-</content>
