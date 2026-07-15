@@ -20,6 +20,15 @@ files this script writes, edit the Ontos source and re-run this script.
 This is a mechanical strip, not a judgment call: always read `git diff
 content/` yourself before publishing, the same way check-broken-links.py's
 --fix mode never replaces a human read.
+
+Each of the five nations (Armada, Polaris, Voldaen, Jesthaen, Hilltop) syncs
+to its own folder's index.md directly, not to a same-named file alongside
+it — a folder and a page inside it should never share a name. This relies
+on a patched "shortest" link-resolution strategy in quartz/util/path.ts
+that treats a folder's own index.md as satisfying a wikilink to that
+folder's name, and a matching patch in check-broken-links.py's own
+existing_targets(). If either patch is ever reverted, [[armada]] (and the
+other four) will break across the whole site.
 """
 import re
 import sys
@@ -43,6 +52,7 @@ TITLES = {
     "the-ones-below.md": "The Ones Below",
     "the-ophanim.md": "The Ophanim",
     "armada.md": "Armada",
+    "guild.md": "The Guild",
     "crater-lake.md": "Crater Lake",
     "draconis.md": "Draconis",
     "hilltop.md": "Hilltop",
@@ -83,16 +93,23 @@ PAGE_MAP = {
     "the-one-above.md": "setting/the-one-above.md",
     "the-ones-below.md": "setting/the-ones-below.md",
     "the-ophanim.md": "setting/the-ophanim.md",
-    "armada.md": "locations/armada/armada.md",
+    # The five nations (Armada, Polaris, Voldaen, Jesthaen, Hilltop) are each
+    # a folder whose own index.md IS the nation's page, not a separate file
+    # alongside it — [[armada]] resolves to a folder's index.md exactly the
+    # same way it resolves to a same-named file, via the patched "shortest"
+    # link-resolution strategy in quartz/util/path.ts. This avoids ever
+    # having a folder and a page inside it share the same name.
+    "armada.md": "locations/armada/index.md",
+    "guild.md": "locations/armada/guild.md",
     "crater-lake.md": "locations/crater-lake.md",
-    "draconis.md": "locations/draconis/draconis.md",
-    "hilltop.md": "locations/hilltop.md",
-    "hilltop-night-zone.md": "locations/hilltop-night-zone.md",
+    "draconis.md": "locations/draconis.md",
+    "hilltop.md": "locations/hilltop/index.md",
+    "hilltop-night-zone.md": "locations/hilltop/hilltop-night-zone.md",
     "convent-of-saint-trefan.md": "locations/jesthaen/convent-of-saint-trefan.md",
     "drinmery.md": "locations/jesthaen/drinmery.md",
-    "jesthaen.md": "locations/jesthaen/jesthaen.md",
-    "polaris.md": "locations/polaris/polaris.md",
-    "voldaen.md": "locations/voldaen/voldaen.md",
+    "jesthaen.md": "locations/jesthaen/index.md",
+    "polaris.md": "locations/polaris/index.md",
+    "voldaen.md": "locations/voldaen/index.md",
     "aldric-voldis.md": "npcs/aldric-voldis.md",
     "edrion-voldis.md": "npcs/edrion-voldis.md",
     "eltanin.md": "npcs/eltanin.md",
@@ -253,41 +270,6 @@ def render(title, marker_block, body):
     return "\n".join(fm_lines) + "\n\n" + body
 
 
-SUMMARY_RE = re.compile(r"^\*\*Summary\*\*:\s*(.+)$")
-
-
-def extract_summary(body):
-    for line in body.splitlines():
-        m = SUMMARY_RE.match(line.strip())
-        if m:
-            return m.group(1).strip()
-    return None
-
-
-def write_folder_indexes(written_dests):
-    """For every synced page that's the sole eponymous occupant of its own
-    subfolder (locations/armada/armada.md), write a sibling index.md so the
-    Quartz folder page shows a real description instead of a bare listing
-    that just repeats the folder name (Armada > Armada)."""
-    made = []
-    for dest in written_dests:
-        folder = dest.parent
-        if folder.name != dest.stem:
-            continue
-        index_dest = folder / "index.md"
-        summary = extract_summary(dest.read_text())
-        if not summary:
-            continue
-        title = None
-        for fm_line in dest.read_text().splitlines():
-            if fm_line.startswith("title:"):
-                title = fm_line[len("title:"):].strip()
-                break
-        index_dest.write_text(render(title or dest.stem, None, summary + "\n"))
-        made.append(str(index_dest.relative_to(CONTENT_DIR)))
-    return made
-
-
 def sync_page(src_name, dest_rel):
     src = ONTOS_SETTING / src_name
     text = src.read_text()
@@ -321,16 +303,9 @@ def main():
         dest = sync_page(src_name, dest_rel)
         written.append(dest)
 
-    folder_indexes = write_folder_indexes(written)
-
     print(f"Synced {len(written)} page(s) from Ontos:")
     for w in sorted(str(d.relative_to(CONTENT_DIR)) for d in written):
         print(f"  {w}")
-
-    if folder_indexes:
-        print(f"\nWrote {len(folder_indexes)} folder description page(s):")
-        for w in sorted(folder_indexes):
-            print(f"  {w}")
 
     if removed:
         print(f"\nRemoved {len(removed)} page(s) no longer in scope (not yet shared beyond the PDF):")

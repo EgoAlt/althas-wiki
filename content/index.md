@@ -27,6 +27,7 @@ Player-facing reference wiki for the *Ut Supra Sic Infra* campaign, set in the w
 ## Factions
 
 - [[the-holy-see|The Holy See]]: divine regent authority governing the faith from Hilltop
+- [[guild|The Guild]]: governs Armada, seats held by token possession, not inheritance or election
 
 ## Concepts
 
