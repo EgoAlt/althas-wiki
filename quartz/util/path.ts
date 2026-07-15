@@ -237,10 +237,17 @@ export function transformLink(src: FullSlug, target: string, opts: TransformOpti
     let [targetCanonical, targetAnchor] = splitAnchor(canonicalSlug)
 
     if (opts.strategy === "shortest") {
-      // if the file name is unique, then it's just the filename
+      // if the file name is unique, then it's just the filename. A folder's
+      // own index.md has no filename of its own to match against, so treat
+      // its parent folder's name as its effective filename instead — lets
+      // [[armada]] resolve to locations/armada/index.md, the same way it'd
+      // resolve to locations/armada/armada.md.
       const matchingFileNames = opts.allSlugs.filter((slug) => {
         const parts = slug.split("/")
         const fileName = parts.at(-1)
+        if (fileName === "index" && parts.length >= 2) {
+          return targetCanonical === parts.at(-2)
+        }
         return targetCanonical === fileName
       })
 

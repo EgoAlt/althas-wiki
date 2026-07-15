@@ -60,9 +60,21 @@ def fix_file(md_file, existing):
     return changes
 
 
+def existing_targets():
+    """Every wikilink target Quartz's resolver would consider satisfied:
+    a page's own filename, plus (matching the patched "shortest" resolution
+    strategy in quartz/util/path.ts) a folder's name for its own index.md."""
+    targets = set()
+    for p in CONTENT_DIR.rglob("*.md"):
+        targets.add(p.stem)
+        if p.stem == "index":
+            targets.add(p.parent.name)
+    return targets
+
+
 def main():
     fix = "--fix" in sys.argv
-    existing = {p.stem for p in CONTENT_DIR.rglob("*.md")}
+    existing = existing_targets()
     broken = find_broken(existing)
 
     if not broken:
