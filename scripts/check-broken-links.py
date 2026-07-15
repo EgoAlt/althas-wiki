@@ -5,35 +5,90 @@ pointing at a page that doesn't exist in content/. Quartz itself renders these
 identically to working links (same class, no visual difference), so this is the
 only way to know before a player finds one by clicking a dead end.
 
-Never fails the build: this is a report, not a gate. Deciding what to do about
-a broken link (delete the mention, repoint it, convert to plain text) needs
-human judgment, not an automatic fix.
+Default mode just reports. Pass --fix to also repair what it finds:
+  - A markdown list line that's entirely "- [[target|Display]]" or
+    "- [[target|Display]]: some description" (a TOC-style entry whose whole
+    point was describing that now-gone page) gets deleted outright.
+  - Any other occurrence (an inline mention inside a sentence) gets de-linked
+    in place: "[[target|Display]]" becomes plain "Display" (or "target" if
+    there was no pipe), so the surrounding sentence stays intact.
+
+--fix is a mechanical, no-judgment repair: it guarantees no dead link survives,
+it does NOT rewrite prose or decide whether a whole paragraph built around the
+missing page still deserves to exist. That call still needs a human read.
 """
 import re
 import sys
 from pathlib import Path
 
 CONTENT_DIR = Path(__file__).resolve().parent.parent / "content"
-LINK_RE = re.compile(r"\[\[([^\]|#]+)")
+LINK_RE = re.compile(r"\[\[([^\]|#]+)(\|([^\]]+))?\]\]")
+TOC_LINE_RE = re.compile(r"^(\s*-\s*)\[\[([^\]|#]+)(\|([^\]]+))?\]\](\s*:.*)?\s*$")
 
 
-def main():
-    existing = {p.stem for p in CONTENT_DIR.glob("*.md")}
+def find_broken(existing):
     broken = []
     for md_file in sorted(CONTENT_DIR.glob("*.md")):
         for lineno, line in enumerate(md_file.read_text().splitlines(), 1):
             for match in LINK_RE.finditer(line):
                 target = match.group(1).strip()
                 if target and target not in existing:
-                    broken.append((md_file.name, lineno, target))
+                    broken.append((md_file, lineno, target))
+    return broken
+
+
+def fix_file(md_file, existing):
+    lines = md_file.read_text().splitlines()
+    new_lines = []
+    changes = []
+    for lineno, line in enumerate(lines, 1):
+        toc_match = TOC_LINE_RE.match(line)
+        if toc_match and toc_match.group(2).strip() not in existing:
+            changes.append((lineno, "deleted line", line.strip()))
+            continue  # drop the whole line
+
+        def replace(m):
+            target = m.group(1).strip()
+            if target in existing:
+                return m.group(0)
+            display = (m.group(3) or target).strip()
+            changes.append((lineno, f"de-linked to plain text: {display!r}", line.strip()))
+            return display
+
+        new_lines.append(LINK_RE.sub(replace, line))
+    md_file.write_text("\n".join(new_lines) + "\n")
+    return changes
+
+
+def main():
+    fix = "--fix" in sys.argv
+    existing = {p.stem for p in CONTENT_DIR.glob("*.md")}
+    broken = find_broken(existing)
 
     if not broken:
         print("No broken wikilinks found.")
         return 0
 
-    print(f"Found {len(broken)} broken wikilink(s):\n")
-    for fname, lineno, target in broken:
-        print(f"  {fname}:{lineno} -> [[{target}]]")
+    if not fix:
+        print(f"Found {len(broken)} broken wikilink(s):\n")
+        for md_file, lineno, target in broken:
+            print(f"  {md_file.name}:{lineno} -> [[{target}]]")
+        return 0
+
+    affected_files = sorted({md_file for md_file, _, _ in broken})
+    print(f"Found {len(broken)} broken wikilink(s) across {len(affected_files)} file(s), fixing:\n")
+    for md_file in affected_files:
+        for lineno, action, original in fix_file(md_file, existing):
+            print(f"  {md_file.name}:{lineno} -> {action}")
+            print(f"      was: {original}")
+
+    remaining = find_broken(existing)
+    if remaining:
+        print(f"\n{len(remaining)} broken wikilink(s) could not be auto-fixed, needs a manual look:")
+        for md_file, lineno, target in remaining:
+            print(f"  {md_file.name}:{lineno} -> [[{target}]]")
+    else:
+        print("\nAll broken wikilinks resolved.")
     return 0
 
 
