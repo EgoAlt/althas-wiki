@@ -1,7 +1,7 @@
 ---
 title: Crater Lake
 marker:
-    - coordinates: "1100, 1500"
+    - coordinates: "1515, 1313"
       icon: lucide-waves
       colour: "#2f6f8f"
 ---

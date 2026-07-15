@@ -1,7 +1,7 @@
 ---
 title: Polaris
 marker:
-    - coordinates: "600, 1900"
+    - coordinates: "2075, 1328"
       icon: lucide-sparkles
       colour: "#5b8dd6"
 ---

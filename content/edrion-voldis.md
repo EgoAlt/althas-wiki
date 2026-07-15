@@ -6,7 +6,7 @@ title: Edrion Voldis
 
 ---
 
-Son of King [[valthis-voldis|Valthis Voldis]] and father of [[orsian-voldis|Orsian Voldis]] and [[valis-voldis|Valis Voldis]]. Fought as one of the Five Heroes against [[the-ophanim|the Ophanim]] at [[hilltop|Hilltop]] in 331 VR, and was believed to have perished in the fighting alongside Saint Cassio of [[the-holy-see|the Holy See]].
+Son of King [[valthis-voldis|Valthis Voldis]] and father of [[orsian-voldis|Orsian Voldis]] and [[valis-voldis|Valis Voldis]]. Fought as one of the Five Heroes against [[the-ophanim|the Ophanim]] at [[hilltop|Hilltop]] in 331 VR, and is believed to have perished in the fighting alongside Saint Cassio of [[the-holy-see|the Holy See]].
 
 His believed death was not the end of the crisis, only its start. Valthis was assassinated soon after by the figure Voldaen taverns still call the Kingslayer, leaving Edrion's sickly young son Orsian to inherit the throne before he was old enough to rule. In his will, Edrion had named his bastard half-brother [[aldric-voldis|Aldric Voldis]] regent for exactly this circumstance, a provision that would go on to poison the next two decades of Voldaen politics.
 

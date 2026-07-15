@@ -1,7 +1,7 @@
 ---
 title: Draconis
 marker:
-    - coordinates: "200, 1400"
+    - coordinates: "2211, 1048"
       icon: lucide-mountain-snow
       colour: "#8a8a8a"
 ---
