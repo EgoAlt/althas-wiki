@@ -2,7 +2,7 @@
 title: Hesper
 ---
 
-**Summary**: Archmage of the Triumvirate governing [[polaris|Polaris]], eccentric collector of odd things, and [[rastaban|Rastaban]]'s teacher. Killed by a giant during her final duel with her son Izar, an act that plunged Polaris into riots.
+**Summary**: Archmage of the Triumvirate governing [[polaris|Polaris]], eccentric collector of odd things. Killed by a giant during her final duel with her son Izar, an act that plunged Polaris into riots.
 
 ---
 
@@ -16,5 +16,4 @@ She was killed by a giant during her final duel with Izar. News of an archmage o
 
 ## Related pages
 
-- [[rastaban|Rastaban]]
 - [[polaris|Polaris]]

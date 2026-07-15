@@ -50,7 +50,7 @@ Player-facing reference wiki for the *Ut Supra Sic Infra* campaign, set in the w
 
 ## NPCs
 
-- [[hesper|Hesper]]: archmage of Polaris's Triumvirate, Rastaban's teacher, killed by a giant during her final duel with Izar, sparking riots
+- [[hesper|Hesper]]: archmage of Polaris's Triumvirate, killed by a giant during her final duel with Izar, sparking riots
 
 ## History (Voldaen)
 

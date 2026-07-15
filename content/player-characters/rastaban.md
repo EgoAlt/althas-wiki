@@ -19,5 +19,4 @@ Ancestry: Giant. Community: Loreborne. Class: Wizard, subclass School of Knowled
 
 ## Related pages
 
-- [[hesper|Hesper]]
 - [[polaris|Polaris]]
