@@ -10,8 +10,6 @@ Son of [[edrion-voldis|Edrion Voldis]], grandson of [[valthis-voldis|Valthis Vol
 
 From then on Orsian was, in the wiki's own words, "little more than a royal puppet," surrounded by the coalition of nobles who ruled in his name. He died without heirs in 348 VR. The capital houses backed his elder sister [[valis-voldis|Valis Voldis]] for unbroken succession; the southern nobles answered with a rival claim for Aldric's return. That fracture became the revolution that produced [[jesthaen|Jesthaen]].
 
-See [[miracles|Miracles]] for what actually makes House Voldis so powerful: hoarded, hereditary gifts rather than mere longevity or training.
-
 ## Related pages
 
 - [[althas]]

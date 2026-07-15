@@ -2,12 +2,20 @@
 title: Rastaban
 ---
 
-**Summary**: Player character. A [[draconis|Draconis]] giant, wizard of the School of Knowledge, serving penal labor for the church after his archmage teacher, Hesper, disappeared.
+**Summary**: Player character. A [[draconis|Draconis]] giant, wizard of the School of Knowledge, serving penal labor for the church after being framed for killing his archmage teacher, Hesper.
+
+---
 
 > [!note] Player character
 > Rastaban ("Ras") is a PC, not an NPC.
 
 23 years old, born in [[draconis|Draconis]], son of [[thuban|Thuban]] and younger brother of [[eltanin|Eltanin]]. Big and strong, but visibly damaged: only his left arm remains, his left eye is scarred, and both it and his rare third eye (a Giant "Strange Pattern") stay hidden under a detailed blindfold-headband. Long, unkempt hair.
+
+## Current status
+
+Three years into penal servitude for the church, doing manual labor (heavy lifting, clearing magically hazardous areas) to avoid using magic at all. That changed once: during a rescue, a boulder threatened civilians and Ras, panicking, summoned a blue arcane arm from his missing shoulder and shattered it. Since then his assignments have leaned more dangerous, mostly clearing magical hazards and scaring off (not killing, by his own restraint) beasts.
+
+He's still watched closely: his left hand is bound to his own right shoulder to stop him casting, and his headband stays on to hide the third eye and the scar. Every few days his captors attempt to skin the markings again. It never gets easier.
 
 ## Character
 

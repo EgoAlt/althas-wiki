@@ -8,9 +8,7 @@ title: Valis Voldis
 
 Daughter of [[edrion-voldis|Edrion Voldis]], elder sister of [[orsian-voldis|Orsian Voldis]]. When Orsian died without heirs in 348 VR, the capital's noble houses backed Valis for the throne, insisting on unbroken succession over the southern nobles' rival claim for the return of the exiled [[aldric-voldis|Aldric Voldis]]. That standoff fractured into the revolution that produced [[jesthaen|Jesthaen]].
 
-Valis now rules Voldaen in the aftermath, five years after the Jesthaen Treaty. What she's actually like on the throne, and how she's handling the tension with the new republic, hasn't come up in play yet.
-
-See [[miracles|Miracles]] for what actually makes House Voldis so powerful: hoarded, hereditary gifts rather than mere longevity or training.
+Valis now rules Voldaen in the aftermath, five years after the Jesthaen Treaty.
 
 ## Related pages
 

@@ -2,7 +2,7 @@
 title: Althas
 ---
 
-**Summary**: The homebrew campaign frame for the Daggerheart campaign, set on the fractured continent of Althas, five years after a nation-spanning war.
+**Summary**: The campaign frame for *Ut Supra Sic Infra*, set on the fractured continent of Althas, five years after a nation-spanning war.
 
 ---
 
@@ -20,6 +20,10 @@ Ancient, Daunting, Grimdark, Ominous, Political, Sweeping, Terrifying, Tragic.
 ## Themes
 
 Apocalypse, Corruption, Divided Loyalties, The Nature of Power, The Price of Ambition, Redemption, Survival.
+
+## Touchstones
+
+A Song of Ice and Fire, Anúna, Attack on Titan, Berserk, Blasphemous, Castlevania, Neon Genesis Evangelion.
 
 ## Brief History
 
@@ -101,3 +105,5 @@ All communities are available across nations, but some have unique aspects withi
 - [[aldric-voldis|Aldric Voldis]]
 - [[valis-voldis|Valis Voldis]]
 - [[draconis|Draconis]]
+
+<span style="background-color:#D2ECD0; color:#020309; padding:2px 8px; border-radius:3px; font-size:0.85em;">🤖 Ontos Vault Operator, last edited: 2026-07-11T16:30:00Z</span>
