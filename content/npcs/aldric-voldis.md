@@ -2,6 +2,8 @@
 title: Aldric Voldis
 ---
 
+![[aldric-voldis.jpg|320]]
+
 **Summary**: Bastard half-brother of [[edrion-voldis|Edrion Voldis]] and one of the Five Heroes who fought [[the-ophanim|the Ophanim]]. Named regent, then exiled by a noble coup; his return became the rallying cry of the southern nobles during the succession crisis.
 
 ---

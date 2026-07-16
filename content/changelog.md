@@ -10,6 +10,7 @@ What's new on the wiki, most recent first.
 - **New pages**: [[faeries|Faeries]], the [[convent-of-saint-trefan|Convent of Saint Trefan]], and [[drinmery|Drinmery]].
 - [[the-holy-see|The Holy See]] now lays out how it's organized into Cantons, and the [[canton-of-inquisition|Canton of Inquisition]] entry was rewritten.
 - Added portraits for [[hesper|Hesper]], Uriel, and Rosestripe.
+- Added art to [[divine-relics|Divine Relics]], [[aldric-voldis|Aldric Voldis]], [[edrion-voldis|Edrion Voldis]], [[the-ophanim|The Ophanim]], [[the-one-above|The One Above]], and [[the-ones-below|The Ones Below]]. The last three carry a note that the image is only an artist's rendering, since no true likeness of them is possible.
 - **Renamed** Holy Relics to [[divine-relics|Divine Relics]], and clarified how they work: any Miracle-holder can wield one, whatever their own Miracle.
 - [[drinmery|Drinmery]] and the [[convent-of-saint-trefan|Convent of Saint Trefan]] now appear as pins on the interactive map.
 - Explorer entries that start with "The" now sort by the following word (so "The Holy See" files under H, not T).

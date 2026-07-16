@@ -2,6 +2,8 @@
 title: Edrion Voldis
 ---
 
+![[edrion-voldis.jpeg|320]]
+
 **Summary**: High Prince of [[voldaen|Voldaen]], one of the Five Heroes who died fighting [[the-ophanim|the Ophanim]] in 331 VR, which set off the Voldis Succession Crisis.
 
 ---
