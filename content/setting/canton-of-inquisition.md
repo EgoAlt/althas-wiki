@@ -6,7 +6,7 @@ title: Canton of Inquisition
 
 ---
 
-The Canton first rose as the hidden hand of [[the-holy-see|the Holy See]]: investigating corruption, exposing forbidden rites, and carrying sacred judgment into places ordinary law couldn't reach. Feared, but understood as a necessary instrument of protection. Their writs can unseat a lord, shame a priest, or drag a sinner screaming from beneath his own roof.
+The Canton began as [[the-holy-see|the Holy See]]'s hidden hand: rooting out corruption and forbidden rites, carrying the Church's judgment into places ordinary law couldn't reach. Feared, but understood as a necessary instrument of protection. Its writs reach high and low alike, enough to unseat a lord or drag a sinner screaming from beneath his own roof.
 
 ## Whispers since the Ophanim
 
