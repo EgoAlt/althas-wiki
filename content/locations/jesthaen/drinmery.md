@@ -18,11 +18,6 @@ submap:
     maxZoom: 2
     defaultZoom: 1
     zoomDelta: 0.5
-    markers:
-        - name: You are here
-          coordinates: "155, 180"
-          icon: lucide-paw-print
-          colour: "#c98a4b"
 ---
 
 **Summary**: A medium-sized city in [[jesthaen|Jesthaen]], best known as the home of the [[convent-of-saint-trefan|Convent of Saint Trefan]].

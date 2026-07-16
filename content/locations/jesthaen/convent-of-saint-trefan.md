@@ -18,11 +18,6 @@ submap:
     maxZoom: 2
     defaultZoom: 1
     zoomDelta: 0.5
-    markers:
-        - name: You are here
-          coordinates: "155, 180"
-          icon: lucide-paw-print
-          colour: "#d4af37"
 ---
 
 **Summary**: A convent in [[drinmery|Drinmery]], home to monks and a flock of faeries, prized for its rare library.
