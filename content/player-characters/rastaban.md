@@ -16,7 +16,3 @@ Big and strong. His right arm is missing. His left eye is hidden under a headban
 ## Character
 
 Ancestry: Giant. Community: Loreborne. Class: Wizard, subclass School of Knowledge.
-
-## Related pages
-
-- [[polaris|Polaris]]

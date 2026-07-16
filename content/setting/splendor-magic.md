@@ -27,5 +27,4 @@ Incantations aren't invented by casters. They're discovered. In Althas, this mea
 ## Related pages
 
 - [[codex-magic|Codex magic]]: deliberately contrasted here
-- [[the-ophanim|The Ophanim]]
 - [[miracles|Miracles]]: the hereditary counterpart to asking for magic directly

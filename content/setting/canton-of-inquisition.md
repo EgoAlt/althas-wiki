@@ -19,6 +19,3 @@ The Canton is now one body with two hearts. The old order still sits in its cham
 - [[the-holy-see|The Holy See]]
 - [[the-ophanim|The Ophanim]]
 - [[hilltop|Hilltop]]
-- [[crater-lake|The crater lake]]
-- [[codex-magic|Codex magic]]
-- [[kingslayer|The Kingslayer]]

@@ -10,14 +10,4 @@ An unidentified assassin, still called "the Kingslayer" in Voldaen taverns, who 
 
 ## Related pages
 
-- [[the-ophanim|The Ophanim]]
 - [[valthis-voldis|Valthis Voldis]]
-- [[edrion-voldis|Edrion Voldis]]
-- [[aldric-voldis|Aldric Voldis]]
-- [[canton-of-inquisition|Canton of Inquisition]]
-- [[the-holy-see|The Holy See]]
-- [[armada|Armada]]
-- [[miracles|Miracles]]
-- [[crater-lake|The crater lake]]
-- [[codex-magic|Codex magic]]
-- [[the-ones-below|The ones below]]

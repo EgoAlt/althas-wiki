@@ -28,4 +28,3 @@ Polaris's prosperity was built on Giant labor, yet in the modern magocracy, wher
 - [[voldaen|Voldaen]]
 - [[jesthaen|Jesthaen]]
 - [[hesper|Hesper]]
-- [[rastaban|Rastaban]]
