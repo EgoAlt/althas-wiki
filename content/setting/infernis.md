@@ -5,6 +5,8 @@ homeland: "None settled; itinerant caravans across Althas"
 standing: "Banned from most settlements; sometimes tolerated in Armada"
 ---
 
+![[infernis.webp|320]]
+
 **Summary**: An ancestry banned from most settlements for their supposed association with the Ones Below, living instead in traveling caravans that trade goods, news, and rumors across Althas.
 
 ---
