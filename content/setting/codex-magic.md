@@ -8,7 +8,7 @@ title: Codex Magic
 
 ## The core idea
 
-Codex casters don't generate an effect, they open one. Drawing the correct seal tears a small hole in reality, and whatever bleeds through that hole expresses itself according to the seal's shape: a fireball is not a caster making fire, it's them tearing a hole shaped so that what comes out reads as fire. This is the deliberate opposite of [[splendor-magic|Splendor magic]]: Splendor asks a person (a god) for an effect; Codex reaches past people entirely into a place.
+Codex casters don't generate an effect, they open one. Drawing the correct seal tears a small hole in reality, and whatever bleeds through that hole expresses itself according to the seal's shape: a fireball is not a caster making fire, it's them tearing a hole shaped so that what comes out reads as fire. This is the deliberate opposite of [[splendor-magic|Splendor Magic]]: Splendor asks a person (a god) for an effect; Codex reaches past people entirely into a place.
 
 ## The mechanic
 

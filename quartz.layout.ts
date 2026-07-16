@@ -40,15 +40,20 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.Explorer({
       // Sort ignoring a leading "The " so "The Holy See" files under H, etc.
-      // NOTE: this fn is .toString()'d and run client-side, so it must be
-      // fully self-contained (the `strip` helper lives inside it deliberately).
+      // NOTE: this fn is .toString()'d and run through `new Function` in the
+      // browser, so it must be fully self-contained AND must not create any
+      // named inner function/const: esbuild's keep-names wraps those in a
+      // `__name(...)` helper that does not exist client-side (undefined ->
+      // the Explorer silently dies). Keep the "strip the leading The" logic
+      // inlined for exactly that reason. Verify in a browser after editing.
       sortFn: (a, b) => {
-        const strip = (s: string) => s.replace(/^the\s+/i, "")
         if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
-          return strip(a.displayName).localeCompare(strip(b.displayName), undefined, {
-            numeric: true,
-            sensitivity: "base",
-          })
+          return a.displayName
+            .replace(/^the\s+/i, "")
+            .localeCompare(b.displayName.replace(/^the\s+/i, ""), undefined, {
+              numeric: true,
+              sensitivity: "base",
+            })
         }
         if (!a.isFolder && b.isFolder) {
           return 1
@@ -82,15 +87,20 @@ export const defaultListPageLayout: PageLayout = {
     }),
     Component.Explorer({
       // Sort ignoring a leading "The " so "The Holy See" files under H, etc.
-      // NOTE: this fn is .toString()'d and run client-side, so it must be
-      // fully self-contained (the `strip` helper lives inside it deliberately).
+      // NOTE: this fn is .toString()'d and run through `new Function` in the
+      // browser, so it must be fully self-contained AND must not create any
+      // named inner function/const: esbuild's keep-names wraps those in a
+      // `__name(...)` helper that does not exist client-side (undefined ->
+      // the Explorer silently dies). Keep the "strip the leading The" logic
+      // inlined for exactly that reason. Verify in a browser after editing.
       sortFn: (a, b) => {
-        const strip = (s: string) => s.replace(/^the\s+/i, "")
         if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
-          return strip(a.displayName).localeCompare(strip(b.displayName), undefined, {
-            numeric: true,
-            sensitivity: "base",
-          })
+          return a.displayName
+            .replace(/^the\s+/i, "")
+            .localeCompare(b.displayName.replace(/^the\s+/i, ""), undefined, {
+              numeric: true,
+              sensitivity: "base",
+            })
         }
         if (!a.isFolder && b.isFolder) {
           return 1
