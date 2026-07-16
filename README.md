@@ -1,17 +1,30 @@
-# Quartz v4
+# Althas — Ut Supra Sic Infra Player Wiki
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+Public, spoiler-safe wiki and interactive map for the homebrew Daggerheart campaign *Ut Supra Sic Infra*, published with [Quartz v4](https://quartz.jzhao.xyz/).
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
+Live at: https://egoalt.github.io/althas-wiki/
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+## How this repo works
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+`content/` is a **generated build artifact**, not hand-edited. The GM's actual wiki lives in a private Obsidian vault, annotated with two custom callout types:
 
-## Sponsors
+- `[!gm-only]` — an in-world secret not yet revealed to players
+- `[!gm-notes]` — permanent author-side content (real-world citations, planning notes) never shown to players
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+`scripts/sync-from-ontos.py` reads that source, strips both callout types, and writes the result here. Editing a file under `content/` directly is safe for presentation-only data (map marker coordinates, a page's portrait embed) which the sync preserves across re-syncs, but any lore text will be overwritten on the next run — edit the source vault instead.
+
+## Publishing
+
+1. `python3 scripts/sync-from-ontos.py`
+2. `python3 scripts/check-broken-links.py --fix`
+3. `npx quartz build` (verify locally before pushing)
+4. `git add -A && git commit && git push` — deploys automatically via `.github/workflows/deploy.yml`
+
+## Local dev
+
+```
+npm i
+npx quartz build --serve
+```
+
+Built on [Quartz v4](https://github.com/jackyzha0/quartz) ([MIT licensed](LICENSE.txt)).
