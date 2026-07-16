@@ -22,3 +22,4 @@ Currently ruled by [[valis-voldis|Valis Voldis]] following the Voldis Succession
 - [[valis-voldis|Valis Voldis]]
 - [[edrion-voldis|Edrion Voldis]]
 - [[aldric-voldis|Aldric Voldis]]
+- [[house-voldis|House Voldis]]

@@ -19,3 +19,4 @@ From then on Orsian was, in the wiki's own words, "little more than a royal pupp
 - [[valis-voldis|Valis Voldis]]
 - [[jesthaen|Jesthaen]]
 - [[miracles|Miracles]]
+- [[house-voldis|House Voldis]]

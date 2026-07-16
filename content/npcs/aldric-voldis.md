@@ -23,3 +23,4 @@ When Orsian died heirless in 348 VR, the southern nobles answered the capital's 
 - [[valis-voldis|Valis Voldis]]
 - [[jesthaen|Jesthaen]]
 - [[miracles|Miracles]]
+- [[house-voldis|House Voldis]]

@@ -6,6 +6,7 @@ What's new on the wiki, most recent first.
 
 ## 2026-07-16
 
+- **New page**: [[house-voldis|House Voldis]], the royal dynasty of Voldaen, with a full family tree from the God King's claimed line down to [[valis-voldis|Valis Voldis]], and the story of the succession crisis in one place.
 - **New player characters**: [[uriel-kenan|Uriel Kenan]] and [[rosestripe|Rosestripe]] join [[rastaban|Rastaban]] on the wiki (appearance and mechanics only for now, each with a portrait).
 - **New pages**: [[faeries|Faeries]], the [[convent-of-saint-trefan|Convent of Saint Trefan]], and [[drinmery|Drinmery]].
 - [[the-holy-see|The Holy See]] now lays out how it's organized into Cantons, and the [[canton-of-inquisition|Canton of Inquisition]] entry was rewritten.

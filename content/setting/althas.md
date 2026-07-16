@@ -104,3 +104,4 @@ All communities are available across nations, but some have unique aspects withi
 - [[orsian-voldis|Orsian Voldis]]
 - [[aldric-voldis|Aldric Voldis]]
 - [[valis-voldis|Valis Voldis]]
+- [[house-voldis|House Voldis]]
