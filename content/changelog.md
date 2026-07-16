@@ -6,7 +6,10 @@ What's new on the wiki, most recent first.
 
 ## 2026-07-16
 
-- Added a portrait for [[hesper|Hesper]].
+- **New player characters**: [[uriel-kenan|Uriel Kenan]] and [[rosestripe|Rosestripe]] join [[rastaban|Rastaban]] on the wiki (appearance and mechanics only for now, each with a portrait).
+- **New pages**: [[faeries|Faeries]], the [[convent-of-saint-trefan|Convent of Saint Trefan]], and [[drinmery|Drinmery]].
+- [[the-holy-see|The Holy See]] now lays out how it's organized into Cantons, and the [[canton-of-inquisition|Canton of Inquisition]] entry was rewritten.
+- Added portraits for [[hesper|Hesper]], Uriel, and Rosestripe.
 - Trimmed a few "Related pages" links that were showing up before their time. Nothing new revealed, the pages themselves are unchanged.
 
 ## 2026-07-15
