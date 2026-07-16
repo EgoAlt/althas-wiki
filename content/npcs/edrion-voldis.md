@@ -19,5 +19,5 @@ His death was not the end of the crisis, only its start. Valthis was assassinate
 - [[aldric-voldis|Aldric Voldis]]
 - [[valis-voldis|Valis Voldis]]
 - [[miracles|Miracles]]
-- [[holy-relics|Holy Relics]]
+- [[divine-relics|Divine Relics]]
 - [[kingslayer|The Kingslayer]]

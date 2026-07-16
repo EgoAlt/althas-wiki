@@ -1,5 +1,9 @@
 ---
 title: Drinmery
+marker:
+    - coordinates: "900, 1750"
+      icon: lucide-building-2
+      colour: "#c98a4b"
 ---
 
 **Summary**: A medium-sized city in [[jesthaen|Jesthaen]], best known as the home of the [[convent-of-saint-trefan|Convent of Saint Trefan]].

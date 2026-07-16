@@ -38,7 +38,25 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      // Sort ignoring a leading "The " so "The Holy See" files under H, etc.
+      // NOTE: this fn is .toString()'d and run client-side, so it must be
+      // fully self-contained (the `strip` helper lives inside it deliberately).
+      sortFn: (a, b) => {
+        const strip = (s: string) => s.replace(/^the\s+/i, "")
+        if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
+          return strip(a.displayName).localeCompare(strip(b.displayName), undefined, {
+            numeric: true,
+            sensitivity: "base",
+          })
+        }
+        if (!a.isFolder && b.isFolder) {
+          return 1
+        } else {
+          return -1
+        }
+      },
+    }),
   ],
   right: [
     Component.Graph(),
@@ -62,7 +80,25 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      // Sort ignoring a leading "The " so "The Holy See" files under H, etc.
+      // NOTE: this fn is .toString()'d and run client-side, so it must be
+      // fully self-contained (the `strip` helper lives inside it deliberately).
+      sortFn: (a, b) => {
+        const strip = (s: string) => s.replace(/^the\s+/i, "")
+        if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
+          return strip(a.displayName).localeCompare(strip(b.displayName), undefined, {
+            numeric: true,
+            sensitivity: "base",
+          })
+        }
+        if (!a.isFolder && b.isFolder) {
+          return 1
+        } else {
+          return -1
+        }
+      },
+    }),
   ],
   right: [],
 }
