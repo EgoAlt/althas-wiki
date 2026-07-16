@@ -8,7 +8,7 @@ title: Divine Relics
 
 ## The core idea
 
-Relics from the Divine Age's war against [[the-ones-below|the ones below]] can be safely wielded by anyone of holy blood: anyone who carries a [[miracles|Miracle]]. It doesn't matter which one. The Relic answers to the blood, not to any particular gift, so someone whose Miracle is useless in a fight, a healer's blessing, a scholar's small trick, can still be devastating on the battlefield with a Divine Relic in hand.
+Relics from the Divine Age's war against [[the-ones-below|the Ones Below]] can be safely wielded by anyone of holy blood: anyone who carries a [[miracles|Miracle]]. It doesn't matter which one. The Relic answers to the blood, not to any particular gift, so someone whose Miracle is useless in a fight, a healer's blessing, a scholar's small trick, can still be devastating on the battlefield with a Divine Relic in hand.
 
 ## Consequence for the unworthy
 

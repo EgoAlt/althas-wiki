@@ -2,13 +2,13 @@
 title: Miracles
 ---
 
-**Summary**: Hereditary gifts granted by [[the-one-above|the One Above]] to allies during the Divine Age's war against [[the-ones-below|the ones below]]. A Miracle grants the recipient holy blood, which can (not guaranteed) pass to descendants.
+**Summary**: Hereditary gifts granted by [[the-one-above|the One Above]] to allies during the Divine Age's war against [[the-ones-below|the Ones Below]]. A Miracle grants the recipient holy blood, which can (not guaranteed) pass to descendants.
 
 ---
 
 ## The core idea
 
-During the Divine Age, [[the-one-above|the One Above]] granted Miracles to people who fought alongside him against [[the-ones-below|the ones below]]. A Miracle changes the recipient's blood: it becomes "holy," and that inheritance can (but does not always) pass down to their descendants.
+During the Divine Age, [[the-one-above|the One Above]] granted Miracles to people who fought alongside him against [[the-ones-below|the Ones Below]]. A Miracle changes the recipient's blood: it becomes "holy," and that inheritance can (but does not always) pass down to their descendants.
 
 Not all Miracles are directly useful on the battlefield, but those that are consequently grant immense political power to their owners. Holding more than one Miracle naturally is exceptionally rare.
 

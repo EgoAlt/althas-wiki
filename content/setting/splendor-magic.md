@@ -10,7 +10,7 @@ title: Splendor Magic
 
 Splendor casters don't generate their own power. They speak a precise incantation, correctly, and the One Above grants the effect. What looks like a spell from the outside is, in-fiction, a request that was answered. A caster with the "wrong words" for a desired effect simply cannot produce it, no matter how skilled or determined they are: skill in Splendor magic is fluency, not force.
 
-This is a deliberate contrast with [[codex-magic|Codex magic]]: Splendor asks a person (a god) for magic; Codex tears a hole to reach it directly.
+This is a deliberate contrast with [[codex-magic|Codex Magic]]: Splendor asks a person (a god) for magic; Codex tears a hole to reach it directly.
 
 ## Where the words come from
 
