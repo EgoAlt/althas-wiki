@@ -11,7 +11,7 @@ Player-facing reference wiki for the *Ut Supra Sic Infra* campaign, set in the w
 
 ## Overview
 
-- [[althas]]: the campaign pitch, tone, themes, and brief history of the continent
+- [[althas|Althas]]: the campaign pitch, tone, themes, and brief history of the continent
 
 ## Nations
 
@@ -24,7 +24,7 @@ Player-facing reference wiki for the *Ut Supra Sic Infra* campaign, set in the w
 
 - [[hilltop|Hilltop]]: holy seat of the Holy See, devastated by the Ophanim
 
-- [[crater-lake|The crater lake]]: Divine Age crater at Althas's center, site of the Reborn Inquisition's rite
+- [[crater-lake|Crater Lake]]: Divine Age crater at Althas's center, site of the Reborn Inquisition's rite
 
 ## Factions
 
@@ -38,9 +38,9 @@ Player-facing reference wiki for the *Ut Supra Sic Infra* campaign, set in the w
 
 - [[the-one-above|The One Above]]: still alive but has left Althas
 
-- [[the-ones-below|The ones below]]: the gods the One Above fought in the Divine Age, sealed away
-- [[splendor-magic|Splendor magic]]: incantation-based magic as a favor granted, not generated
-- [[codex-magic|Codex magic]]: seal-drawn magic that tears into a parallel dimension
+- [[the-ones-below|The Ones Below]]: the gods the One Above fought in the Divine Age, sealed away
+- [[splendor-magic|Splendor Magic]]: incantation-based magic as a favor granted, not generated
+- [[codex-magic|Codex Magic]]: seal-drawn magic that tears into a parallel dimension
 - [[miracles|Miracles]]: hereditary gifts from the One Above
 
 - [[holy-relics|Holy Relics]]: Divine Age relics usable only by Miracle-holders

@@ -10,7 +10,7 @@ In 330 VR, the Ophanim landed in central Hilltop, instantly rendering much of th
 
 ## Related pages
 
-- [[althas]]
+- [[althas|Althas]]
 - [[hilltop|Hilltop]]
 - [[canton-of-inquisition|Canton of Inquisition]]
 - [[the-holy-see|The Holy See]]
