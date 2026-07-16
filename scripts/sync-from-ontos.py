@@ -141,27 +141,27 @@ NOT_YET_PUBLIC = {
 
 # Pages with content that survives the gm-only/gm-notes strip, but that
 # Lucas has decided shouldn't be on the frontend right now for a different
-# reason: only material grounded in the shared player-facing PDF ("Ut Supra
-# Sic Infra (v1.1).pdf") is currently in scope for the public site, plus
-# nothing at all about the three PCs or material drawn from player-submitted
-# session-zero documents. Distinct from NOT_YET_PUBLIC (nothing left after
-# stripping) and from [!gm-only] (an in-world secret not yet revealed in
-# play) — these pages may well be common knowledge at the table already,
-# they're just not yet part of the shared written reference material.
-# Revisit once Lucas expands what's officially shared beyond the PDF.
+# reason. Distinct from NOT_YET_PUBLIC (nothing left after stripping) and
+# from [!gm-only] (an in-world secret not yet revealed in play) — these pages
+# may well be common knowledge at the table already, they're just not yet
+# part of the shared public reference material.
+#
+# As of 2026-07-16, with each player's own go-ahead, the two PCs Uriel Kenan
+# and Rosestripe are published in the same shape as Rastaban: a public page
+# carrying only appearance + mechanics, with all backstory wrapped [!gm-only]
+# in the Ontos source. Faeries, the Convent of Saint Trefan, and Drinmery are
+# also now public (the Rosestripe-specific connections among them kept
+# gm-only). What remains held back below is the Drinmery noble cast and the
+# other giants'/Polaris NPCs, none revealed in play yet. Revisit per NPC as
+# the campaign introduces them.
 NOT_YET_SHARED = {
-    "rosestripe.md",
-    "uriel-kenan.md",
     "eltanin.md",
     "guilmore-fleming.md",
     "immanuel-greene.md",
     "izar.md",
     "thuban.md",
     "draconis.md",
-    "convent-of-saint-trefan.md",
-    "drinmery.md",
     "hilltop-night-zone.md",
-    "faeries.md",
 }
 
 CALLOUT_START_RE = re.compile(r"^>\s*\[!(gm-only|gm-notes)\]", re.IGNORECASE)
@@ -257,6 +257,25 @@ def clean_blank_runs(text):
 IMAGE_EMBED_RE = re.compile(r"^!\[[^\]]*\]\([^)]+\)\s*$|^!\[\[[^\]|]+(\|[^\]]+)?\]\]\s*$")
 
 
+def strip_leading_image(body):
+    """Drop a standalone image embed if it's the first non-blank line of the
+    Ontos body. Portraits now live in the GM's source page too (so Lucas's own
+    vault renders them), but frontend art is managed separately here, seeded
+    into content/assets/ and carried forward via extract_image_embed(). Left in
+    place, the source embed would either point at a path that only resolves in
+    Ontos, or double up with the carried-forward one on every re-sync. Only the
+    leading line is touched, mirroring extract_image_embed's own 'first line'
+    rule, so inline images elsewhere in a page are untouched."""
+    lines = body.splitlines()
+    for idx, line in enumerate(lines):
+        if line.strip() == "":
+            continue
+        if IMAGE_EMBED_RE.match(line):
+            return "\n".join(lines[:idx] + lines[idx + 1:])
+        return body
+    return body
+
+
 def extract_image_embed(body):
     """A portrait/illustration is presentation data with no equivalent in
     the GM's source, same category as map marker: coordinates. If the
@@ -284,6 +303,7 @@ def sync_page(src_name, dest_rel):
     text = src.read_text()
     _, body = split_frontmatter(text)
     body = strip_callouts(body)
+    body = strip_leading_image(body)
     body = strip_meta_lines(body)
     body = drop_empty_headings(body)
     body = clean_blank_runs(body)
