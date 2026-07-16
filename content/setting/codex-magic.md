@@ -25,4 +25,4 @@ The "parallel dimension" a seal reaches into isn't just flavor text: it's a subs
 
 ## Related pages
 
-- [[splendor-magic|Splendor magic]]: the deliberately contrasted domain
+- [[splendor-magic|Splendor Magic]]: the deliberately contrasted domain

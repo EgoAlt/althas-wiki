@@ -12,7 +12,7 @@ From then on Orsian was, in the wiki's own words, "little more than a royal pupp
 
 ## Related pages
 
-- [[althas]]
+- [[althas|Althas]]
 - [[voldaen|Voldaen]]
 - [[edrion-voldis|Edrion Voldis]]
 - [[aldric-voldis|Aldric Voldis]]

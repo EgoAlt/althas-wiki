@@ -14,7 +14,7 @@ Commands [[canton-of-inquisition|the Canton of Inquisition]] as its investigativ
 
 ## Related pages
 
-- [[althas]]
+- [[althas|Althas]]
 - [[hilltop|Hilltop]]
 - [[the-ophanim|The Ophanim]]
 - [[canton-of-inquisition|Canton of Inquisition]]

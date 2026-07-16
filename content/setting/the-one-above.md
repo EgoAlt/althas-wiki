@@ -14,9 +14,9 @@ The One Above is still alive. He has left Althas, for reasons not yet establishe
 
 ## Related pages
 
-- [[splendor-magic|Splendor magic]]
+- [[splendor-magic|Splendor Magic]]
 - [[miracles|Miracles]]
-- [[the-ones-below|The ones below]]
-- [[codex-magic|Codex magic]]
+- [[the-ones-below|The Ones Below]]
+- [[codex-magic|Codex Magic]]
 - [[the-holy-see|The Holy See]]
 - [[canton-of-inquisition|Canton of Inquisition]]

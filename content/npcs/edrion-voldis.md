@@ -12,7 +12,7 @@ His death was not the end of the crisis, only its start. Valthis was assassinate
 
 ## Related pages
 
-- [[althas]]
+- [[althas|Althas]]
 - [[voldaen|Voldaen]]
 - [[valthis-voldis|Valthis Voldis]]
 - [[orsian-voldis|Orsian Voldis]]

@@ -12,7 +12,7 @@ His killer, still called "the Kingslayer" in Voldaen taverns, has never been ide
 
 ## Related pages
 
-- [[althas]]
+- [[althas|Althas]]
 - [[voldaen|Voldaen]]
 - [[edrion-voldis|Edrion Voldis]]
 - [[orsian-voldis|Orsian Voldis]]

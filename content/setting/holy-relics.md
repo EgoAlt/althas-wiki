@@ -25,6 +25,6 @@ These Relics are extraordinarily powerful, passed down within families rather th
 ## Related pages
 
 - [[miracles|Miracles]]
-- [[the-ones-below|The ones below]]
+- [[the-ones-below|The Ones Below]]
 - [[voldaen|Voldaen]]
 - [[edrion-voldis|Edrion Voldis]]
