@@ -14,7 +14,4 @@ The lake sits at the center of the map of Althas, a crater left by the Divine Ag
 
 - [[the-one-above|The One Above]]
 - [[the-ones-below|The ones below]]
-- [[codex-magic|Codex magic]]
-- [[canton-of-inquisition|Canton of Inquisition]]
-- [[kingslayer|The Kingslayer]]
 - [[althas]]

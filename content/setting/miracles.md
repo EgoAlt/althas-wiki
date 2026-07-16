@@ -25,4 +25,3 @@ Not all Miracles are directly useful on the battlefield, but those that are cons
 - [[valis-voldis|Valis Voldis]]
 - [[aldric-voldis|Aldric Voldis]]
 - [[the-one-above|The One Above]]
-- [[kingslayer|The Kingslayer]]

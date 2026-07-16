@@ -20,5 +20,4 @@ See [[althas]] for the full history. Governed not by a single ruler but by [[gui
 - [[jesthaen|Jesthaen]]
 - [[polaris|Polaris]]
 - [[the-ophanim|The Ophanim]]
-- [[kingslayer|The Kingslayer]]
 - [[guild|The Guild]]

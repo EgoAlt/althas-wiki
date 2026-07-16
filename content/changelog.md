@@ -7,6 +7,7 @@ What's new on the wiki, most recent first.
 ## 2026-07-16
 
 - Added a portrait for [[hesper|Hesper]].
+- Trimmed a few "Related pages" links that were showing up before their time. Nothing new revealed, the pages themselves are unchanged.
 
 ## 2026-07-15
 
