@@ -7,6 +7,7 @@ marker:
     - coordinates: "1200, 2200"
       icon: lucide-landmark
       colour: "#b3aa02"
+      category: nation
 ---
 
 **Summary**: The holy seat of [[the-holy-see|the Holy See]], once home of the One Above, devastated by [[the-ophanim|the Ophanim]]'s landing in 330 VR. Central Hilltop, around the Ophanim's corpse, has never seen daylight since its death.

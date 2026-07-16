@@ -6,6 +6,7 @@ marker:
     - coordinates: "850, 1700"
       icon: lucide-landmark
       colour: "#84a59d"
+      category: nation
 ---
 
 **Summary**: The newest nation of Althas, a republic born from a workers' rebellion against [[voldaen|Voldaen]] during the Voldis Succession Crisis.

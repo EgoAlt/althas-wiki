@@ -5,7 +5,7 @@ homeland: "Old forests; the convents of [[the-holy-see|the Holy See]]"
 standing: "Trusted message carriers across all of Althas"
 ---
 
-![[faeries.jpg|320]]
+![[faeries.png|320]]
 
 **Summary**: An ancestry bound almost entirely to church and convent life, their very origins a secret kept by the Holy See. Trusted across Althas as message carriers precisely because of how little they care about anyone's business but their flock's.
 

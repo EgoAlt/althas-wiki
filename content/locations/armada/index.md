@@ -8,6 +8,7 @@ marker:
     - coordinates: "695, 2520"
       icon: lucide-anchor
       colour: "#4b8f8c"
+      category: nation
 ---
 
 **Summary**: A merchant federation founded by the trade cities of southern Hilltop during the [[the-ophanim|Ophanim]] crisis, home to a strong Slyborne presence and looser laws than its neighbors.

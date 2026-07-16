@@ -6,6 +6,7 @@ What's new on the wiki, most recent first.
 
 ## 2026-07-16
 
+- **The map learned two tricks**: pins are now grouped into toggleable layers (Settlements, Holy sites, Nations; use the control in the corner), and [[drinmery|Drinmery]] and the [[convent-of-saint-trefan|Convent of Saint Trefan]] have their own local maps you can open straight from their pins. Local cartography is still underway; in the meantime, an annoying dog stole the map.
 - **Infoboxes**: most pages now carry a quick-reference card (who or what something is, key dates, allegiances) beside the article, in the style of a classic wiki infobox.
 - **New pages**: the ancestries of Althas each get their own entry: [[giants|Giants]], [[clanks|Clanks]], and [[infernis|Infernis]] join [[faeries|Faeries]].
 - Added art to all four ancestry pages.
