@@ -45,7 +45,7 @@ Player-facing reference wiki for the *Ut Supra Sic Infra* campaign, set in the w
 - [[codex-magic|Codex Magic]]: seal-drawn magic that tears into a parallel dimension
 - [[miracles|Miracles]]: hereditary gifts from the One Above
 
-- [[holy-relics|Holy Relics]]: Divine Age relics usable only by Miracle-holders
+- [[divine-relics|Divine Relics]]: Divine Age relics any Miracle-holder can wield, whatever their Miracle
 
 ## Player characters
 

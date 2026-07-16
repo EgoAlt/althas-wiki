@@ -10,7 +10,7 @@ The Canton first rose as the hidden hand of [[the-holy-see|the Holy See]]: inves
 
 ## Whispers since the Ophanim
 
-Since [[the-ophanim|the Ophanim]] descended on [[hilltop|Hilltop]], a quiet unease has spread through the common folk about the Inquisition. Nothing anyone will say too loudly: just talk, passed between neighbors, that some Inquisitors have grown harder since the angel came. That confession alone no longer satisfies them, that a few now speak of sin as something that must be drowned and remade rather than forgiven. Whether any of it is true, or only the kind of story frightened people tell after the sky opens over a holy city, most couldn't say.
+Since [[the-ophanim|the Ophanim]] descended on [[hilltop|Hilltop]], a quiet unease has spread through the common folk about the Inquisition. Nothing anyone will say too loudly: just talk, passed between neighbors, that some Inquisitors have grown harder since the angel came. That justice, the way it used to be handed down, is no longer enough for them, and that a few have begun to say Althas will not be safe until it is scoured of its sin, not merely judged for it. Whether any of it is true, or only the kind of story frightened people tell after the sky opens over a holy city, most couldn't say.
 
 ## Related pages
 

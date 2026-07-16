@@ -1,5 +1,9 @@
 ---
 title: Convent of Saint Trefan
+marker:
+    - coordinates: "920, 1770"
+      icon: lucide-church
+      colour: "#d4af37"
 ---
 
 **Summary**: A convent in [[drinmery|Drinmery]], home to monks and a flock of faeries, prized for its rare library.
