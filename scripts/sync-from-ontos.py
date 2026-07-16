@@ -102,9 +102,7 @@ PAGE_MAP = {
     "armada.md": "locations/armada/index.md",
     "guild.md": "locations/armada/guild.md",
     "crater-lake.md": "locations/crater-lake.md",
-    "draconis.md": "locations/draconis.md",
     "hilltop.md": "locations/hilltop/index.md",
-    "hilltop-night-zone.md": "locations/hilltop/hilltop-night-zone.md",
     "convent-of-saint-trefan.md": "locations/jesthaen/convent-of-saint-trefan.md",
     "drinmery.md": "locations/jesthaen/drinmery.md",
     "jesthaen.md": "locations/jesthaen/index.md",
@@ -112,14 +110,9 @@ PAGE_MAP = {
     "voldaen.md": "locations/voldaen/index.md",
     "aldric-voldis.md": "npcs/aldric-voldis.md",
     "edrion-voldis.md": "npcs/edrion-voldis.md",
-    "eltanin.md": "npcs/eltanin.md",
-    "guilmore-fleming.md": "npcs/guilmore-fleming.md",
     "hesper.md": "npcs/hesper.md",
-    "immanuel-greene.md": "npcs/immanuel-greene.md",
-    "izar.md": "npcs/izar.md",
     "kingslayer.md": "npcs/kingslayer.md",
     "orsian-voldis.md": "npcs/orsian-voldis.md",
-    "thuban.md": "npcs/thuban.md",
     "valis-voldis.md": "npcs/valis-voldis.md",
     "valthis-voldis.md": "npcs/valthis-voldis.md",
     "rastaban.md": "player-characters/rastaban.md",
@@ -128,39 +121,31 @@ PAGE_MAP = {
     "index.md": "index.md",
 }
 
-# Pages that exist in Ontos but currently have nothing left to say once
-# GM-only material is stripped out. Not an error, revisit as the campaign
-# reveals more; listed explicitly so a skip is a decision, not a silent gap.
+# Pages that exist in Ontos but produce no public page: everything on them is
+# wrapped [!gm-only] (an in-world secret not yet revealed in play) or [!gm-notes]
+# (author notes), so nothing survives the strip. They are deliberately left out
+# of PAGE_MAP above. Listed here so a skip is a visible decision, not a silent
+# gap. To publish one, unwrap its [!gm-only] material in the Ontos source and add
+# it back to PAGE_MAP + TITLES.
+#
+# 2026-07-16: the former NOT_YET_SHARED list (pages held back despite having
+# public-ready content) was retired at Lucas's request. Those pages' content was
+# wrapped [!gm-only] instead, so "is this page public?" is now answered purely by
+# its tags, one mechanism, not two. The giants (Draconis / Eltanin / Thuban), the
+# Drinmery nobles (Guilmore Fleming / Immanuel Greene), Izar, and the Hilltop
+# night zone joined this list as a result.
 NOT_YET_PUBLIC = {
     "the-co-existers.md",
     "the-fallen-houses.md",
     "sage-magic.md",
     "ophanim-heresies.md",
     "old-blood.md",
-}
-
-# Pages with content that survives the gm-only/gm-notes strip, but that
-# Lucas has decided shouldn't be on the frontend right now for a different
-# reason. Distinct from NOT_YET_PUBLIC (nothing left after stripping) and
-# from [!gm-only] (an in-world secret not yet revealed in play) — these pages
-# may well be common knowledge at the table already, they're just not yet
-# part of the shared public reference material.
-#
-# As of 2026-07-16, with each player's own go-ahead, the two PCs Uriel Kenan
-# and Rosestripe are published in the same shape as Rastaban: a public page
-# carrying only appearance + mechanics, with all backstory wrapped [!gm-only]
-# in the Ontos source. Faeries, the Convent of Saint Trefan, and Drinmery are
-# also now public (the Rosestripe-specific connections among them kept
-# gm-only). What remains held back below is the Drinmery noble cast and the
-# other giants'/Polaris NPCs, none revealed in play yet. Revisit per NPC as
-# the campaign introduces them.
-NOT_YET_SHARED = {
+    "draconis.md",
     "eltanin.md",
+    "thuban.md",
+    "izar.md",
     "guilmore-fleming.md",
     "immanuel-greene.md",
-    "izar.md",
-    "thuban.md",
-    "draconis.md",
     "hilltop-night-zone.md",
 }
 
@@ -324,14 +309,7 @@ def sync_page(src_name, dest_rel):
 
 def main():
     written = []
-    removed = []
     for src_name, dest_rel in PAGE_MAP.items():
-        if src_name in NOT_YET_SHARED:
-            dest = CONTENT_DIR / dest_rel
-            if dest.exists():
-                dest.unlink()
-                removed.append(str(dest.relative_to(CONTENT_DIR)))
-            continue
         dest = sync_page(src_name, dest_rel)
         written.append(dest)
 
@@ -339,17 +317,8 @@ def main():
     for w in sorted(str(d.relative_to(CONTENT_DIR)) for d in written):
         print(f"  {w}")
 
-    if removed:
-        print(f"\nRemoved {len(removed)} page(s) no longer in scope (not yet shared beyond the PDF):")
-        for w in sorted(removed):
-            print(f"  {w}")
-
-    print(f"\nNot yet public (no content survives once GM-only material is stripped):")
+    print(f"\nNot public (everything on the page is GM-only; kept out of PAGE_MAP):")
     for name in sorted(NOT_YET_PUBLIC):
-        print(f"  {name}")
-
-    print(f"\nNot yet shared beyond the PDF (held back from the frontend for now):")
-    for name in sorted(NOT_YET_SHARED):
         print(f"  {name}")
     return 0
 
