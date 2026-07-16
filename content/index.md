@@ -59,5 +59,6 @@ Player-facing reference wiki for the *Ut Supra Sic Infra* campaign, set in the w
 
 ## History (Voldaen)
 
+- [[house-voldis|House Voldis]]: the royal dynasty, with the family tree from the God King to Valis
 - [[edrion-voldis|Edrion Voldis]], [[valthis-voldis|Valthis Voldis]], [[orsian-voldis|Orsian Voldis]], [[aldric-voldis|Aldric Voldis]], [[valis-voldis|Valis Voldis]]: the Voldis Succession Crisis cast
 - [[kingslayer|The Kingslayer]]: unidentified killer of Valthis Voldis, tavern legend in Voldaen

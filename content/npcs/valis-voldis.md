@@ -18,3 +18,4 @@ Valis now rules Voldaen in the aftermath, five years after the Jesthaen Treaty.
 - [[aldric-voldis|Aldric Voldis]]
 - [[jesthaen|Jesthaen]]
 - [[miracles|Miracles]]
+- [[house-voldis|House Voldis]]

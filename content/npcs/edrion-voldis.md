@@ -23,3 +23,4 @@ His death was not the end of the crisis, only its start. Valthis was assassinate
 - [[miracles|Miracles]]
 - [[divine-relics|Divine Relics]]
 - [[kingslayer|The Kingslayer]]
+- [[house-voldis|House Voldis]]
