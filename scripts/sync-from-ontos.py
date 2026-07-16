@@ -254,11 +254,28 @@ def clean_blank_runs(text):
     return text.strip() + "\n"
 
 
-def render(title, marker_block, body):
+IMAGE_EMBED_RE = re.compile(r"^!\[[^\]]*\]\([^)]+\)\s*$|^!\[\[[^\]|]+(\|[^\]]+)?\]\]\s*$")
+
+
+def extract_image_embed(body):
+    """A portrait/illustration is presentation data with no equivalent in
+    the GM's source, same category as map marker: coordinates. If the
+    destination file already opens on a standalone image line, carry it
+    forward so re-syncing text content never wipes out embedded art."""
+    for line in body.splitlines():
+        if line.strip() == "":
+            continue
+        return line if IMAGE_EMBED_RE.match(line) else None
+    return None
+
+
+def render(title, marker_block, body, image_embed=None):
     fm_lines = ["---", f"title: {title}"]
     if marker_block:
         fm_lines.append(marker_block)
     fm_lines.append("---")
+    if image_embed:
+        body = image_embed + "\n\n" + body
     return "\n".join(fm_lines) + "\n\n" + body
 
 
@@ -273,12 +290,15 @@ def sync_page(src_name, dest_rel):
 
     dest = CONTENT_DIR / dest_rel
     marker_block = None
+    image_embed = None
     if dest.exists():
-        existing_fm, _ = split_frontmatter(dest.read_text())
+        existing_text = dest.read_text()
+        existing_fm, existing_body = split_frontmatter(existing_text)
         marker_block = extract_marker_block(existing_fm)
+        image_embed = extract_image_embed(existing_body)
 
     dest.parent.mkdir(parents=True, exist_ok=True)
-    dest.write_text(render(TITLES[src_name], marker_block, body))
+    dest.write_text(render(TITLES[src_name], marker_block, body, image_embed))
     return dest
 
 
