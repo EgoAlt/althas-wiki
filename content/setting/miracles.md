@@ -1,5 +1,8 @@
 ---
 title: Miracles
+kind: magic-system
+practitioners: "[[house-voldis|House Voldis]]"
+source: "[[the-one-above|The One Above]]"
 ---
 
 **Summary**: Hereditary gifts granted by [[the-one-above|the One Above]] to allies during the Divine Age's war against [[the-ones-below|the Ones Below]]. A Miracle grants the recipient holy blood, which can (not guaranteed) pass to descendants.

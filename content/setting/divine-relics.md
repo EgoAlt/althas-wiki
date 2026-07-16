@@ -1,5 +1,8 @@
 ---
 title: Divine Relics
+kind: artifact
+wielder: "[[miracles|Miracle-holders]]"
+origin: The Divine Age
 ---
 
 ![[divine-relics.jpg|320]]

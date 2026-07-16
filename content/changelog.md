@@ -6,6 +6,8 @@ What's new on the wiki, most recent first.
 
 ## 2026-07-16
 
+- **Infoboxes**: most pages now carry a quick-reference card (who or what something is, key dates, allegiances) beside the article, in the style of a classic wiki infobox.
+- **New pages**: the ancestries of Althas each get their own entry: [[giants|Giants]], [[clanks|Clanks]], and [[infernis|Infernis]] join [[faeries|Faeries]].
 - **New page**: [[house-voldis|House Voldis]], the royal dynasty of Voldaen, with a full family tree from the God King's claimed line down to [[valis-voldis|Valis Voldis]], and the story of the succession crisis in one place.
 - **New player characters**: [[uriel-kenan|Uriel Kenan]] and [[rosestripe|Rosestripe]] join [[rastaban|Rastaban]] on the wiki (appearance and mechanics only for now, each with a portrait).
 - **New pages**: [[faeries|Faeries]], the [[convent-of-saint-trefan|Convent of Saint Trefan]], and [[drinmery|Drinmery]].

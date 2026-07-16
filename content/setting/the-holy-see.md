@@ -1,5 +1,7 @@
 ---
 title: The Holy See
+kind: organization
+seat: central Althas
 ---
 
 **Summary**: The divine regent authority that governs the faith of the One Above from [[hilltop|Hilltop]], in the god's continued absence.

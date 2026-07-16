@@ -1,5 +1,9 @@
 ---
 title: Valis Voldis
+kind: person
+house: "[[house-voldis|House Voldis]]"
+allegiance: "[[voldaen|Voldaen]]"
+role: "Ruler of [[voldaen|Voldaen]]"
 ---
 
 **Summary**: Elder sister of [[orsian-voldis|Orsian Voldis]], backed by the capital noble houses to succeed him. Currently rules [[voldaen|Voldaen]].

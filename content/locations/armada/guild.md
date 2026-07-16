@@ -1,5 +1,7 @@
 ---
 title: The Guild
+kind: organization
+seat: "[[armada|Armada]]"
 ---
 
 **Summary**: The governing institution of [[armada|Armada]]: a collection of city-state rulers who each hold their seat through possession of a physical token, not inheritance or election.

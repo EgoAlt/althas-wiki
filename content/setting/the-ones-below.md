@@ -1,5 +1,8 @@
 ---
 title: The Ones Below
+kind: being
+nature: primordial gods of chaos
+fate: Sealed away
 ---
 
 ![[the-ones-below.jpeg|320]]

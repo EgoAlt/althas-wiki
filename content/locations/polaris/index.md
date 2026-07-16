@@ -1,5 +1,8 @@
 ---
 title: Polaris
+kind: nation
+ruler: "Triumvirate of Archmages"
+government: "Magocracy"
 marker:
     - coordinates: "2075, 1328"
       icon: lucide-sparkles
@@ -10,7 +13,7 @@ marker:
 
 ---
 
-A nation of scholars and mages who broke off from Hilltop to pursue arcane ambition. Home to the continent's magic academies (Loreborne communities) and a magocratic industrial rise built on Giant labor. Rival of [[voldaen|Voldaen]], supported the [[jesthaen|Jesthaen]] rebels.
+A nation of scholars and mages who broke off from Hilltop to pursue arcane ambition. Home to the continent's magic academies (Loreborne communities) and a magocratic industrial rise built on [[giants|Giant]] labor. Rival of [[voldaen|Voldaen]], supported the [[jesthaen|Jesthaen]] rebels.
 
 See [[althas|Althas]] for the full history and the Giants' role in Polaris society.
 
@@ -20,7 +23,7 @@ Polaris is ruled by a Triumvirate of Archmages.
 
 ## The Giants of Polaris
 
-Polaris's prosperity was built on Giant labor, yet in the modern magocracy, where arcane aptitude largely determines status, giants are treated as a lowly working class: hauling stone for academies they cannot attend and operating machinery designed by mages who will never enter their workshops.
+Polaris's prosperity was built on [[giants|Giant]] labor, yet in the modern magocracy, where arcane aptitude largely determines status, giants are treated as a lowly working class: hauling stone for academies they cannot attend and operating machinery designed by mages who will never enter their workshops.
 
 ## Related pages
 
@@ -28,3 +31,4 @@ Polaris's prosperity was built on Giant labor, yet in the modern magocracy, wher
 - [[voldaen|Voldaen]]
 - [[jesthaen|Jesthaen]]
 - [[hesper|Hesper]]
+- [[giants|Giants]]

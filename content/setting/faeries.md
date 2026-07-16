@@ -1,5 +1,8 @@
 ---
 title: Faeries
+kind: ancestry
+homeland: "Old forests; the convents of [[the-holy-see|the Holy See]]"
+standing: "Trusted message carriers across all of Althas"
 ---
 
 **Summary**: An ancestry bound almost entirely to church and convent life, their very origins a secret kept by the Holy See. Trusted across Althas as message carriers precisely because of how little they care about anyone's business but their flock's.
@@ -19,3 +22,6 @@ Exceptions to the incuriosity do turn up, a faerie who teaches itself to read be
 - [[the-holy-see|The Holy See]]
 - [[convent-of-saint-trefan|Convent of Saint Trefan]]
 - [[althas|Althas]]
+- [[giants|Giants]]
+- [[clanks|Clanks]]
+- [[infernis|Infernis]]

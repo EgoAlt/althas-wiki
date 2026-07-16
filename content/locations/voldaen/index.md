@@ -1,5 +1,8 @@
 ---
 title: Voldaen
+kind: nation
+ruler: "[[valis-voldis|Valis Voldis]]"
+government: Monarchy
 marker:
     - coordinates: "900, 900"
       icon: lucide-landmark

@@ -1,5 +1,9 @@
 ---
 title: House Voldis
+kind: organization
+seat: "[[voldaen|Voldaen]]"
+leader: "[[valis-voldis|Valis Voldis]]"
+founded: "Divine Age"
 ---
 
 **Summary**: The royal dynasty of [[voldaen|Voldaen]], custodians of sacred inheritance, ruling by claimed divine descent from the God King of the Divine Age. Currently headed by [[valis-voldis|Valis Voldis]].

@@ -1,5 +1,9 @@
 ---
 title: The One Above
+kind: being
+nature: god
+domain: "[[splendor-magic|Splendor]]"
+fate: Alive, departed Althas
 ---
 
 ![[the-one-above.jpg|320]]

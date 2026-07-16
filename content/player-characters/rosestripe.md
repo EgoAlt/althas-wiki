@@ -1,5 +1,7 @@
 ---
 title: Rosestripe
+kind: person
+pc: true
 ---
 
 ![[rosestripe.webp|320]]

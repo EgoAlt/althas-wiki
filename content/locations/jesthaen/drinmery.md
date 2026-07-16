@@ -1,5 +1,7 @@
 ---
 title: Drinmery
+kind: location
+nation: "[[jesthaen|Jesthaen]]"
 marker:
     - coordinates: "900, 1750"
       icon: lucide-building-2

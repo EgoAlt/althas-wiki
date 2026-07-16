@@ -1,5 +1,7 @@
 ---
 title: Splendor Magic
+kind: magic-system
+source: "[[the-one-above|The One Above]]"
 ---
 
 **Summary**: How Splendor magic actually works in Althas: not a caster's own power, but a favor granted by [[the-one-above|the One Above]] to whoever knows the correct incantation. Casting a spell is asking, not commanding.

@@ -1,5 +1,9 @@
 ---
 title: Edrion Voldis
+kind: person
+died: 331 VR
+house: "[[house-voldis|House Voldis]]"
+role: High Prince of Voldaen
 ---
 
 ![[edrion-voldis.jpeg|320]]
