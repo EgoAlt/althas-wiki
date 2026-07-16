@@ -7,6 +7,7 @@ marker:
     - coordinates: "2075, 1328"
       icon: lucide-sparkles
       colour: "#5b8dd6"
+      category: nation
 ---
 
 **Summary**: A magocratic nation of scholars and mages who broke off from Hilltop, ruled by a Triumvirate of Archmages. Its industrial rise was built on Giant labor.

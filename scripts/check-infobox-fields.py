@@ -11,8 +11,8 @@ can't quietly publish frontmatter that shouldn't be there.
 
 What it flags, per file in content/:
   - an off-whitelist top-level key: anything that isn't `title`, `marker`,
-    `kind`, or a schema field (leakage: the contract says such a key cannot
-    reach the site).
+    `submap`, `kind`, or a schema field (leakage: the contract says such a
+    key cannot reach the site).
   - a `kind:` value that isn't one of the eight known kinds.
   - a schema field on a page with no `kind:` at all.
   - a schema field that doesn't belong to the page's declared kind
@@ -45,10 +45,10 @@ KIND_FIELDS = {
 }
 ALL_FIELDS = {f for fields in KIND_FIELDS.values() for f in fields}
 
-# Non-schema keys the sync legitimately writes: the display title and the
-# frontend-only map-pin block (whose sub-keys are indented, so the top-level
-# key scan below never sees them).
-NON_SCHEMA_KEYS = {"title", "marker"}
+# Non-schema keys the sync legitimately writes: the display title plus the
+# frontend-only map-pin block and local-map `submap:` block (whose sub-keys
+# are indented, so the top-level key scan below never sees them).
+NON_SCHEMA_KEYS = {"title", "marker", "submap"}
 
 FRONTMATTER_RE = re.compile(r"^---\n(.*?\n)---\n?", re.DOTALL)
 TOP_KEY_RE = re.compile(r"^([A-Za-z_][A-Za-z0-9_-]*):")

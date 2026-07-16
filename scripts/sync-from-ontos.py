@@ -11,8 +11,9 @@ that never reaches players.
 This script reads each mapped source page, strips both callout types
 entirely, trims frontmatter down to `title:` plus the whitelisted typed
 infobox fields (see INFOBOX_KIND_FIELDS below; carrying forward any
-existing `marker:` map-pin data already present in the destination file,
-since that's presentation data with no equivalent in the GM's source),
+existing `marker:` map-pin data and `submap:` local-map block already
+present in the destination file, since those are presentation data with
+no equivalent in the GM's source),
 drops the Sources/Last updated bookkeeping lines, and writes the result
 into content/.
 
@@ -193,10 +194,12 @@ def split_frontmatter(text):
     return m.group(1), text[m.end():]
 
 
-def extract_marker_block(frontmatter_text):
+def extract_frontmatter_block(frontmatter_text, key):
+    """Capture a top-level frontmatter key plus all its indented continuation
+    lines (including YAML comments inside the block), verbatim."""
     lines = frontmatter_text.splitlines()
     for idx, line in enumerate(lines):
-        if line.startswith("marker:"):
+        if line.startswith(f"{key}:"):
             block = [line]
             j = idx + 1
             while j < len(lines) and (lines[j][:1] in (" ", "\t") or lines[j].strip() == ""):
@@ -206,6 +209,18 @@ def extract_marker_block(frontmatter_text):
                 block.pop()
             return "\n".join(block)
     return None
+
+
+def extract_marker_block(frontmatter_text):
+    return extract_frontmatter_block(frontmatter_text, "marker")
+
+
+def extract_submap_block(frontmatter_text):
+    """A page's embedded local map (`submap:` block: image, caption, local
+    pins) is presentation data with no equivalent in the GM's source, same
+    category as `marker:` map-pin coordinates. Carry it forward from the
+    existing destination file so re-syncs never wipe it."""
+    return extract_frontmatter_block(frontmatter_text, "submap")
 
 
 def extract_infobox_fields(frontmatter_text):
@@ -340,12 +355,14 @@ def extract_image_embed(body):
     return None
 
 
-def render(title, marker_block, body, image_embed=None, infobox_lines=None):
+def render(title, marker_block, body, image_embed=None, infobox_lines=None, submap_block=None):
     fm_lines = ["---", f"title: {title}"]
     if infobox_lines:
         fm_lines.extend(infobox_lines)
     if marker_block:
         fm_lines.append(marker_block)
+    if submap_block:
+        fm_lines.append(submap_block)
     fm_lines.append("---")
     if image_embed:
         body = image_embed + "\n\n" + body
@@ -365,15 +382,19 @@ def sync_page(src_name, dest_rel):
 
     dest = CONTENT_DIR / dest_rel
     marker_block = None
+    submap_block = None
     image_embed = None
     if dest.exists():
         existing_text = dest.read_text()
         existing_fm, existing_body = split_frontmatter(existing_text)
         marker_block = extract_marker_block(existing_fm)
+        submap_block = extract_submap_block(existing_fm)
         image_embed = extract_image_embed(existing_body)
 
     dest.parent.mkdir(parents=True, exist_ok=True)
-    dest.write_text(render(TITLES[src_name], marker_block, body, image_embed, infobox_lines))
+    dest.write_text(
+        render(TITLES[src_name], marker_block, body, image_embed, infobox_lines, submap_block)
+    )
     return dest
 
 
