@@ -26,11 +26,22 @@ LINK_RE = re.compile(r"\[\[([^\]|#]+)(\|([^\]]+))?\]\]")
 TOC_LINE_RE = re.compile(r"^(\s*-\s*)\[\[([^\]|#]+)(\|([^\]]+))?\]\](\s*:.*)?\s*$")
 
 
+def is_embed(line, match_start):
+    """A leading `!` turns [[...]] into an embed (an image, not a page
+    link) - Quartz resolves those against asset files, not content/*.md,
+    so they must never be treated as broken links just because their
+    target isn't a page. `![[hesper.jpg|320]]` is a real, working embed
+    even though there's no hesper.jpg.md anywhere."""
+    return match_start > 0 and line[match_start - 1] == "!"
+
+
 def find_broken(existing):
     broken = []
     for md_file in sorted(CONTENT_DIR.rglob("*.md")):
         for lineno, line in enumerate(md_file.read_text().splitlines(), 1):
             for match in LINK_RE.finditer(line):
+                if is_embed(line, match.start()):
+                    continue
                 target = match.group(1).strip()
                 if target and target not in existing:
                     broken.append((md_file, lineno, target))
@@ -48,6 +59,8 @@ def fix_file(md_file, existing):
             continue  # drop the whole line
 
         def replace(m):
+            if is_embed(line, m.start()):
+                return m.group(0)
             target = m.group(1).strip()
             if target in existing:
                 return m.group(0)
