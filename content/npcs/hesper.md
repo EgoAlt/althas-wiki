@@ -1,5 +1,7 @@
 ---
 title: Hesper
+kind: person
+role: "Archmage of the Triumvirate of [[polaris|Polaris]]"
 ---
 
 ![[hesper.jpg|320]]

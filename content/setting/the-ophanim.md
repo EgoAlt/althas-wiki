@@ -1,5 +1,8 @@
 ---
 title: The Ophanim
+kind: being
+nature: angelic being
+fate: Slain in 331 VR
 ---
 
 ![[the-ophanim.webp|320]]

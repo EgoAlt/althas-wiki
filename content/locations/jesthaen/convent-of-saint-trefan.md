@@ -1,5 +1,7 @@
 ---
 title: Convent of Saint Trefan
+kind: location
+region: "[[drinmery|Drinmery]]"
 marker:
     - coordinates: "920, 1770"
       icon: lucide-church

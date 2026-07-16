@@ -1,5 +1,7 @@
 ---
 title: Rastaban
+kind: person
+pc: true
 ---
 
 **Summary**: Player character. A Loreborne Giant, School of Knowledge Wizard.

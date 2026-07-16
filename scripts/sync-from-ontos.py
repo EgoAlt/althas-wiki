@@ -9,7 +9,8 @@ for permanent author-side content (real-world citations, planning notes)
 that never reaches players.
 
 This script reads each mapped source page, strips both callout types
-entirely, trims frontmatter down to just `title:` (carrying forward any
+entirely, trims frontmatter down to `title:` plus the whitelisted typed
+infobox fields (see INFOBOX_KIND_FIELDS below; carrying forward any
 existing `marker:` map-pin data already present in the destination file,
 since that's presentation data with no equivalent in the GM's source),
 drops the Sources/Last updated bookkeeping lines, and writes the result
@@ -44,6 +45,9 @@ TITLES = {
     "canton-of-inquisition.md": "Canton of Inquisition",
     "codex-magic.md": "Codex Magic",
     "faeries.md": "Faeries",
+    "giants.md": "Giants",
+    "clanks.md": "Clanks",
+    "infernis.md": "Infernis",
     "divine-relics.md": "Divine Relics",
     "miracles.md": "Miracles",
     "splendor-magic.md": "Splendor Magic",
@@ -87,6 +91,9 @@ PAGE_MAP = {
     "canton-of-inquisition.md": "setting/canton-of-inquisition.md",
     "codex-magic.md": "setting/codex-magic.md",
     "faeries.md": "setting/faeries.md",
+    "giants.md": "setting/giants.md",
+    "clanks.md": "setting/clanks.md",
+    "infernis.md": "setting/infernis.md",
     "divine-relics.md": "setting/divine-relics.md",
     "miracles.md": "setting/miracles.md",
     "splendor-magic.md": "setting/splendor-magic.md",
@@ -151,6 +158,29 @@ NOT_YET_PUBLIC = {
     "hilltop-night-zone.md",
 }
 
+# The public-fields contract for the typed-infobox pilot (see the campaign's
+# specs/althas-article-templates-design.md in Ontos). These are the ONLY
+# frontmatter keys, besides `title:` and the carried-forward `marker:` block,
+# that are allowed to pass from the GM's source through to the published site.
+# They pass VERBATIM (wikilink values stay raw; the frontend Infobox component
+# parses them). A key not listed here cannot reach the site, so any future
+# vault-side frontmatter field is private by default. Keys only pass for the
+# page's own declared `kind:` (no kind, nothing passes): `date` on a non-event
+# page, for example, is vault bookkeeping, not schema, and stays stripped.
+# Kept in step with quartz/components/Infobox.tsx, scripts/check-infobox-fields.py,
+# and the authoring reference (notes/article-templates.md in the campaign folder).
+INFOBOX_KIND_FIELDS = {
+    "person": ("born", "died", "house", "allegiance", "role", "pc"),
+    "nation": ("capital", "ruler", "government", "founded"),
+    "location": ("nation", "region"),
+    "organization": ("seat", "leader", "founded"),
+    "magic-system": ("practitioners", "source"),
+    "being": ("nature", "domain", "fate"),
+    "artifact": ("wielder", "origin"),
+    "event": ("when", "outcome"),
+    "ancestry": ("homeland", "standing"),
+}
+
 CALLOUT_START_RE = re.compile(r"^>\s*\[!(gm-only|gm-notes)\]", re.IGNORECASE)
 HEADING_RE = re.compile(r"^#{1,6}\s")
 FRONTMATTER_RE = re.compile(r"^---\n(.*?\n)---\n?", re.DOTALL)
@@ -176,6 +206,41 @@ def extract_marker_block(frontmatter_text):
                 block.pop()
             return "\n".join(block)
     return None
+
+
+def extract_infobox_fields(frontmatter_text):
+    """Pull the typed infobox lines out of the GM's source frontmatter,
+    verbatim. Only `kind:` plus the fields belonging to that declared kind
+    pass; a page without a valid `kind:` passes nothing. Indented
+    continuation lines (block-style YAML lists) travel with their key,
+    mirroring extract_marker_block()."""
+    lines = frontmatter_text.splitlines()
+    kind = None
+    for line in lines:
+        m = re.match(r"""^kind:\s*["']?([a-z-]+)["']?\s*$""", line)
+        if m:
+            kind = m.group(1)
+            break
+    if kind not in INFOBOX_KIND_FIELDS:
+        return []
+    allowed = ("kind",) + INFOBOX_KIND_FIELDS[kind]
+    out = []
+    i, n = 0, len(lines)
+    while i < n:
+        m = re.match(r"^([A-Za-z_][A-Za-z0-9_-]*):", lines[i])
+        if m and m.group(1) in allowed:
+            block = [lines[i]]
+            j = i + 1
+            while j < n and (lines[j][:1] in (" ", "\t") or lines[j].strip() == ""):
+                block.append(lines[j])
+                j += 1
+            while block and block[-1].strip() == "":
+                block.pop()
+            out.extend(block)
+            i = j
+            continue
+        i += 1
+    return out
 
 
 def strip_callouts(body):
@@ -275,8 +340,10 @@ def extract_image_embed(body):
     return None
 
 
-def render(title, marker_block, body, image_embed=None):
+def render(title, marker_block, body, image_embed=None, infobox_lines=None):
     fm_lines = ["---", f"title: {title}"]
+    if infobox_lines:
+        fm_lines.extend(infobox_lines)
     if marker_block:
         fm_lines.append(marker_block)
     fm_lines.append("---")
@@ -288,7 +355,8 @@ def render(title, marker_block, body, image_embed=None):
 def sync_page(src_name, dest_rel):
     src = ONTOS_SETTING / src_name
     text = src.read_text()
-    _, body = split_frontmatter(text)
+    src_fm, body = split_frontmatter(text)
+    infobox_lines = extract_infobox_fields(src_fm)
     body = strip_callouts(body)
     body = strip_leading_image(body)
     body = strip_meta_lines(body)
@@ -305,7 +373,7 @@ def sync_page(src_name, dest_rel):
         image_embed = extract_image_embed(existing_body)
 
     dest.parent.mkdir(parents=True, exist_ok=True)
-    dest.write_text(render(TITLES[src_name], marker_block, body, image_embed))
+    dest.write_text(render(TITLES[src_name], marker_block, body, image_embed, infobox_lines))
     return dest
 
 

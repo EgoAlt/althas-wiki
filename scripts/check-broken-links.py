@@ -22,8 +22,11 @@ import sys
 from pathlib import Path
 
 CONTENT_DIR = Path(__file__).resolve().parent.parent / "content"
-LINK_RE = re.compile(r"\[\[([^\]|#]+)(\|([^\]]+))?\]\]")
-TOC_LINE_RE = re.compile(r"^(\s*-\s*)\[\[([^\]|#]+)(\|([^\]]+))?\]\](\s*:.*)?\s*$")
+# A wikilink inside a markdown table escapes its pipe as \| (Quartz renders
+# that correctly), so the target group must not swallow the backslash and the
+# separator must accept both | and \|.
+LINK_RE = re.compile(r"\[\[([^\]|#\\]+)(\\?\|([^\]]+))?\]\]")
+TOC_LINE_RE = re.compile(r"^(\s*-\s*)\[\[([^\]|#\\]+)(\\?\|([^\]]+))?\]\](\s*:.*)?\s*$")
 
 
 def is_embed(line, match_start):

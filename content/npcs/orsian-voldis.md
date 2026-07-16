@@ -1,5 +1,9 @@
 ---
 title: Orsian Voldis
+kind: person
+died: "348 VR"
+house: "[[house-voldis|House Voldis]]"
+role: "King of [[voldaen|Voldaen]]"
 ---
 
 **Summary**: Child-king of [[voldaen|Voldaen]] after his grandfather's assassination, ruled as a puppet of the noble coalition that exiled his regent. Died heirless in 348 VR, triggering the crisis that birthed [[jesthaen|Jesthaen]].

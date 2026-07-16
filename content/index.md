@@ -33,11 +33,17 @@ Player-facing reference wiki for the *Ut Supra Sic Infra* campaign, set in the w
 - [[canton-of-inquisition|Canton of Inquisition]]: the Holy See's feared investigative and judicial arm
 - [[guild|The Guild]]: governs Armada, seats held by token possession, not inheritance or election
 
+## Ancestries
+
+- [[clanks|Clanks]]: the newest ancestry, first built in Polaris's labs and Hilltop's sacred workshops; sentient Clanks are rare and politically dangerous
+- [[faeries|Faeries]]: ancestry lore, origin theory, and their role as message carriers
+- [[giants|Giants]]: builders of Polaris's industrial rise, now treated as its lowly working class
+- [[infernis|Infernis]]: banned from most settlements, living in traveling caravans that trade goods, news, and rumors
+
 ## Concepts
 
 - [[the-ophanim|The Ophanim]]: the angelic being that devastated Hilltop in 330 VR
 
-- [[faeries|Faeries]]: ancestry lore, origin theory, and their role as message carriers
 - [[the-one-above|The One Above]]: still alive but has left Althas
 
 - [[the-ones-below|The Ones Below]]: the gods the One Above fought in the Divine Age, sealed away

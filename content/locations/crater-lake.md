@@ -1,5 +1,7 @@
 ---
 title: Crater Lake
+kind: location
+region: Central Althas
 ---
 
 **Summary**: A massive lake at the geographic center of Althas, formed as a crater when [[the-one-above|the One Above]] cast [[the-ones-below|the Ones Below]] down at the end of the Divine Age's war.

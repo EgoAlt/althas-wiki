@@ -1,5 +1,8 @@
 ---
 title: Hilltop
+kind: nation
+ruler: "[[the-holy-see|The Holy See]]"
+government: "Theocracy"
 marker:
     - coordinates: "1200, 2200"
       icon: lucide-landmark

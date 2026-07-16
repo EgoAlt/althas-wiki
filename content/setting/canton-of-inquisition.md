@@ -1,5 +1,6 @@
 ---
 title: Canton of Inquisition
+kind: organization
 ---
 
 **Summary**: [[the-holy-see|The Holy See]]'s investigative and judicial arm, one of its Cantons: the hidden hand that carries sacred judgment into places ordinary law can't reach.

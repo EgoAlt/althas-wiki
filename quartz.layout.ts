@@ -24,6 +24,12 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
+    // On mobile the right sidebar renders below the article, so the infobox
+    // gets a mobile-only twin up here, right below the title block (same
+    // MobileOnly/DesktopOnly pairing pattern as Spacer/TableOfContents).
+    // Server-rendered only: no .toString()/new Function client script, so the
+    // Explorer sortFn __name pitfall doesn't apply here.
+    Component.MobileOnly(Component.Infobox()),
   ],
   left: [
     Component.PageTitle(),
@@ -65,6 +71,7 @@ export const defaultContentPageLayout: PageLayout = {
   ],
   right: [
     Component.Graph(),
+    Component.DesktopOnly(Component.Infobox()),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],

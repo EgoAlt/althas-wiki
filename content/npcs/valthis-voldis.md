@@ -1,5 +1,10 @@
 ---
 title: Valthis Voldis
+kind: person
+died: 331 VR
+house: "[[house-voldis|House Voldis]]"
+allegiance: "[[voldaen|Voldaen]]"
+role: "King of [[voldaen|Voldaen]]"
 ---
 
 **Summary**: King of [[voldaen|Voldaen]], father of [[edrion-voldis|Edrion Voldis]]. Assassinated in 331 VR, shortly after his son's death fighting [[the-ophanim|the Ophanim]], leaving a child heir on the throne.

@@ -1,5 +1,7 @@
 ---
 title: Uriel Kenan
+kind: person
+pc: true
 ---
 
 ![[uriel-kenan.png|320]]

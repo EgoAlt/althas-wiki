@@ -1,5 +1,7 @@
 ---
 title: Jesthaen
+kind: nation
+government: "Republic"
 marker:
     - coordinates: "850, 1700"
       icon: lucide-landmark

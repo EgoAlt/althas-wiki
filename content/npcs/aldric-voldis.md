@@ -1,5 +1,8 @@
 ---
 title: Aldric Voldis
+kind: person
+house: "[[house-voldis|House Voldis]]"
+role: Regent of Voldaen
 ---
 
 ![[aldric-voldis.jpg|320]]
