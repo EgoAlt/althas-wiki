@@ -15,6 +15,7 @@ import TagList from "./TagList"
 import Graph from "./Graph"
 import Backlinks from "./Backlinks"
 import Infobox from "./Infobox"
+import DiceRoller from "./DiceRoller"
 import NationIndex from "./NationIndex"
 import Search from "./Search"
 import Footer from "./Footer"
@@ -43,6 +44,7 @@ export {
   Graph,
   Backlinks,
   Infobox,
+  DiceRoller,
   NationIndex,
   Search,
   Footer,
