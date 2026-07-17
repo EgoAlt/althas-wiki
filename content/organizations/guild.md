@@ -17,3 +17,4 @@ Guild membership isn't inherited or elected: it's held through possession of a p
 ## Related pages
 
 - [[armada|Armada]]
+- [[diplomacy|Diplomacy]]

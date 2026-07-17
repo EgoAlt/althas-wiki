@@ -33,3 +33,4 @@ Polaris's prosperity was built on [[giants|Giant]] labor, yet in the modern mago
 - [[jesthaen|Jesthaen]]
 - [[hesper|Hesper]]
 - [[giants|Giants]]
+- [[diplomacy|Diplomacy]]

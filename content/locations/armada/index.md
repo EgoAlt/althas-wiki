@@ -27,3 +27,4 @@ See [[althas|Althas]] for the full history. Governed not by a single ruler but b
 - [[the-ophanim|The Ophanim]]
 - [[guild|The Guild]]
 - [[infernis|Infernis]]
+- [[diplomacy|Diplomacy]]

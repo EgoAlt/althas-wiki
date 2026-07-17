@@ -27,3 +27,4 @@ Currently ruled by [[valis-voldis|Valis Voldis]] following the Voldis Succession
 - [[edrion-voldis|Edrion Voldis]]
 - [[aldric-voldis|Aldric Voldis]]
 - [[house-voldis|House Voldis]]
+- [[diplomacy|Diplomacy]]

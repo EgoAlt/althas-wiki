@@ -26,3 +26,4 @@ The Holy See is organized into Cantons, each an arm of the Church governing one 
 - [[canton-of-inquisition|Canton of Inquisition]]
 - [[jesthaen|Jesthaen]]
 - [[voldaen|Voldaen]]
+- [[diplomacy|Diplomacy]]
