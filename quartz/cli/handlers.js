@@ -287,6 +287,27 @@ export async function handleBuild(argv) {
               minify: true,
               platform: "browser",
               format: "esm",
+              plugins: [
+                // Stub Node's built-in "crypto" module for browser bundles.
+                // Some client-bundled npm packages (e.g. random-js, pulled in
+                // by the dice roller) contain a `require("crypto")` guarded
+                // behind a dead branch that only runs under Node; the default
+                // RNG uses Math.random and never touches it. Without this stub
+                // esbuild's browser platform errors on the unresolved builtin.
+                {
+                  name: "stub-node-crypto",
+                  setup(b) {
+                    b.onResolve({ filter: /^crypto$/ }, () => ({
+                      path: "crypto",
+                      namespace: "stub-node-crypto",
+                    }))
+                    b.onLoad({ filter: /.*/, namespace: "stub-node-crypto" }, () => ({
+                      contents: "module.exports = {}",
+                      loader: "js",
+                    }))
+                  },
+                },
+              ],
             })
             const rawMod = transpiled.outputFiles[0].text
             return {

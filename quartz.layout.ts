@@ -11,7 +11,16 @@ export const sharedPageComponents: SharedLayout = {
   // FolderPage with defaultListPageLayout, not by ContentPage. Pure
   // build-time server rendering: no client script is emitted, so the
   // Explorer sortFn __name serialization trap does not apply to it.
-  afterBody: [Component.NationIndex()],
+  // DiceRoller renders only on the dice-roller utility page (slug check), so
+  // the bundled dice library and its UI never appear on any lore page. Its
+  // client script re-binds on the "nav" SPA event and cleans up after itself.
+  afterBody: [
+    Component.NationIndex(),
+    Component.ConditionalRender({
+      component: Component.DiceRoller(),
+      condition: (page) => page.fileData.slug === "dice-roller",
+    }),
+  ],
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/jackyzha0/quartz",

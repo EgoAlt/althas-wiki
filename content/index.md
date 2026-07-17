@@ -7,6 +7,7 @@ title: Althas
 Player-facing reference wiki for the *Ut Supra Sic Infra* campaign, set in the world of Althas.
 
 - [[map|Interactive Map]]
+- [[dice-roller|Dice Roller]]
 - [[changelog|Changelog]]
 
 ## Overview
