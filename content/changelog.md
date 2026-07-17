@@ -4,6 +4,12 @@ title: Changelog
 
 What's new on the wiki, most recent first.
 
+## 2026-07-17
+
+- **New page**: a [[dice-roller|Dice Roller]] you can use right on the wiki. Type any standard notation, tap a quick button for a single die, or roll the Duality Dice for a Daggerheart check (it tells you Hope, Fear, or a critical). Your recent rolls stay listed even after you leave and come back.
+- **Infoboxes now lead with the portrait**: where a page has art, it now sits at the top of the reference card, in the usual wiki style, with the card moved to the top of the sidebar.
+- **The family tree is clickable**: on [[house-voldis|House Voldis]], click any named person in the tree to jump straight to their page.
+
 ## 2026-07-16
 
 - **The wiki got reorganized**: pages now live in folders by what they are ([[guild|organizations]], [[miracles|magic]], [[the-one-above|beings]], [[faeries|ancestries]], and purely geographic locations, with [[crater-lake|Crater Lake]] filed under [[hilltop|Hilltop]] where it belongs), and every nation's page now ends with a generated "In this nation" section listing the organizations, people, and places tied to it. Old links and bookmarks still work: they redirect to each page's new home.
