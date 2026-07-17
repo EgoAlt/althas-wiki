@@ -24,3 +24,4 @@ See [[althas|Althas]] for the full history.
 - [[polaris|Polaris]]
 - [[armada|Armada]]
 - [[drinmery|Drinmery]]
+- [[diplomacy|Diplomacy]]

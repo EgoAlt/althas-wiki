@@ -110,3 +110,4 @@ All communities are available across nations, but some have unique aspects withi
 - [[giants|Giants]]
 - [[clanks|Clanks]]
 - [[infernis|Infernis]]
+- [[diplomacy|Diplomacy]]
