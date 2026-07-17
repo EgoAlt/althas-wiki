@@ -31,6 +31,11 @@ graph TD
     VALTHIS --> ALDRIC
     EDRION --> ORSIAN
     EDRION --> VALIS
+    click VALTHIS "../npcs/valthis-voldis" "Valthis Voldis"
+    click EDRION "../npcs/edrion-voldis" "Edrion Voldis"
+    click ALDRIC "../npcs/aldric-voldis" "Aldric Voldis"
+    click ORSIAN "../npcs/orsian-voldis" "Orsian Voldis"
+    click VALIS "../npcs/valis-voldis" "Valis Voldis"
 ```
 
 > [!note] Reading the tree
