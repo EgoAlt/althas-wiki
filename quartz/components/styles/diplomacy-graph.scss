@@ -1,0 +1,168 @@
+@use "../../styles/variables.scss" as *;
+
+// Diplomacy force graph. Five edge-type colors are exposed as custom
+// properties so the swatches in the legend and the SVG strokes stay in sync,
+// and so both themes get readable hues. Light values live on :root; the dark
+// overrides sit under :root[saved-theme="dark"], matching darkmode.scss.
+:root {
+  --dg-governance: #284b63;
+  --dg-war-history: #b5432f;
+  --dg-alliance: #3f7d5c;
+  --dg-rivalry: #c07c1e;
+  --dg-uneasy: #7d5ba6;
+  --dg-other: #808080;
+}
+
+:root[saved-theme="dark"] {
+  --dg-governance: #7b97aa;
+  --dg-war-history: #e08a78;
+  --dg-alliance: #7fc09b;
+  --dg-rivalry: #e0b25f;
+  --dg-uneasy: #b79ad6;
+  --dg-other: #9a9a9a;
+}
+
+.diplomacy-graph-mount {
+  margin: 1.5rem 0 2rem 0;
+
+  .diplomacy-svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .dg-edge {
+    stroke-width: 2;
+    stroke: var(--dg-other);
+    transition: opacity 0.2s ease;
+
+    &.type-governance {
+      stroke: var(--dg-governance);
+    }
+    &.type-war-history {
+      stroke: var(--dg-war-history);
+    }
+    &.type-alliance {
+      stroke: var(--dg-alliance);
+    }
+    &.type-rivalry {
+      stroke: var(--dg-rivalry);
+    }
+    &.type-uneasy {
+      stroke: var(--dg-uneasy);
+    }
+    &.type-other {
+      stroke: var(--dg-other);
+    }
+  }
+
+  // Arrowhead tints to match the edge it terminates. context-stroke picks up
+  // the parent line's stroke in browsers that support it; older engines fall
+  // back to a neutral gray.
+  .dg-arrowhead {
+    fill: var(--gray);
+  }
+  @supports (fill: context-stroke) {
+    .dg-arrowhead {
+      fill: context-stroke;
+    }
+  }
+
+  .dg-node {
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+
+    circle {
+      fill: var(--light);
+      stroke: var(--secondary);
+      stroke-width: 2;
+      transition:
+        fill 0.1s ease,
+        stroke 0.1s ease;
+    }
+
+    &.kind-nation circle {
+      stroke: var(--secondary);
+      fill: color-mix(in srgb, var(--secondary) 12%, var(--light));
+    }
+    &.kind-institution circle {
+      stroke: var(--tertiary);
+      fill: color-mix(in srgb, var(--tertiary) 12%, var(--light));
+    }
+    &.kind-people circle {
+      stroke: var(--gray);
+      fill: color-mix(in srgb, var(--gray) 12%, var(--light));
+    }
+
+    text {
+      font-size: 0.75rem;
+      fill: var(--dark);
+      text-anchor: middle;
+      pointer-events: none;
+      font-family: var(--bodyFont);
+    }
+
+    &:hover circle {
+      stroke-width: 3;
+    }
+  }
+
+  .dimmed {
+    opacity: 0.15;
+  }
+
+  .diplomacy-caption {
+    min-height: 2.5rem;
+    margin-top: 0.75rem;
+    padding: 0.4rem 0.1rem;
+    color: var(--darkgray);
+    font-size: 0.9rem;
+    line-height: 1.35;
+  }
+
+  .diplomacy-legend {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1rem;
+    margin: 0.5rem 0 0 0;
+    padding: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.8rem;
+      color: var(--darkgray);
+      text-transform: capitalize;
+    }
+
+    .dg-swatch {
+      display: inline-block;
+      width: 1.1rem;
+      height: 0.3rem;
+      border-radius: 2px;
+      background-color: var(--dg-other);
+      flex: 0 0 auto;
+
+      &.type-governance {
+        background-color: var(--dg-governance);
+      }
+      &.type-war-history {
+        background-color: var(--dg-war-history);
+      }
+      &.type-alliance {
+        background-color: var(--dg-alliance);
+      }
+      &.type-rivalry {
+        background-color: var(--dg-rivalry);
+      }
+      &.type-uneasy {
+        background-color: var(--dg-uneasy);
+      }
+      &.type-other {
+        background-color: var(--dg-other);
+      }
+    }
+  }
+}
