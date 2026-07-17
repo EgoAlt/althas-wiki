@@ -111,3 +111,5 @@ All communities are available across nations, but some have unique aspects withi
 - [[clanks|Clanks]]
 - [[infernis|Infernis]]
 - [[diplomacy|Diplomacy]]
+- [[timeline|Timeline]]
+- [[calendar|Calendar]]

@@ -6,6 +6,8 @@ What's new on the wiki, most recent first.
 
 ## 2026-07-17
 
+- **New page**: a [[calendar|Calendar]] of Althas, the shape of the year: ten months of 33 days, an eleven-day week with a prayer day at its center, and the three closing holidays that mark the final battle of the Divine Age, 333 days in all.
+- **New page**: a [[timeline|Timeline]] gathering the dated history of Althas into one view, from the Divine Age through the founding of Voldaen to the Jesthaen Treaty of 358 VR.
 - **New page**: a [[diplomacy|Diplomacy]] map showing how the five nations and the powers within them stand toward each other after the Jesthaen Treaty, as a labeled diagram you can click through, plus the rivalries and alliances written out below it.
 - **New page**: a [[dice-roller|Dice Roller]] you can use right on the wiki. Type any standard notation, tap a quick button for a single die, or roll the Duality Dice for a Daggerheart check (it tells you Hope, Fear, or a critical). Your recent rolls stay listed even after you leave and come back.
 - **Infoboxes now lead with the portrait**: where a page has art, it now sits at the top of the reference card, in the usual wiki style, with the card moved to the top of the sidebar.
