@@ -44,6 +44,8 @@ CONTENT_DIR = Path(__file__).resolve().parent.parent / "content"
 TITLES = {
     "althas.md": "Althas",
     "diplomacy.md": "Diplomacy",
+    "calendar.md": "Calendar",
+    "timeline.md": "Timeline",
     "canton-of-inquisition.md": "Canton of Inquisition",
     "codex-magic.md": "Codex Magic",
     "faeries.md": "Faeries",
@@ -99,6 +101,8 @@ PAGE_MAP = {
     # redirecting.
     "althas.md": "setting/althas.md",
     "diplomacy.md": "setting/diplomacy.md",
+    "calendar.md": "setting/calendar.md",
+    "timeline.md": "setting/timeline.md",
     "canton-of-inquisition.md": "organizations/canton-of-inquisition.md",
     "the-holy-see.md": "organizations/the-holy-see.md",
     "guild.md": "organizations/guild.md",
