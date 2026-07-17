@@ -5,9 +5,8 @@ aliases:
 kind: ancestry
 homeland: "Northern Polaris"
 standing: "Polaris's lowly working class, despite building its industrial rise"
+image: giants.webp
 ---
-
-![[giants.webp|320]]
 
 **Summary**: An ancestry native to northern Polaris, once respected as builders and guardians. In the modern magocracy they are treated as a lowly working class, despite Polaris's industrial rise being built on Giant labor.
 

@@ -6,9 +6,8 @@ kind: being
 nature: god
 domain: "[[splendor-magic|Splendor]]"
 fate: Alive, departed Althas
+image: the-one-above.jpg
 ---
-
-![[the-one-above.jpg|320]]
 
 *An artist's rendering, not a likeness. The One Above held no shape for long, and none who claim to have glimpsed the god describe the same figure twice. No true image of it can exist; this is only how one believer pictured him.*
 

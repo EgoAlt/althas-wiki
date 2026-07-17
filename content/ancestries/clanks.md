@@ -5,9 +5,8 @@ aliases:
 kind: ancestry
 homeland: "Polaris's labs and Hilltop's sacred workshops"
 standing: "Sentient Clanks are rare, controversial, and politically dangerous"
+image: clanks.jpg
 ---
-
-![[clanks.jpg|320]]
 
 **Summary**: The most recent addition to Althas's peoples, first built in Polaris's labs and Hilltop's sacred workshops. Sentient Clanks are rare, controversial, and politically dangerous.
 

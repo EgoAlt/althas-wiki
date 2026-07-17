@@ -11,9 +11,9 @@ that never reaches players.
 This script reads each mapped source page, strips both callout types
 entirely, trims frontmatter down to `title:` plus the whitelisted typed
 infobox fields (see INFOBOX_KIND_FIELDS below; carrying forward any
-existing `marker:` map-pin data and `submap:` local-map block already
-present in the destination file, since those are presentation data with
-no equivalent in the GM's source),
+existing `marker:` map-pin data, `submap:` local-map block, and `image:`
+portrait filename already present in the destination file, since those are
+presentation data with no equivalent in the GM's source),
 drops the Sources/Last updated bookkeeping lines, and writes the result
 into content/.
 
@@ -266,6 +266,15 @@ def extract_submap_block(frontmatter_text):
     return extract_frontmatter_block(frontmatter_text, "submap")
 
 
+def extract_image_block(frontmatter_text):
+    """A page's portrait filename (`image:` key, value = a bare asset filename
+    resolving to content/assets/) is presentation data with no equivalent in
+    the GM's source, same category as `marker:` and `submap:`. Carry it forward
+    from the existing destination file so re-syncing text content never wipes
+    it. The frontend Infobox component renders it at the top of the card."""
+    return extract_frontmatter_block(frontmatter_text, "image")
+
+
 def extract_infobox_fields(frontmatter_text):
     """Pull the typed infobox lines out of the GM's source frontmatter,
     verbatim. Only `kind:` plus the fields belonging to that declared kind
@@ -369,13 +378,14 @@ IMAGE_EMBED_RE = re.compile(r"^!\[[^\]]*\]\([^)]+\)\s*$|^!\[\[[^\]|]+(\|[^\]]+)?
 
 def strip_leading_image(body):
     """Drop a standalone image embed if it's the first non-blank line of the
-    Ontos body. Portraits now live in the GM's source page too (so Lucas's own
-    vault renders them), but frontend art is managed separately here, seeded
-    into content/assets/ and carried forward via extract_image_embed(). Left in
-    place, the source embed would either point at a path that only resolves in
-    Ontos, or double up with the carried-forward one on every re-sync. Only the
-    leading line is touched, mirroring extract_image_embed's own 'first line'
-    rule, so inline images elsewhere in a page are untouched."""
+    Ontos body. Portraits live in the GM's source page too (so Lucas's own
+    vault renders them), but frontend art is managed separately here: the
+    filename lives in the content-side `image:` frontmatter key (carried
+    forward by extract_image_block) and the Infobox component renders it. Left
+    in place, the source body embed would point at a path that only resolves in
+    Ontos and would double up with the infobox portrait on the published page.
+    Only the leading line is touched, so inline images elsewhere in a page are
+    untouched."""
     lines = body.splitlines()
     for idx, line in enumerate(lines):
         if line.strip() == "":
@@ -386,20 +396,8 @@ def strip_leading_image(body):
     return body
 
 
-def extract_image_embed(body):
-    """A portrait/illustration is presentation data with no equivalent in
-    the GM's source, same category as map marker: coordinates. If the
-    destination file already opens on a standalone image line, carry it
-    forward so re-syncing text content never wipes out embedded art."""
-    for line in body.splitlines():
-        if line.strip() == "":
-            continue
-        return line if IMAGE_EMBED_RE.match(line) else None
-    return None
-
-
 def render(
-    title, marker_block, body, image_embed=None, infobox_lines=None, submap_block=None,
+    title, marker_block, body, image_block=None, infobox_lines=None, submap_block=None,
     alias_slugs=None,
 ):
     fm_lines = ["---", f"title: {title}"]
@@ -408,13 +406,13 @@ def render(
         fm_lines.extend(f"  - {slug}" for slug in alias_slugs)
     if infobox_lines:
         fm_lines.extend(infobox_lines)
+    if image_block:
+        fm_lines.append(image_block)
     if marker_block:
         fm_lines.append(marker_block)
     if submap_block:
         fm_lines.append(submap_block)
     fm_lines.append("---")
-    if image_embed:
-        body = image_embed + "\n\n" + body
     return "\n".join(fm_lines) + "\n\n" + body
 
 
@@ -432,18 +430,18 @@ def sync_page(src_name, dest_rel):
     dest = CONTENT_DIR / dest_rel
     marker_block = None
     submap_block = None
-    image_embed = None
+    image_block = None
     if dest.exists():
         existing_text = dest.read_text()
-        existing_fm, existing_body = split_frontmatter(existing_text)
+        existing_fm, _ = split_frontmatter(existing_text)
         marker_block = extract_marker_block(existing_fm)
         submap_block = extract_submap_block(existing_fm)
-        image_embed = extract_image_embed(existing_body)
+        image_block = extract_image_block(existing_fm)
 
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text(
         render(
-            TITLES[src_name], marker_block, body, image_embed, infobox_lines, submap_block,
+            TITLES[src_name], marker_block, body, image_block, infobox_lines, submap_block,
             alias_slugs=RENAMES.get(dest_rel),
         )
     )
