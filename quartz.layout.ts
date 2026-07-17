@@ -45,6 +45,16 @@ export const defaultContentPageLayout: PageLayout = {
     // Server-rendered only: no .toString()/new Function client script, so the
     // Explorer sortFn __name pitfall doesn't apply here.
     Component.MobileOnly(Component.Infobox()),
+    // The diplomacy force graph replaces the Mermaid DAG on setting/diplomacy.
+    // Mounted here in beforeBody, but diplomacy-graph.inline.ts relocates the
+    // rendered SVG to sit exactly where the diplomacy-graph code block is in
+    // the article flow, then hides that block. Slug-gated so it appears
+    // nowhere else. Client script rebinds on the "nav" SPA event and stops the
+    // simulation via window.addCleanup.
+    Component.ConditionalRender({
+      component: Component.DiplomacyGraph(),
+      condition: (page) => page.fileData.slug === "setting/diplomacy",
+    }),
   ],
   left: [
     Component.PageTitle(),

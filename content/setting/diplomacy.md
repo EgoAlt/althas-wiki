@@ -6,45 +6,34 @@ title: Diplomacy
 
 ---
 
-The decade of warfare that the Jesthaen Treaty ended in 358 VR left the continent divided and the peace uneasy. This page lays out where the five nations and their governing powers stand toward one another. Nodes link to their own pages.
+The decade of warfare that the Jesthaen Treaty ended in 358 VR left the continent divided and the peace uneasy. This page lays out where the five nations and their governing powers stand toward one another. The web below can be dragged into new arrangements, and each power links to its own page.
 
-```mermaid
-graph LR
-    VOL["Voldaen"]
-    POL["Polaris"]
-    ARM["Armada"]
-    JES["Jesthaen"]
-    HIL["Hilltop"]
-    HSE["The Holy See"]
-    CAN["Canton of Inquisition"]
-    GLD["The Guild"]
-    HVO["House Voldis"]
-    INF["Infernis"]
+```diplomacy-graph
+# Nodes: slug | display name | kind | site page path
+node voldaen | Voldaen | nation | locations/voldaen
+node polaris | Polaris | nation | locations/polaris
+node armada | Armada | nation | locations/armada
+node jesthaen | Jesthaen | nation | locations/jesthaen
+node hilltop | Hilltop | nation | locations/hilltop
+node the-holy-see | The Holy See | institution | organizations/the-holy-see
+node canton-of-inquisition | Canton of Inquisition | institution | organizations/canton-of-inquisition
+node guild | The Guild | institution | organizations/guild
+node house-voldis | House Voldis | institution | organizations/house-voldis
+node infernis | Infernis | people | ancestries/infernis
 
-    HVO -->|"royal dynasty, rules"| VOL
-    HSE -->|"divine regent, governs the faith from"| HIL
-    CAN -->|"investigative and judicial arm of"| HSE
-    GLD -->|"governs"| ARM
-    ARM -->|"sometimes tolerates"| INF
-
-    VOL <-->|"rivals"| POL
-    HIL -->|"sent aid in the rebellion"| VOL
-    HSE -->|"allied in the rebellion"| VOL
-    POL -->|"backed the rebels"| JES
-    ARM -->|"backed the rebels"| JES
-    POL <-->|"fragile wartime alliance"| ARM
-    JES <-->|"revolution, then a tenuous peace"| VOL
-
-    click VOL "../locations/voldaen" "Voldaen"
-    click POL "../locations/polaris" "Polaris"
-    click ARM "../locations/armada" "Armada"
-    click JES "../locations/jesthaen" "Jesthaen"
-    click HIL "../locations/hilltop" "Hilltop"
-    click HSE "../organizations/the-holy-see" "The Holy See"
-    click CAN "../organizations/canton-of-inquisition" "Canton of Inquisition"
-    click GLD "../organizations/guild" "The Guild"
-    click HVO "../organizations/house-voldis" "House Voldis"
-    click INF "../ancestries/infernis" "Infernis"
+# Edges: source -> target (arrow) or <-> (mutual) | type | label
+edge house-voldis -> voldaen | governance | royal dynasty, rules
+edge the-holy-see -> hilltop | governance | divine regent, governs the faith from
+edge canton-of-inquisition -> the-holy-see | governance | investigative and judicial arm of
+edge guild -> armada | governance | governs
+edge armada -> infernis | uneasy | sometimes tolerates
+edge voldaen <-> polaris | rivalry | rivals
+edge hilltop -> voldaen | war-history | sent aid in the rebellion
+edge the-holy-see -> voldaen | war-history | allied in the rebellion
+edge polaris -> jesthaen | war-history | backed the rebels
+edge armada -> jesthaen | war-history | backed the rebels
+edge polaris <-> armada | alliance | fragile wartime alliance
+edge jesthaen <-> voldaen | uneasy | revolution, then a tenuous peace
 ```
 
 ## The two sides of the war
