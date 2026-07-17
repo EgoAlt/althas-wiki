@@ -1,7 +1,7 @@
 import { JSX } from "preact"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import style from "./styles/infobox.scss"
-import { FilePath, FullSlug, slugifyFilePath, transformLink } from "../util/path"
+import { FilePath, FullSlug, joinSegments, pathToRoot, slugifyFilePath, transformLink } from "../util/path"
 import { classNames } from "../util/lang"
 
 // The typed-infobox schema for the article-templates pilot. Field order here
@@ -118,15 +118,34 @@ export default (() => {
   const Infobox: QuartzComponent = ({ fileData, displayClass, ctx }: QuartzComponentProps) => {
     const fm = fileData.frontmatter as Record<string, unknown> | undefined
     const kind = fm?.["kind"]
-    if (typeof kind !== "string" || !(kind in KIND_FIELDS)) {
+    const validKind = typeof kind === "string" && kind in KIND_FIELDS
+    const image = typeof fm?.["image"] === "string" ? (fm["image"] as string) : undefined
+
+    // A card exists when the page has a portrait OR a valid typed kind. An
+    // untyped page with no image renders no card, exactly as before.
+    if (!image && !validKind) {
       return null
     }
-    const rows = KIND_FIELDS[kind]
-      .map((field) => [field, fm![field]] as const)
-      .filter(([, value]) => value !== undefined && value !== null && value !== "")
+
+    const rows = validKind
+      ? KIND_FIELDS[kind as string]
+          .map((field) => [field, fm![field]] as const)
+          .filter(([, value]) => value !== undefined && value !== null && value !== "")
+      : []
+
+    // `image:` is a bare asset filename resolving to content/assets/. Build a
+    // page-relative URL (root-relative would break under the deployed base
+    // path), the same relative-URL approach Quartz uses for every internal
+    // link, so no base path is ever hardcoded here.
+    const imageSrc = image
+      ? joinSegments(pathToRoot(fileData.slug!), "assets", image)
+      : undefined
+    const title = typeof fm?.["title"] === "string" ? (fm["title"] as string) : ""
+
     return (
       <div class={classNames(displayClass, "infobox")}>
-        <span class="infobox-kind">{kindLabel(kind)}</span>
+        {imageSrc && <img class="infobox-image" src={imageSrc} alt={title} />}
+        {validKind && <span class="infobox-kind">{kindLabel(kind as string)}</span>}
         {rows.length > 0 && (
           <dl class="infobox-fields">
             {rows.map(([field, value]) => (

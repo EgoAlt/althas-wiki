@@ -2,9 +2,8 @@
 title: Uriel Kenan
 kind: person
 pc: true
+image: uriel-kenan.png
 ---
-
-![[uriel-kenan.png|320]]
 
 **Summary**: Player character. An Orderborne Elf, Divine Wielder Seraph.
 

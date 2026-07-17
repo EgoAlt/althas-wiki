@@ -2,9 +2,8 @@
 title: Hesper
 kind: person
 role: "Archmage of the Triumvirate of [[polaris|Polaris]]"
+image: hesper.jpg
 ---
-
-![[hesper.jpg|320]]
 
 **Summary**: Archmage of the Triumvirate governing [[polaris|Polaris]], eccentric collector of odd things. Killed by a giant during her final duel with her son Izar, an act that plunged Polaris into riots.
 

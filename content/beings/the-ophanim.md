@@ -5,9 +5,8 @@ aliases:
 kind: being
 nature: angelic being
 fate: Slain in 331 VR
+image: the-ophanim.webp
 ---
-
-![[the-ophanim.webp|320]]
 
 *An artist's rendering, not a likeness. The Ophanim wore no fixed form, and no two who beheld it ever agreed on its shape. No true image of it can exist; this is one soul's guess, set down after the looking.*
 

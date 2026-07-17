@@ -5,9 +5,8 @@ aliases:
 kind: artifact
 wielder: "[[miracles|Miracle-holders]]"
 origin: The Divine Age
+image: divine-relics.jpg
 ---
-
-![[divine-relics.jpg|320]]
 
 **Summary**: Relics from the Divine Age, wieldable by anyone of holy blood ([[miracles|Miracle]]-holders), no matter which Miracle they carry. Hereditary, immensely powerful, and fought over across generations.
 

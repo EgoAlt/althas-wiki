@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
 Unit tests for sync-from-ontos.py's presentation-data carry-forward: the
-`marker:` map-pin block and the `submap:` local-map block must survive a
-re-sync verbatim (including YAML comment lines inside the block), because
-both exist only in content/ and would otherwise be wiped every time the
-page is regenerated from the GM's source.
+`marker:` map-pin block, the `submap:` local-map block, and the `image:`
+portrait filename must survive a re-sync verbatim (including YAML comment
+lines inside a block), because all three exist only in content/ and would
+otherwise be wiped every time the page is regenerated from the GM's source.
 
 Pure-function tests on fixtures; never reads the Ontos vault and never
 touches content/. Run from the repo root:
@@ -40,12 +40,16 @@ SUBMAP_BLOCK = """submap:
           coordinates: "155, 180"
           icon: lucide-paw-print"""
 
+IMAGE_LINE = "image: drinmery.jpg"
+
 # What a destination file looks like after a previous sync: title + typed
-# infobox fields from the source, marker/submap blocks hand-maintained here.
+# infobox fields from the source, image/marker/submap presentation data
+# hand-maintained here.
 EXISTING_DEST = f"""---
 title: Drinmery
 kind: location
 nation: "[[jesthaen|Jesthaen]]"
+{IMAGE_LINE}
 {MARKER_BLOCK}
 {SUBMAP_BLOCK}
 ---
@@ -64,10 +68,23 @@ def test_extracts_submap_block():
     assert sync.extract_submap_block(fm) == SUBMAP_BLOCK, "submap block not extracted verbatim"
 
 
+def test_extracts_image_block():
+    fm, _ = sync.split_frontmatter(EXISTING_DEST)
+    assert sync.extract_image_block(fm) == IMAGE_LINE, "image line not extracted verbatim"
+
+
 def test_missing_blocks_return_none():
     fm, _ = sync.split_frontmatter("---\ntitle: Bare\nkind: location\n---\n\nBody.\n")
     assert sync.extract_marker_block(fm) is None
     assert sync.extract_submap_block(fm) is None
+    assert sync.extract_image_block(fm) is None
+
+
+def test_image_line_does_not_match_marker_or_submap_extractor():
+    fm, _ = sync.split_frontmatter(f"---\ntitle: X\n{IMAGE_LINE}\n---\n\nBody.\n")
+    assert sync.extract_marker_block(fm) is None
+    assert sync.extract_submap_block(fm) is None
+    assert sync.extract_image_block(fm) == IMAGE_LINE
 
 
 def test_submap_key_does_not_match_marker_extractor():
@@ -76,21 +93,25 @@ def test_submap_key_does_not_match_marker_extractor():
     assert sync.extract_submap_block(fm) == SUBMAP_BLOCK
 
 
-def test_resync_round_trip_preserves_both_blocks():
+def test_resync_round_trip_preserves_all_presentation_data():
     """Simulate sync_page's carry-forward: extract from the existing dest,
     render a fresh page around a new body, and confirm a second extraction
-    still yields the identical blocks (so N re-syncs are lossless)."""
+    still yields the identical image/marker/submap data (so N re-syncs are
+    lossless)."""
     fm, _ = sync.split_frontmatter(EXISTING_DEST)
+    image = sync.extract_image_block(fm)
     marker = sync.extract_marker_block(fm)
     submap = sync.extract_submap_block(fm)
     rendered = sync.render(
         "Drinmery",
         marker,
         "New body text from a re-sync.",
+        image_block=image,
         infobox_lines=["kind: location", 'nation: "[[jesthaen|Jesthaen]]"'],
         submap_block=submap,
     )
     fm2, body2 = sync.split_frontmatter(rendered)
+    assert sync.extract_image_block(fm2) == IMAGE_LINE, "image line lost on re-sync"
     assert sync.extract_marker_block(fm2) == MARKER_BLOCK, "marker block lost on re-sync"
     assert sync.extract_submap_block(fm2) == SUBMAP_BLOCK, "submap block lost on re-sync"
     assert "New body text from a re-sync." in body2

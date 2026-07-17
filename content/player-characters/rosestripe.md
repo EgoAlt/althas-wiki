@@ -2,9 +2,8 @@
 title: Rosestripe
 kind: person
 pc: true
+image: rosestripe.webp
 ---
-
-![[rosestripe.webp|320]]
 
 **Summary**: Player character. An Orderborne [[faeries|Faerie]], Poisoner Assassin.
 
