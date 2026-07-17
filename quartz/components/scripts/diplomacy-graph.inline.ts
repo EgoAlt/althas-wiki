@@ -13,10 +13,12 @@ import {
 // Diplomacy force graph. Parses the page's diplomacy-graph block (raw text in
 // data-graph, set by plugins/transformers/diplomacygraph.ts), hides the code
 // block, and renders an SVG force layout in its place. Grammar must stay
-// equivalent to scripts/check-diplomacy-graph.py in the site repo. On any
-// parse failure: leave the code block visible and bail (it doubles as the
-// no-JS fallback). Element listeners rebind per "nav"; window.addCleanup for
-// anything document/window-level.
+// equivalent to scripts/check-diplomacy-graph.py in the site repo; like that
+// gate's public-edge check, edges whose endpoints have no node declaration in
+// the block are treated as a parse failure. On any parse failure: leave the
+// code block visible and bail (it doubles as the no-JS fallback). Element
+// listeners rebind per "nav"; window.addCleanup for anything document/window-
+// level.
 //
 // Imports come from "d3" (not the d3-force/d3-selection/d3-drag subpaths):
 // the site already bundles d3 this way in graph.inline.ts, and it keeps the
@@ -53,6 +55,23 @@ function parseGraph(text: string): { nodes: GNode[]; edges: GEdge[] } | null {
     }
     console.warn("diplomacy-graph: unparseable line, leaving text block visible:", line)
     return null
+  }
+  // Referential check, mirroring check-diplomacy-graph.py's "public edge
+  // references non-public node" error: a grammar-valid edge whose endpoint
+  // has no node declaration would otherwise pass parsing, hide the code
+  // block, and then throw inside d3's forceLink id lookup, leaving a dead
+  // half-rendered page. Fail closed here instead.
+  const ids = new Set(nodes.map((n) => n.id))
+  for (const e of edges) {
+    if (!ids.has(e.source as string) || !ids.has(e.target as string)) {
+      console.warn(
+        "diplomacy-graph: edge references undeclared node, leaving text block visible:",
+        e.source,
+        "->",
+        e.target,
+      )
+      return null
+    }
   }
   return nodes.length ? { nodes, edges } : null
 }
@@ -134,6 +153,28 @@ function setupDiplomacyGraph() {
     .append("text")
     .attr("dy", (d) => (RADIUS[d.kind] ?? 14) + 14)
     .text((d) => d.name)
+
+  // Keep name labels readable at every width. The SVG scales to the article
+  // column (rendered px = user units * renderedWidth / 760), so at mobile
+  // widths the stylesheet's 12-unit default would render around 5px. Measure
+  // the actual scale and compensate so labels render at roughly 10px, capped
+  // so desktop (scale ~0.83, ~10px rendered already) stays effectively
+  // unchanged and tiny panes cannot balloon the text. The inline style wins
+  // over the stylesheet default. Runs immediately, then again on two settle
+  // timers (layout is not always final at "nav" time, which is why the
+  // viewBox is fixed rather than measured), and on window resize. Plain
+  // timers on purpose: rAF and ResizeObserver callbacks proved unreliable in
+  // embedded panes, while timers and resize listeners fire everywhere. All
+  // torn down in the cleanup below.
+  const labelResize = () => {
+    const rendered = (svg.node() as SVGSVGElement).getBoundingClientRect().width
+    if (!rendered) return
+    const fs = Math.min(Math.max(12, 10 / (rendered / width)), 26)
+    node.selectAll<SVGTextElement, GNode>("text").style("font-size", `${fs}px`)
+  }
+  labelResize()
+  const labelTimers = [window.setTimeout(labelResize, 150), window.setTimeout(labelResize, 600)]
+  window.addEventListener("resize", labelResize)
 
   const sim: Simulation<GNode, undefined> = forceSimulation(nodes)
     .force("charge", forceManyBody().strength(-380))
@@ -228,7 +269,11 @@ function setupDiplomacyGraph() {
   }
   mount.appendChild(legend)
 
-  window.addCleanup(() => sim.stop())
+  window.addCleanup(() => {
+    sim.stop()
+    labelTimers.forEach((t) => window.clearTimeout(t))
+    window.removeEventListener("resize", labelResize)
+  })
 }
 
 document.addEventListener("nav", () => {
