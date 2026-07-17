@@ -6,6 +6,7 @@ What's new on the wiki, most recent first.
 
 ## 2026-07-17
 
+- **The diplomacy web is now a living graph**: on [[diplomacy|Diplomacy]], the static diagram has been replaced by a draggable web. Pull the nations and powers into new arrangements, hover or tap a connection to read what it means, and click any power to jump to its page. Connections are colored by kind (governance, war history, alliance, rivalry, uneasy peace), with a legend below.
 - **The home page is now the full setting overview**: the campaign's pitch, tone, themes, and history (including the Voldis succession crisis) now open the landing page, right above the directory of every nation, faction, ancestry, and character. The separate "Althas" overview page was folded in; old links to it redirect here.
 - **New page**: [[izar|Izar]], son of the archmage [[hesper|Hesper]] and an ambitious mage of [[polaris|Polaris]] who challenged her for years over her seat on the ruling Triumvirate.
 - **New art**: a portrait for [[izar|Izar]], and art for the two magic systems, [[codex-magic|Codex Magic]] and [[splendor-magic|Splendor Magic]].
