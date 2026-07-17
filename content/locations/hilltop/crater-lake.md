@@ -1,5 +1,7 @@
 ---
 title: Crater Lake
+aliases:
+  - locations/crater-lake
 kind: location
 region: Central Althas
 ---

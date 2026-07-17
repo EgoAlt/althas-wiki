@@ -1,5 +1,7 @@
 ---
 title: House Voldis
+aliases:
+  - locations/voldaen/house-voldis
 kind: organization
 seat: "[[voldaen|Voldaen]]"
 leader: "[[valis-voldis|Valis Voldis]]"

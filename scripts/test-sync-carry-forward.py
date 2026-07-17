@@ -96,6 +96,48 @@ def test_resync_round_trip_preserves_both_blocks():
     assert "New body text from a re-sync." in body2
 
 
+def test_alias_slugs_render_as_frontmatter_list():
+    """A page in the RENAMES table must carry its old path(s) as a Quartz
+    `aliases:` list so the AliasRedirects emitter keeps its old URL
+    redirecting after every re-sync."""
+    rendered = sync.render(
+        "Crater Lake", None, "Body.", alias_slugs=["locations/crater-lake"]
+    )
+    fm, _ = sync.split_frontmatter(rendered)
+    lines = fm.splitlines()
+    assert "aliases:" in lines, "aliases: key missing"
+    assert "  - locations/crater-lake" in lines, "alias slug missing/misformatted"
+
+
+def test_alias_lines_do_not_disturb_carry_forward():
+    """aliases: sits in the same frontmatter as the carried marker/submap
+    blocks; adding it must not break their verbatim round trip."""
+    rendered = sync.render(
+        "Drinmery",
+        MARKER_BLOCK,
+        "Body.",
+        infobox_lines=["kind: location", 'nation: "[[jesthaen|Jesthaen]]"'],
+        submap_block=SUBMAP_BLOCK,
+        alias_slugs=["old/drinmery-path"],
+    )
+    fm, _ = sync.split_frontmatter(rendered)
+    assert sync.extract_marker_block(fm) == MARKER_BLOCK, "marker block broken by aliases"
+    assert sync.extract_submap_block(fm) == SUBMAP_BLOCK, "submap block broken by aliases"
+    assert "  - old/drinmery-path" in fm.splitlines()
+
+
+def test_renames_table_is_consistent_with_page_map():
+    """Every RENAMES key must be a current PAGE_MAP destination (else the
+    alias would never be written), and no alias may equal the page's own
+    current slug (a self-redirect would shadow the real page)."""
+    dests = set(sync.PAGE_MAP.values())
+    for dest, old_slugs in sync.RENAMES.items():
+        assert dest in dests, f"RENAMES key {dest} is not a PAGE_MAP destination"
+        current_slug = dest[: -len(".md")] if dest.endswith(".md") else dest
+        for old in old_slugs:
+            assert old != current_slug, f"{dest} aliases its own current path"
+
+
 def main():
     tests = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
     for t in tests:

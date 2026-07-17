@@ -1,5 +1,7 @@
 ---
 title: The Ophanim
+aliases:
+  - setting/the-ophanim
 kind: being
 nature: angelic being
 fate: Slain in 331 VR

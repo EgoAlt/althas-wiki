@@ -1,5 +1,7 @@
 ---
 title: Infernis
+aliases:
+  - setting/infernis
 kind: ancestry
 homeland: "None settled; itinerant caravans across Althas"
 standing: "Banned from most settlements; sometimes tolerated in Armada"

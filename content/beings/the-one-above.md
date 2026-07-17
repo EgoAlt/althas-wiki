@@ -1,5 +1,7 @@
 ---
 title: The One Above
+aliases:
+  - setting/the-one-above
 kind: being
 nature: god
 domain: "[[splendor-magic|Splendor]]"

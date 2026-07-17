@@ -1,5 +1,7 @@
 ---
 title: Clanks
+aliases:
+  - setting/clanks
 kind: ancestry
 homeland: "Polaris's labs and Hilltop's sacred workshops"
 standing: "Sentient Clanks are rare, controversial, and politically dangerous"

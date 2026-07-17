@@ -1,5 +1,7 @@
 ---
 title: Giants
+aliases:
+  - setting/giants
 kind: ancestry
 homeland: "Northern Polaris"
 standing: "Polaris's lowly working class, despite building its industrial rise"

@@ -15,6 +15,7 @@ import TagList from "./TagList"
 import Graph from "./Graph"
 import Backlinks from "./Backlinks"
 import Infobox from "./Infobox"
+import NationIndex from "./NationIndex"
 import Search from "./Search"
 import Footer from "./Footer"
 import DesktopOnly from "./DesktopOnly"
@@ -42,6 +43,7 @@ export {
   Graph,
   Backlinks,
   Infobox,
+  NationIndex,
   Search,
   Footer,
   DesktopOnly,

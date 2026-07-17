@@ -88,20 +88,30 @@ TITLES = {
 
 # source filename (in Ontos setting/) -> destination path (relative to content/)
 PAGE_MAP = {
+    # Type-based folders (2026-07-16 Explorer/categories reorg, see the
+    # campaign's specs/althas-explorer-categories-design.md in Ontos):
+    # folders answer "what is this" (setting/ = world & concepts,
+    # organizations/, magic/, beings/, ancestries/, locations/ purely
+    # geographic), metadata answers "whose is this" (the generated
+    # per-nation sections, quartz/components/NationIndex.tsx). Every page
+    # moved in that reorg has a RENAMES entry below so its old URL keeps
+    # redirecting.
     "althas.md": "setting/althas.md",
-    "canton-of-inquisition.md": "setting/canton-of-inquisition.md",
-    "codex-magic.md": "setting/codex-magic.md",
-    "faeries.md": "setting/faeries.md",
-    "giants.md": "setting/giants.md",
-    "clanks.md": "setting/clanks.md",
-    "infernis.md": "setting/infernis.md",
-    "divine-relics.md": "setting/divine-relics.md",
-    "miracles.md": "setting/miracles.md",
-    "splendor-magic.md": "setting/splendor-magic.md",
-    "the-holy-see.md": "setting/the-holy-see.md",
-    "the-one-above.md": "setting/the-one-above.md",
-    "the-ones-below.md": "setting/the-ones-below.md",
-    "the-ophanim.md": "setting/the-ophanim.md",
+    "canton-of-inquisition.md": "organizations/canton-of-inquisition.md",
+    "the-holy-see.md": "organizations/the-holy-see.md",
+    "guild.md": "organizations/guild.md",
+    "house-voldis.md": "organizations/house-voldis.md",
+    "codex-magic.md": "magic/codex-magic.md",
+    "divine-relics.md": "magic/divine-relics.md",
+    "miracles.md": "magic/miracles.md",
+    "splendor-magic.md": "magic/splendor-magic.md",
+    "the-one-above.md": "beings/the-one-above.md",
+    "the-ones-below.md": "beings/the-ones-below.md",
+    "the-ophanim.md": "beings/the-ophanim.md",
+    "faeries.md": "ancestries/faeries.md",
+    "giants.md": "ancestries/giants.md",
+    "clanks.md": "ancestries/clanks.md",
+    "infernis.md": "ancestries/infernis.md",
     # The five nations (Armada, Polaris, Voldaen, Jesthaen, Hilltop) are each
     # a folder whose own index.md IS the nation's page, not a separate file
     # alongside it — [[armada]] resolves to a folder's index.md exactly the
@@ -109,15 +119,13 @@ PAGE_MAP = {
     # link-resolution strategy in quartz/util/path.ts. This avoids ever
     # having a folder and a page inside it share the same name.
     "armada.md": "locations/armada/index.md",
-    "guild.md": "locations/armada/guild.md",
-    "crater-lake.md": "locations/crater-lake.md",
     "hilltop.md": "locations/hilltop/index.md",
+    "crater-lake.md": "locations/hilltop/crater-lake.md",
     "convent-of-saint-trefan.md": "locations/jesthaen/convent-of-saint-trefan.md",
     "drinmery.md": "locations/jesthaen/drinmery.md",
     "jesthaen.md": "locations/jesthaen/index.md",
     "polaris.md": "locations/polaris/index.md",
     "voldaen.md": "locations/voldaen/index.md",
-    "house-voldis.md": "locations/voldaen/house-voldis.md",
     "aldric-voldis.md": "npcs/aldric-voldis.md",
     "edrion-voldis.md": "npcs/edrion-voldis.md",
     "hesper.md": "npcs/hesper.md",
@@ -129,6 +137,41 @@ PAGE_MAP = {
     "rosestripe.md": "player-characters/rosestripe.md",
     "uriel-kenan.md": "player-characters/uriel-kenan.md",
     "index.md": "index.md",
+}
+
+# Old URL -> forever-redirect table. A page that has ever moved keeps every
+# path it has ever lived at as a Quartz `aliases:` frontmatter entry (written
+# by render() below on every sync, so re-syncs preserve the redirects
+# forever). Each alias is a root-relative slug (no leading slash, no .md):
+# quartz/plugins/transformers/frontmatter.ts slugifies it as-is and the
+# AliasRedirects emitter then writes a redirect stub at that exact old URL.
+# Keyed by CURRENT destination (the PAGE_MAP value); values are the old
+# destination slugs. If a page moves again, append the newly-old slug here,
+# never remove one: players' bookmarks don't expire.
+#
+# NOTE: frontmatter.ts deliberately does NOT feed these alias slugs into
+# wikilink resolution (allSlugs). An alias by construction shares its
+# basename with the real page, so counting it would make every [[basename]]
+# link ambiguous under the "shortest" strategy and break site-wide. See the
+# comment in quartz/plugins/transformers/frontmatter.ts.
+RENAMES = {
+    # 2026-07-16 Explorer/categories reorg
+    "locations/hilltop/crater-lake.md": ["locations/crater-lake"],
+    "organizations/house-voldis.md": ["locations/voldaen/house-voldis"],
+    "organizations/guild.md": ["locations/armada/guild"],
+    "organizations/the-holy-see.md": ["setting/the-holy-see"],
+    "organizations/canton-of-inquisition.md": ["setting/canton-of-inquisition"],
+    "magic/miracles.md": ["setting/miracles"],
+    "magic/codex-magic.md": ["setting/codex-magic"],
+    "magic/splendor-magic.md": ["setting/splendor-magic"],
+    "magic/divine-relics.md": ["setting/divine-relics"],
+    "beings/the-one-above.md": ["setting/the-one-above"],
+    "beings/the-ones-below.md": ["setting/the-ones-below"],
+    "beings/the-ophanim.md": ["setting/the-ophanim"],
+    "ancestries/faeries.md": ["setting/faeries"],
+    "ancestries/giants.md": ["setting/giants"],
+    "ancestries/clanks.md": ["setting/clanks"],
+    "ancestries/infernis.md": ["setting/infernis"],
 }
 
 # Pages that exist in Ontos but produce no public page: everything on them is
@@ -355,8 +398,14 @@ def extract_image_embed(body):
     return None
 
 
-def render(title, marker_block, body, image_embed=None, infobox_lines=None, submap_block=None):
+def render(
+    title, marker_block, body, image_embed=None, infobox_lines=None, submap_block=None,
+    alias_slugs=None,
+):
     fm_lines = ["---", f"title: {title}"]
+    if alias_slugs:
+        fm_lines.append("aliases:")
+        fm_lines.extend(f"  - {slug}" for slug in alias_slugs)
     if infobox_lines:
         fm_lines.extend(infobox_lines)
     if marker_block:
@@ -393,7 +442,10 @@ def sync_page(src_name, dest_rel):
 
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text(
-        render(TITLES[src_name], marker_block, body, image_embed, infobox_lines, submap_block)
+        render(
+            TITLES[src_name], marker_block, body, image_embed, infobox_lines, submap_block,
+            alias_slugs=RENAMES.get(dest_rel),
+        )
     )
     return dest
 

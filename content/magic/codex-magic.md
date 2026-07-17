@@ -1,5 +1,7 @@
 ---
 title: Codex Magic
+aliases:
+  - setting/codex-magic
 kind: magic-system
 practitioners: Codex casters
 source: "[[the-one-above|The One Above]]"

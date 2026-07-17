@@ -5,7 +5,13 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  // NationIndex renders the generated "In this nation" section on nation
+  // pages (kind: nation) and nothing anywhere else. It lives in the shared
+  // afterBody because nation pages are folder index files, emitted by
+  // FolderPage with defaultListPageLayout, not by ContentPage. Pure
+  // build-time server rendering: no client script is emitted, so the
+  // Explorer sortFn __name serialization trap does not apply to it.
+  afterBody: [Component.NationIndex()],
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/jackyzha0/quartz",
@@ -45,6 +51,29 @@ export const defaultContentPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer({
+      // Title-case the top-level folder labels so the Explorer reads
+      // "Organizations", "NPCs", "Player Characters" instead of raw lowercase
+      // slugs. Nation folders (Voldaen, etc.) already get their title from
+      // their index.md and aren't in the map, so `?? node.displayName` leaves
+      // them untouched. SAME __name trap as sortFn below: this fn is
+      // .toString()'d into the browser, so NO named inner const/function. An
+      // inline object literal is safe (keep-names only wraps named fn/class
+      // expressions), so the lookup table is written inline deliberately.
+      mapFn: (node) => {
+        if (node.isFolder) {
+          node.displayName =
+            {
+              organizations: "Organizations",
+              magic: "Magic",
+              beings: "Beings",
+              ancestries: "Ancestries",
+              locations: "Locations",
+              npcs: "NPCs",
+              "player-characters": "Player Characters",
+              setting: "Setting",
+            }[node.displayName] ?? node.displayName
+        }
+      },
       // Sort ignoring a leading "The " so "The Holy See" files under H, etc.
       // NOTE: this fn is .toString()'d and run through `new Function` in the
       // browser, so it must be fully self-contained AND must not create any
@@ -93,6 +122,29 @@ export const defaultListPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer({
+      // Title-case the top-level folder labels so the Explorer reads
+      // "Organizations", "NPCs", "Player Characters" instead of raw lowercase
+      // slugs. Nation folders (Voldaen, etc.) already get their title from
+      // their index.md and aren't in the map, so `?? node.displayName` leaves
+      // them untouched. SAME __name trap as sortFn below: this fn is
+      // .toString()'d into the browser, so NO named inner const/function. An
+      // inline object literal is safe (keep-names only wraps named fn/class
+      // expressions), so the lookup table is written inline deliberately.
+      mapFn: (node) => {
+        if (node.isFolder) {
+          node.displayName =
+            {
+              organizations: "Organizations",
+              magic: "Magic",
+              beings: "Beings",
+              ancestries: "Ancestries",
+              locations: "Locations",
+              npcs: "NPCs",
+              "player-characters": "Player Characters",
+              setting: "Setting",
+            }[node.displayName] ?? node.displayName
+        }
+      },
       // Sort ignoring a leading "The " so "The Holy See" files under H, etc.
       // NOTE: this fn is .toString()'d and run through `new Function` in the
       // browser, so it must be fully self-contained AND must not create any
