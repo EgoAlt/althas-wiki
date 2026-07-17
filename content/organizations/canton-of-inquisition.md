@@ -1,5 +1,7 @@
 ---
 title: Canton of Inquisition
+aliases:
+  - setting/canton-of-inquisition
 kind: organization
 ---
 

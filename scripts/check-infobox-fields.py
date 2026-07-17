@@ -45,10 +45,13 @@ KIND_FIELDS = {
 }
 ALL_FIELDS = {f for fields in KIND_FIELDS.values() for f in fields}
 
-# Non-schema keys the sync legitimately writes: the display title plus the
+# Non-schema keys the sync legitimately writes: the display title, the
 # frontend-only map-pin block and local-map `submap:` block (whose sub-keys
-# are indented, so the top-level key scan below never sees them).
-NON_SCHEMA_KEYS = {"title", "marker", "submap"}
+# are indented, so the top-level key scan below never sees them), and the
+# `aliases:` old-URL redirect list a moved page carries (the RENAMES table
+# in sync-from-ontos.py; Quartz's AliasRedirects emitter turns each entry
+# into a redirect stub at the page's former path).
+NON_SCHEMA_KEYS = {"title", "marker", "submap", "aliases"}
 
 FRONTMATTER_RE = re.compile(r"^---\n(.*?\n)---\n?", re.DOTALL)
 TOP_KEY_RE = re.compile(r"^([A-Za-z_][A-Za-z0-9_-]*):")

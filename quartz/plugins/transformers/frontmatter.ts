@@ -84,7 +84,21 @@ export const FrontMatter: QuartzTransformerPlugin<Partial<Options>> = (userOpts)
             if (aliases) {
               data.aliases = aliases // frontmatter
               file.data.aliases = getAliasSlugs(aliases)
-              allSlugs.push(...file.data.aliases)
+              // PATCHED (2026-07-16 Explorer/categories reorg): upstream
+              // Quartz pushes these alias slugs into allSlugs so [[alias]]
+              // wikilinks resolve. This wiki only uses aliases as old-URL
+              // redirects for moved pages (the RENAMES table in
+              // scripts/sync-from-ontos.py), where the alias by construction
+              // shares its basename with the real page (locations/crater-lake
+              // vs locations/hilltop/crater-lake). Counting the alias in
+              // allSlugs would make the "shortest" strategy in
+              // quartz/util/path.ts see two matches for [[crater-lake]],
+              // give up on the unique-basename resolution, and emit a broken
+              // root-absolute link — for every link to every moved page.
+              // The AliasRedirects emitter reads file.data.aliases directly,
+              // so the redirect stubs are unaffected by skipping the push.
+              // Do not restore the upstream `allSlugs.push(...)` line unless
+              // links are deliberately written to alias names.
             }
 
             if (data.permalink != null && data.permalink.toString() !== "") {

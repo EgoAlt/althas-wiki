@@ -1,5 +1,7 @@
 ---
 title: The Holy See
+aliases:
+  - setting/the-holy-see
 kind: organization
 seat: central Althas
 ---

@@ -1,5 +1,7 @@
 ---
 title: The Ones Below
+aliases:
+  - setting/the-ones-below
 kind: being
 nature: primordial gods of chaos
 fate: Sealed away

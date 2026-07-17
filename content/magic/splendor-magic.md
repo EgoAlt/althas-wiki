@@ -1,5 +1,7 @@
 ---
 title: Splendor Magic
+aliases:
+  - setting/splendor-magic
 kind: magic-system
 source: "[[the-one-above|The One Above]]"
 ---

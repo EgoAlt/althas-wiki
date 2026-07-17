@@ -1,5 +1,7 @@
 ---
 title: The Guild
+aliases:
+  - locations/armada/guild
 kind: organization
 seat: "[[armada|Armada]]"
 ---

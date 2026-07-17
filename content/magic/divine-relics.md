@@ -1,5 +1,7 @@
 ---
 title: Divine Relics
+aliases:
+  - setting/divine-relics
 kind: artifact
 wielder: "[[miracles|Miracle-holders]]"
 origin: The Divine Age

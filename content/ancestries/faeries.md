@@ -1,5 +1,7 @@
 ---
 title: Faeries
+aliases:
+  - setting/faeries
 kind: ancestry
 homeland: "Old forests; the convents of [[the-holy-see|the Holy See]]"
 standing: "Trusted message carriers across all of Althas"

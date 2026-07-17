@@ -1,5 +1,7 @@
 ---
 title: Miracles
+aliases:
+  - setting/miracles
 kind: magic-system
 practitioners: "[[house-voldis|House Voldis]]"
 source: "[[the-one-above|The One Above]]"
