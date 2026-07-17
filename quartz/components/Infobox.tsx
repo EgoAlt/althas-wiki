@@ -90,6 +90,19 @@ const renderString = (
   return parts
 }
 
+// Capitalize the first character of a rendered value so field values always
+// read title-style regardless of how they're written in the source
+// ("god" -> "God", "central" -> "Central", "angelic being" -> "Angelic
+// being"). Only touches the leading plain-text run: a value that starts with
+// a wikilink (first part is an <a>) is left alone, since its display text is
+// already cased by the author.
+const capitalizeFirst = (parts: (string | JSX.Element)[]): (string | JSX.Element)[] => {
+  if (parts.length > 0 && typeof parts[0] === "string" && parts[0].length > 0) {
+    parts[0] = parts[0].charAt(0).toUpperCase() + parts[0].slice(1)
+  }
+  return parts
+}
+
 const renderValue = (
   value: unknown,
   slug: FullSlug,
@@ -109,7 +122,7 @@ const renderValue = (
     return parts
   }
   if (typeof value === "string") {
-    return renderString(value, slug, allSlugs)
+    return capitalizeFirst(renderString(value, slug, allSlugs))
   }
   return [String(value)]
 }
@@ -120,6 +133,8 @@ export default (() => {
     const kind = fm?.["kind"]
     const validKind = typeof kind === "string" && kind in KIND_FIELDS
     const image = typeof fm?.["image"] === "string" ? (fm["image"] as string) : undefined
+    const imageCaption =
+      typeof fm?.["image_caption"] === "string" ? (fm["image_caption"] as string) : undefined
 
     // A card exists when the page has a portrait OR a valid typed kind. An
     // untyped page with no image renders no card, exactly as before.
@@ -144,7 +159,12 @@ export default (() => {
 
     return (
       <div class={classNames(displayClass, "infobox")}>
-        {imageSrc && <img class="infobox-image" src={imageSrc} alt={title} />}
+        {imageSrc && (
+          <figure class="infobox-figure">
+            <img class="infobox-image" src={imageSrc} alt={title} />
+            {imageCaption && <figcaption class="infobox-caption">{imageCaption}</figcaption>}
+          </figure>
+        )}
         {validKind && <span class="infobox-kind">{kindLabel(kind as string)}</span>}
         {rows.length > 0 && (
           <dl class="infobox-fields">

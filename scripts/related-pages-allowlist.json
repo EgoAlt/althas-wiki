@@ -1,0 +1,52 @@
+{
+  "_comment": "Human-owned exceptions to the grounding gate (check-related-pages-grounding.py). Each entry is a connection that is genuinely public but not restated as prose on the linking page, reviewed and cleared by Lucas 2026-07-17. hub_targets: overview/utility pages any page may link. public_names: NOT_YET_PUBLIC entities whose name is public (currently none; Izar was promoted to a full public page instead). pages: per-page target exceptions with reasons.",
+  "hub_targets": ["diplomacy", "timeline", "calendar", "index"],
+  "public_names": {},
+  "pages": {
+    "ancestries/clanks.md": {
+      "faeries": "peer navigation: the four Althas ancestries cross-reference each other",
+      "giants": "peer navigation: the four Althas ancestries cross-reference each other",
+      "infernis": "peer navigation: the four Althas ancestries cross-reference each other"
+    },
+    "ancestries/faeries.md": {
+      "giants": "peer navigation: the four Althas ancestries cross-reference each other",
+      "clanks": "peer navigation: the four Althas ancestries cross-reference each other",
+      "infernis": "peer navigation: the four Althas ancestries cross-reference each other"
+    },
+    "ancestries/giants.md": {
+      "faeries": "peer navigation: the four Althas ancestries cross-reference each other",
+      "clanks": "peer navigation: the four Althas ancestries cross-reference each other",
+      "infernis": "peer navigation: the four Althas ancestries cross-reference each other"
+    },
+    "ancestries/infernis.md": {
+      "faeries": "peer navigation: the four Althas ancestries cross-reference each other",
+      "giants": "peer navigation: the four Althas ancestries cross-reference each other",
+      "clanks": "peer navigation: the four Althas ancestries cross-reference each other"
+    },
+    "magic/miracles.md": {
+      "edrion-voldis": "public two-hop: miracles.md publicly names House Voldis as its practitioners; this royal's public infobox declares house: House Voldis. gm-only detail (Usurpation, Edrion's Phoenix immortality) stays hidden.",
+      "valthis-voldis": "public two-hop: House Voldis publicly holds Miracles; this royal is publicly House Voldis. The Kingslayer/assassination tie stays gm-only.",
+      "orsian-voldis": "public two-hop: House Voldis publicly holds Miracles; this royal is publicly House Voldis.",
+      "valis-voldis": "public two-hop: House Voldis publicly holds Miracles; this royal is publicly House Voldis.",
+      "aldric-voldis": "public two-hop: House Voldis publicly holds Miracles; this royal is publicly House Voldis."
+    },
+    "magic/splendor-magic.md": {
+      "miracles": "public: the One Above's page publicly names him as the source of both Splendor Magic and Miracles, so the two are publicly linked"
+    },
+    "npcs/edrion-voldis.md": {
+      "miracles": "public two-hop: House Voldis publicly holds Miracles; Edrion is publicly House Voldis. His Phoenix/Recurrence specifics stay gm-only."
+    },
+    "npcs/valthis-voldis.md": {
+      "miracles": "public two-hop: House Voldis publicly holds Miracles; Valthis is publicly House Voldis. The assassination tie stays gm-only."
+    },
+    "npcs/orsian-voldis.md": {
+      "miracles": "public two-hop: House Voldis publicly holds Miracles; Orsian is publicly House Voldis."
+    },
+    "npcs/valis-voldis.md": {
+      "miracles": "public two-hop: House Voldis publicly holds Miracles; Valis is publicly House Voldis."
+    },
+    "npcs/aldric-voldis.md": {
+      "miracles": "public two-hop: House Voldis publicly holds Miracles; Aldric is publicly House Voldis."
+    }
+  }
+}

@@ -22,7 +22,7 @@ Before the Ophanim's descent, Hilltop was home to old noble houses that fused no
 
 ## Related pages
 
-- [[althas|Althas]]
+- [[index|Althas]]
 - [[the-ophanim|The Ophanim]]
 - [[the-holy-see|The Holy See]]
 - [[armada|Armada]]

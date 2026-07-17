@@ -24,7 +24,7 @@ Exceptions to the incuriosity do turn up, a faerie who teaches itself to read be
 
 - [[the-holy-see|The Holy See]]
 - [[convent-of-saint-trefan|Convent of Saint Trefan]]
-- [[althas|Althas]]
+- [[index|Althas]]
 - [[giants|Giants]]
 - [[clanks|Clanks]]
 - [[infernis|Infernis]]

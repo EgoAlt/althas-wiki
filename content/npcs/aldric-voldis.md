@@ -18,7 +18,7 @@ When Orsian died heirless in 348 VR, the southern nobles answered the capital's 
 
 ## Related pages
 
-- [[althas|Althas]]
+- [[index|Althas]]
 - [[voldaen|Voldaen]]
 - [[edrion-voldis|Edrion Voldis]]
 - [[orsian-voldis|Orsian Voldis]]

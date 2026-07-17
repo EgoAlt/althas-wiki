@@ -47,11 +47,11 @@ The modern line's story is the founding wound of the campaign's present day. In 
 
 Edrion's will had named his bastard half-brother, [[aldric-voldis|Aldric Voldis]], regent for exactly this circumstance. Within a few years the capital's oldest noble families staged a quiet coup, stripped Aldric of his authority, and exiled him to the western borders. Orsian ruled as their puppet until he died heirless in 348 VR.
 
-The capital houses backed his elder sister, [[valis-voldis|Valis Voldis]], insisting on unbroken succession, while the southern nobles answered with a rival claim for Aldric's return. The dispute spread far beyond the family, and out of that fracture came the revolution that founded [[jesthaen|Jesthaen]]. Valis rules Voldaen in the aftermath. See [[althas|Althas]] for the full telling.
+The capital houses backed his elder sister, [[valis-voldis|Valis Voldis]], insisting on unbroken succession, while the southern nobles answered with a rival claim for Aldric's return. The dispute spread far beyond the family, and out of that fracture came the revolution that founded [[jesthaen|Jesthaen]]. Valis rules Voldaen in the aftermath. See [[index|Althas]] for the full telling.
 
 ## Related pages
 
-- [[althas|Althas]]
+- [[index|Althas]]
 - [[voldaen|Voldaen]]
 - [[valthis-voldis|Valthis Voldis]]
 - [[edrion-voldis|Edrion Voldis]]

@@ -7,9 +7,8 @@ nature: god
 domain: "[[splendor-magic|Splendor]]"
 fate: Alive, departed Althas
 image: the-one-above.jpg
+image_caption: "An artist's rendering, not a likeness. The One Above held no shape for long, and none who claim to have glimpsed the god describe the same figure twice. No true image of it can exist; this is only how one believer pictured him."
 ---
-
-*An artist's rendering, not a likeness. The One Above held no shape for long, and none who claim to have glimpsed the god describe the same figure twice. No true image of it can exist; this is only how one believer pictured him.*
 
 **Summary**: The god of [[splendor-magic|Splendor]], worshipped by [[the-holy-see|the Holy See]] and [[canton-of-inquisition|the Canton of Inquisition]]. Protected Althas's mortal creations in the Divine Age, clashing with and striking down [[the-ones-below|the Ones Below]], and granted [[miracles|Miracles]] to his allies in that war. Still alive, but has since left Althas.
 

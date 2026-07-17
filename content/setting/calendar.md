@@ -44,7 +44,7 @@ The years of this calendar are numbered in the Voldaen Reckoning, written VR, re
 ## Related pages
 
 - [[timeline|Timeline]]
-- [[althas|Althas]]
+- [[index|Althas]]
 - [[the-one-above|The One Above]]
 - [[the-ones-below|The Ones Below]]
 - [[crater-lake|Crater Lake]]

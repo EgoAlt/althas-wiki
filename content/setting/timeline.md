@@ -41,7 +41,7 @@ Active combat ran for the better part of a decade, with Hilltop aiding Voldaen w
 ## Related pages
 
 - [[calendar|Calendar]]
-- [[althas|Althas]]
+- [[index|Althas]]
 - [[diplomacy|Diplomacy]]
 - [[the-one-above|The One Above]]
 - [[the-ones-below|The Ones Below]]
