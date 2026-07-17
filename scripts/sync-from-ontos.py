@@ -43,6 +43,7 @@ CONTENT_DIR = Path(__file__).resolve().parent.parent / "content"
 # from the filename) so it always matches Lucas's own naming choices exactly.
 TITLES = {
     "althas.md": "Althas",
+    "diplomacy.md": "Diplomacy",
     "canton-of-inquisition.md": "Canton of Inquisition",
     "codex-magic.md": "Codex Magic",
     "faeries.md": "Faeries",
@@ -97,6 +98,7 @@ PAGE_MAP = {
     # moved in that reorg has a RENAMES entry below so its old URL keeps
     # redirecting.
     "althas.md": "setting/althas.md",
+    "diplomacy.md": "setting/diplomacy.md",
     "canton-of-inquisition.md": "organizations/canton-of-inquisition.md",
     "the-holy-see.md": "organizations/the-holy-see.md",
     "guild.md": "organizations/guild.md",
