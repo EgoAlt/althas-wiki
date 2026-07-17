@@ -4,11 +4,6 @@ title: Changelog
 
 What's new on the wiki, most recent first.
 
-## 2026-07-17
-
-- **The wiki is reorganized.** The Explorer now groups pages by what they are: Organizations, Magic, Beings, Ancestries, Locations, People. Old bookmarks still work.
-- **"In this nation"**: each nation's page now lists everything tied to it (its organizations, people, and places) in one place, so you can see Voldaen or Hilltop at a glance without hunting through folders.
-
 ## 2026-07-16
 
 - **The wiki got reorganized**: pages now live in folders by what they are ([[guild|organizations]], [[miracles|magic]], [[the-one-above|beings]], [[faeries|ancestries]], and purely geographic locations, with [[crater-lake|Crater Lake]] filed under [[hilltop|Hilltop]] where it belongs), and every nation's page now ends with a generated "In this nation" section listing the organizations, people, and places tied to it. Old links and bookmarks still work: they redirect to each page's new home.
