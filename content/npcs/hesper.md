@@ -20,3 +20,4 @@ She was killed by a giant during her final duel with Izar. News of an archmage o
 ## Related pages
 
 - [[polaris|Polaris]]
+- [[izar|Izar]]

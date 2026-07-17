@@ -20,7 +20,7 @@ The arrangement has grown more volatile recently. When the archmage [[hesper|Hes
 
 ## Related pages
 
-- [[althas|Althas]]
+- [[index|Althas]]
 - [[polaris|Polaris]]
 - [[hesper|Hesper]]
 - [[faeries|Faeries]]

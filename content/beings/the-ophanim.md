@@ -6,9 +6,8 @@ kind: being
 nature: angelic being
 fate: Slain in 331 VR
 image: the-ophanim.webp
+image_caption: "An artist's rendering, not a likeness. The Ophanim wore no fixed form, and no two who beheld it ever agreed on its shape. No true image of it can exist; this is one soul's guess, set down after the looking."
 ---
-
-*An artist's rendering, not a likeness. The Ophanim wore no fixed form, and no two who beheld it ever agreed on its shape. No true image of it can exist; this is one soul's guess, set down after the looking.*
 
 **Summary**: The angelic being that descended on [[hilltop|Hilltop]] in 330 VR and was slain a year later by the Five Heroes. Its arrival and death reshaped the continent's politics and its faith, and left the land around its corpse permanently, unnaturally dark.
 
@@ -18,7 +17,7 @@ In 330 VR, the Ophanim landed in central Hilltop, instantly rendering much of th
 
 ## Related pages
 
-- [[althas|Althas]]
+- [[index|Althas]]
 - [[hilltop|Hilltop]]
 - [[canton-of-inquisition|Canton of Inquisition]]
 - [[the-holy-see|The Holy See]]

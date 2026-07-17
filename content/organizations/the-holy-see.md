@@ -20,7 +20,7 @@ The Holy See is organized into Cantons, each an arm of the Church governing one 
 
 ## Related pages
 
-- [[althas|Althas]]
+- [[index|Althas]]
 - [[hilltop|Hilltop]]
 - [[the-ophanim|The Ophanim]]
 - [[canton-of-inquisition|Canton of Inquisition]]

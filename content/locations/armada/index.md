@@ -17,11 +17,11 @@ marker:
 
 A federation founded by merchant lords who declared the trade cities of Hilltop's south independent during the Ophanim crisis. Home to a strong Slyborne (criminal organization) presence and looser laws than its neighbors; the one nation where [[infernis|Infernis]] are sometimes tolerated. Supported the [[jesthaen|Jesthaen]] rebels alongside [[polaris|Polaris]].
 
-See [[althas|Althas]] for the full history. Governed not by a single ruler but by [[guild|the Guild]], a collection of city-state rulers who each hold their seat by possession of a physical token.
+See [[index|Althas]] for the full history. Governed not by a single ruler but by [[guild|the Guild]], a collection of city-state rulers who each hold their seat by possession of a physical token.
 
 ## Related pages
 
-- [[althas|Althas]]
+- [[index|Althas]]
 - [[jesthaen|Jesthaen]]
 - [[polaris|Polaris]]
 - [[the-ophanim|The Ophanim]]

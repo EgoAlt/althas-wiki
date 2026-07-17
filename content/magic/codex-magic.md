@@ -5,6 +5,7 @@ aliases:
 kind: magic-system
 practitioners: Codex casters
 source: "[[the-one-above|The One Above]]"
+image: codex-magic.png
 ---
 
 **Summary**: Casters draw a precise seal that tears a hole in the fabric of reality, letting power filter through from a parallel dimension. A fireball isn't conjured fire, it's a tear that happens to express itself as fire.

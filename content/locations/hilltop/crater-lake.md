@@ -18,4 +18,4 @@ The lake sits at the center of the map of Althas, a crater left by the Divine Ag
 
 - [[the-one-above|The One Above]]
 - [[the-ones-below|The Ones Below]]
-- [[althas|Althas]]
+- [[index|Althas]]

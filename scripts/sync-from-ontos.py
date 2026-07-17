@@ -42,7 +42,6 @@ CONTENT_DIR = Path(__file__).resolve().parent.parent / "content"
 # Display title for each source page. Kept as an explicit table (not derived
 # from the filename) so it always matches Lucas's own naming choices exactly.
 TITLES = {
-    "althas.md": "Althas",
     "diplomacy.md": "Diplomacy",
     "calendar.md": "Calendar",
     "timeline.md": "Timeline",
@@ -76,8 +75,8 @@ TITLES = {
     "eltanin.md": "Eltanin",
     "guilmore-fleming.md": "Guilmore Fleming",
     "hesper.md": "Hesper",
-    "immanuel-greene.md": "Immanuel Greene",
     "izar.md": "Izar",
+    "immanuel-greene.md": "Immanuel Greene",
     "kingslayer.md": "The Kingslayer",
     "orsian-voldis.md": "Orsian Voldis",
     "thuban.md": "Thuban",
@@ -99,7 +98,6 @@ PAGE_MAP = {
     # per-nation sections, quartz/components/NationIndex.tsx). Every page
     # moved in that reorg has a RENAMES entry below so its old URL keeps
     # redirecting.
-    "althas.md": "setting/althas.md",
     "diplomacy.md": "setting/diplomacy.md",
     "calendar.md": "setting/calendar.md",
     "timeline.md": "setting/timeline.md",
@@ -135,6 +133,7 @@ PAGE_MAP = {
     "aldric-voldis.md": "npcs/aldric-voldis.md",
     "edrion-voldis.md": "npcs/edrion-voldis.md",
     "hesper.md": "npcs/hesper.md",
+    "izar.md": "npcs/izar.md",
     "kingslayer.md": "npcs/kingslayer.md",
     "orsian-voldis.md": "npcs/orsian-voldis.md",
     "valis-voldis.md": "npcs/valis-voldis.md",
@@ -161,6 +160,11 @@ PAGE_MAP = {
 # link ambiguous under the "shortest" strategy and break site-wide. See the
 # comment in quartz/plugins/transformers/frontmatter.ts.
 RENAMES = {
+    # 2026-07-17 landing-page merge: the standalone overview at /setting/althas
+    # was folded into the home page (index.md). Keep that old URL redirecting to
+    # home so player bookmarks survive. All [[althas]] wikilinks in the source
+    # were repointed to [[index]] at the same time.
+    "index.md": ["setting/althas"],
     # 2026-07-16 Explorer/categories reorg
     "locations/hilltop/crater-lake.md": ["locations/crater-lake"],
     "organizations/house-voldis.md": ["locations/voldaen/house-voldis"],
@@ -202,7 +206,6 @@ NOT_YET_PUBLIC = {
     "draconis.md",
     "eltanin.md",
     "thuban.md",
-    "izar.md",
     "guilmore-fleming.md",
     "immanuel-greene.md",
     "hilltop-night-zone.md",
@@ -384,27 +387,49 @@ IMAGE_EMBED_RE = re.compile(r"^!\[[^\]]*\]\([^)]+\)\s*$|^!\[\[[^\]|]+(\|[^\]]+)?
 
 def strip_leading_image(body):
     """Drop a standalone image embed if it's the first non-blank line of the
-    Ontos body. Portraits live in the GM's source page too (so Lucas's own
-    vault renders them), but frontend art is managed separately here: the
-    filename lives in the content-side `image:` frontmatter key (carried
-    forward by extract_image_block) and the Infobox component renders it. Left
-    in place, the source body embed would point at a path that only resolves in
-    Ontos and would double up with the infobox portrait on the published page.
-    Only the leading line is touched, so inline images elsewhere in a page are
-    untouched."""
+    Ontos body, and capture an italic caption line immediately following it.
+    Returns (body_without_image_and_caption, caption_or_None).
+
+    Portraits live in the GM's source page too (so Lucas's own vault renders
+    them), but frontend art is managed separately here: the filename lives in
+    the content-side `image:` frontmatter key (carried forward by
+    extract_image_block) and the Infobox renders it, with the author's caption
+    beneath it via the `image_caption:` key (this function's second return
+    value, derived from the source each sync so Ontos stays authoritative for
+    the caption text). Left in the body, the source embed would double up with
+    the infobox portrait and the caption would render as loose article text
+    instead of under the image. Only the leading image and its immediately
+    following caption are touched; inline images elsewhere are untouched."""
     lines = body.splitlines()
-    for idx, line in enumerate(lines):
-        if line.strip() == "":
-            continue
-        if IMAGE_EMBED_RE.match(line):
-            return "\n".join(lines[:idx] + lines[idx + 1:])
-        return body
-    return body
+    idx = 0
+    while idx < len(lines) and lines[idx].strip() == "":
+        idx += 1
+    if idx >= len(lines) or not IMAGE_EMBED_RE.match(lines[idx]):
+        return body, None
+    drop = {idx}
+    caption = None
+    j = idx + 1
+    while j < len(lines) and lines[j].strip() == "":
+        j += 1
+    if j < len(lines):
+        cap = lines[j].strip()
+        # A single-italic line (*...*): not bold (**...**), not a "* " bullet.
+        if (
+            len(cap) >= 2
+            and cap.startswith("*")
+            and cap.endswith("*")
+            and not cap.startswith("**")
+            and not cap.startswith("* ")
+        ):
+            caption = cap.strip("*").strip()
+            drop.add(j)
+    new_lines = [line for k, line in enumerate(lines) if k not in drop]
+    return "\n".join(new_lines), caption
 
 
 def render(
     title, marker_block, body, image_block=None, infobox_lines=None, submap_block=None,
-    alias_slugs=None,
+    alias_slugs=None, image_caption=None,
 ):
     fm_lines = ["---", f"title: {title}"]
     if alias_slugs:
@@ -414,6 +439,8 @@ def render(
         fm_lines.extend(infobox_lines)
     if image_block:
         fm_lines.append(image_block)
+        if image_caption:
+            fm_lines.append(f'image_caption: "{image_caption.replace(chr(34), chr(92) + chr(34))}"')
     if marker_block:
         fm_lines.append(marker_block)
     if submap_block:
@@ -428,7 +455,7 @@ def sync_page(src_name, dest_rel):
     src_fm, body = split_frontmatter(text)
     infobox_lines = extract_infobox_fields(src_fm)
     body = strip_callouts(body)
-    body = strip_leading_image(body)
+    body, image_caption = strip_leading_image(body)
     body = strip_meta_lines(body)
     body = drop_empty_headings(body)
     body = clean_blank_runs(body)
@@ -448,7 +475,7 @@ def sync_page(src_name, dest_rel):
     dest.write_text(
         render(
             TITLES[src_name], marker_block, body, image_block, infobox_lines, submap_block,
-            alias_slugs=RENAMES.get(dest_rel),
+            alias_slugs=RENAMES.get(dest_rel), image_caption=image_caption,
         )
     )
     return dest

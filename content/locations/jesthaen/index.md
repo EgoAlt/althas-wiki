@@ -15,11 +15,11 @@ marker:
 
 The newest nation of Althas, born from the Voldis Succession Crisis in [[voldaen|Voldaen]]: a workers' and anti-monarchist rebellion that became a full revolution, then a republic. Supported by [[polaris|Polaris]] and [[armada|Armada]] during the war; the Jesthaen Treaty ended active combat in 358 VR, though the peace remains tenuous.
 
-See [[althas|Althas]] for the full history.
+See [[index|Althas]] for the full history.
 
 ## Related pages
 
-- [[althas|Althas]]
+- [[index|Althas]]
 - [[voldaen|Voldaen]]
 - [[polaris|Polaris]]
 - [[armada|Armada]]

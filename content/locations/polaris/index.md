@@ -16,7 +16,7 @@ marker:
 
 A nation of scholars and mages who broke off from Hilltop to pursue arcane ambition. Home to the continent's magic academies (Loreborne communities) and a magocratic industrial rise built on [[giants|Giant]] labor. Rival of [[voldaen|Voldaen]], supported the [[jesthaen|Jesthaen]] rebels.
 
-See [[althas|Althas]] for the full history and the Giants' role in Polaris society.
+See [[index|Althas]] for the full history and the Giants' role in Polaris society.
 
 ## Governance: the Triumvirate of Archmages
 
@@ -28,7 +28,7 @@ Polaris's prosperity was built on [[giants|Giant]] labor, yet in the modern mago
 
 ## Related pages
 
-- [[althas|Althas]]
+- [[index|Althas]]
 - [[voldaen|Voldaen]]
 - [[jesthaen|Jesthaen]]
 - [[hesper|Hesper]]

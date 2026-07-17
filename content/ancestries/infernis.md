@@ -20,7 +20,7 @@ With settled life closed to them, Infernis travel in caravans, trading goods, ne
 
 ## Related pages
 
-- [[althas|Althas]]
+- [[index|Althas]]
 - [[armada|Armada]]
 - [[the-ones-below|The Ones Below]]
 - [[faeries|Faeries]]

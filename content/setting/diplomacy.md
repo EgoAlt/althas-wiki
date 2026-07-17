@@ -2,7 +2,7 @@
 title: Diplomacy
 ---
 
-**Summary**: A map of how the five nations of [[althas|Althas]] and the powers within them stand toward each other, five years after the Jesthaen Treaty. It draws only on relationships already stated elsewhere in the wiki.
+**Summary**: A map of how the five nations of [[index|Althas]] and the powers within them stand toward each other, five years after the Jesthaen Treaty. It draws only on relationships already stated elsewhere in the wiki.
 
 ---
 
@@ -61,7 +61,7 @@ Several powers on the map are not nations but the institutions that run them. [[
 
 ## Related pages
 
-- [[althas|Althas]]
+- [[index|Althas]]
 - [[timeline|Timeline]]
 - [[voldaen|Voldaen]]
 - [[polaris|Polaris]]

@@ -2,22 +2,6 @@
 title: Convent of Saint Trefan
 kind: location
 region: "[[drinmery|Drinmery]]"
-marker:
-    - coordinates: "920, 1770"
-      icon: lucide-church
-      colour: "#d4af37"
-      category: holy-site
-submap:
-    # Placeholder art until real cartography for the convent exists. Local
-    # pin coordinates below are in this image's own pixel space and will NOT
-    # survive the art swap; re-place every pin when image: changes, then
-    # drop the caption line.
-    image: assets/map-placeholder.png
-    caption: Annoying dog stole the map
-    minZoom: 0
-    maxZoom: 2
-    defaultZoom: 1
-    zoomDelta: 0.5
 ---
 
 **Summary**: A convent in [[drinmery|Drinmery]], home to monks and a flock of faeries, prized for its rare library.

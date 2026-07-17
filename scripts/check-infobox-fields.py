@@ -52,7 +52,7 @@ ALL_FIELDS = {f for fields in KIND_FIELDS.values() for f in fields}
 # the `aliases:` old-URL redirect list a moved page carries (the RENAMES table
 # in sync-from-ontos.py; Quartz's AliasRedirects emitter turns each entry
 # into a redirect stub at the page's former path).
-NON_SCHEMA_KEYS = {"title", "marker", "submap", "image", "aliases"}
+NON_SCHEMA_KEYS = {"title", "marker", "submap", "image", "image_caption", "aliases"}
 
 FRONTMATTER_RE = re.compile(r"^---\n(.*?\n)---\n?", re.DOTALL)
 TOP_KEY_RE = re.compile(r"^([A-Za-z_][A-Za-z0-9_-]*):")
