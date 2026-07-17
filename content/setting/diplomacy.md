@@ -62,6 +62,7 @@ Several powers on the map are not nations but the institutions that run them. [[
 ## Related pages
 
 - [[althas|Althas]]
+- [[timeline|Timeline]]
 - [[voldaen|Voldaen]]
 - [[polaris|Polaris]]
 - [[armada|Armada]]
