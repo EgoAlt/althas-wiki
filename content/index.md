@@ -11,6 +11,7 @@ Player-facing reference wiki for the *Ut Supra Sic Infra* campaign, set on the f
 - [[map|Interactive Map]]
 - [[timeline|Timeline]]
 - [[calendar|Calendar]]
+- [[chronicle|Chronicle]]
 - [[diplomacy|Diplomacy]]
 - [[dice-roller|Dice Roller]]
 - [[changelog|Changelog]]
@@ -138,8 +139,8 @@ All communities are available across nations, but some have unique aspects withi
 
 ## NPCs
 
-- [[hesper_arcturus|Hesper]]: archmage of Polaris's Triumvirate, killed by a giant during her final duel with her son Izar, sparking riots
-- [[izar_arcturus|Izar]]: Hesper's son, a Polaris mage who challenged her for her Triumvirate seat
+- [[hesper_arcturus|Hesper Arcturus]]: archmage of Polaris's Triumvirate, killed by a giant during her final duel with her son Izar, sparking riots
+- [[izar_arcturus|Izar Arcturus]]: Hesper's son, a Polaris mage who challenged her for her Triumvirate seat
 
 ## History (Voldaen)
 

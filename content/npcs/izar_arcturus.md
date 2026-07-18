@@ -1,5 +1,5 @@
 ---
-title: Izar
+title: Izar Arcturus
 aliases:
   - npcs/izar
 kind: person

@@ -17,6 +17,7 @@ import Backlinks from "./Backlinks"
 import Infobox from "./Infobox"
 import DiceRoller from "./DiceRoller"
 import DiplomacyGraph from "./DiplomacyGraph"
+import ChronicleCalendar from "./ChronicleCalendar"
 import NationIndex from "./NationIndex"
 import Search from "./Search"
 import Footer from "./Footer"
@@ -47,6 +48,7 @@ export {
   Infobox,
   DiceRoller,
   DiplomacyGraph,
+  ChronicleCalendar,
   NationIndex,
   Search,
   Footer,

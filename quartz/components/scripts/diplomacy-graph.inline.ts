@@ -103,8 +103,8 @@ function setupDiplomacyGraph() {
   // (it came back far too narrow, collapsing the graph into a tall strip), and
   // a fixed landscape box renders identically regardless of when the script
   // runs.
-  const width = 760
-  const height = 520
+  const width = 920
+  const height = 600
   const svg = select(mount)
     .append("svg")
     .attr("class", "diplomacy-svg")
@@ -112,24 +112,9 @@ function setupDiplomacyGraph() {
     .attr("role", "img")
     .attr("aria-label", "Diplomacy web of Althas")
 
-  // Arrowhead marker for directed edges only.
-  svg
-    .append("defs")
-    .append("marker")
-    .attr("id", "dg-arrow")
-    .attr("viewBox", "0 -5 10 10")
-    .attr("refX", 28)
-    .attr("refY", 0)
-    .attr("markerWidth", 7)
-    .attr("markerHeight", 7)
-    .attr("orient", "auto")
-    .append("path")
-    .attr("d", "M0,-5L10,0L0,5")
-    .attr("class", "dg-arrowhead")
-
   const caption = document.createElement("div")
   caption.className = "diplomacy-caption"
-  caption.textContent = "Hover or tap a connection to read it."
+  caption.textContent = "Hover or tap a power to focus its connections."
   mount.appendChild(caption)
 
   const typeClass = (t: string) => (KNOWN_TYPES.includes(t) ? `type-${t}` : "type-other")
@@ -140,7 +125,20 @@ function setupDiplomacyGraph() {
     .data(edges)
     .join("line")
     .attr("class", (d) => `dg-edge ${typeClass(d.etype)}`)
-    .attr("marker-end", (d) => (d.mutual ? null : "url(#dg-arrow)"))
+
+  // Relationship label sitting on each connecting line (always visible, at the
+  // edge midpoint, kept centered in tick()). A --light halo (paint-order stroke
+  // in the stylesheet) keeps it legible where it crosses a colored edge. Drawn
+  // after the edges so it reads above them; pointer-events:none so it never
+  // steals the edge/node hover and drag handlers.
+  const edgeLabel = svg
+    .append("g")
+    .attr("class", "dg-edge-labels")
+    .selectAll("text")
+    .data(edges)
+    .join("text")
+    .attr("class", "dg-edge-label")
+    .text((d) => d.label)
 
   const node = svg
     .append("g")
@@ -169,23 +167,32 @@ function setupDiplomacyGraph() {
   const labelResize = () => {
     const rendered = (svg.node() as SVGSVGElement).getBoundingClientRect().width
     if (!rendered) return
-    const fs = Math.min(Math.max(12, 10 / (rendered / width)), 26)
+    const scale = rendered / width
+    const fs = Math.min(Math.max(12, 10 / scale), 26)
     node.selectAll<SVGTextElement, GNode>("text").style("font-size", `${fs}px`)
+    // Edge labels a touch smaller than node names, same compensation so they
+    // don't collapse to ~5px at mobile widths.
+    const efs = Math.min(Math.max(11, 9 / scale), 22)
+    edgeLabel.style("font-size", `${efs}px`)
   }
   labelResize()
   const labelTimers = [window.setTimeout(labelResize, 150), window.setTimeout(labelResize, 600)]
   window.addEventListener("resize", labelResize)
 
   const sim: Simulation<GNode, undefined> = forceSimulation(nodes)
-    .force("charge", forceManyBody().strength(-380))
+    // Spacing tuned so the always-visible edge labels have room: a longer link
+    // distance and stronger repulsion spread the tight war-cluster (Armada /
+    // Polaris / Jesthaen) whose midpoint labels otherwise overlap into an
+    // unreadable pile. Nodes stay draggable to separate any that still crowd.
+    .force("charge", forceManyBody().strength(-620))
     .force("center", forceCenter(width / 2, height / 2))
     .force(
       "link",
       forceLink<GNode, GEdge>(edges)
         .id((d) => d.id)
-        .distance(120),
+        .distance(175),
     )
-    .force("collide", forceCollide<GNode>((d) => (RADIUS[d.kind] ?? 14) + 26))
+    .force("collide", forceCollide<GNode>((d) => (RADIUS[d.kind] ?? 14) + 34))
 
   function tick() {
     link
@@ -193,6 +200,9 @@ function setupDiplomacyGraph() {
       .attr("y1", (d) => (d.source as GNode).y!)
       .attr("x2", (d) => (d.target as GNode).x!)
       .attr("y2", (d) => (d.target as GNode).y!)
+    edgeLabel
+      .attr("x", (d) => ((d.source as GNode).x! + (d.target as GNode).x!) / 2)
+      .attr("y", (d) => ((d.source as GNode).y! + (d.target as GNode).y!) / 2)
     node.attr("transform", (d) => `translate(${d.x},${d.y})`)
   }
   sim.on("tick", tick)
@@ -238,12 +248,13 @@ function setupDiplomacyGraph() {
         !!d && n !== d && !edges.some((e) => adjacent(d, e) && (e.source === n || e.target === n)),
     )
     link.classed("dimmed", (e) => !!d && !adjacent(d, e))
+    edgeLabel.classed("dimmed", (e) => !!d && !adjacent(d, e))
     caption.textContent = d
       ? edges
           .filter((e) => adjacent(d, e))
           .map(edgeText)
           .join("  •  ") || d.name
-      : "Hover or tap a connection to read it."
+      : "Hover or tap a power to focus its connections."
   }
   node.on("mouseenter", (_ev, d) => focusNode(d)).on("mouseleave", () => focusNode(null))
   link
