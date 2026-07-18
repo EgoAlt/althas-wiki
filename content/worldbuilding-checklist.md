@@ -1,5 +1,7 @@
 ---
 title: Worldbuilding Checklist
+aliases:
+  - setting/worldbuilding-checklist
 ---
 
 **Summary**: A running checklist of parts of Althas still open for the table to help shape, from the names of the months to the songs people sing.

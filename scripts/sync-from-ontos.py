@@ -104,7 +104,7 @@ PAGE_MAP = {
     "calendar.md": "setting/calendar.md",
     "chronicle.md": "setting/chronicle.md",
     "timeline.md": "setting/timeline.md",
-    "worldbuilding-checklist.md": "setting/worldbuilding-checklist.md",
+    "worldbuilding-checklist.md": "worldbuilding-checklist.md",
     "parish-of-inquisition.md": "organizations/parish-of-inquisition.md",
     "the-holy-see.md": "organizations/the-holy-see.md",
     "guild.md": "organizations/guild.md",
@@ -180,6 +180,9 @@ RENAMES = {
     # home so player bookmarks survive. All [[althas]] wikilinks in the source
     # were repointed to [[index]] at the same time.
     "index.md": ["setting/althas"],
+    # 2026-07-18 moved the Worldbuilding Checklist to the content root (top-level
+    # quick access with map/changelog/dice-roller), out of the setting/ folder.
+    "worldbuilding-checklist.md": ["setting/worldbuilding-checklist"],
     # 2026-07-16 Explorer/categories reorg
     "locations/hilltop/crater-lake.md": ["locations/crater-lake"],
     "organizations/house-voldis.md": ["locations/voldaen/house-voldis"],
