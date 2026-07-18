@@ -1,11 +1,12 @@
 ---
 title: Hesper Arcturus
+image: hesper.jpg
 aliases:
   - npcs/hesper
+  - npcs/hesper_arcturus
 kind: person
 role: "Archmage of the Triumvirate of [[polaris|Polaris]]"
 house: "House Arcturus"
-image: hesper.jpg
 ---
 
 **Summary**: Archmage of the Triumvirate governing [[polaris|Polaris]], eccentric collector of odd things. Killed by a giant during her final duel with her son Izar, an act that plunged Polaris into riots.
@@ -25,4 +26,4 @@ She was killed by a giant during her final duel with Izar. News of an archmage o
 ## Related pages
 
 - [[polaris|Polaris]]
-- [[izar_arcturus|Izar]]
+- [[izar-arcturus|Izar]]

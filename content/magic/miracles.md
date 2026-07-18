@@ -23,12 +23,12 @@ Not all Miracles are directly useful on the battlefield, but those that are cons
 
 ## Publicly known Miracles
 
-- **The Miracle of Firmament**: lets its bearer treat open air as a solid, workable surface, so [[codex-magic|Codex]] seals can be drawn directly into empty space rather than onto any physical surface or medium. House Arcturus's own signature Miracle; see [[hesper_arcturus|Hesper]] and [[izar_arcturus|Izar]].
+- **The Miracle of Firmament**: lets its bearer treat open air as a solid, workable surface, so [[codex-magic|Codex]] seals can be drawn directly into empty space rather than onto any physical surface or medium. House Arcturus's own signature Miracle; see [[hesper-arcturus|Hesper]] and [[izar-arcturus|Izar]].
 - **The Miracle of Voldis**: [[voldaen|House Voldis]]'s own signature Miracle, said to let its bearer hold multiple Miracles at once.
 
 ## House Arcturus's power
 
-House Arcturus is a Polaris family of high standing: the power of the Miracle of Firmament has produced a long line of Triumvirate Archmages across the family's history. [[hesper_arcturus|Hesper]] was born with it. Her son [[izar_arcturus|Izar]] was not, until the day of their final duel.
+House Arcturus is a Polaris family of high standing: the power of the Miracle of Firmament has produced a long line of Triumvirate Archmages across the family's history. [[hesper-arcturus|Hesper]] was born with it. Her son [[izar-arcturus|Izar]] was not, until the day of their final duel.
 
 ## Related pages
 
@@ -39,5 +39,5 @@ House Arcturus is a Polaris family of high standing: the power of the Miracle of
 - [[valis-voldis|Valis Voldis]]
 - [[aldric-voldis|Aldric Voldis]]
 - [[the-one-above|The One Above]]
-- [[hesper_arcturus|Hesper]]
-- [[izar_arcturus|Izar]]
+- [[hesper-arcturus|Hesper]]
+- [[izar-arcturus|Izar]]
