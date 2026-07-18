@@ -16,13 +16,13 @@ Giants are native to northern [[polaris|Polaris]]. They were once respected as b
 
 That respect has not survived into the modern magocracy. Status in Polaris largely follows arcane aptitude, and giants have little of it, so the ancestry that raised the nation now works at the bottom of it: hauling stone for academies they cannot attend and operating machinery designed by mages who will never enter their workshops.
 
-The arrangement has grown more volatile recently. When the archmage [[hesper|Hesper]] was killed by a giant during her final duel with her son Izar, news of a Triumvirate archmage struck down within her own walls plunged Polaris into riots: fear that giants had grown bold enough to strike at the ruling seats themselves, and anger looking for somewhere to land.
+The arrangement has grown more volatile recently. When the archmage [[hesper_arcturus|Hesper]] was killed by a giant during her final duel with her son Izar, news of a Triumvirate archmage struck down within her own walls plunged Polaris into riots: fear that giants had grown bold enough to strike at the ruling seats themselves, and anger looking for somewhere to land.
 
 ## Related pages
 
 - [[index|Althas]]
 - [[polaris|Polaris]]
-- [[hesper|Hesper]]
+- [[hesper_arcturus|Hesper]]
 - [[faeries|Faeries]]
 - [[clanks|Clanks]]
 - [[infernis|Infernis]]

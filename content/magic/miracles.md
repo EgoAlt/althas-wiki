@@ -19,7 +19,16 @@ Not all Miracles are directly useful on the battlefield, but those that are cons
 
 ## House Voldis's power
 
-[[voldaen|House Voldis]] is known across Althas for a signature Miracle that lets its bearer hold multiple Miracles at once. Over generations the family has amassed a formidable collection of them, and this, not mere longevity or training, is the real source of Voldaen's strength.
+[[voldaen|House Voldis]] is known across Althas for a signature Miracle, popularly called the **Miracle of Voldis**, that lets its bearer hold multiple Miracles at once. Over generations the family has amassed a formidable collection of them, and this, not mere longevity or training, is the real source of Voldaen's strength.
+
+## Publicly known Miracles
+
+- **The Miracle of Firmament**: lets its bearer treat open air as a solid, workable surface, so [[codex-magic|Codex]] seals can be drawn directly into empty space rather than onto any physical surface or medium. House Arcturus's own signature Miracle; see [[hesper_arcturus|Hesper]] and [[izar_arcturus|Izar]].
+- **The Miracle of Voldis**: [[voldaen|House Voldis]]'s own signature Miracle, said to let its bearer hold multiple Miracles at once (see House Voldis's power, above; the truth is otherwise, and is GM-only).
+
+## House Arcturus's power
+
+House Arcturus is a Polaris family of high standing: the power of the Miracle of Firmament has produced a long line of Triumvirate Archmages across the family's history. [[hesper_arcturus|Hesper]] was born with it. Her son [[izar_arcturus|Izar]] was not, until the day of their final duel.
 
 ## Related pages
 
@@ -30,3 +39,5 @@ Not all Miracles are directly useful on the battlefield, but those that are cons
 - [[valis-voldis|Valis Voldis]]
 - [[aldric-voldis|Aldric Voldis]]
 - [[the-one-above|The One Above]]
+- [[hesper_arcturus|Hesper]]
+- [[izar_arcturus|Izar]]

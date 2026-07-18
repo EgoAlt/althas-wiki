@@ -138,8 +138,8 @@ All communities are available across nations, but some have unique aspects withi
 
 ## NPCs
 
-- [[hesper|Hesper]]: archmage of Polaris's Triumvirate, killed by a giant during her final duel with her son Izar, sparking riots
-- [[izar|Izar]]: Hesper's son, a Polaris mage who challenged her for her Triumvirate seat
+- [[hesper_arcturus|Hesper]]: archmage of Polaris's Triumvirate, killed by a giant during her final duel with her son Izar, sparking riots
+- [[izar_arcturus|Izar]]: Hesper's son, a Polaris mage who challenged her for her Triumvirate seat
 
 ## History (Voldaen)
 

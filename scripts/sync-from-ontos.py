@@ -74,8 +74,8 @@ TITLES = {
     "edrion-voldis.md": "Edrion Voldis",
     "eltanin.md": "Eltanin",
     "guilmore-fleming.md": "Guilmore Fleming",
-    "hesper.md": "Hesper",
-    "izar.md": "Izar",
+    "hesper_arcturus.md": "Hesper",
+    "izar_arcturus.md": "Izar",
     "immanuel-greene.md": "Immanuel Greene",
     "kingslayer.md": "The Kingslayer",
     "orsian-voldis.md": "Orsian Voldis",
@@ -132,8 +132,13 @@ PAGE_MAP = {
     "voldaen.md": "locations/voldaen/index.md",
     "aldric-voldis.md": "npcs/aldric-voldis.md",
     "edrion-voldis.md": "npcs/edrion-voldis.md",
-    "hesper.md": "npcs/hesper.md",
-    "izar.md": "npcs/izar.md",
+    # 2026-07-18: the Ontos source files were renamed hesper.md -> hesper_arcturus.md
+    # and izar.md -> izar_arcturus.md (House Arcturus canon, edited via Cowork). The
+    # setting/ wikilinks all became [[hesper_arcturus]]/[[izar_arcturus]] to match, so
+    # the published slug follows suit and the old /npcs/hesper + /npcs/izar URLs keep
+    # redirecting via RENAMES below.
+    "hesper_arcturus.md": "npcs/hesper_arcturus.md",
+    "izar_arcturus.md": "npcs/izar_arcturus.md",
     "kingslayer.md": "npcs/kingslayer.md",
     "orsian-voldis.md": "npcs/orsian-voldis.md",
     "valis-voldis.md": "npcs/valis-voldis.md",
@@ -160,6 +165,11 @@ PAGE_MAP = {
 # link ambiguous under the "shortest" strategy and break site-wide. See the
 # comment in quartz/plugins/transformers/frontmatter.ts.
 RENAMES = {
+    # 2026-07-18 House Arcturus rename: source files hesper.md/izar.md became
+    # hesper_arcturus.md/izar_arcturus.md, so the destination slug moved too. Keep
+    # the old published URLs redirecting.
+    "npcs/hesper_arcturus.md": ["npcs/hesper"],
+    "npcs/izar_arcturus.md": ["npcs/izar"],
     # 2026-07-17 landing-page merge: the standalone overview at /setting/althas
     # was folded into the home page (index.md). Keep that old URL redirecting to
     # home so player bookmarks survive. All [[althas]] wikilinks in the source
