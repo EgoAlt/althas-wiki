@@ -24,7 +24,7 @@ Not all Miracles are directly useful on the battlefield, but those that are cons
 ## Publicly known Miracles
 
 - **The Miracle of Firmament**: lets its bearer treat open air as a solid, workable surface, so [[codex-magic|Codex]] seals can be drawn directly into empty space rather than onto any physical surface or medium. House Arcturus's own signature Miracle; see [[hesper_arcturus|Hesper]] and [[izar_arcturus|Izar]].
-- **The Miracle of Voldis**: [[voldaen|House Voldis]]'s own signature Miracle, said to let its bearer hold multiple Miracles at once (see House Voldis's power, above; the truth is otherwise, and is GM-only).
+- **The Miracle of Voldis**: [[voldaen|House Voldis]]'s own signature Miracle, said to let its bearer hold multiple Miracles at once.
 
 ## House Arcturus's power
 
