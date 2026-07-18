@@ -22,7 +22,7 @@ This is a deliberate contrast with [[codex-magic|Codex Magic]]: Splendor asks a 
 Incantations aren't invented by casters. They're discovered. In Althas, this means:
 
 - The correct words for a given effect are fixed and pre-existing, not something a caster can improvise or homebrew their way into.
-- Finding a new incantation is itself a narrative event: a discovery, not a training milestone. This is a strong hook for [[the-holy-see|the Holy See]] and [[canton-of-inquisition|the Canton of Inquisition]] as institutions: whoever controls incantation research controls what Splendor magic can even do.
+- Finding a new incantation is itself a narrative event: a discovery, not a training milestone. This is a strong hook for [[the-holy-see|the Holy See]] and [[parish-of-inquisition|the Parish of Inquisition]] as institutions: whoever controls incantation research controls what Splendor magic can even do.
 - Most known incantations are old and few in number.
 
 ## Why this fits the One Above's absence

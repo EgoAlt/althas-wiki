@@ -13,6 +13,7 @@ Player-facing reference wiki for the *Ut Supra Sic Infra* campaign, set on the f
 - [[calendar|Calendar]]
 - [[chronicle|Chronicle]]
 - [[diplomacy|Diplomacy]]
+- [[worldbuilding-checklist|Worldbuilding Checklist]]
 - [[dice-roller|Dice Roller]]
 - [[changelog|Changelog]]
 
@@ -108,7 +109,7 @@ All communities are available across nations, but some have unique aspects withi
 ## Factions
 
 - [[the-holy-see|The Holy See]]: divine regent authority governing the faith from Hilltop
-- [[canton-of-inquisition|Canton of Inquisition]]: the Holy See's feared investigative and judicial arm
+- [[parish-of-inquisition|Parish of Inquisition]]: the Holy See's feared investigative and judicial arm
 - [[guild|The Guild]]: governs Armada, seats held by token possession, not inheritance or election
 
 ## Ancestries

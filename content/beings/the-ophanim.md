@@ -19,7 +19,7 @@ In 330 VR, the Ophanim landed in central Hilltop, instantly rendering much of th
 
 - [[index|Althas]]
 - [[hilltop|Hilltop]]
-- [[canton-of-inquisition|Canton of Inquisition]]
+- [[parish-of-inquisition|Parish of Inquisition]]
 - [[the-holy-see|The Holy See]]
 - [[edrion-voldis|Edrion Voldis]]
 - [[aldric-voldis|Aldric Voldis]]

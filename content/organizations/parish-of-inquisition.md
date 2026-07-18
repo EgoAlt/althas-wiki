@@ -1,15 +1,16 @@
 ---
-title: Canton of Inquisition
+title: Parish of Inquisition
 aliases:
+  - organizations/canton-of-inquisition
   - setting/canton-of-inquisition
 kind: organization
 ---
 
-**Summary**: [[the-holy-see|The Holy See]]'s investigative and judicial arm, one of its Cantons: the hidden hand that carries sacred judgment into places ordinary law can't reach.
+**Summary**: [[the-holy-see|The Holy See]]'s investigative and judicial arm, one of its Parishes: the hidden hand that carries sacred judgment into places ordinary law can't reach.
 
 ---
 
-The Canton began as [[the-holy-see|the Holy See]]'s hidden hand: rooting out corruption and forbidden rites, carrying the Church's judgment into places ordinary law couldn't reach. Feared, but understood as a necessary instrument of protection. Its writs reach high and low alike, enough to unseat a lord or drag a sinner screaming from beneath his own roof.
+The Parish began as [[the-holy-see|the Holy See]]'s hidden hand: rooting out corruption and forbidden rites, carrying the Church's judgment into places ordinary law couldn't reach. Feared, but understood as a necessary instrument of protection. Its writs reach high and low alike, enough to unseat a lord or drag a sinner screaming from beneath his own roof.
 
 ## Whispers since the Ophanim
 

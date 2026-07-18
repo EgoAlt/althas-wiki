@@ -34,7 +34,7 @@ def test_tier2_secret_signals():
 
 def test_clean_public_prose_passes():
     clean = (
-        "The Holy See governs the faith from Hilltop and fields the Canton of "
+        "The Holy See governs the faith from Hilltop and fields the Parish of "
         "Inquisition as its investigative arm. House Voldis rules Voldaen."
     )
     t1, t2 = csl.scan_text(clean)

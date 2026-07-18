@@ -6,6 +6,8 @@ What's new on the wiki, most recent first.
 
 ## 2026-07-18
 
+- **New page, the [[worldbuilding-checklist|Worldbuilding Checklist]]**: a running list of parts of Althas still open for the table to help shape, from the names of the months and the thirty Saints of the Divine Age to the songs people sing. Daggerheart invites players into the worldbuilding, so pick anything that draws you and bring it to the table.
+- **"Canton" is now "Parish"**: the arms of [[the-holy-see|the Holy See]] (Inquisition, Orthodoxy, Finance, Resource, and Cartography) are now called Parishes. The [[parish-of-inquisition|Parish of Inquisition]] keeps everything from its old page, and older links to it still work.
 - **House Arcturus**: [[hesper-arcturus|Hesper]] and her son [[izar-arcturus|Izar]] are now known to belong to House Arcturus, an old Polaris family whose signature Miracle, the Miracle of Firmament, lets its bearer draw [[codex-magic|Codex]] seals straight out of open air, as if the sky itself were parchment.
 - **[[miracles|Miracles]] expanded**: the page now names the publicly known Miracles, the Miracle of Firmament and House Voldis's Miracle of Voldis, and adds a short note on House Arcturus's standing in Polaris.
 - **The [[diplomacy|Diplomacy]] web is cleaner to read**: hover or tap any power to reveal how it ties to the others. Arrows show which way each tie runs, with double-headed arrows for mutual ones.
@@ -37,7 +39,7 @@ What's new on the wiki, most recent first.
 - **New page**: [[house-voldis|House Voldis]], the royal dynasty of Voldaen, with a full family tree from the God King's claimed line down to [[valis-voldis|Valis Voldis]], and the story of the succession crisis in one place.
 - **New player characters**: [[uriel-kenan|Uriel Kenan]] and [[rosestripe|Rosestripe]] join [[rastaban|Rastaban]] on the wiki (appearance and mechanics only for now, each with a portrait).
 - **New pages**: [[faeries|Faeries]], the [[convent-of-saint-trefan|Convent of Saint Trefan]], and [[drinmery|Drinmery]].
-- [[the-holy-see|The Holy See]] now lays out how it's organized into Cantons, and the [[canton-of-inquisition|Canton of Inquisition]] entry was rewritten.
+- [[the-holy-see|The Holy See]] now lays out how it's organized into Cantons, and the Canton of Inquisition entry was rewritten.
 - Added portraits for [[hesper-arcturus|Hesper]], Uriel, and Rosestripe.
 - Added art to [[divine-relics|Divine Relics]], [[aldric-voldis|Aldric Voldis]], [[edrion-voldis|Edrion Voldis]], [[the-ophanim|The Ophanim]], [[the-one-above|The One Above]], and [[the-ones-below|The Ones Below]]. The last three carry a note that the image is only an artist's rendering, since no true likeness of them is possible.
 - **Renamed** Holy Relics to [[divine-relics|Divine Relics]], and clarified how they work: any Miracle-holder can wield one, whatever their own Miracle.
@@ -48,7 +50,7 @@ What's new on the wiki, most recent first.
 ## 2026-07-15
 
 - **New page**: [[guild|The Guild]], Armada's governing body: no single ruler, city-states run by whoever holds that seat's token.
-- **Major expansion**: [[miracles|Miracles]], [[canton-of-inquisition|Canton of Inquisition]], [[codex-magic|Codex Magic]], [[crater-lake|Crater Lake]], [[divine-relics|Holy Relics]], and [[splendor-magic|Splendor Magic]] are now on the wiki. [[hilltop|Hilltop]], [[the-holy-see|The Holy See]], and [[the-one-above|The One Above]] all got substantially bigger.
+- **Major expansion**: [[miracles|Miracles]], Canton of Inquisition, [[codex-magic|Codex Magic]], [[crater-lake|Crater Lake]], [[divine-relics|Holy Relics]], and [[splendor-magic|Splendor Magic]] are now on the wiki. [[hilltop|Hilltop]], [[the-holy-see|The Holy See]], and [[the-one-above|The One Above]] all got substantially bigger.
 - **New**: a first page for [[rastaban|Rastaban]] (appearance and background only for now, more once the campaign starts), and a page for [[hesper-arcturus|Hesper]], including what's now known about her fate.
 - Armada, Polaris, Voldaen, Jesthaen, and Hilltop each got a proper overview page instead of a bare folder listing.
 - The wiki and interactive map went live.

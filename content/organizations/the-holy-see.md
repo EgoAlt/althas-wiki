@@ -14,16 +14,16 @@ Claimed authority over [[hilltop|Hilltop]] after the One Above departed, becomin
 
 Ratified the Jesthaen Treaty in 358 VR, ending active combat in the [[jesthaen|Jesthaen]] rebellion.
 
-## The Cantons
+## The Parishes
 
-The Holy See is organized into Cantons, each an arm of the Church governing one part of the faith and its worldly administration. The two most prominent in daily life are the [[canton-of-inquisition|Canton of Inquisition]], its feared investigative and judicial hand, and the **Canton of Orthodoxy**, which presides over doctrine, scripture, and the proper form of worship. The rest handle the machinery of a church that also functions as a government: a **Canton of Finance** for the See's treasury and the movement of its funds, a **Canton of Resource** for trade, supply, and taxation, a **Canton of Cartography**, and others besides. Most people only ever deal with a cleric of one Canton or another, to have something witnessed and sealed, or judged.
+The Holy See is organized into Parishes, each an arm of the Church governing one part of the faith and its worldly administration. The two most prominent in daily life are the [[parish-of-inquisition|Parish of Inquisition]], its feared investigative and judicial hand, and the **Parish of Orthodoxy**, which presides over doctrine, scripture, and the proper form of worship. The rest handle the machinery of a church that also functions as a government: a **Parish of Finance** for the See's treasury and the movement of its funds, a **Parish of Resource** for trade, supply, and taxation, a **Parish of Cartography**, and others besides. Most people only ever deal with a cleric of one Parish or another, to have something witnessed and sealed, or judged.
 
 ## Related pages
 
 - [[index|Althas]]
 - [[hilltop|Hilltop]]
 - [[the-ophanim|The Ophanim]]
-- [[canton-of-inquisition|Canton of Inquisition]]
+- [[parish-of-inquisition|Parish of Inquisition]]
 - [[jesthaen|Jesthaen]]
 - [[voldaen|Voldaen]]
 - [[diplomacy|Diplomacy]]
