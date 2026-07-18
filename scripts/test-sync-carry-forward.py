@@ -159,10 +159,10 @@ def test_renames_table_is_consistent_with_page_map():
             assert old != current_slug, f"{dest} aliases its own current path"
 
 
-def test_carry_forward_source_prefers_existing_destination(tmp_paths):
+def test_carry_forward_source_prefers_existing_destination(tmp_path):
     """When the destination already exists, that file is the carry-forward
     source (the normal re-sync case)."""
-    content_dir = tmp_paths
+    content_dir = tmp_path
     dest_rel = "npcs/hesper-arcturus.md"
     dest = content_dir / dest_rel
     dest.parent.mkdir(parents=True, exist_ok=True)
@@ -170,12 +170,12 @@ def test_carry_forward_source_prefers_existing_destination(tmp_paths):
     assert sync.carry_forward_source(dest, dest_rel) == dest
 
 
-def test_carry_forward_source_falls_back_to_most_recent_rename(tmp_paths):
+def test_carry_forward_source_falls_back_to_most_recent_rename(tmp_path):
     """The bug fix: when the destination is brand new (a page rename), fall
     back to the most-recent prior destination in RENAMES, whose content/ file
     still holds the image:/marker:/submap: presentation data. Most-recent =
     last element of the RENAMES list (newly-old slugs are appended)."""
-    content_dir = tmp_paths
+    content_dir = tmp_path
     dest_rel = "npcs/hesper-arcturus.md"
     dest = content_dir / dest_rel  # does NOT exist yet
     # Two prior destinations; only the most-recent one holds the real data.
@@ -197,9 +197,9 @@ def test_carry_forward_source_falls_back_to_most_recent_rename(tmp_paths):
     assert sync.extract_image_block(fm) == IMAGE_LINE
 
 
-def test_carry_forward_source_none_when_new_and_no_rename(tmp_paths):
+def test_carry_forward_source_none_when_new_and_no_rename(tmp_path):
     """A genuinely new page with no RENAMES entry has nothing to carry from."""
-    content_dir = tmp_paths
+    content_dir = tmp_path
     dest_rel = "npcs/brand-new.md"
     dest = content_dir / dest_rel
     saved = (sync.RENAMES, sync.CONTENT_DIR)
@@ -211,10 +211,10 @@ def test_carry_forward_source_none_when_new_and_no_rename(tmp_paths):
         (sync.RENAMES, sync.CONTENT_DIR) = saved
 
 
-def test_carry_forward_source_skips_missing_old_destinations(tmp_paths):
+def test_carry_forward_source_skips_missing_old_destinations(tmp_path):
     """If the most-recent prior destination file was already deleted, fall
     through to an older one that still exists rather than returning it blind."""
-    content_dir = tmp_paths
+    content_dir = tmp_path
     dest_rel = "npcs/hesper-arcturus.md"
     dest = content_dir / dest_rel
     old_original = content_dir / "npcs/hesper.md"
@@ -230,11 +230,11 @@ def test_carry_forward_source_skips_missing_old_destinations(tmp_paths):
     assert src == old_original
 
 
-def test_sync_page_carries_image_across_a_rename(tmp_paths):
+def test_sync_page_carries_image_across_a_rename(tmp_path):
     """End-to-end regression for the real 2026-07-18 bug: rename the source
     file, point PAGE_MAP/TITLES/RENAMES at the new slug, and confirm sync_page
     writes the new destination WITH the portrait recovered from the old one."""
-    root = tmp_paths
+    root = tmp_path
     ontos = root / "ontos-setting"
     content = root / "content"
     ontos.mkdir(parents=True, exist_ok=True)
@@ -269,9 +269,11 @@ def main():
 
     tests = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
     for t in tests:
-        # Tests that declare a `tmp_paths` parameter get a fresh temp dir,
+        # Tests that declare a `tmp_path` parameter get a fresh temp dir,
         # cleaned up after; the rest are pure-fixture tests that take nothing.
-        if "tmp_paths" in inspect.signature(t).parameters:
+        # `tmp_path` is also pytest's built-in fixture of the same shape, so
+        # these run identically under `pytest scripts/test-sync-carry-forward.py`.
+        if "tmp_path" in inspect.signature(t).parameters:
             tmp = Path(tempfile.mkdtemp(prefix="sync-carry-test-"))
             try:
                 t(tmp)
