@@ -1,6 +1,5 @@
 ---
 title: Izar Arcturus
-image: izar.png
 aliases:
   - npcs/izar
   - npcs/izar_arcturus
@@ -8,6 +7,7 @@ kind: person
 role: "Mage of [[polaris|Polaris]]"
 allegiance: "[[polaris|Polaris]]"
 house: "House Arcturus"
+image: izar.png
 ---
 
 **Summary**: Son of the archmage [[hesper-arcturus|Hesper]] and an ambitious mage of [[polaris|Polaris]] in his own right, who for years challenged his mother for her seat on the ruling Triumvirate, despite being born without House Arcturus's Miracle of Firmament, unlike her. Present at her death during their final duel, the day he wielded it for the first time.
