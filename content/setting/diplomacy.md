@@ -16,7 +16,7 @@ node armada | Armada | nation | locations/armada
 node jesthaen | Jesthaen | nation | locations/jesthaen
 node hilltop | Hilltop | nation | locations/hilltop
 node the-holy-see | The Holy See | institution | organizations/the-holy-see
-node canton-of-inquisition | Canton of Inquisition | institution | organizations/canton-of-inquisition
+node parish-of-inquisition | Parish of Inquisition | institution | organizations/parish-of-inquisition
 node guild | The Guild | institution | organizations/guild
 node house-voldis | House Voldis | institution | organizations/house-voldis
 node infernis | Infernis | people | ancestries/infernis
@@ -24,7 +24,7 @@ node infernis | Infernis | people | ancestries/infernis
 # Edges: source -> target (arrow) or <-> (mutual) | type | label
 edge house-voldis -> voldaen | governance | royal dynasty, rules
 edge the-holy-see -> hilltop | governance | divine regent, governs the faith from
-edge canton-of-inquisition -> the-holy-see | governance | investigative and judicial arm of
+edge parish-of-inquisition -> the-holy-see | governance | investigative and judicial arm of
 edge guild -> armada | governance | governs
 edge armada -> infernis | uneasy | sometimes tolerates
 edge voldaen <-> polaris | rivalry | rivals
@@ -46,7 +46,7 @@ The fighting that the Jesthaen Treaty ended had two sides. [[voldaen|Voldaen]] h
 
 ## Who governs whom
 
-Several powers on the map are not nations but the institutions that run them. [[house-voldis|House Voldis]] is the royal dynasty of Voldaen. [[the-holy-see|The Holy See]] governs the faith from Hilltop and fields the [[canton-of-inquisition|Canton of Inquisition]] as its investigative and judicial arm. [[armada|Armada]] answers to [[guild|the Guild]] rather than to any single ruler. Armada is also the one nation that sometimes tolerates the [[infernis|Infernis]], who are banned almost everywhere else.
+Several powers on the map are not nations but the institutions that run them. [[house-voldis|House Voldis]] is the royal dynasty of Voldaen. [[the-holy-see|The Holy See]] governs the faith from Hilltop and fields the [[parish-of-inquisition|Parish of Inquisition]] as its investigative and judicial arm. [[armada|Armada]] answers to [[guild|the Guild]] rather than to any single ruler. Armada is also the one nation that sometimes tolerates the [[infernis|Infernis]], who are banned almost everywhere else.
 
 ## Related pages
 
@@ -58,7 +58,7 @@ Several powers on the map are not nations but the institutions that run them. [[
 - [[jesthaen|Jesthaen]]
 - [[hilltop|Hilltop]]
 - [[the-holy-see|The Holy See]]
-- [[canton-of-inquisition|Canton of Inquisition]]
+- [[parish-of-inquisition|Parish of Inquisition]]
 - [[guild|The Guild]]
 - [[house-voldis|House Voldis]]
 - [[infernis|Infernis]]
