@@ -8,6 +8,8 @@ title: Calendar
 
 The year of Althas is 333 days long. Ten months of 33 days each make up the working year of 330 days, and three days of holiday follow the tenth month to close the year. Those closing days stand outside the months, which is why the count runs three past the round 330.
 
+Where this page sets out the shape of the year, the [[chronicle|Chronicle]] records what happens within it, day by day.
+
 ## The week
 
 Each month is built from three weeks, and every week is eleven days. A week opens and closes on a weekend, and a single day of prayer falls at its center. Eight working days sit on either side of that prayer day.
@@ -43,6 +45,7 @@ The years of this calendar are numbered in the Voldaen Reckoning, written VR, re
 
 ## Related pages
 
+- [[chronicle|Chronicle]]
 - [[timeline|Timeline]]
 - [[index|Althas]]
 - [[the-one-above|The One Above]]

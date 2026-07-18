@@ -44,6 +44,7 @@ CONTENT_DIR = Path(__file__).resolve().parent.parent / "content"
 TITLES = {
     "diplomacy.md": "Diplomacy",
     "calendar.md": "Calendar",
+    "chronicle.md": "Chronicle",
     "timeline.md": "Timeline",
     "canton-of-inquisition.md": "Canton of Inquisition",
     "codex-magic.md": "Codex Magic",
@@ -74,8 +75,8 @@ TITLES = {
     "edrion-voldis.md": "Edrion Voldis",
     "eltanin.md": "Eltanin",
     "guilmore-fleming.md": "Guilmore Fleming",
-    "hesper_arcturus.md": "Hesper",
-    "izar_arcturus.md": "Izar",
+    "hesper_arcturus.md": "Hesper Arcturus",
+    "izar_arcturus.md": "Izar Arcturus",
     "immanuel-greene.md": "Immanuel Greene",
     "kingslayer.md": "The Kingslayer",
     "orsian-voldis.md": "Orsian Voldis",
@@ -100,6 +101,7 @@ PAGE_MAP = {
     # redirecting.
     "diplomacy.md": "setting/diplomacy.md",
     "calendar.md": "setting/calendar.md",
+    "chronicle.md": "setting/chronicle.md",
     "timeline.md": "setting/timeline.md",
     "canton-of-inquisition.md": "organizations/canton-of-inquisition.md",
     "the-holy-see.md": "organizations/the-holy-see.md",
@@ -294,6 +296,20 @@ def extract_image_block(frontmatter_text):
     return extract_frontmatter_block(frontmatter_text, "image")
 
 
+CURRENT_DATE_RE = re.compile(r'^current-date:\s*"?([0-9]+-(?:0[1-9]|10|H)-[0-9]{2})"?\s*$', re.MULTILINE)
+
+
+def extract_current_date(frontmatter_text):
+    """Campaign-date passthrough for the Chronicle (specs/althas-chronicle-
+    calendar-design.md): the manually-advanced current-date lives in the Ontos
+    source frontmatter and must reach the published page's frontmatter, where
+    ChronicleCalendar.tsx reads it. Format VR-MM-DD, zero-padded, H = holidays."""
+    if not frontmatter_text:
+        return None
+    m = CURRENT_DATE_RE.search(frontmatter_text)
+    return m.group(1) if m else None
+
+
 def extract_infobox_fields(frontmatter_text):
     """Pull the typed infobox lines out of the GM's source frontmatter,
     verbatim. Only `kind:` plus the fields belonging to that declared kind
@@ -439,7 +455,7 @@ def strip_leading_image(body):
 
 def render(
     title, marker_block, body, image_block=None, infobox_lines=None, submap_block=None,
-    alias_slugs=None, image_caption=None,
+    alias_slugs=None, image_caption=None, current_date=None,
 ):
     fm_lines = ["---", f"title: {title}"]
     if alias_slugs:
@@ -447,6 +463,8 @@ def render(
         fm_lines.extend(f"  - {slug}" for slug in alias_slugs)
     if infobox_lines:
         fm_lines.extend(infobox_lines)
+    if current_date:
+        fm_lines.append(f'current-date: "{current_date}"')
     if image_block:
         fm_lines.append(image_block)
         if image_caption:
@@ -464,6 +482,7 @@ def sync_page(src_name, dest_rel):
     text = src.read_text()
     src_fm, body = split_frontmatter(text)
     infobox_lines = extract_infobox_fields(src_fm)
+    current_date = extract_current_date(src_fm)
     body = strip_callouts(body)
     body, image_caption = strip_leading_image(body)
     body = strip_meta_lines(body)
@@ -486,6 +505,7 @@ def sync_page(src_name, dest_rel):
         render(
             TITLES[src_name], marker_block, body, image_block, infobox_lines, submap_block,
             alias_slugs=RENAMES.get(dest_rel), image_caption=image_caption,
+            current_date=current_date,
         )
     )
     return dest

@@ -1,5 +1,5 @@
 ---
-title: Hesper
+title: Hesper Arcturus
 aliases:
   - npcs/hesper
 kind: person

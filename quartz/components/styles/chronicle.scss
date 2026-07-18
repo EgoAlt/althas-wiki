@@ -1,0 +1,187 @@
+@use "../../styles/variables.scss" as *;
+
+// Chronicle month-grid navigation layer. Purely presentational shell; behavior
+// is in scripts/chronicle.inline.ts. Colors go through the Quartz theme tokens
+// (color-mix over var(--light), the page background in both themes) so weekend
+// / prayer / event / today read correctly in light and dark without a separate
+// dark override block.
+.chronicle-calendar {
+  margin: 1rem 0 2rem 0;
+  max-width: 40rem;
+
+  .chronicle-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .chronicle-month-label {
+    font-weight: $semiBoldWeight;
+    color: var(--dark);
+    flex: 1 1 auto;
+    text-align: center;
+  }
+
+  // Matches the site button look (see dice.scss .dice-btn).
+  .chronicle-btn {
+    font-family: inherit;
+    font-size: 0.9rem;
+    color: var(--dark);
+    background-color: var(--light);
+    border: 1px solid var(--lightgray);
+    border-radius: 5px;
+    padding: 0.3rem 0.7rem;
+    cursor: pointer;
+    transition:
+      background-color 0.1s ease,
+      border-color 0.1s ease;
+
+    &:hover:not(:disabled) {
+      background-color: var(--highlight);
+      border-color: var(--gray);
+    }
+
+    &:disabled {
+      opacity: 0.4;
+      cursor: default;
+    }
+  }
+
+  .chronicle-today-btn {
+    flex: 0 0 auto;
+  }
+
+  // The wrapper scrolls on narrow viewports, never the page body.
+  .chronicle-grid-wrap {
+    overflow-x: auto;
+  }
+
+  .chronicle-grid {
+    display: grid;
+    grid-template-columns: repeat(11, minmax(2rem, 1fr));
+    gap: 3px;
+    min-width: 24rem; // keeps cells legible; wrapper scrolls below this
+
+    &.chronicle-grid-holidays {
+      grid-template-columns: repeat(3, minmax(2rem, 6rem));
+      min-width: 0;
+    }
+  }
+
+  .chronicle-colhead {
+    text-align: center;
+    font-size: 0.7rem;
+    color: var(--gray);
+    padding-bottom: 0.15rem;
+  }
+
+  .chronicle-day {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    color: var(--dark);
+    background-color: var(--light);
+    border: 1px solid var(--lightgray);
+    border-radius: 4px;
+    // Reset button chrome for the event cells (rendered as <button>).
+    font-family: inherit;
+    padding: 0;
+    appearance: none;
+  }
+
+  // Week-role tints. Work days stay plain; weekend and prayer get subtle,
+  // distinct washes; holidays get their own.
+  .role-weekend {
+    background-color: color-mix(in srgb, var(--secondary) 12%, var(--light));
+  }
+  .role-prayer {
+    background-color: color-mix(in srgb, var(--tertiary) 16%, var(--light));
+  }
+  .role-holiday {
+    background-color: color-mix(in srgb, var(--tertiary) 22%, var(--light));
+  }
+  .chronicle-colhead.role-weekend {
+    background: none;
+    color: color-mix(in srgb, var(--secondary) 70%, var(--gray));
+  }
+  .chronicle-colhead.role-prayer {
+    background: none;
+    color: color-mix(in srgb, var(--tertiary) 75%, var(--gray));
+  }
+
+  // A recorded day: clickable, dot marker, hover lift.
+  .chronicle-day.has-event {
+    cursor: pointer;
+    font-weight: $semiBoldWeight;
+    border-color: color-mix(in srgb, var(--secondary) 45%, var(--lightgray));
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 3px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: var(--secondary);
+    }
+
+    &:hover {
+      background-color: var(--highlight);
+      border-color: var(--gray);
+    }
+  }
+
+  // The current campaign day.
+  .chronicle-day.is-today {
+    outline: 2px solid var(--secondary);
+    outline-offset: -1px;
+  }
+
+  .chronicle-legend {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1rem;
+    margin: 0.75rem 0 0 0;
+    padding: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.8rem;
+      color: var(--darkgray);
+    }
+  }
+
+  .chronicle-swatch {
+    display: inline-block;
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 3px;
+    border: 1px solid var(--lightgray);
+    flex: 0 0 auto;
+
+    &.swatch-weekend {
+      background-color: color-mix(in srgb, var(--secondary) 12%, var(--light));
+    }
+    &.swatch-prayer {
+      background-color: color-mix(in srgb, var(--tertiary) 16%, var(--light));
+    }
+    &.swatch-event {
+      background-color: var(--secondary);
+      border-color: var(--secondary);
+    }
+    &.swatch-today {
+      background-color: var(--light);
+      outline: 2px solid var(--secondary);
+      outline-offset: -3px;
+    }
+  }
+}

@@ -56,16 +56,23 @@
     }
   }
 
-  // Arrowhead tints to match the edge it terminates. context-stroke picks up
-  // the parent line's stroke in browsers that support it; older engines fall
-  // back to a neutral gray.
-  .dg-arrowhead {
-    fill: var(--gray);
-  }
-  @supports (fill: context-stroke) {
-    .dg-arrowhead {
-      fill: context-stroke;
-    }
+  // Relationship label riding on each connecting line. The paint-order:stroke
+  // trick paints a --light (page-background) halo behind the glyphs so the text
+  // stays legible where it crosses a colored edge. font-size is set inline by
+  // the script (responsive to the rendered width); the value here is only a
+  // pre-hydration fallback.
+  .dg-edge-label {
+    fill: var(--dark);
+    font-size: 0.7rem;
+    font-family: var(--bodyFont);
+    text-anchor: middle;
+    dominant-baseline: middle;
+    pointer-events: none;
+    paint-order: stroke;
+    stroke: var(--light);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    transition: opacity 0.2s ease;
   }
 
   .dg-node {

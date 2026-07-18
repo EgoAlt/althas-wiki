@@ -55,6 +55,13 @@ export const defaultContentPageLayout: PageLayout = {
       component: Component.DiplomacyGraph(),
       condition: (page) => page.fileData.slug === "setting/diplomacy",
     }),
+    // ChronicleCalendar renders only on the Chronicle page (slug check): the
+    // month-grid navigation layer over the page's own rendered date sections.
+    // See the campaign's specs/althas-chronicle-calendar-design.md in Ontos.
+    Component.ConditionalRender({
+      component: Component.ChronicleCalendar(),
+      condition: (page) => page.fileData.slug === "setting/chronicle",
+    }),
   ],
   left: [
     Component.PageTitle(),
