@@ -1,7 +1,10 @@
 ---
 title: Hesper
+aliases:
+  - npcs/hesper
 kind: person
 role: "Archmage of the Triumvirate of [[polaris|Polaris]]"
+house: "House Arcturus"
 image: hesper.jpg
 ---
 
@@ -10,6 +13,8 @@ image: hesper.jpg
 ---
 
 An older mage who held a seat on Polaris's ruling Triumvirate of Archmages, though her own reputation in the city leaned more eccentric than powerful: she was known for a quiet, unambitious lifestyle and a habit of collecting odd things purely to study them, rather than for anything resembling political weight. She believed magic was everywhere, for anyone with the eyes (or, as it turned out, the hands) to see it.
+
+She came from House Arcturus, known for its Miracle of Firmament, letting its bearer draw seals directly out of open air, as if the sky itself were parchment, rather than needing any surface to draw on. Hesper was born with it. Her son was not.
 
 She had a son, Izar, a mage who periodically challenged her for her Triumvirate seat. Polaris society read these duels as something close to a mercy Izar extended an "old stubborn woman," since she always won and always refused to kill him.
 
@@ -20,4 +25,4 @@ She was killed by a giant during her final duel with Izar. News of an archmage o
 ## Related pages
 
 - [[polaris|Polaris]]
-- [[izar|Izar]]
+- [[izar_arcturus|Izar]]
