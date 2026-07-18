@@ -478,6 +478,28 @@ def render(
     return "\n".join(fm_lines) + "\n\n" + body
 
 
+def carry_forward_source(dest, dest_rel):
+    """Return the file to read carried-forward presentation blocks (`image:`,
+    `marker:`, `submap:`) from, or None if there's nothing to carry.
+
+    Normally that's the destination itself (the re-sync case). But those blocks
+    live ONLY in content/, never in the Ontos source (rule 26), so a page
+    *rename* would silently drop them: the new destination path has no prior
+    file to carry from. In that case fall back to the most-recent prior
+    destination recorded in RENAMES, whose content/ file still holds the data.
+    RENAMES lists old slugs oldest-first (newly-old slugs are appended), so the
+    most-recent prior destination is the last surviving entry; walk from newest
+    to oldest and take the first that still exists on disk. Fixed 2026-07-18
+    after the House Arcturus rename dropped both portraits twice."""
+    if dest.exists():
+        return dest
+    for old_slug in reversed(RENAMES.get(dest_rel, [])):
+        candidate = CONTENT_DIR / (old_slug + ".md")
+        if candidate.exists():
+            return candidate
+    return None
+
+
 def sync_page(src_name, dest_rel):
     src = ONTOS_SETTING / src_name
     text = src.read_text()
@@ -494,9 +516,9 @@ def sync_page(src_name, dest_rel):
     marker_block = None
     submap_block = None
     image_block = None
-    if dest.exists():
-        existing_text = dest.read_text()
-        existing_fm, _ = split_frontmatter(existing_text)
+    carry_src = carry_forward_source(dest, dest_rel)
+    if carry_src is not None:
+        existing_fm, _ = split_frontmatter(carry_src.read_text())
         marker_block = extract_marker_block(existing_fm)
         submap_block = extract_submap_block(existing_fm)
         image_block = extract_image_block(existing_fm)

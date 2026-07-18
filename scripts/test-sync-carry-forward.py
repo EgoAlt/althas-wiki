@@ -159,10 +159,126 @@ def test_renames_table_is_consistent_with_page_map():
             assert old != current_slug, f"{dest} aliases its own current path"
 
 
+def test_carry_forward_source_prefers_existing_destination(tmp_paths):
+    """When the destination already exists, that file is the carry-forward
+    source (the normal re-sync case)."""
+    content_dir = tmp_paths
+    dest_rel = "npcs/hesper-arcturus.md"
+    dest = content_dir / dest_rel
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    dest.write_text(EXISTING_DEST)
+    assert sync.carry_forward_source(dest, dest_rel) == dest
+
+
+def test_carry_forward_source_falls_back_to_most_recent_rename(tmp_paths):
+    """The bug fix: when the destination is brand new (a page rename), fall
+    back to the most-recent prior destination in RENAMES, whose content/ file
+    still holds the image:/marker:/submap: presentation data. Most-recent =
+    last element of the RENAMES list (newly-old slugs are appended)."""
+    content_dir = tmp_paths
+    dest_rel = "npcs/hesper-arcturus.md"
+    dest = content_dir / dest_rel  # does NOT exist yet
+    # Two prior destinations; only the most-recent one holds the real data.
+    old_original = content_dir / "npcs/hesper.md"
+    old_recent = content_dir / "npcs/hesper_arcturus.md"
+    for p in (old_original, old_recent):
+        p.parent.mkdir(parents=True, exist_ok=True)
+    old_original.write_text("---\ntitle: Hesper\nimage: stale-original.jpg\n---\n\nBody.\n")
+    old_recent.write_text(EXISTING_DEST)
+    saved = (sync.RENAMES, sync.CONTENT_DIR)
+    try:
+        sync.CONTENT_DIR = content_dir
+        sync.RENAMES = {"npcs/hesper-arcturus.md": ["npcs/hesper", "npcs/hesper_arcturus"]}
+        src = sync.carry_forward_source(dest, dest_rel)
+    finally:
+        (sync.RENAMES, sync.CONTENT_DIR) = saved
+    assert src == old_recent, "did not pick the most-recent prior destination"
+    fm, _ = sync.split_frontmatter(src.read_text())
+    assert sync.extract_image_block(fm) == IMAGE_LINE
+
+
+def test_carry_forward_source_none_when_new_and_no_rename(tmp_paths):
+    """A genuinely new page with no RENAMES entry has nothing to carry from."""
+    content_dir = tmp_paths
+    dest_rel = "npcs/brand-new.md"
+    dest = content_dir / dest_rel
+    saved = (sync.RENAMES, sync.CONTENT_DIR)
+    try:
+        sync.CONTENT_DIR = content_dir
+        sync.RENAMES = {}
+        assert sync.carry_forward_source(dest, dest_rel) is None
+    finally:
+        (sync.RENAMES, sync.CONTENT_DIR) = saved
+
+
+def test_carry_forward_source_skips_missing_old_destinations(tmp_paths):
+    """If the most-recent prior destination file was already deleted, fall
+    through to an older one that still exists rather than returning it blind."""
+    content_dir = tmp_paths
+    dest_rel = "npcs/hesper-arcturus.md"
+    dest = content_dir / dest_rel
+    old_original = content_dir / "npcs/hesper.md"
+    old_original.parent.mkdir(parents=True, exist_ok=True)
+    old_original.write_text(EXISTING_DEST)  # only the oldest survives
+    saved = (sync.RENAMES, sync.CONTENT_DIR)
+    try:
+        sync.CONTENT_DIR = content_dir
+        sync.RENAMES = {"npcs/hesper-arcturus.md": ["npcs/hesper", "npcs/hesper_arcturus"]}
+        src = sync.carry_forward_source(dest, dest_rel)
+    finally:
+        (sync.RENAMES, sync.CONTENT_DIR) = saved
+    assert src == old_original
+
+
+def test_sync_page_carries_image_across_a_rename(tmp_paths):
+    """End-to-end regression for the real 2026-07-18 bug: rename the source
+    file, point PAGE_MAP/TITLES/RENAMES at the new slug, and confirm sync_page
+    writes the new destination WITH the portrait recovered from the old one."""
+    root = tmp_paths
+    ontos = root / "ontos-setting"
+    content = root / "content"
+    ontos.mkdir(parents=True, exist_ok=True)
+    (content / "npcs").mkdir(parents=True, exist_ok=True)
+    # The old published page already carries the portrait (content/-only data).
+    (content / "npcs/izar_arcturus.md").write_text(
+        "---\ntitle: Izar Arcturus\nimage: izar.png\nkind: person\n---\n\nOld body.\n"
+    )
+    # The renamed Ontos source (no image: in source, per rule 26).
+    (ontos / "izar-arcturus.md").write_text(
+        "---\ntitle: Izar Arcturus\nkind: person\n---\n\nNew body from the source.\n"
+    )
+    saved = (sync.ONTOS_SETTING, sync.CONTENT_DIR, sync.PAGE_MAP, sync.TITLES, sync.RENAMES)
+    try:
+        sync.ONTOS_SETTING = ontos
+        sync.CONTENT_DIR = content
+        sync.PAGE_MAP = {"izar-arcturus.md": "npcs/izar-arcturus.md"}
+        sync.TITLES = {"izar-arcturus.md": "Izar Arcturus"}
+        sync.RENAMES = {"npcs/izar-arcturus.md": ["npcs/izar", "npcs/izar_arcturus"]}
+        dest = sync.sync_page("izar-arcturus.md", "npcs/izar-arcturus.md")
+    finally:
+        (sync.ONTOS_SETTING, sync.CONTENT_DIR, sync.PAGE_MAP, sync.TITLES, sync.RENAMES) = saved
+    fm, body = sync.split_frontmatter(dest.read_text())
+    assert sync.extract_image_block(fm) == "image: izar.png", "portrait dropped across rename"
+    assert "New body from the source." in body, "new source body not synced"
+
+
 def main():
+    import inspect
+    import shutil
+    import tempfile
+
     tests = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
     for t in tests:
-        t()
+        # Tests that declare a `tmp_paths` parameter get a fresh temp dir,
+        # cleaned up after; the rest are pure-fixture tests that take nothing.
+        if "tmp_paths" in inspect.signature(t).parameters:
+            tmp = Path(tempfile.mkdtemp(prefix="sync-carry-test-"))
+            try:
+                t(tmp)
+            finally:
+                shutil.rmtree(tmp, ignore_errors=True)
+        else:
+            t()
         print(f"  PASS {t.__name__}")
     print(f"{len(tests)} test(s) passed.")
     return 0
