@@ -237,7 +237,8 @@ function setupDiplomacyGraph() {
       }),
   )
 
-  // Hover/tap: caption + dim non-adjacent.
+  // Hover/tap: caption + dim non-adjacent + reveal the focused node's edge
+  // labels (labels are hidden at rest, see the .shown class).
   const adjacent = (n: GNode, e: GEdge) => e.source === n || e.target === n
   const edgeText = (e: GEdge) =>
     `${(e.source as GNode).name} ${e.mutual ? "and" : "to"} ${(e.target as GNode).name}: ${e.label}`
@@ -248,7 +249,9 @@ function setupDiplomacyGraph() {
         !!d && n !== d && !edges.some((e) => adjacent(d, e) && (e.source === n || e.target === n)),
     )
     link.classed("dimmed", (e) => !!d && !adjacent(d, e))
-    edgeLabel.classed("dimmed", (e) => !!d && !adjacent(d, e))
+    // Show labels only for the hovered node's own connections; hide all when
+    // nothing is focused. Keeps the graph uncluttered at rest.
+    edgeLabel.classed("shown", (e) => !!d && adjacent(d, e))
     caption.textContent = d
       ? edges
           .filter((e) => adjacent(d, e))
@@ -260,10 +263,12 @@ function setupDiplomacyGraph() {
   link
     .on("mouseenter", (_ev, e) => {
       caption.textContent = edgeText(e)
+      edgeLabel.classed("shown", (x) => x === e)
     })
     .on("mouseleave", () => focusNode(null))
     .on("click", (_ev, e) => {
       caption.textContent = edgeText(e)
+      edgeLabel.classed("shown", (x) => x === e)
     })
 
   // Legend from types present in the public data.
