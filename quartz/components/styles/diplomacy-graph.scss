@@ -61,6 +61,19 @@
   // stays legible where it crosses a colored edge. font-size is set inline by
   // the script (responsive to the rendered width); the value here is only a
   // pre-hydration fallback.
+  // Arrowhead tints to match the edge it terminates. context-stroke picks up
+  // the referencing line's stroke in browsers that support it; older engines
+  // fall back to a neutral gray. One shared marker serves both ends (single
+  // arrow on directed edges, double on mutual).
+  .dg-arrowhead {
+    fill: var(--gray);
+  }
+  @supports (fill: context-stroke) {
+    .dg-arrowhead {
+      fill: context-stroke;
+    }
+  }
+
   // Hover-only: labels are hidden at rest (keeps the busy Voldaen hub legible)
   // and revealed by the script (.shown) for the edges of the hovered/tapped
   // node, or for a directly-hovered edge.

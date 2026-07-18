@@ -112,6 +112,25 @@ function setupDiplomacyGraph() {
     .attr("role", "img")
     .attr("aria-label", "Diplomacy web of Althas")
 
+  // Arrowhead marker. orient="auto-start-reverse" makes the SAME marker point
+  // the right way at both ends: forward (into the target) as marker-end, and
+  // reversed (into the source) as marker-start. Directed edges (->) get an end
+  // arrow only; mutual edges (<->) get arrows at both ends. Direction has to be
+  // shown by the arrows now that the relationship labels are hover-only.
+  svg
+    .append("defs")
+    .append("marker")
+    .attr("id", "dg-arrow")
+    .attr("viewBox", "0 -5 10 10")
+    .attr("refX", 28)
+    .attr("refY", 0)
+    .attr("markerWidth", 7)
+    .attr("markerHeight", 7)
+    .attr("orient", "auto-start-reverse")
+    .append("path")
+    .attr("d", "M0,-5L10,0L0,5")
+    .attr("class", "dg-arrowhead")
+
   const caption = document.createElement("div")
   caption.className = "diplomacy-caption"
   caption.textContent = "Hover or tap a power to focus its connections."
@@ -125,12 +144,14 @@ function setupDiplomacyGraph() {
     .data(edges)
     .join("line")
     .attr("class", (d) => `dg-edge ${typeClass(d.etype)}`)
+    .attr("marker-end", "url(#dg-arrow)")
+    .attr("marker-start", (d) => (d.mutual ? "url(#dg-arrow)" : null))
 
-  // Relationship label sitting on each connecting line (always visible, at the
-  // edge midpoint, kept centered in tick()). A --light halo (paint-order stroke
-  // in the stylesheet) keeps it legible where it crosses a colored edge. Drawn
-  // after the edges so it reads above them; pointer-events:none so it never
-  // steals the edge/node hover and drag handlers.
+  // Relationship label sitting at each edge's midpoint, revealed on hover only
+  // (hidden at rest via the .dg-edge-label opacity in the stylesheet; the
+  // script toggles .shown). A --light halo (paint-order stroke) keeps it legible
+  // where it crosses a colored edge. Drawn after the edges so it reads above
+  // them; pointer-events:none so it never steals the edge/node hover and drag.
   const edgeLabel = svg
     .append("g")
     .attr("class", "dg-edge-labels")

@@ -8,7 +8,7 @@ What's new on the wiki, most recent first.
 
 - **House Arcturus**: [[hesper_arcturus|Hesper]] and her son [[izar_arcturus|Izar]] are now known to belong to House Arcturus, an old Polaris family whose signature Miracle, the Miracle of Firmament, lets its bearer draw [[codex-magic|Codex]] seals straight out of open air, as if the sky itself were parchment.
 - **[[miracles|Miracles]] expanded**: the page now names the publicly known Miracles, the Miracle of Firmament and House Voldis's Miracle of Voldis, and adds a short note on House Arcturus's standing in Polaris.
-- **The [[diplomacy|Diplomacy]] web is cleaner to read**: hover or tap any power to reveal how it ties to the others, and the directional arrows are gone.
+- **The [[diplomacy|Diplomacy]] web is cleaner to read**: hover or tap any power to reveal how it ties to the others. Arrows show which way each tie runs, with double-headed arrows for mutual ones.
 - **Full names**: the archmage [[hesper_arcturus|Hesper Arcturus]] and her son [[izar_arcturus|Izar Arcturus]] now carry their house name in their page titles.
 - **New page, the [[chronicle|Chronicle]]**: a day-by-day record of the campaign with a month grid you can page through. Recorded days are marked and link straight to their entry, the current day is ringed, and the record fills in as the story does, including older days written down once they come to light.
 
