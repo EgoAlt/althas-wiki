@@ -10,9 +10,9 @@ image_caption: "Lael, called the Reborn, the Icon of Shame."
 
 ---
 
-## The hero who returned
+## The Reborn Inquisitor
 
-Lael was one of the Five Heroes who fought and brought down [[the-ophanim|the Ophanim]] at [[hilltop|Hilltop]] in 333-334 VR, alongside the Voldis High Prince [[edrion-voldis|Edrion Voldis]] and Saint Cassio of [[the-holy-see|the Holy See]] (both of whom died) and [[aldric-voldis|Aldric Voldis]] (who survived). Lael fell in the fighting too. He did not stay dead.
+Lael was a high-ranking Inquisitor of [[the-holy-see|the Holy See]] and one of the Five Heroes who fought and brought down [[the-ophanim|the Ophanim]] at [[hilltop|Hilltop]] in 333-334 VR, alongside the Voldis High Prince [[edrion-voldis|Edrion Voldis]] and Saint Cassio (both of whom died) and [[aldric-voldis|Aldric Voldis]] (who survived). Lael fell in the fighting too. He did not stay dead.
 
 His [[miracles|Miracle of Rebirth]] returned his soul to his own body, which the Miracle keeps from ever truly dying. What rose was Lael again, in a form that no longer ages and cannot be laid to rest by any ordinary wound. It is from this that his epithet comes: the Reborn.
 
