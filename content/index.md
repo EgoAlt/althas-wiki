@@ -42,9 +42,9 @@ The continent of Althas once flew under one banner. In the Divine Age, the One A
 
 Over the next several centuries, factional differences within Voldaen grew untenable. With the One Above absent, [[the-holy-see|the Holy See]] asserted its authority as the divine regent of [[hilltop|Hilltop]]. Later, a group of scholars and mages who wished to push the boundaries of arcane knowledge broke off and founded the nation of [[polaris|Polaris]].
 
-In 330 VR, [[the-ophanim|the Ophanim]] landed in central [[hilltop|Hilltop]], instantly rendering much of the nation uninhabitable. As [[the-holy-see|the Holy See]] and its refugees relocated to central Althas, each nation mobilized a force to subdue the Ophanim before its influence could spread further. Seizing the opportunity, the merchant lords of the south declared the trade cities of Hilltop an independent nation, forming the federation of [[armada|Armada]]. Finally, in 331 VR, the Ophanim was brought down by the Five Heroes, including the Voldis High Prince, [[edrion-voldis|Edrion Voldis]], and Saint Cassio of the Holy See, who both perished in the fighting.
+In 333 VR, [[the-ophanim|the Ophanim]] landed in central [[hilltop|Hilltop]], instantly rendering much of the nation uninhabitable. As [[the-holy-see|the Holy See]] and its refugees relocated to central Althas, each nation mobilized a force to subdue the Ophanim before its influence could spread further. Seizing the opportunity, the merchant lords of the south declared the trade cities of Hilltop an independent nation, forming the federation of [[armada|Armada]]. Finally, in 334 VR, the Ophanim was brought down by the Five Heroes, including the Voldis High Prince, [[edrion-voldis|Edrion Voldis]], and Saint Cassio of the Holy See, who both perished in the fighting.
 
-Just fifteen years ago, in 348 VR, during a succession crisis in Voldaen due to the death of the High Prince, groups of workers and anti-monarchists declared independence to establish their own nation, known as [[jesthaen|Jesthaen]]. This bloody revolution consumed the continent, with [[hilltop|Hilltop]] coming to Voldaen's aid while Polaris and Armada supported the Jesthaen rebels. Active combat ended in 358 VR with [[the-holy-see|the Holy See]]'s ratification of the Jesthaen Treaty, but the peace remains tenuous.
+Just fifteen years ago, in 351 VR, a succession crisis in Voldaen boiled over into revolution. The baseborn war-hero [[aldric-voldis|Aldric Voldis]], cast out of the regency by the capital's nobles, led the common people of the south in secession and founded the republic of [[jesthaen|Jesthaen]]. This bloody revolution consumed the continent, with [[hilltop|Hilltop]] coming to Voldaen's aid while Polaris and Armada supported the Jesthaen rebels. Active combat ended in 361 VR with [[the-holy-see|the Holy See]]'s ratification of the Jesthaen Treaty, but the peace remains tenuous.
 
 The emergence of the Jesthaen Republic as a nascent military force has redrawn the lines of power, challenging the Kingdom of Voldaen and the Holy See's traditional authority. But the alliance between Polaris and the upstart nations of Armada and Jesthaen is fragile, and there are many in both Voldaen and Jesthaen with unfinished business from the war. Minor border clashes and trade disputes threaten to boil over. Many believe that war is coming again, it's only a matter of when and how.
 
@@ -52,15 +52,15 @@ The emergence of the Jesthaen Republic as a nascent military force has redrawn t
 
 [[voldaen|Voldaen]] is the oldest nation of Althas, a proud monarchy of ancient bloodlines and inherited splendor. Its kings claim rule not by conquest or law, but by divine descent from the God King of the Divine Age. The House of Voldis are custodians of sacred inheritance for the nation.
 
-In 331 VR, Voldaen lost its High Prince, [[edrion-voldis|Edrion Voldis]], during the battle against [[the-ophanim|the Ophanim]]. Soon after, King [[valthis-voldis|Valthis Voldis]] was assassinated, leaving Edrion's sickly young son, [[orsian-voldis|Orsian Voldis]], to inherit the throne before he was old enough to rule in his own name. The killer is still unknown, though many a drunk in many a tavern has claimed to be the famed Kingslayer.
+In 334 VR, Voldaen lost its High Prince, [[edrion-voldis|Edrion Voldis]], during the battle against [[the-ophanim|the Ophanim]]. Soon after, King [[valthis-voldis|Valthis Voldis]] was assassinated, leaving Edrion's young daughter, [[valis-voldis|Valis Voldis]], the last heir of the direct line before she was old enough to rule. The killer is still unknown, though many a drunk in many a tavern has claimed to be the famed Kingslayer.
 
-In his will, the late High Prince had named his bastard half-brother, [[aldric-voldis|Aldric Voldis]], as regent should their father die before Orsian came of age. As one of the Five Heroes who fought to slay [[the-ophanim|the Ophanim]], Aldric was respected by soldiers and border lords, but distrusted by the capital's oldest noble families, especially after speaking openly of reform.
+In his will, the late High Prince had named his baseborn half-brother, [[aldric-voldis|Aldric Voldis]], as regent for his daughter. As one of the Five Heroes who fought to slay [[the-ophanim|the Ophanim]], Aldric was respected by soldiers and border lords, but the capital's oldest noble families would not accept a bastard's hand on the realm, all the more after he spoke openly of reform.
 
-Within a few years of Orsian's coronation, the capital's most powerful nobles organized a quiet coup. Aldric was stripped of his authority and exiled to the western borders under the pretense of military necessity. In his absence, the young king became little more than a royal puppet, surrounded by a coalition of nobles who ruled in his name.
+Within a few years the capital's most powerful houses organized a quiet coup. Aldric was stripped of the regency and exiled to the western borders under the pretense of military necessity, and the nobles took power themselves, crowning the child Valis and ruling in her name.
 
-Orsian died without heirs in 348 VR. The capital noble houses backed his elder sister, [[valis-voldis|Valis Voldis]], insisting on unbroken succession. The southern nobles answered with a rival claim, calling for the return of the exiled Aldric. What began as a dispute within the House of Voldis spread beyond the royal family: noble factions in the capital formed alliances, while anti-monarchists found common cause with southern nobles, and reformists began asking whether the House of Voldis deserved to survive at all.
+Aldric did not raise a claim to the throne. Baseborn, the son of a common woman, he carried his cause to the neglected south and the borderlands instead, where the council's rule fell hardest. Over years of exile he gathered reformers, anti-monarchists, and the war-weary common folk, until in 351 VR that movement broke into open revolution, seeking not to seize the crown but to abolish it.
 
-By the end of 348 VR, the succession crisis had become a revolution. Out of that fracture came [[jesthaen|Jesthaen]]: first a rebellion, then a republic.
+Out of that fracture came [[jesthaen|Jesthaen]]: first a rebellion, then a republic, the first nation of Althas to reject the divine right of the Voldis line. Voldaen held its diminished half; Queen Valis wears its crown still, a figurehead for the council that rules beneath her.
 
 ## Communities
 
@@ -121,7 +121,7 @@ All communities are available across nations, but some have unique aspects withi
 
 ## Concepts
 
-- [[the-ophanim|The Ophanim]]: the angelic being that devastated Hilltop in 330 VR
+- [[the-ophanim|The Ophanim]]: the angelic being that devastated Hilltop in 333 VR
 
 - [[the-one-above|The One Above]]: still alive but has left Althas
 
@@ -146,5 +146,7 @@ All communities are available across nations, but some have unique aspects withi
 ## History (Voldaen)
 
 - [[house-voldis|House Voldis]]: the royal dynasty, with the family tree from the God King to Valis
-- [[edrion-voldis|Edrion Voldis]], [[valthis-voldis|Valthis Voldis]], [[orsian-voldis|Orsian Voldis]], [[aldric-voldis|Aldric Voldis]], [[valis-voldis|Valis Voldis]]: the Voldis Succession Crisis cast
+- [[the-god-king|The God King]], [[the-mad-king|The Mad King]], [[the-blessed-king|The Blessed King]]: the founding king and the two ancient reigns the histories remember
+- [[valthis-voldis|Valthis Voldis]], [[edrion-voldis|Edrion Voldis]], [[valis-voldis|Valis Voldis]], [[aldric-voldis|Aldric Voldis]]: the Voldis Succession Crisis cast
+- [[jestha|Jestha]]: the common woman Aldric's Republic of Jesthaen is named for
 - [[kingslayer|The Kingslayer]]: unidentified killer of Valthis Voldis, tavern legend in Voldaen

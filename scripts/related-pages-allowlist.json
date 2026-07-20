@@ -26,7 +26,6 @@
     "magic/miracles.md": {
       "edrion-voldis": "public two-hop: miracles.md publicly names House Voldis as its practitioners; this royal's public infobox declares house: House Voldis. gm-only detail (Usurpation, Edrion's Phoenix immortality) stays hidden.",
       "valthis-voldis": "public two-hop: House Voldis publicly holds Miracles; this royal is publicly House Voldis. The Kingslayer/assassination tie stays gm-only.",
-      "orsian-voldis": "public two-hop: House Voldis publicly holds Miracles; this royal is publicly House Voldis.",
       "valis-voldis": "public two-hop: House Voldis publicly holds Miracles; this royal is publicly House Voldis.",
       "aldric-voldis": "public two-hop: House Voldis publicly holds Miracles; this royal is publicly House Voldis."
     },
@@ -38,9 +37,6 @@
     },
     "npcs/valthis-voldis.md": {
       "miracles": "public two-hop: House Voldis publicly holds Miracles; Valthis is publicly House Voldis. The assassination tie stays gm-only."
-    },
-    "npcs/orsian-voldis.md": {
-      "miracles": "public two-hop: House Voldis publicly holds Miracles; Orsian is publicly House Voldis."
     },
     "npcs/valis-voldis.md": {
       "miracles": "public two-hop: House Voldis publicly holds Miracles; Valis is publicly House Voldis."

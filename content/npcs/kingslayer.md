@@ -8,7 +8,7 @@ role: "Assassin of King [[valthis-voldis|Valthis Voldis]]"
 
 ---
 
-An unidentified assassin, still called "the Kingslayer" in Voldaen taverns, who killed King [[valthis-voldis|Valthis Voldis]] in 331 VR. Voldaen has never identified them.
+An unidentified assassin, still called "the Kingslayer" in Voldaen taverns, who killed King [[valthis-voldis|Valthis Voldis]] in 334 VR. Voldaen has never identified them.
 
 ## Related pages
 

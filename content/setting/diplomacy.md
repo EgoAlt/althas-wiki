@@ -6,7 +6,7 @@ title: Diplomacy
 
 ---
 
-The decade of warfare that the Jesthaen Treaty ended in 358 VR left the continent divided and the peace uneasy. This page lays out where the five nations and their governing powers stand toward one another. The web below can be dragged into new arrangements, and each power links to its own page.
+The decade of warfare that the Jesthaen Treaty ended in 361 VR left the continent divided and the peace uneasy. This page lays out where the five nations and their governing powers stand toward one another. The web below can be dragged into new arrangements, and each power links to its own page.
 
 ```diplomacy-graph
 # Nodes: slug | display name | kind | site page path
@@ -38,7 +38,7 @@ edge jesthaen <-> voldaen | uneasy | revolution, then a tenuous peace
 
 ## The two sides of the war
 
-The fighting that the Jesthaen Treaty ended had two sides. [[voldaen|Voldaen]] held the old monarchy, [[hilltop|Hilltop]] sent aid to it, and [[the-holy-see|the Holy See]] stood with it as well. Against them stood [[jesthaen|Jesthaen]], the republic that had broken away from Voldaen during the Voldis Succession Crisis, with [[polaris|Polaris]] and [[armada|Armada]] backing the rebels. The treaty stopped active combat in 358 VR without resolving what had caused it, and the peace between Voldaen and Jesthaen remains tenuous.
+The fighting that the Jesthaen Treaty ended had two sides. [[voldaen|Voldaen]] held the old monarchy, [[hilltop|Hilltop]] sent aid to it, and [[the-holy-see|the Holy See]] stood with it as well. Against them stood [[jesthaen|Jesthaen]], the republic that had broken away from Voldaen during the Voldis Succession Crisis, with [[polaris|Polaris]] and [[armada|Armada]] backing the rebels. The treaty stopped active combat in 361 VR without resolving what had caused it, and the peace between Voldaen and Jesthaen remains tenuous.
 
 ## Rivalries and alliances
 

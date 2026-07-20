@@ -18,36 +18,49 @@ The House of Voldis has ruled [[voldaen|Voldaen]] since the nation's founding in
 
 ```mermaid
 graph TD
-    GK["The God King<br/>founder of Voldaen, Divine Age"]
-    GAP["Unnamed generations"]
-    VALTHIS["Valthis Voldis<br/>King, assassinated 331 VR"]
-    EDRION["Edrion Voldis<br/>High Prince, died 331 VR"]
-    ALDRIC["Aldric Voldis<br/>bastard, regent, exiled"]
-    ORSIAN["Orsian Voldis<br/>child-king, died heirless 348 VR"]
-    VALIS["Valis Voldis<br/>rules Voldaen today"]
-    GK -.->|claimed descent| GAP
-    GAP -.-> VALTHIS
+    GK["The God King<br/>founder of Voldaen, r. 0-31 VR"]
+    K1["A king of the line<br/>r. 31-63 VR"]
+    K2["A king of the line<br/>r. 63-93 VR"]
+    MAD["The Mad King<br/>r. 93-117 VR<br/>proclaimed himself the One Above returned"]
+    BLESSED["The Blessed King<br/>r. 117-149 VR<br/>ended the war, Hilltop wins independence"]
+    K3["A king of the line<br/>r. 149-178 VR"]
+    K4["A king of the line<br/>r. 178-209 VR"]
+    K5["A king of the line<br/>r. 209-241 VR"]
+    K6["A king of the line<br/>r. 241-272 VR<br/>Polaris secedes"]
+    K7["A king of the line<br/>r. 272-302 VR"]
+    VALTHIS["Valthis Voldis<br/>King, assassinated 334 VR"]
+    EDRION["Edrion Voldis<br/>High Prince, died 334 VR"]
+    ALDRIC["Aldric Voldis<br/>baseborn; founds the Republic of Jesthaen"]
+    VALIS["Valis Voldis<br/>Queen, reigns as the council's figurehead"]
+    GK --> K1 --> K2 --> MAD --> BLESSED --> K3 --> K4 --> K5 --> K6 --> K7 --> VALTHIS
     VALTHIS --> EDRION
-    VALTHIS --> ALDRIC
-    EDRION --> ORSIAN
+    VALTHIS -.->|baseborn| ALDRIC
     EDRION --> VALIS
+    click GK "../npcs/the-god-king" "The God King"
+    click MAD "../npcs/the-mad-king" "The Mad King"
+    click BLESSED "../npcs/the-blessed-king" "The Blessed King"
     click VALTHIS "../npcs/valthis-voldis" "Valthis Voldis"
     click EDRION "../npcs/edrion-voldis" "Edrion Voldis"
     click ALDRIC "../npcs/aldric-voldis" "Aldric Voldis"
-    click ORSIAN "../npcs/orsian-voldis" "Orsian Voldis"
     click VALIS "../npcs/valis-voldis" "Valis Voldis"
 ```
 
 > [!note] Reading the tree
-> The dashed line marks the house's own claim of divine descent, rendered here exactly as the house presents it. No public record names the generations between the God King and [[valthis-voldis|Valthis Voldis]]; the gap is part of the historical record, not an omission of this page.
+> House Voldis rules by claimed divine descent from the God King, rendered here as the house presents it. The individual names of the deep dynasty are largely lost to record, marked here only as kings of the line, save the two reigns the histories could not forget: the Mad King and the Blessed King. The named line resumes with [[valthis-voldis|Valthis Voldis]]. The dashed line marks [[aldric-voldis|Aldric]]'s baseborn descent, acknowledged but never legitimized.
+
+## The ancient line
+
+Voldaen's crown has passed down the House of Voldis since the God King founded the nation at the close of the Divine Age. Most of that long line is remembered only as a succession of kings; two reigns the histories could not forget.
+
+The first is the Mad King, who proclaimed himself the One Above returned to Althas. The Holy See named the claim heresy, and the realm broke into civil war between crown and church. The war ended under his successor, the Blessed King, who put down the Mad King, his own father, and denounced him before the faithful. Out of that settlement Hilltop, long the Holy See's own seat, won its full independence from the Voldis crown. Generations later, the scholars and mages of the north broke from Voldaen in their turn to found [[polaris|Polaris]].
 
 ## The succession crisis
 
-The modern line's story is the founding wound of the campaign's present day. In 331 VR the High Prince, [[edrion-voldis|Edrion Voldis]], died fighting the Ophanim as one of the Five Heroes. King [[valthis-voldis|Valthis Voldis]] was assassinated soon after by a killer Voldaen has never identified, remembered only as [[kingslayer|the Kingslayer]]. The crown passed to Edrion's sickly young son, [[orsian-voldis|Orsian Voldis]], before he was old enough to rule in his own name.
+The modern line's story is the founding wound of the campaign's present day. In 334 VR the High Prince, [[edrion-voldis|Edrion Voldis]], died fighting the Ophanim as one of the Five Heroes. King [[valthis-voldis|Valthis Voldis]] was assassinated soon after by a killer Voldaen has never identified, remembered only as [[kingslayer|the Kingslayer]]. Both deaths fell within a year, leaving Edrion's young daughter, [[valis-voldis|Valis Voldis]], the last heir of the direct line before she was old enough to rule.
 
-Edrion's will had named his bastard half-brother, [[aldric-voldis|Aldric Voldis]], regent for exactly this circumstance. Within a few years the capital's oldest noble families staged a quiet coup, stripped Aldric of his authority, and exiled him to the western borders. Orsian ruled as their puppet until he died heirless in 348 VR.
+Edrion's will had named his baseborn half-brother, [[aldric-voldis|Aldric Voldis]], her regent. The capital's oldest noble families would not accept a bastard's hand on the realm: they stripped him of the regency, exiled him to the western borders, and took power themselves, ruling in the child-queen's name. Aldric did not contest the throne. He carried his cause to the common people of the south instead, and over long years of exile built the movement that broke into revolution in 351 VR and founded the [[jesthaen|Republic of Jesthaen]], named for his mother, [[jestha|Jestha]].
 
-The capital houses backed his elder sister, [[valis-voldis|Valis Voldis]], insisting on unbroken succession, while the southern nobles answered with a rival claim for Aldric's return. The dispute spread far beyond the family, and out of that fracture came the revolution that founded [[jesthaen|Jesthaen]]. Valis rules Voldaen in the aftermath. See [[index|Althas]] for the full telling.
+Voldaen held, diminished, its southern half lost. Queen [[valis-voldis|Valis]] wears the crown to this day, though the council of houses that exiled Aldric governs beneath it. See [[index|Althas]] for the full telling.
 
 ## Related pages
 
@@ -56,8 +69,9 @@ The capital houses backed his elder sister, [[valis-voldis|Valis Voldis]], insis
 - [[valthis-voldis|Valthis Voldis]]
 - [[edrion-voldis|Edrion Voldis]]
 - [[aldric-voldis|Aldric Voldis]]
-- [[orsian-voldis|Orsian Voldis]]
 - [[valis-voldis|Valis Voldis]]
+- [[jestha|Jestha]]
 - [[jesthaen|Jesthaen]]
 - [[kingslayer|The Kingslayer]]
 - [[miracles|Miracles]]
+- [[polaris|Polaris]]
