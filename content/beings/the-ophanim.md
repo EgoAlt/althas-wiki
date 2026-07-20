@@ -13,7 +13,15 @@ image_caption: "An artist's rendering, not a likeness. The Ophanim wore no fixed
 
 ---
 
-In 333 VR, the Ophanim landed in central Hilltop, instantly rendering much of the region uninhabitable. [[the-holy-see|The Holy See]] and its refugees relocated to central Althas, and each of the five nations mobilized a force to bring it down before its influence spread further. Seizing the moment, the merchant lords of the south declared the trade cities of Hilltop an independent nation: [[armada|Armada]]. In 334 VR, the Ophanim was brought down by the Five Heroes, among them [[edrion-voldis|Edrion Voldis]] of [[voldaen|Voldaen]] and Saint Cassio of the Holy See, both of whom perished in the fighting; [[aldric-voldis|Aldric Voldis]] fought and survived.
+In 333 VR, the Ophanim landed in central Hilltop, instantly rendering much of the region uninhabitable. [[the-holy-see|The Holy See]] and its refugees relocated to central Althas, and each of the five nations mobilized a force to bring it down before its influence spread further. Seizing the moment, the merchant lords of the south declared the trade cities of Hilltop an independent nation: [[armada|Armada]]. In 334 VR, the Ophanim was brought down by the Five Heroes, among them [[edrion-voldis|Edrion Voldis]] of [[voldaen|Voldaen]] and Saint Cassio of the Holy See, both of whom perished in the fighting; [[aldric-voldis|Aldric Voldis]] fought and survived, and [[lael|Lael]], called the Reborn, fell in the battle and rose again through his Miracle of Rebirth.
+
+## What scripture says
+
+Holy scripture names the Ophanim a herald: a defender of [[the-one-above|the One Above]] foretold to descend when [[the-ones-below|the Ones Below]] strain the seal that holds them, come to lead the fight and to herald the One Above's own return. The [[the-holy-see|Holy See's]] Parish of Orthodoxy teaches that mortal eyes should be covered before such an angel, holding blindness as reverence and fear as humility. That the Ophanim came in 333 VR and the One Above did not return with it has troubled the faithful ever since. Why the Ophanim turned on Althas at all, no one agrees: there are as many readings of its coming as there are living souls on the continent, from the penitent to the apocalyptic, some far more extreme than others.
+
+## The OphDreams
+
+Those who looked upon the Ophanim while it still lived are not free of it. Each night they share a single vision, the same for every one of them: the OphDreams, cryptic and wordless, showing nothing but ruin, the death and destruction of whatever the dreamer holds most dear. The vision is never quite the same twice, and no waking soul has yet made sense of it.
 
 ## Related pages
 

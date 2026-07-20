@@ -34,3 +34,4 @@ Polaris's prosperity was built on [[giants|Giant]] labor, yet in the modern mago
 - [[hesper-arcturus|Hesper]]
 - [[giants|Giants]]
 - [[diplomacy|Diplomacy]]
+- [[the-polaris-secession|The Polaris Secession]]
