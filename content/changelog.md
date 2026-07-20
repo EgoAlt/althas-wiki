@@ -10,6 +10,7 @@ What's new on the wiki, most recent first.
 - **New art**: portraits for the [[the-god-king|God King]], [[the-mad-king|the Mad King]], [[the-blessed-king|the Blessed King]], and Queen [[valis-voldis|Valis]], plus a new portrait for [[edrion-voldis|Edrion Voldis]].
 - **The Voldis Succession Crisis, retold**: [[aldric-voldis|Aldric Voldis]], the baseborn war-hero spurned by the capital's noble houses, is now the founder of the [[jesthaen|Republic of Jesthaen]], the nation he raised for the common people and named for his mother, [[jestha|Jestha]] (new page). [[valis-voldis|Valis Voldis]] reigns over a diminished [[voldaen|Voldaen]] as the noble council's crowned queen.
 - **The histories have been re-dated**: the timeline now places the Ophanim's arrival at 333 VR and the present day at 366 VR, with every dated page updated to match.
+- **More ancient history on the [[timeline|Timeline]]**: the Mad King's civil war (93-117 VR) and the founding of [[polaris|Polaris]], which broke away from [[voldaen|Voldaen]] by treaty around 241 VR rather than by war, now sit on the timeline alongside the modern events, with fuller tellings on [[voldaen|Voldaen]] and in the home-page history. (Polaris's origin is corrected too: it broke from Voldaen, not Hilltop.)
 
 ## 2026-07-18
 

@@ -40,7 +40,7 @@ A Song of Ice and Fire, Anúna, Attack on Titan, Berserk, Blasphemous, Castlevan
 
 The continent of Althas once flew under one banner. In the Divine Age, the One Above protected their mortal creations, clashing with the primordial powers of chaos, the Ones Below, and striking them down. With victory secured, the people of Althas crowned their first God King and founded the nation of [[voldaen|Voldaen]]. Meanwhile, the One Above established their seat in what is now known as [[hilltop|Hilltop]], but departed soon after for unknown reasons.
 
-Over the next several centuries, factional differences within Voldaen grew untenable. With the One Above absent, [[the-holy-see|the Holy See]] asserted its authority as the divine regent of [[hilltop|Hilltop]]. Later, a group of scholars and mages who wished to push the boundaries of arcane knowledge broke off and founded the nation of [[polaris|Polaris]].
+Over the next several centuries, factional differences within Voldaen grew untenable. With the One Above absent, [[the-holy-see|the Holy See]] asserted its authority as the divine regent of [[hilltop|Hilltop]]. The reign remembered as the Mad King's broke crown and church into open civil war; it ended only under his successor, the Blessed King, and out of that settlement Hilltop won full independence from the Voldis crown. Later, a group of scholars and mages who wished to push the boundaries of arcane knowledge broke away from Voldaen and founded the nation of [[polaris|Polaris]].
 
 In 333 VR, [[the-ophanim|the Ophanim]] landed in central [[hilltop|Hilltop]], instantly rendering much of the nation uninhabitable. As [[the-holy-see|the Holy See]] and its refugees relocated to central Althas, each nation mobilized a force to subdue the Ophanim before its influence could spread further. Seizing the opportunity, the merchant lords of the south declared the trade cities of Hilltop an independent nation, forming the federation of [[armada|Armada]]. Finally, in 334 VR, the Ophanim was brought down by the Five Heroes, including the Voldis High Prince, [[edrion-voldis|Edrion Voldis]], and Saint Cassio of the Holy See, who both perished in the fighting.
 
@@ -123,7 +123,7 @@ All communities are available across nations, but some have unique aspects withi
 
 - [[the-ophanim|The Ophanim]]: the angelic being that devastated Hilltop in 333 VR
 
-- [[the-one-above|The One Above]]: still alive but has left Althas
+- [[the-one-above|The One Above]]: has left Althas
 
 - [[the-ones-below|The Ones Below]]: the gods the One Above fought in the Divine Age, sealed away
 - [[splendor-magic|Splendor Magic]]: incantation-based magic as a favor granted, not generated
