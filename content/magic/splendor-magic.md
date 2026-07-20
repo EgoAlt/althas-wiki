@@ -27,7 +27,7 @@ Incantations aren't invented by casters. They're discovered. In Althas, this mea
 
 ## Why this fits the One Above's absence
 
-[[the-one-above|The One Above]] is still alive but has left Althas.
+[[the-one-above|The One Above]] has left Althas.
 
 ## Related pages
 
