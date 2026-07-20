@@ -142,6 +142,14 @@ All communities are available across nations, but some have unique aspects withi
 
 - [[hesper-arcturus|Hesper Arcturus]]: archmage of Polaris's Triumvirate, killed by a giant during her final duel with her son Izar, sparking riots
 - [[izar-arcturus|Izar Arcturus]]: Hesper's son, a Polaris mage who challenged her for her Triumvirate seat
+- [[lael|Lael]]: one of the Five Heroes, slain fighting the Ophanim and returned by his Miracle of Rebirth
+
+## Events
+
+- [[the-divine-age|The Divine Age]]: the founding era, the One Above's war against the Ones Below
+- [[the-mad-kings-war|The Mad King's War]]: the 93-117 VR civil war between crown and church
+- [[the-polaris-secession|The Polaris Secession]]: the ~241 VR partition that founded Polaris
+- See the [[timeline|Timeline]] for the full chronology and the [[chronicle|Chronicle]] for the day-by-day record
 
 ## History (Voldaen)
 

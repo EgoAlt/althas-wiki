@@ -18,7 +18,8 @@ The House of Voldis has ruled [[voldaen|Voldaen]] since the nation's founding in
 
 ```mermaid
 graph TD
-    GK["The God King<br/>founder of Voldaen, r. 0-31 VR"]
+    GK["The God King<br/>founder of Voldaen<br/>Divine Age to 0 VR"]
+    K0["A king of the line<br/>r. 0-31 VR"]
     K1["A king of the line<br/>r. 31-63 VR"]
     K2["A king of the line<br/>r. 63-93 VR"]
     MAD["The Mad King<br/>r. 93-117 VR<br/>proclaimed himself the One Above returned"]
@@ -27,12 +28,14 @@ graph TD
     K4["A king of the line<br/>r. 178-209 VR"]
     K5["A king of the line<br/>r. 209-241 VR"]
     K6["A king of the line<br/>r. 241-272 VR<br/>Polaris secedes"]
+    BRO["A prince of the line<br/>renounced his claim in the Polaris settlement"]
     K7["A king of the line<br/>r. 272-302 VR"]
     VALTHIS["Valthis Voldis<br/>King, assassinated 334 VR"]
     EDRION["Edrion Voldis<br/>High Prince, died 334 VR"]
     ALDRIC["Aldric Voldis<br/>baseborn; founds the Republic of Jesthaen"]
     VALIS["Valis Voldis<br/>Queen, reigns as the council's figurehead"]
-    GK --> K1 --> K2 --> MAD --> BLESSED --> K3 --> K4 --> K5 --> K6 --> K7 --> VALTHIS
+    GK --> K0 --> K1 --> K2 --> MAD --> BLESSED --> K3 --> K4 --> K5 --> K6 --> K7 --> VALTHIS
+    K6 -.->|younger brother| BRO
     VALTHIS --> EDRION
     VALTHIS -.->|baseborn| ALDRIC
     EDRION --> VALIS
@@ -46,7 +49,7 @@ graph TD
 ```
 
 > [!note] Reading the tree
-> House Voldis rules by claimed divine descent from the God King, rendered here as the house presents it. The individual names of the deep dynasty are largely lost to record, marked here only as kings of the line, save the two reigns the histories could not forget: the Mad King and the Blessed King. The named line resumes with [[valthis-voldis|Valthis Voldis]]. The dashed line marks [[aldric-voldis|Aldric]]'s baseborn descent, acknowledged but never legitimized.
+> House Voldis rules by claimed divine descent from the God King, rendered here as the house presents it. The individual names of the deep dynasty are largely lost to record, marked here only as kings of the line, save the two reigns the histories could not forget: the Mad King and the Blessed King. The named line resumes with [[valthis-voldis|Valthis Voldis]]. The dashed lines mark [[aldric-voldis|Aldric]]'s baseborn descent, acknowledged but never legitimized, and the younger prince who renounced his claim in the settlement that made [[polaris|Polaris]] independent.
 
 ## The ancient line
 

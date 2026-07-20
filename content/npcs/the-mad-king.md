@@ -20,4 +20,5 @@ He is remembered by no other name than the Mad King. The war he began ended only
 - [[voldaen|Voldaen]]
 - [[house-voldis|House Voldis]]
 - [[the-blessed-king|The Blessed King]]
+- [[the-mad-kings-war|The Mad King's War]]
 - [[the-holy-see|The Holy See]]

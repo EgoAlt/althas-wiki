@@ -22,15 +22,15 @@ timeline
 
 ## Founding Era
 
-Althas once flew under a single banner. In the Divine Age [[the-one-above|the One Above]] protected the continent's mortal creations and fought [[the-ones-below|the Ones Below]], the primordial powers of chaos, and struck them down. The war ended when the One Above cast the Ones Below down and sealed them away, and that blow left the crater that became [[crater-lake|the Crater Lake]] at the center of Althas. With victory secured, the people crowned their first God King and founded [[voldaen|Voldaen]]. The One Above set their seat at what is now [[hilltop|Hilltop]] and departed soon after for reasons no one records. In their absence [[the-holy-see|the Holy See]] took up authority as divine regent, and later a group of scholars and mages broke away to found [[polaris|Polaris]].
+Althas once flew under a single banner. In the Divine Age [[the-one-above|the One Above]] protected the continent's mortal creations and fought [[the-ones-below|the Ones Below]], the primordial powers of chaos, and struck them down. The war ended when the One Above cast the Ones Below down and sealed them away, and that blow left the crater that became [[crater-lake|the Crater Lake]] at the center of Althas. With victory secured, the people crowned their first God King and founded [[voldaen|Voldaen]]. The One Above set their seat at what is now [[hilltop|Hilltop]] and departed soon after for reasons no one records. In their absence [[the-holy-see|the Holy See]] took up authority as divine regent, and later a group of scholars and mages broke away to found [[polaris|Polaris]]. See [[the-divine-age|the Divine Age]] for this era in full.
 
 ## The Mad King's War (93-117 VR)
 
-Generations after the founding, the king remembered as the Mad King proclaimed himself [[the-one-above|the One Above]] returned in the flesh. [[the-holy-see|The Holy See]] named the claim heresy, and crown and church fell into open civil war, the first fracture of a continent that had flown under one banner since the Divine Age. It ended in 117 VR when his own son and successor, the Blessed King, struck him down and denounced him before the faithful. Out of that settlement [[hilltop|Hilltop]] won full independence from the Voldis crown. See [[house-voldis|House Voldis]] for the dynasty across these reigns.
+Generations after the founding, the king remembered as the Mad King proclaimed himself [[the-one-above|the One Above]] returned in the flesh. [[the-holy-see|The Holy See]] named the claim heresy, and crown and church fell into open civil war, the first fracture of a continent that had flown under one banner since the Divine Age. It ended in 117 VR when his own son and successor, the Blessed King, struck him down and denounced him before the faithful. Out of that settlement [[hilltop|Hilltop]] won full independence from the Voldis crown. See [[house-voldis|House Voldis]] for the dynasty across these reigns, and [[the-mad-kings-war|the Mad King's War]] for the event in full.
 
 ## 241 VR
 
-The scholars and mages of the north, grown into a power of their own, broke away from [[voldaen|Voldaen]] by negotiated partition rather than repeat the last war's bloodshed, founding [[polaris|Polaris]] under its Triumvirate of Archmages.
+The scholars and mages of the north, grown into a power of their own, broke away from [[voldaen|Voldaen]] by negotiated partition rather than repeat the last war's bloodshed, founding [[polaris|Polaris]] under its Triumvirate of Archmages. See [[the-polaris-secession|the Polaris Secession]].
 
 ## 333 VR
 
@@ -71,4 +71,7 @@ Active combat ran for the better part of a decade, with Hilltop aiding Voldaen w
 - [[the-god-king|The God King]]
 - [[the-mad-king|The Mad King]]
 - [[the-blessed-king|The Blessed King]]
+- [[the-divine-age|The Divine Age]]
+- [[the-mad-kings-war|The Mad King's War]]
+- [[the-polaris-secession|The Polaris Secession]]
 - [[jesthaen|Jesthaen]]

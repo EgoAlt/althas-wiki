@@ -22,3 +22,4 @@ Out of the settlement that ended the war, [[hilltop|Hilltop]], long the seat of 
 - [[the-mad-king|The Mad King]]
 - [[the-holy-see|The Holy See]]
 - [[hilltop|Hilltop]]
+- [[the-mad-kings-war|The Mad King's War]]

@@ -17,14 +17,15 @@ During the Divine Age, [[the-one-above|the One Above]] granted Miracles to peopl
 
 Not all Miracles are directly useful on the battlefield, but those that are consequently grant immense political power to their owners. Holding more than one Miracle naturally is exceptionally rare.
 
-## House Voldis's power
-
-[[voldaen|House Voldis]] is known across Althas for a signature Miracle, popularly called the **Miracle of Voldis**, that lets its bearer hold multiple Miracles at once. Over generations the family has amassed a formidable collection of them, and this, not mere longevity or training, is the real source of Voldaen's strength.
-
 ## Publicly known Miracles
 
 - **The Miracle of Firmament**: lets its bearer treat open air as a solid, workable surface, so [[codex-magic|Codex]] seals can be drawn directly into empty space rather than onto any physical surface or medium. House Arcturus's own signature Miracle; see [[hesper-arcturus|Hesper]] and [[izar-arcturus|Izar]].
 - **The Miracle of Voldis**: [[voldaen|House Voldis]]'s own signature Miracle, said to let its bearer hold multiple Miracles at once.
+- **The Miracle of Rebirth**: at its bearer's death, the soul returns to reoccupy its own now-deathless body; only destroying the body ends the bearer for good. Carried by [[lael|Lael]], "the Reborn," one of the Five Heroes who fell fighting [[the-ophanim|the Ophanim]] and rose again.
+
+## House Voldis's power
+
+[[voldaen|House Voldis]] is known across Althas for a signature Miracle, popularly called the **Miracle of Voldis**, that lets its bearer hold multiple Miracles at once. Over generations the family has amassed a formidable collection of them, and this, not mere longevity or training, is the real source of Voldaen's strength.
 
 ## House Arcturus's power
 
@@ -37,6 +38,7 @@ House Arcturus is a Polaris family of high standing: the power of the Miracle of
 - [[valthis-voldis|Valthis Voldis]]
 - [[valis-voldis|Valis Voldis]]
 - [[aldric-voldis|Aldric Voldis]]
+- [[lael|Lael]]
 - [[the-one-above|The One Above]]
 - [[hesper-arcturus|Hesper]]
 - [[izar-arcturus|Izar]]
