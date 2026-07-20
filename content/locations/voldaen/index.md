@@ -16,7 +16,7 @@ marker:
 
 The oldest nation of Althas, a proud monarchy of ancient bloodlines ruled by the House of Voldis, claiming descent from the God King of the Divine Age. Rival of [[polaris|Polaris]], allied with Hilltop and [[the-holy-see|the Holy See]] during the [[jesthaen|Jesthaen]] rebellion.
 
-Currently ruled by [[valis-voldis|Valis Voldis]] following the Voldis Succession Crisis, the event that ultimately birthed Jesthaen as a breakaway republic. See [[index|Althas]] for the full history.
+Queen [[valis-voldis|Valis Voldis]] wears its crown following the Voldis Succession Crisis, in which her baseborn uncle [[aldric-voldis|Aldric Voldis]] broke the realm's southern half away to found the breakaway republic of Jesthaen. See [[index|Althas]] for the full history.
 
 ## Related pages
 

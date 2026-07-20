@@ -1,6 +1,6 @@
 ---
 title: Chronicle
-current-date: "363-01-01"
+current-date: "366-01-01"
 ---
 
 **Summary**: The chronicle of Althas: a day-by-day record of what has happened, kept as the days pass and filled in as older truths come to light.

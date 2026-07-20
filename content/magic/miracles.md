@@ -35,7 +35,6 @@ House Arcturus is a Polaris family of high standing: the power of the Miracle of
 - [[voldaen|Voldaen]]
 - [[edrion-voldis|Edrion Voldis]]
 - [[valthis-voldis|Valthis Voldis]]
-- [[orsian-voldis|Orsian Voldis]]
 - [[valis-voldis|Valis Voldis]]
 - [[aldric-voldis|Aldric Voldis]]
 - [[the-one-above|The One Above]]

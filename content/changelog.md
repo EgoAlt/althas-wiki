@@ -4,6 +4,13 @@ title: Changelog
 
 What's new on the wiki, most recent first.
 
+## 2026-07-20
+
+- **The House of Voldis history runs much deeper**: the [[house-voldis|family tree]] now traces the long line of kings between the God King and today, and the two reigns the histories never forgot get their own pages, [[the-mad-king|the Mad King]], who proclaimed himself the One Above returned and split the realm into civil war between crown and church, and [[the-blessed-king|the Blessed King]], who ended that war and won [[hilltop|Hilltop]] its independence. The founding [[the-god-king|God King]] has a page too, and you can click any of them in the family tree.
+- **New art**: portraits for the [[the-god-king|God King]], [[the-mad-king|the Mad King]], [[the-blessed-king|the Blessed King]], and Queen [[valis-voldis|Valis]], plus a new portrait for [[edrion-voldis|Edrion Voldis]].
+- **The Voldis Succession Crisis, retold**: [[aldric-voldis|Aldric Voldis]], the baseborn war-hero spurned by the capital's noble houses, is now the founder of the [[jesthaen|Republic of Jesthaen]], the nation he raised for the common people and named for his mother, [[jestha|Jestha]] (new page). [[valis-voldis|Valis Voldis]] reigns over a diminished [[voldaen|Voldaen]] as the noble council's crowned queen.
+- **The histories have been re-dated**: the timeline now places the Ophanim's arrival at 333 VR and the present day at 366 VR, with every dated page updated to match.
+
 ## 2026-07-18
 
 - **New page, the [[worldbuilding-checklist|Worldbuilding Checklist]]**: a running list of parts of Althas still open for the table to help shape, from the names of the months and the thirty Saints of the Divine Age to the songs people sing. Daggerheart invites players into the worldbuilding, so pick anything that draws you and bring it to the table.

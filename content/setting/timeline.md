@@ -2,7 +2,7 @@
 title: Timeline
 ---
 
-**Summary**: A chronology of Althas, from the Divine Age to the [[jesthaen|Jesthaen]] Treaty of 358 VR. It gathers the dated history already recorded across the wiki into one view; the [[calendar|Calendar]] page explains how the years are counted.
+**Summary**: A chronology of Althas, from the Divine Age to the [[jesthaen|Jesthaen]] Treaty of 361 VR. It gathers the dated history already recorded across the wiki into one view; the [[calendar|Calendar]] page explains how the years are counted.
 
 ---
 
@@ -12,31 +12,31 @@ The years of Althas are numbered in the Voldaen Reckoning (VR), counted from the
 timeline
     title A history of Althas
     Founding Era : The Divine Age, the One Above casts down the Ones Below : Voldaen founded under the God King
-    330 VR : The Ophanim lands on Hilltop : Armada secedes
-    331 VR : The Five Heroes slay the Ophanim : The king is assassinated
-    348 VR : Orsian dies heirless, the succession crisis opens
-    358 VR : The Jesthaen Treaty ends the war
+    333 VR : The Ophanim lands on Hilltop : Armada secedes
+    334 VR : The Five Heroes slay the Ophanim : The king is assassinated
+    351 VR : Aldric's revolution founds the Republic of Jesthaen
+    361 VR : The Jesthaen Treaty ends the war
 ```
 
 ## Founding Era
 
 Althas once flew under a single banner. In the Divine Age [[the-one-above|the One Above]] protected the continent's mortal creations and fought [[the-ones-below|the Ones Below]], the primordial powers of chaos, and struck them down. The war ended when the One Above cast the Ones Below down and sealed them away, and that blow left the crater that became [[crater-lake|the Crater Lake]] at the center of Althas. With victory secured, the people crowned their first God King and founded [[voldaen|Voldaen]]. The One Above set their seat at what is now [[hilltop|Hilltop]] and departed soon after for reasons no one records. In their absence [[the-holy-see|the Holy See]] took up authority as divine regent, and later a group of scholars and mages broke away to found [[polaris|Polaris]].
 
-## 330 VR
+## 333 VR
 
 [[the-ophanim|The Ophanim]] landed in central Hilltop and rendered much of the region uninhabitable. The Holy See and its refugees relocated to central Althas, and the merchant lords of the southern trade cities used the upheaval to declare independence as [[armada|Armada]].
 
-## 331 VR
+## 334 VR
 
-The Five Heroes brought the Ophanim down. Among them, the Voldaen High Prince [[edrion-voldis|Edrion Voldis]] and Saint Cassio of the Holy See died in the fighting. Soon after, King [[valthis-voldis|Valthis Voldis]] was assassinated by a killer Voldaen has never identified, and the crown passed to Edrion's sickly young son [[orsian-voldis|Orsian Voldis]] before he was old enough to rule in his own name.
+The Five Heroes brought the Ophanim down. Among them, the Voldaen High Prince [[edrion-voldis|Edrion Voldis]] and Saint Cassio of the Holy See died in the fighting. Soon after, King [[valthis-voldis|Valthis Voldis]] was assassinated by a killer Voldaen has never identified, leaving Edrion's young daughter [[valis-voldis|Valis Voldis]] the last heir of the direct line before she was old enough to rule.
 
-## 348 VR
+## 351 VR
 
-Orsian died without heirs. The capital's noble houses backed his elder sister [[valis-voldis|Valis Voldis]] for unbroken succession, while the southern nobles called for the return of the exiled [[aldric-voldis|Aldric Voldis]]. The dispute spread far past [[house-voldis|House Voldis]] and hardened into a revolution, and out of that fracture came [[jesthaen|Jesthaen]], first a rebellion and then a republic.
+The capital's noble houses had driven the baseborn regent [[aldric-voldis|Aldric Voldis]] into exile and ruled through the child-queen [[valis-voldis|Valis Voldis]] in his place. Aldric carried his cause to the common people of the south, and the movement he built there hardened into revolution. Out of that fracture came [[jesthaen|Jesthaen]], first a rebellion and then a republic, named for Aldric's mother and the first nation of Althas to reject the divine right of [[house-voldis|House Voldis]].
 
-## 358 VR
+## 361 VR
 
-Active combat ran for the better part of a decade, with Hilltop aiding Voldaen while Polaris and Armada backed the Jesthaen rebels. It ended in 358 VR with the Holy See's ratification of the Jesthaen Treaty, though the peace between Voldaen and Jesthaen remains tenuous. The [[diplomacy|Diplomacy]] page maps where the powers stand five years on.
+Active combat ran for the better part of a decade, with Hilltop aiding Voldaen while Polaris and Armada backed the Jesthaen rebels. It ended in 361 VR with the Holy See's ratification of the Jesthaen Treaty, though the peace between Voldaen and Jesthaen remains tenuous. The [[diplomacy|Diplomacy]] page maps where the powers stand five years on.
 
 ## Related pages
 
@@ -55,7 +55,6 @@ Active combat ran for the better part of a decade, with Hilltop aiding Voldaen w
 - [[armada|Armada]]
 - [[edrion-voldis|Edrion Voldis]]
 - [[valthis-voldis|Valthis Voldis]]
-- [[orsian-voldis|Orsian Voldis]]
 - [[valis-voldis|Valis Voldis]]
 - [[aldric-voldis|Aldric Voldis]]
 - [[house-voldis|House Voldis]]
