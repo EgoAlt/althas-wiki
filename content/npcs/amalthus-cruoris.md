@@ -3,6 +3,7 @@ title: Amalthus Cruoris
 kind: person
 role: Pontiff of the Holy See
 house: House Cruoris
+image: amalthus-cruoris.jpg
 ---
 
 **Summary**: The reigning Pontiff of [[the-holy-see|the Holy See]], head of the faith of [[the-one-above|the One Above]], raised from [[parish-of-orthodoxy|the Parish of Orthodoxy]] as one of the foremost scriptural minds of his generation. Of House Cruoris, and bearer of the [[miracles|Miracle of Viaticum]].
