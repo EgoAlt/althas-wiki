@@ -4,6 +4,14 @@ title: Changelog
 
 What's new on the wiki, most recent first.
 
+## 2026-07-21
+
+- **The Holy See has a face**: [[amalthus-cruoris|Pontiff Amalthus Cruoris]] (new page, with a portrait) is the reigning head of [[the-holy-see|the Holy See]], raised from the Parish of Orthodoxy as one of the faith's foremost scholars of scripture, and bearer of his house's Miracle of Viaticum.
+- **New page, the [[parish-of-orthodoxy|Parish of Orthodoxy]]**: the Holy See's doctrinal arm, which decides what scripture means and guards the sacred words that [[splendor-magic|Splendor Magic]] depends on. It also teaches that mortal eyes be covered before the divine, the rule behind the veils and masks its high clergy wear.
+- **A new Miracle on the [[miracles|Miracles]] page, the Miracle of Viaticum**: the signature Miracle of House Cruoris. Its bearer writes a prayer in his own blood and seals it shut; when the seal is broken the words speak themselves aloud, once, so [[the-one-above|the One Above]] answers a single request through it, wherever the bearer stands. It is how the Church sends its grace where no priest can go.
+- **[[splendor-magic|Splendor Magic]] gains a note on the living channel**: an incantation needs something living to carry it to the One Above, which is why a living voice works, and why the Viaticum's blood-sealed prayers can carry a request in the Pontiff's place.
+- **New art**: a portrait for [[the-holy-see|the Holy See]].
+
 ## 2026-07-20
 
 - **The House of Voldis history runs much deeper**: the [[house-voldis|family tree]] now traces the long line of kings between the God King and today, and the two reigns the histories never forgot get their own pages, [[the-mad-king|the Mad King]], who proclaimed himself the One Above returned and split the realm into civil war between crown and church, and [[the-blessed-king|the Blessed King]], who ended that war and won [[hilltop|Hilltop]] its independence. The founding [[the-god-king|God King]] has a page too, and you can click any of them in the family tree.

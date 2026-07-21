@@ -22,6 +22,7 @@ Not all Miracles are directly useful on the battlefield, but those that are cons
 - **The Miracle of Firmament**: lets its bearer treat open air as a solid, workable surface, so [[codex-magic|Codex]] seals can be drawn directly into empty space rather than onto any physical surface or medium. House Arcturus's own signature Miracle; see [[hesper-arcturus|Hesper]] and [[izar-arcturus|Izar]].
 - **The Miracle of Voldis**: [[voldaen|House Voldis]]'s own signature Miracle, said to let its bearer hold multiple Miracles at once.
 - **The Miracle of Rebirth**: at its bearer's death, the soul returns to reoccupy its own now-deathless body; only destroying the body ends the bearer for good. Carried by [[lael|Lael]], "the Reborn," one of the Five Heroes who fell fighting [[the-ophanim|the Ophanim]] and rose again.
+- **The Miracle of Viaticum**: the signature Miracle of **House Cruoris**, an oldblood house bound to [[the-holy-see|the Holy See]], and borne by [[amalthus-cruoris|the reigning Pontiff]] when a Cruoris sits the chair. Its bearer can lend a single Splendor working to another person: he writes a prayer in his own holy blood, seals it with wax mixed into that blood, and when the seal is broken the words speak themselves in his voice, so [[the-one-above|the One Above]] answers the bearer's ask once, as though the Pontiff had made it. See [[amalthus-cruoris|Pontiff Amalthus Cruoris]].
 
 ## House Voldis's power
 
@@ -30,6 +31,10 @@ Not all Miracles are directly useful on the battlefield, but those that are cons
 ## House Arcturus's power
 
 House Arcturus is a Polaris family of high standing: the power of the Miracle of Firmament has produced a long line of Triumvirate Archmages across the family's history. [[hesper-arcturus|Hesper]] was born with it. Her son [[izar-arcturus|Izar]] was not, until the day of their final duel.
+
+## House Cruoris's power
+
+House Cruoris is one of the faith's oldblood houses, ancient and bound tightly to [[the-holy-see|the Holy See]] and its history. Its signature Miracle is the **Miracle of Viaticum**: where most Miracles serve their bearer, Viaticum serves through its bearer, letting him extend a single Splendor working to someone else, sealed in his own blood and spent on one breaking. Cruoris's Miracle is powerful enough, and suited enough to the Church's work, that the house's name recurs across the roll of Pontiffs; the current bearer, [[amalthus-cruoris|Amalthus Cruoris]], holds the chair now. It is how the faith grants grace where no priest can go.
 
 ## Related pages
 
@@ -42,3 +47,6 @@ House Arcturus is a Polaris family of high standing: the power of the Miracle of
 - [[the-one-above|The One Above]]
 - [[hesper-arcturus|Hesper]]
 - [[izar-arcturus|Izar]]
+- [[amalthus-cruoris|Pontiff Amalthus Cruoris]]
+- [[the-holy-see|The Holy See]]
+- [[parish-of-orthodoxy|Parish of Orthodoxy]]

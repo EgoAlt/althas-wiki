@@ -17,6 +17,10 @@ Splendor casters don't generate their own power. They speak a precise incantatio
 
 This is a deliberate contrast with [[codex-magic|Codex Magic]]: Splendor asks a person (a god) for magic; Codex tears a hole to reach it directly.
 
+## A living channel
+
+An incantation also needs a living channel to carry it. Correct wording alone is not enough: the words must be borne by something living to reach [[the-one-above|the One Above]]. Ordinarily this is trivial, a living voice speaking a living ask, so casters rarely notice it as a separate requirement at all. It only becomes visible at the edges of the practice, as with the blood-borne prayers of the [[miracles|Miracle of Viaticum]], where the Pontiff's own holy blood serves as the living channel in his place.
+
 ## Where the words come from
 
 Incantations aren't invented by casters. They're discovered. In Althas, this means:
