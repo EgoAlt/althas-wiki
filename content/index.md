@@ -110,6 +110,7 @@ All communities are available across nations, but some have unique aspects withi
 
 - [[the-holy-see|The Holy See]]: divine regent authority governing the faith from Hilltop
 - [[parish-of-inquisition|Parish of Inquisition]]: the Holy See's feared investigative and judicial arm
+- [[parish-of-orthodoxy|Parish of Orthodoxy]]: the Holy See's doctrinal arm, keeper of scripture and the Splendor incantations
 - [[guild|The Guild]]: governs Armada, seats held by token possession, not inheritance or election
 
 ## Ancestries
@@ -143,6 +144,7 @@ All communities are available across nations, but some have unique aspects withi
 - [[hesper-arcturus|Hesper Arcturus]]: archmage of Polaris's Triumvirate, killed by a giant during her final duel with her son Izar, sparking riots
 - [[izar-arcturus|Izar Arcturus]]: Hesper's son, a Polaris mage who challenged her for her Triumvirate seat
 - [[lael|Lael]]: one of the Five Heroes, slain fighting the Ophanim and returned by his Miracle of Rebirth
+- [[amalthus-cruoris|Amalthus Cruoris]]: reigning Pontiff of the Holy See, of House Cruoris, bearer of the Miracle of Viaticum
 
 ## Events
 

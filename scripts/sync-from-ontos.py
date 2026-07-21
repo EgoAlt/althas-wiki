@@ -51,6 +51,8 @@ TITLES = {
     "the-polaris-secession.md": "The Polaris Secession",
     "worldbuilding-checklist.md": "Worldbuilding Checklist",
     "parish-of-inquisition.md": "Parish of Inquisition",
+    "parish-of-orthodoxy.md": "Parish of Orthodoxy",
+    "amalthus-cruoris.md": "Amalthus Cruoris",
     "codex-magic.md": "Codex Magic",
     "faeries.md": "Faeries",
     "giants.md": "Giants",
@@ -116,6 +118,8 @@ PAGE_MAP = {
     "the-polaris-secession.md": "setting/the-polaris-secession.md",
     "worldbuilding-checklist.md": "worldbuilding-checklist.md",
     "parish-of-inquisition.md": "organizations/parish-of-inquisition.md",
+    "parish-of-orthodoxy.md": "organizations/parish-of-orthodoxy.md",
+    "amalthus-cruoris.md": "npcs/amalthus-cruoris.md",
     "the-holy-see.md": "organizations/the-holy-see.md",
     "guild.md": "organizations/guild.md",
     "house-voldis.md": "organizations/house-voldis.md",
@@ -230,6 +234,7 @@ RENAMES = {
 # Drinmery nobles (Guilmore Fleming / Immanuel Greene), Izar, and the Hilltop
 # night zone joined this list as a result.
 NOT_YET_PUBLIC = {
+    "the-threnodies.md",
     "the-co-existers.md",
     "the-fallen-houses.md",
     "sage-magic.md",

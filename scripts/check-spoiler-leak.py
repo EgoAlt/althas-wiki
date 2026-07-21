@@ -69,7 +69,7 @@ TIER2 = [
     r"\bin reality\b",
     r"\breally (is|a|an|the)\b",
     r"\bthe real reason\b",
-    r"\bplayers (will|should|kn|do|wo|are|have|must|might)\b",
+    r"\bplayers (will|should|know|knew|do|don'?t|won'?t|are|have|had|must|might|need)\b",
     r"\bforeshadow",
     r"\bspoiler",
     r"\bin disguise\b",
