@@ -87,6 +87,28 @@ function parseGraph(text: string): { nodes: GNode[]; edges: GEdge[] } | null {
 
 const RADIUS: Record<string, number> = { nation: 22, institution: 16, people: 12 }
 
+// How far (in layout units, beyond the target node's own radius) an arrow tip
+// sits from the node it points at. A single fixed marker refX cannot do this
+// because node radii differ by kind, so the line itself is shortened per edge.
+// ARROW_GAP is tuned by eye in the browser; 6 is the starting value.
+const ARROW_GAP = 6
+
+// The drawn end of an edge, pulled back from a node's center toward the other
+// end by (that node's radius + ARROW_GAP), so the arrow tip clears the circle
+// by the same gap regardless of node size. A directed edge's source end sits at
+// the source center (hidden under its circle, no arrow there); only mutual edges
+// pull the source end back too, since they carry a marker-start arrow.
+function endpoint(d: GEdge, which: "source" | "target") {
+  const from = (which === "source" ? d.source : d.target) as GNode
+  const other = (which === "source" ? d.target : d.source) as GNode
+  if (which === "source" && !d.mutual) return { x: from.x!, y: from.y! }
+  const dx = other.x! - from.x!
+  const dy = other.y! - from.y!
+  const len = Math.hypot(dx, dy) || 1
+  const back = (RADIUS[from.kind] ?? 14) + ARROW_GAP
+  return { x: from.x! + (dx / len) * back, y: from.y! + (dy / len) * back }
+}
+
 function setupDiplomacyGraph() {
   const mount = document.querySelector<HTMLElement>(".diplomacy-graph-mount")
   const codeEl = document.querySelector<HTMLElement>(
@@ -131,7 +153,7 @@ function setupDiplomacyGraph() {
     .append("marker")
     .attr("id", "dg-arrow")
     .attr("viewBox", "0 -5 10 10")
-    .attr("refX", 28)
+    .attr("refX", 10)
     .attr("refY", 0)
     .attr("markerWidth", 7)
     .attr("markerHeight", 7)
@@ -226,10 +248,10 @@ function setupDiplomacyGraph() {
 
   function tick() {
     link
-      .attr("x1", (d) => (d.source as GNode).x!)
-      .attr("y1", (d) => (d.source as GNode).y!)
-      .attr("x2", (d) => (d.target as GNode).x!)
-      .attr("y2", (d) => (d.target as GNode).y!)
+      .attr("x1", (d) => endpoint(d, "source").x)
+      .attr("y1", (d) => endpoint(d, "source").y)
+      .attr("x2", (d) => endpoint(d, "target").x)
+      .attr("y2", (d) => endpoint(d, "target").y)
     edgeLabel
       .attr("x", (d) => ((d.source as GNode).x! + (d.target as GNode).x!) / 2)
       .attr("y", (d) => ((d.source as GNode).y! + (d.target as GNode).y!) / 2)
