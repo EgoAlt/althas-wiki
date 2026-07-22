@@ -4,6 +4,8 @@ import {
   forceCenter,
   forceLink,
   forceCollide,
+  forceX,
+  forceY,
   Simulation,
   SimulationNodeDatum,
   select,
@@ -134,8 +136,8 @@ function setupDiplomacyGraph() {
   // (it came back far too narrow, collapsing the graph into a tall strip), and
   // a fixed landscape box renders identically regardless of when the script
   // runs.
-  const width = 920
-  const height = 600
+  const width = 1040
+  const height = 820
   const svg = select(mount)
     .append("svg")
     .attr("class", "diplomacy-svg")
@@ -245,8 +247,22 @@ function setupDiplomacyGraph() {
         .distance(175),
     )
     .force("collide", forceCollide<GNode>((d) => (RADIUS[d.kind] ?? 14) + 34))
+    // Pull each node gently toward center so the growing graph stays inside the
+    // viewBox instead of drifting off the edges; the tick clamp below is the hard
+    // guarantee, these forces just keep nodes off the boundary so it rarely bites.
+    .force("x", forceX(width / 2).strength(0.08))
+    .force("y", forceY(height / 2).strength(0.08))
+
+  // Keep every node (and most of its label) inside the viewBox at all times,
+  // including after a drag. MARGIN clears the largest node radius plus its label.
+  const MARGIN = 52
+  function clampToView(n: GNode) {
+    n.x = Math.max(MARGIN, Math.min(width - MARGIN, n.x!))
+    n.y = Math.max(MARGIN, Math.min(height - MARGIN, n.y!))
+  }
 
   function tick() {
+    nodes.forEach(clampToView)
     link
       .attr("x1", (d) => endpoint(d, "source").x)
       .attr("y1", (d) => endpoint(d, "source").y)
