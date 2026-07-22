@@ -3,7 +3,7 @@ title: Jestha
 kind: person
 ---
 
-**Summary**: A common woman of Voldaen, mother of [[aldric-voldis|Aldric Voldis]] by King [[valthis-voldis|Valthis Voldis]], and the namesake of the [[jesthaen|Republic of Jesthaen]].
+**Summary**: A common woman of Voldaen, mother of [[aldric-voldis|Aldric Voldis]] by King [[valthis-voldis|Valthis Voldis]], and the namesake of the [[jesthaen|Jesthaen Republic]].
 
 ---
 

@@ -19,7 +19,12 @@ node the-holy-see | The Holy See | institution | organizations/the-holy-see
 node parish-of-inquisition | Parish of Inquisition | institution | organizations/parish-of-inquisition
 node guild | The Guild | institution | organizations/guild
 node house-voldis | House Voldis | institution | organizations/house-voldis
+node parish-of-orthodoxy | Parish of Orthodoxy | institution | organizations/parish-of-orthodoxy
 node infernis | Infernis | people | ancestries/infernis
+node amalthus-cruoris | Amalthus Cruoris | people | npcs/amalthus-cruoris
+node valis-voldis | Valis Voldis | people | npcs/valis-voldis
+node aldric-voldis | Aldric Voldis | people | npcs/aldric-voldis
+node lael | Lael | people | npcs/lael
 
 # Edges: source -> target (arrow) or <-> (mutual) | type | label
 edge house-voldis -> voldaen | governance | royal dynasty, rules
@@ -34,6 +39,12 @@ edge polaris -> jesthaen | war-history | backed the rebels
 edge armada -> jesthaen | war-history | backed the rebels
 edge polaris <-> armada | alliance | fragile wartime alliance
 edge jesthaen <-> voldaen | uneasy | revolution, then a tenuous peace
+edge parish-of-orthodoxy -> the-holy-see | governance | doctrinal arm of
+edge amalthus-cruoris -> the-holy-see | governance | Pontiff, leads
+edge valis-voldis -> voldaen | governance | reigning queen, council figurehead
+edge aldric-voldis -> jesthaen | governance | founder, leads
+edge aldric-voldis -> house-voldis | uneasy | spurned baseborn son
+edge lael -> parish-of-inquisition | governance | Lord Commander, leads
 ```
 
 ## The two sides of the war
