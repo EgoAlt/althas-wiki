@@ -25,6 +25,7 @@ import {
 // esbuild inline-script pipeline happy.
 
 const KNOWN_TYPES = ["governance", "war-history", "alliance", "rivalry", "uneasy"]
+const KNOWN_KINDS = ["nation", "institution", "people"]
 const NODE_RE = /^node\s+([a-z0-9-]+)\s*\|\s*([^|]+?)\s*\|\s*([a-z-]+)\s*\|\s*(\S+)\s*$/
 const EDGE_RE = /^edge\s+([a-z0-9-]+)\s*(->|<->)\s*([a-z0-9-]+)\s*\|\s*([a-z-]+)\s*\|\s*(.+?)\s*$/
 
@@ -45,6 +46,14 @@ function parseGraph(text: string): { nodes: GNode[]; edges: GEdge[] } | null {
     if (!line || line.startsWith("#")) continue
     const n = NODE_RE.exec(line)
     if (n) {
+      if (!KNOWN_KINDS.includes(n[3])) {
+        console.warn("diplomacy-graph: unknown node kind, leaving text block visible:", n[3], "in", line)
+        return null
+      }
+      if (nodes.some((x) => x.id === n[1])) {
+        console.warn("diplomacy-graph: duplicate node slug, leaving text block visible:", n[1])
+        return null
+      }
       nodes.push({ id: n[1], name: n[2], kind: n[3], path: n[4] })
       continue
     }
