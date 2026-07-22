@@ -80,6 +80,66 @@ def parse_lines(lines):
             errors.append(f"unrecognized line: {line!r}")
     return nodes, edges, errors
 
+DIPLOMACY_RE = re.compile(r"^diplomacy:\s*(public|gm)\s*$", re.M)
+
+def read_diplomacy_flags(ontos_setting):
+    """{slug: "public"|"gm"} for every setting page carrying a diplomacy: flag.
+    Slug is the filename stem, matching the node-slug convention."""
+    flags = {}
+    for md in sorted(ontos_setting.glob("*.md")):
+        fm, _ = _sync.split_frontmatter(md.read_text())
+        m = DIPLOMACY_RE.search(fm or "")
+        if m:
+            flags[md.stem] = m.group(1)
+    return flags
+
+def check_drift(pub_nodes, gm_nodes, flags, existing_pages):
+    """Bidirectional drift between the diplomacy: flags and the graph blocks.
+    Hard errors (any return value is a publish blocker):
+      - a flagged page with no matching node (or in the wrong block)
+      - a node whose backing page is unflagged or flagged for the other block
+    A node whose slug has no setting/{slug}.md is a page-less abstraction
+    (gm-only, e.g. reborn-inquisition) and is exempt from the flag check."""
+    errors = []
+    for slug, vis in sorted(flags.items()):
+        here, there = (pub_nodes, gm_nodes) if vis == "public" else (gm_nodes, pub_nodes)
+        wrong = "gm" if vis == "public" else "public"
+        if slug in here:
+            continue
+        if slug in there:
+            errors.append(f"page '{slug}' is flagged diplomacy: {vis} but its node is in the {wrong} block")
+        else:
+            errors.append(f"page '{slug}' is flagged diplomacy: {vis} but has no node in the {vis} block")
+    for slug in sorted(pub_nodes):
+        if slug not in existing_pages:
+            continue
+        if flags.get(slug) == "gm":
+            errors.append(f"RULE 29 SPOILER RISK: node '{slug}' is in the PUBLIC block but its page is flagged diplomacy: gm")
+        elif flags.get(slug) != "public":
+            errors.append(f"node '{slug}' is in the public block but its page is not flagged diplomacy: public")
+    for slug in sorted(gm_nodes):
+        if slug not in existing_pages:
+            continue
+        if flags.get(slug) == "public":
+            errors.append(f"node '{slug}' is in the gm block but its page is flagged diplomacy: public")
+        elif flags.get(slug) != "gm":
+            errors.append(f"node '{slug}' is in the gm block but its page is not flagged diplomacy: gm")
+    return errors
+
+def _selfcheck():
+    pub = {"voldaen": ("Voldaen", "nation", "locations/voldaen")}
+    gm = {"kingslayer": ("The Kingslayer", "people", "-"),
+          "reborn-inquisition": ("Reborn Inquisition", "institution", "-")}
+    existing = {"voldaen", "kingslayer", "lael"}  # reborn-inquisition has no page
+    # clean: flags match, page-less gm node exempt
+    assert check_drift(pub, gm, {"voldaen": "public", "kingslayer": "gm"}, existing) == []
+    # flagged but absent
+    assert any("no node" in e for e in check_drift(pub, gm, {"voldaen": "public", "lael": "public"}, existing))
+    # present but unflagged
+    assert any("not flagged" in e for e in check_drift(pub, gm, {"kingslayer": "gm"}, existing))
+    # gm page shown in the public block
+    assert any("RULE 29" in e for e in check_drift(pub, gm, {"voldaen": "gm", "kingslayer": "gm"}, existing))
+
 def validate(pub_nodes, pub_edges, gm_nodes, gm_edges, content_dir):
     errors, warnings = [], []
     for slug in gm_nodes:
@@ -115,6 +175,10 @@ def validate(pub_nodes, pub_edges, gm_nodes, gm_edges, content_dir):
     return errors, warnings
 
 def main():
+    if "--selfcheck" in sys.argv:
+        _selfcheck()
+        print("check-diplomacy-graph: self-check passed")
+        return 0
     src = _sync.ONTOS_SETTING / "diplomacy.md"
     text = src.read_text()
     pub_lines, gm_lines = extract_blocks(text)
@@ -124,7 +188,10 @@ def main():
     pub_nodes, pub_edges, e1 = parse_lines(pub_lines)
     gm_nodes, gm_edges, e2 = parse_lines(gm_lines)
     errors, warnings = validate(pub_nodes, pub_edges, gm_nodes, gm_edges, _sync.CONTENT_DIR)
-    errors = e1 + e2 + errors
+    flags = read_diplomacy_flags(_sync.ONTOS_SETTING)
+    existing_pages = {md.stem for md in _sync.ONTOS_SETTING.glob("*.md")}
+    drift = check_drift(pub_nodes, gm_nodes, flags, existing_pages)
+    errors = e1 + e2 + errors + drift
     for w in warnings:
         print(f"  WARN: {w}")
     if errors:
