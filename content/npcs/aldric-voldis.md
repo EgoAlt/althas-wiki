@@ -2,11 +2,11 @@
 title: Aldric Voldis
 kind: person
 house: "[[house-voldis|House Voldis]]"
-role: Founder of the Republic of Jesthaen
+role: Founder of the Jesthaen Republic
 image: aldric-voldis.jpg
 ---
 
-**Summary**: Baseborn half-brother of High Prince [[edrion-voldis|Edrion Voldis]] and one of the Five Heroes who fought [[the-ophanim|the Ophanim]]. Spurned by the capital's nobles, he became the champion of the common people and founded the [[jesthaen|Republic of Jesthaen]], named for his mother, Jestha.
+**Summary**: Baseborn half-brother of High Prince [[edrion-voldis|Edrion Voldis]] and one of the Five Heroes who fought [[the-ophanim|the Ophanim]]. Spurned by the capital's nobles, he became the champion of the common people and founded the [[jesthaen|Jesthaen Republic]], named for his mother, Jestha.
 
 ---
 
@@ -14,7 +14,7 @@ Aldric is the bastard son of King [[valthis-voldis|Valthis Voldis]] of [[voldaen
 
 When Edrion fell fighting the Ophanim and King Valthis was assassinated soon after ([[kingslayer|the Kingslayer]]), Edrion's will named Aldric regent for his young daughter, [[valis-voldis|Valis Voldis]], the only heir left. The capital's great houses would not suffer a baseborn man holding real power over the realm. Within a few years they stripped him of the regency and drove him to the western borders under the pretense of military necessity, then ruled in the child-queen's name themselves.
 
-Cast out, Aldric did not raise a banner to claim the throne for himself. He turned instead to the people of the neglected south and the borderlands, where the noble council's rule fell hardest, carrying his mother's common blood as proof he was one of them. Reformers, anti-monarchists, and the war-weary gathered to him over the long years of his exile. In 351 VR that movement broke into open revolution, and out of it Aldric founded the [[jesthaen|Republic of Jesthaen]], named for his mother, the first nation of Althas to reject the divine right of the Voldis line outright. He leads the young Republic still, five years after the [[jesthaen|Jesthaen Treaty]] that won its recognition.
+Cast out, Aldric did not raise a banner to claim the throne for himself. He turned instead to the people of the neglected south and the borderlands, where the noble council's rule fell hardest, carrying his mother's common blood as proof he was one of them. Reformers, anti-monarchists, and the war-weary gathered to him over the long years of his exile. In 351 VR that movement broke into open revolution, and out of it Aldric founded the [[jesthaen|Jesthaen Republic]], named for his mother, the first nation of Althas to reject the divine right of the Voldis line outright. He leads the young Republic still, five years after the [[jesthaen|Jesthaen Treaty]] that won its recognition.
 
 ## Related pages
 

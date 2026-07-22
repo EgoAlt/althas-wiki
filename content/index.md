@@ -158,5 +158,5 @@ All communities are available across nations, but some have unique aspects withi
 - [[house-voldis|House Voldis]]: the royal dynasty, with the family tree from the God King to Valis
 - [[the-god-king|The God King]], [[the-mad-king|The Mad King]], [[the-blessed-king|The Blessed King]]: the founding king and the two ancient reigns the histories remember
 - [[valthis-voldis|Valthis Voldis]], [[edrion-voldis|Edrion Voldis]], [[valis-voldis|Valis Voldis]], [[aldric-voldis|Aldric Voldis]]: the Voldis Succession Crisis cast
-- [[jestha|Jestha]]: the common woman Aldric's Republic of Jesthaen is named for
+- [[jestha|Jestha]]: the common woman Aldric's Jesthaen Republic is named for
 - [[kingslayer|The Kingslayer]]: unidentified killer of Valthis Voldis, tavern legend in Voldaen

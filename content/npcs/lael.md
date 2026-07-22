@@ -20,6 +20,14 @@ His [[miracles|Miracle of Rebirth]] returned his soul to his own body, which the
 
 The Miracle of Rebirth triggers at its bearer's death: the soul reoccupies its own now-deathless body and rises again. A bearer struck down returns; the only way to end him for good is to destroy the body itself. Lael has carried it since the Ophanim's fall, and by every account still walks Althas, unchanged by the years. See [[miracles|Miracles]] for how holy gifts like this pass and work.
 
+## The Ophanim's Fall
+
+Lael led the Inquisitors into the final battle against [[the-ophanim|the Ophanim]] in 334 VR and fell as one of the Five Heroes.
+
+## The Icon of Shame
+
+Where the other fallen Heroes stayed dead, Lael returned, and the Church proclaims his Rebirth a blessing of [[the-one-above|the One Above]], divine favor granted for his service to [[the-holy-see|the Holy See]]. It holds him up as a living mercy: a man who had fallen into shame and heresy in his day and was lifted back into holy purpose all the same. Restored to the faith, he rose again over the years to Lord Commander of the Inquisitors. To the faithful he is the Reborn, and, without mockery, the Icon of Shame, the proof the Church offers that no one who has fallen lies beyond redemption in holy hands.
+
 ## Depictions
 
 More of the art that has grown up around Lael, "the Icon of Shame."

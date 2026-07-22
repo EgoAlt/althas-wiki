@@ -32,7 +32,7 @@ graph TD
     K7["A king of the line<br/>r. 272-302 VR"]
     VALTHIS["Valthis Voldis<br/>King, assassinated 334 VR"]
     EDRION["Edrion Voldis<br/>High Prince, died 334 VR"]
-    ALDRIC["Aldric Voldis<br/>baseborn; founds the Republic of Jesthaen"]
+    ALDRIC["Aldric Voldis<br/>baseborn; founds the Jesthaen Republic"]
     VALIS["Valis Voldis<br/>Queen, reigns as the council's figurehead"]
     GK --> K0 --> K1 --> K2 --> MAD --> BLESSED --> K3 --> K4 --> K5 --> K6 --> K7 --> VALTHIS
     K6 -.->|younger brother| BRO
@@ -61,7 +61,7 @@ The first is the Mad King, who proclaimed himself the One Above returned to Alth
 
 The modern line's story is the founding wound of the campaign's present day. In 334 VR the High Prince, [[edrion-voldis|Edrion Voldis]], died fighting the Ophanim as one of the Five Heroes. King [[valthis-voldis|Valthis Voldis]] was assassinated soon after by a killer Voldaen has never identified, remembered only as [[kingslayer|the Kingslayer]]. Both deaths fell within a year, leaving Edrion's young daughter, [[valis-voldis|Valis Voldis]], the last heir of the direct line before she was old enough to rule.
 
-Edrion's will had named his baseborn half-brother, [[aldric-voldis|Aldric Voldis]], her regent. The capital's oldest noble families would not accept a bastard's hand on the realm: they stripped him of the regency, exiled him to the western borders, and took power themselves, ruling in the child-queen's name. Aldric did not contest the throne. He carried his cause to the common people of the south instead, and over long years of exile built the movement that broke into revolution in 351 VR and founded the [[jesthaen|Republic of Jesthaen]], named for his mother, [[jestha|Jestha]].
+Edrion's will had named his baseborn half-brother, [[aldric-voldis|Aldric Voldis]], her regent. The capital's oldest noble families would not accept a bastard's hand on the realm: they stripped him of the regency, exiled him to the western borders, and took power themselves, ruling in the child-queen's name. Aldric did not contest the throne. He carried his cause to the common people of the south instead, and over long years of exile built the movement that broke into revolution in 351 VR and founded the [[jesthaen|Jesthaen Republic]], named for his mother, [[jestha|Jestha]].
 
 Voldaen held, diminished, its southern half lost. Queen [[valis-voldis|Valis]] wears the crown to this day, though the council of houses that exiled Aldric governs beneath it. See [[index|Althas]] for the full telling.
 

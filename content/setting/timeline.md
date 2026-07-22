@@ -16,7 +16,7 @@ timeline
     241 VR : Polaris secedes from Voldaen
     333 VR : The Ophanim lands on Hilltop : Armada secedes
     334 VR : The Five Heroes slay the Ophanim : The king is assassinated
-    351 VR : Aldric's revolution founds the Republic of Jesthaen
+    351 VR : Aldric's revolution founds the Jesthaen Republic
     361 VR : The Jesthaen Treaty ends the war
 ```
 

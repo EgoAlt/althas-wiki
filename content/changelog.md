@@ -4,6 +4,11 @@ title: Changelog
 
 What's new on the wiki, most recent first.
 
+## 2026-07-22
+
+- **The Diplomacy web maps the powers within the nations**: the [[diplomacy|Diplomacy]] graph now shows more than the five nations. It adds the [[parish-of-orthodoxy|Parish of Orthodoxy]] (the Holy See's doctrinal arm), Pontiff [[amalthus-cruoris|Amalthus Cruoris]] and the [[the-holy-see|Holy See]] he leads, Queen [[valis-voldis|Valis Voldis]] on the throne of [[voldaen|Voldaen]], [[aldric-voldis|Aldric Voldis]] who founded and leads the [[jesthaen|Jesthaen Republic]], and [[lael|Lael]], Lord Commander of the Inquisitors, each placed by where it currently stands toward the rest. Drag any power to rearrange the web.
+- **[[lael|Lael's]] page tells more of his return**: the faith holds him up as the Icon of Shame, its proof that no one who has fallen lies beyond redemption, blessed by [[the-one-above|the One Above]] with the Miracle of Rebirth for his service and restored in time to Lord Commander of the Inquisitors.
+
 ## 2026-07-21
 
 - **The Holy See has a face**: [[amalthus-cruoris|Pontiff Amalthus Cruoris]] (new page, with a portrait) is the reigning head of [[the-holy-see|the Holy See]], raised from the Parish of Orthodoxy as one of the faith's foremost scholars of scripture, and bearer of his house's Miracle of Viaticum.
