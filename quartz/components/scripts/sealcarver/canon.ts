@@ -119,6 +119,77 @@ export const CANON: CanonSeal[] = [
   }),
 ]
 
+const codex = (name: string, book: string, seal: Seal): CanonSeal => ({
+  name,
+  level: 1,
+  domain: "Codex",
+  book,
+  gallery: true,
+  seal,
+})
+
+// The nine Level 1 Codex grimoire spells, seal designs authored for Althas
+// (approved by Lucas at the G2 gate, 2026-08-06, incl. the outward-pointing
+// expel orientation). New canon: these are ours, not the supplement's.
+export const CODEX_SEALS: CanonSeal[] = [
+  codex("Power Push", "Book of Ava", {
+    heart: { element: "body", mode: "manipulate", wrap: "none" },
+    daggers: [{ dagger: "movement-directional", mod: "none", count: 3, placement: "directional" }],
+    ring: { plain: false, targets: ["close"], qualifiers: ["body"], trigger: "none" },
+  }),
+  codex("Tava's Armor", "Book of Ava", {
+    heart: { element: "magic", mode: "create", wrap: "loop" },
+    daggers: [{ dagger: "grasp", mod: "none", count: 4, placement: "symmetric" }],
+    ring: { plain: false, targets: ["touched"], qualifiers: ["body"], trigger: "none" },
+  }),
+  codex("Ice Spike", "Book of Ava", {
+    heart: { element: "nature-water", mode: "create", wrap: "none" },
+    daggers: [
+      { dagger: "solidify", mod: "none", count: 3, placement: "symmetric" },
+      { dagger: "shape", mod: "shape-teardrop", count: 3, placement: "symmetric" },
+    ],
+    ring: { plain: false, targets: ["sensed"], qualifiers: ["space"], trigger: "none" },
+  }),
+  codex("Slumber", "Book of Illiat", {
+    heart: { element: "mind", mode: "manipulate", wrap: "none" },
+    daggers: [{ dagger: "surround", mod: "none", count: 4, placement: "symmetric" }],
+    ring: { plain: false, targets: ["close"], qualifiers: ["mind"], trigger: "none" },
+  }),
+  codex("Arcane Barrage", "Book of Illiat", {
+    heart: { element: "magic", mode: "create", wrap: "none" },
+    daggers: [{ dagger: "expel", mod: "none", count: 6, placement: "directional" }],
+    ring: { plain: false, targets: ["sensed"], qualifiers: ["body"], trigger: "none" },
+  }),
+  codex("Telepathy", "Book of Illiat", {
+    heart: { element: "mind", mode: "manipulate", wrap: "loop" },
+    daggers: [
+      { dagger: "absorption", mod: "senses", count: 2, placement: "symmetric" },
+      { dagger: "disperse", mod: "senses", count: 2, placement: "symmetric" },
+    ],
+    ring: { plain: false, targets: ["sensed"], qualifiers: ["mind"], trigger: "none" },
+  }),
+  codex("Wild Flame", "Book of Tyfar", {
+    heart: { element: "nature-fire", mode: "create", wrap: "none" },
+    daggers: [{ dagger: "expel", mod: "none", count: 3, placement: "directional" }],
+    ring: { plain: false, targets: ["close"], qualifiers: ["body"], trigger: "none" },
+  }),
+  codex("Magic Hand", "Book of Tyfar", {
+    heart: { element: "magic", mode: "create", wrap: "loop" },
+    daggers: [
+      { dagger: "shape", mod: "none", count: 2, placement: "symmetric" },
+      { dagger: "movement-omnidirectional", mod: "none", count: 2, placement: "symmetric" },
+    ],
+    ring: { plain: false, targets: ["sensed"], qualifiers: ["space"], trigger: "none" },
+  }),
+  codex("Mysterious Mist", "Book of Tyfar", {
+    heart: { element: "nature-water", mode: "create", wrap: "none" },
+    daggers: [{ dagger: "disperse", mod: "none", count: 6, placement: "symmetric" }],
+    ring: { plain: false, targets: ["sensed"], qualifiers: ["space"], trigger: "none" },
+  }),
+]
+
+CANON.push(...CODEX_SEALS)
+
 let index: Map<string, CanonSeal> | undefined
 
 export function findCanon(sig: string): CanonSeal | undefined {

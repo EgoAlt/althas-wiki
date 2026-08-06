@@ -54,7 +54,7 @@ export const TARGET_NAMES: Record<TargetId, string> = {
   sensed: "the Sensed",
   thought: "a Thought Held",
   touched: "the Touched",
-  close: "the Near",
+  close: "a Nearby Target",
 }
 
 function joinList(xs: string[]): string {

@@ -46,3 +46,13 @@ test("Arcana entries are hidden from the gallery", () => {
     assert.equal(c.gallery, false, `${c.name} must not spoil the discovery pool`)
   }
 })
+
+test("nine Codex gallery entries, grouped in three books", () => {
+  const codex = CANON.filter((c) => c.domain === "Codex")
+  assert.equal(codex.length, 9)
+  assert.equal(
+    codex.every((c) => c.gallery && c.level === 1 && c.book),
+    true,
+  )
+  assert.equal(new Set(codex.map((c) => c.book)).size, 3)
+})

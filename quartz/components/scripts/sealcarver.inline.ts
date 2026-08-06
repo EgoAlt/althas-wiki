@@ -60,7 +60,7 @@ const TARGET_LABELS: Record<TargetId, string> = {
   sensed: "Sensed",
   thought: "In Thought",
   touched: "Touched",
-  close: "Nearby",
+  close: "Nearby Target",
 }
 const TRIGGER_LABELS: Record<Exclude<TriggerId, "none">, string> = {
   "casters-will": "Caster's Will",

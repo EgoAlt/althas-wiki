@@ -69,7 +69,9 @@ function groupAngles(
   hasDirectional: boolean,
 ): number[] {
   if (g.placement === "directional") {
-    const spread = 38
+    // Keep the whole cluster inside ~120 degrees so a high count still reads
+    // as one directed volley rather than a scatter.
+    const spread = Math.min(38, 120 / Math.max(g.count - 1, 1))
     return Array.from({ length: g.count }, (_, i) => 90 + (i - (g.count - 1) / 2) * spread)
   }
   const step = 360 / Math.max(g.count, 1)
@@ -79,6 +81,12 @@ function groupAngles(
   const offset = base + gi * (step / nGroups)
   return Array.from({ length: g.count }, (_, i) => offset + i * step)
 }
+
+// Sigils are placed with rot = ring angle, which points their authored "up"
+// outward. Sigils authored sideways need a correction so their arrow points
+// radially out instead of chasing the circle (expel's arrow points right in
+// its own frame; G2 feedback caught the tangential drift).
+const ORIENT: Partial<Record<string, number>> = { expel: -90 }
 
 function heart(seal: Seal): string {
   const parts: string[] = []
@@ -101,15 +109,30 @@ function daggers(seal: Seal): string {
   const hasDirectional = seal.daggers.some((g) => g.placement === "directional")
   seal.daggers.forEach((g, gi) => {
     for (const ang of groupAngles(g, gi, n, hasDirectional)) {
-      parts.push(onRing(`functions/${g.dagger}`, R_DAGGER, ang, 135))
+      const orient = ORIENT[g.dagger] ?? 0
+      const a = (ang * Math.PI) / 180
+      parts.push(
+        place(
+          `functions/${g.dagger}`,
+          C + R_DAGGER * Math.sin(a),
+          C - R_DAGGER * Math.cos(a),
+          135,
+          ang + orient,
+        ),
+      )
       if (g.mod === "none") continue
       if (g.mod === "senses") {
         // Senses sits adjacent to its sigil (Cloaking Blast's construction).
         parts.push(onRing(`modifiers/${g.mod}`, R_MOD, ang, MOD_W))
       } else {
-        // Delay and the Shape modifiers are frames that WRAP their sigil
-        // (p8: "Expel with Delay" draws the brackets around the arrow).
-        parts.push(onRing(`modifiers/${g.mod}`, R_DAGGER, ang, 205))
+        // Delay WRAPS its sigil (p8: "Expel with Delay" draws the brackets
+        // around the arrow); Shape mods are set INTO the Shape sigil's slot.
+        // Either way the mod shares the sigil's center AND final rotation so
+        // the composite reads as one glyph.
+        const cx = C + R_DAGGER * Math.sin(a)
+        const cy = C - R_DAGGER * Math.cos(a)
+        const w = g.mod === "delay" ? 205 : 40
+        parts.push(place(`modifiers/${g.mod}`, cx, cy, w, ang + orient))
       }
     }
   })
