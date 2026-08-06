@@ -72,7 +72,9 @@ export const CANON: CanonSeal[] = [
   }),
   arcana("Flight", 3, {
     heart: { element: "body", mode: "manipulate", wrap: "loop" },
-    daggers: [{ dagger: "movement-omnidirectional", mod: "none", count: 4, placement: "symmetric" }],
+    daggers: [
+      { dagger: "movement-omnidirectional", mod: "none", count: 4, placement: "symmetric" },
+    ],
     ring: { plain: false, targets: ["caster"], qualifiers: ["body"], trigger: "none" },
   }),
   arcana("Blink Out", 4, {

@@ -93,7 +93,13 @@ export const DAGGERS: DaggerId[] = [
   "seek",
   "compress",
 ]
-export const DAGGER_MODS: DaggerMod[] = ["none", "delay", "senses", "shape-sphere", "shape-teardrop"]
+export const DAGGER_MODS: DaggerMod[] = [
+  "none",
+  "delay",
+  "senses",
+  "shape-sphere",
+  "shape-teardrop",
+]
 export const TARGETS: TargetId[] = ["caster", "sensed", "thought", "touched", "close"]
 export const TRIGGERS: TriggerId[] = ["none", "casters-will", "targets-will"]
 export const MAX_DAGGER_GROUPS = 3

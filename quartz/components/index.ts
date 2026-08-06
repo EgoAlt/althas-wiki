@@ -16,6 +16,7 @@ import Graph from "./Graph"
 import Backlinks from "./Backlinks"
 import Infobox from "./Infobox"
 import DiceRoller from "./DiceRoller"
+import Sealcarver from "./Sealcarver"
 import DiplomacyGraph from "./DiplomacyGraph"
 import ChronicleCalendar from "./ChronicleCalendar"
 import NationIndex from "./NationIndex"
@@ -47,6 +48,7 @@ export {
   Backlinks,
   Infobox,
   DiceRoller,
+  Sealcarver,
   DiplomacyGraph,
   ChronicleCalendar,
   NationIndex,

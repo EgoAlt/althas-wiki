@@ -1,0 +1,205 @@
+@use "../../styles/variables.scss" as *;
+
+.sealcarver {
+  margin-top: 1.5rem;
+
+  .sc-canvas {
+    display: flex;
+    justify-content: center;
+
+    svg {
+      width: 100%;
+      max-width: 480px;
+      height: auto;
+      color: var(--dark); // currentColor hook: seal strokes follow the theme
+    }
+  }
+
+  .sc-name {
+    text-align: center;
+    font-style: italic;
+    min-height: 1.6em;
+    margin: 0.6rem 0 0.8rem;
+    color: var(--darkgray);
+
+    &.sc-name-canon {
+      font-style: normal;
+      font-weight: 600;
+      color: var(--secondary);
+      transition: color 0.3s ease;
+    }
+  }
+
+  .sc-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .sc-btn {
+    font-family: inherit;
+    font-size: 0.85rem;
+    padding: 0.35rem 0.7rem;
+    border: 1px solid var(--lightgray);
+    border-radius: 5px;
+    background: var(--light);
+    color: var(--dark);
+    cursor: pointer;
+
+    &:hover {
+      border-color: var(--secondary);
+    }
+  }
+
+  .sc-export-preview {
+    display: flex;
+    justify-content: center;
+
+    img {
+      max-width: 240px;
+      margin-top: 0.5rem;
+      border: 1px solid var(--lightgray);
+      border-radius: 5px;
+    }
+  }
+
+  .sc-editor h3 {
+    margin: 1.2rem 0 0.5rem;
+  }
+
+  .sc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(56px, 1fr));
+    gap: 0.35rem;
+  }
+
+  .sc-sigil-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    padding: 0.3rem 0.15rem;
+    border: 1px solid var(--lightgray);
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+    color: var(--darkgray);
+
+    svg {
+      width: 34px;
+      height: 34px;
+      color: var(--darkgray);
+    }
+
+    span {
+      font-size: 0.55rem;
+      line-height: 1.1;
+      text-align: center;
+      color: var(--gray);
+    }
+
+    &.sc-selected {
+      border-color: var(--secondary);
+      color: var(--secondary);
+
+      svg {
+        color: var(--secondary);
+      }
+    }
+  }
+
+  .sc-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.4rem 0;
+  }
+
+  .sc-pill-group {
+    display: inline-flex;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+  }
+
+  .sc-pill {
+    font-size: 0.72rem;
+    padding: 0.2rem 0.55rem;
+    border: 1px solid var(--lightgray);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--darkgray);
+    cursor: pointer;
+
+    &.sc-selected {
+      border-color: var(--secondary);
+      color: var(--secondary);
+    }
+  }
+
+  .sc-dagger-group {
+    border: 1px solid var(--lightgray);
+    border-radius: 8px;
+    padding: 0.6rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .sc-group-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.35rem;
+
+    strong {
+      font-size: 0.8rem;
+      color: var(--gray);
+    }
+  }
+
+  .sc-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 0.7rem;
+  }
+
+  .sc-gallery-book {
+    grid-column: 1 / -1;
+    margin: 0.5rem 0 0;
+    font-size: 0.95rem;
+  }
+
+  .sc-gallery-card {
+    border: 1px solid var(--lightgray);
+    border-radius: 8px;
+    padding: 0.5rem;
+    background: transparent;
+    cursor: pointer;
+    text-align: center;
+    color: var(--dark);
+
+    svg {
+      width: 100%;
+      height: auto;
+      color: var(--dark);
+    }
+
+    figcaption {
+      font-size: 0.75rem;
+      margin-top: 0.3rem;
+      color: var(--darkgray);
+    }
+  }
+
+  .sc-gallery-hint {
+    font-size: 0.85rem;
+    color: var(--gray);
+  }
+
+  @media all and #{$mobile} {
+    .sc-grid {
+      grid-template-columns: repeat(auto-fill, minmax(48px, 1fr));
+    }
+  }
+}

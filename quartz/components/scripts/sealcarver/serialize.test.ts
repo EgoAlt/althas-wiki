@@ -16,7 +16,12 @@ test("roundtrip identity for a maximal seal", () => {
       { dagger: "expel", mod: "delay", count: 5, placement: "directional" },
       { dagger: "seek", mod: "shape-teardrop", count: 8, placement: "symmetric" },
     ],
-    ring: { plain: false, targets: ["caster", "thought"], qualifiers: ["mind", "time"], trigger: "targets-will" },
+    ring: {
+      plain: false,
+      targets: ["caster", "thought"],
+      qualifiers: ["mind", "time"],
+      trigger: "targets-will",
+    },
   }
   assert.deepEqual(decodeSeal(encodeSeal(s)), s)
 })

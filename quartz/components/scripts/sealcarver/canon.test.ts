@@ -24,7 +24,9 @@ test("findCanon matches Flight at a different dagger count", () => {
   const flight: Seal = {
     heart: { element: "body", mode: "manipulate", wrap: "loop" },
     // canon table uses count 4; a player using 6 still discovers Flight
-    daggers: [{ dagger: "movement-omnidirectional", mod: "none", count: 6, placement: "symmetric" }],
+    daggers: [
+      { dagger: "movement-omnidirectional", mod: "none", count: 6, placement: "symmetric" },
+    ],
     ring: { plain: false, targets: ["caster"], qualifiers: ["body"], trigger: "none" },
   }
   assert.equal(findCanon(signature(flight))?.name, "Flight")

@@ -62,7 +62,12 @@ function onRing(
   return place(key, C + radius * Math.sin(a), C - radius * Math.cos(a), target, angleDeg, fit)
 }
 
-function groupAngles(g: DaggerGroup, gi: number, nGroups: number, hasDirectional: boolean): number[] {
+function groupAngles(
+  g: DaggerGroup,
+  gi: number,
+  nGroups: number,
+  hasDirectional: boolean,
+): number[] {
   if (g.placement === "directional") {
     const spread = 38
     return Array.from({ length: g.count }, (_, i) => 90 + (i - (g.count - 1) / 2) * spread)

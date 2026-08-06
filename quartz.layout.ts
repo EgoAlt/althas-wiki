@@ -20,6 +20,10 @@ export const sharedPageComponents: SharedLayout = {
       component: Component.DiceRoller(),
       condition: (page) => page.fileData.slug === "dice-roller",
     }),
+    Component.ConditionalRender({
+      component: Component.Sealcarver(),
+      condition: (page) => page.fileData.slug === "sealcarver",
+    }),
   ],
   footer: Component.Footer({
     links: {

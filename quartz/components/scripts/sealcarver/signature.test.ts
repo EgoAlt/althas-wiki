@@ -6,7 +6,9 @@ import { Seal, defaultSeal } from "./types"
 function flightish(): Seal {
   return {
     heart: { element: "body", mode: "manipulate", wrap: "loop" },
-    daggers: [{ dagger: "movement-omnidirectional", mod: "none", count: 4, placement: "symmetric" }],
+    daggers: [
+      { dagger: "movement-omnidirectional", mod: "none", count: 4, placement: "symmetric" },
+    ],
     ring: { plain: false, targets: ["caster"], qualifiers: ["body"], trigger: "none" },
   }
 }

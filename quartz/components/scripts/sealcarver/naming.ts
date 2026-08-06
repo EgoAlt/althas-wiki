@@ -85,7 +85,8 @@ function targetPhrase(seal: Seal): string {
 }
 
 export function autoName(seal: Seal): string {
-  const wrap = seal.heart.wrap === "loop" ? "Looping " : seal.heart.wrap === "reset" ? "Recurring " : ""
+  const wrap =
+    seal.heart.wrap === "loop" ? "Looping " : seal.heart.wrap === "reset" ? "Recurring " : ""
   const mode = seal.heart.mode === "create" ? "Creation" : "Manipulation"
   let name = `Seal of ${wrap}${ELEMENT_NAMES[seal.heart.element]} ${mode} by ${daggerPhrase(seal.daggers)}`
   if (!seal.ring.plain) name += ` upon ${targetPhrase(seal)}`

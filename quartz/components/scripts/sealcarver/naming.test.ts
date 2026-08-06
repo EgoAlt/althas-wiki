@@ -10,10 +10,15 @@ test("default seal name", () => {
 test("flight-shaped seal name", () => {
   const s: Seal = {
     heart: { element: "body", mode: "manipulate", wrap: "loop" },
-    daggers: [{ dagger: "movement-omnidirectional", mod: "none", count: 4, placement: "symmetric" }],
+    daggers: [
+      { dagger: "movement-omnidirectional", mod: "none", count: 4, placement: "symmetric" },
+    ],
     ring: { plain: false, targets: ["caster"], qualifiers: ["body"], trigger: "none" },
   }
-  assert.equal(autoName(s), "Seal of Looping Body Manipulation by Free Motion upon the Caster's Body")
+  assert.equal(
+    autoName(s),
+    "Seal of Looping Body Manipulation by Free Motion upon the Caster's Body",
+  )
 })
 
 test("delayed expel renders Delayed Expulsion", () => {
