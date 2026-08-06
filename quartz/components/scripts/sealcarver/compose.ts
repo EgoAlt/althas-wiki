@@ -156,7 +156,7 @@ export function compose(seal: Seal): string {
   )
 }
 
-export function composeForExport(seal: Seal, bg: "white" | "transparent"): string {
+export function composeForSave(seal: Seal, bg: "white" | "transparent"): string {
   let svg = compose(seal).replace(/currentColor/g, "#000000")
   if (bg === "white") {
     svg = svg.replace(">", `><rect width="1000" height="1000" fill="#ffffff"/>`)

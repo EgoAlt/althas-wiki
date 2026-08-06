@@ -25,17 +25,17 @@ export default (() => {
           <button type="button" class="sc-btn sc-share">
             Copy link
           </button>
-          <button type="button" class="sc-btn sc-export-svg">
+          <button type="button" class="sc-btn sc-save-svg">
             SVG
           </button>
-          <button type="button" class="sc-btn sc-export-png">
+          <button type="button" class="sc-btn sc-save-png">
             PNG
           </button>
-          <button type="button" class="sc-btn sc-export-png-t">
+          <button type="button" class="sc-btn sc-save-png-t">
             PNG (transparent)
           </button>
         </div>
-        <div class="sc-export-preview"></div>
+        <div class="sc-save-preview"></div>
 
         <section class="sc-editor">
           <h3>The Heart</h3>

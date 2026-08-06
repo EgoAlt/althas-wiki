@@ -1,6 +1,6 @@
 import assert from "node:assert/strict"
 import { test } from "node:test"
-import { compose, composeForExport } from "./compose"
+import { compose, composeForSave } from "./compose"
 import { SIGILS } from "./sigils.gen"
 import { Seal, defaultSeal } from "./types"
 
@@ -50,11 +50,11 @@ test("trigger sigils appear when set", () => {
 })
 
 test("export variants are theme independent", () => {
-  const white = composeForExport(detailed(), "white")
+  const white = composeForSave(detailed(), "white")
   assert.ok(white.includes("<rect"))
   assert.ok(white.includes("#000000"))
   assert.ok(!white.includes("currentColor"))
-  const transparent = composeForExport(detailed(), "transparent")
+  const transparent = composeForSave(detailed(), "transparent")
   assert.ok(!transparent.includes("<rect"))
   assert.ok(!transparent.includes("currentColor"))
 })

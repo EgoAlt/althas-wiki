@@ -1,5 +1,10 @@
+// CAUTION: the word "e" + "xport" must NEVER appear anywhere in this file,
+// not even in a comment or class-name string. Quartz's inline-script-loader
+// (quartz/cli/handlers.js) strips the first literal occurrence from the
+// source before bundling, which silently corrupts whatever contains it
+// (found 2026-08-06 when ".sc-e*-preview" became ".sc--preview").
 import { CANON, findCanon } from "./sealcarver/canon"
-import { compose, composeForExport } from "./sealcarver/compose"
+import { compose, composeForSave } from "./sealcarver/compose"
 import { autoName, ELEMENT_NAMES } from "./sealcarver/naming"
 import { decodeSeal, encodeSeal } from "./sealcarver/serialize"
 import { SIGILS } from "./sealcarver/sigils.gen"
@@ -22,7 +27,7 @@ import {
 } from "./sealcarver/types"
 
 const STORAGE_KEY = "althas-sealcarver-v1"
-const EXPORT_SIZE = 2000
+const SAVE_SIZE = 2000
 
 // UI copy (short imperative labels; naming.ts nouns are for generated names)
 const DAGGER_LABELS: Record<DaggerId, string> = {
@@ -146,7 +151,7 @@ function setupSealcarver() {
   const daggersEl = root.querySelector<HTMLElement>(".sc-zone-daggers")!
   const ringEl = root.querySelector<HTMLElement>(".sc-zone-ring")!
   const galleryEl = root.querySelector<HTMLElement>(".sc-gallery")!
-  const previewEl = root.querySelector<HTMLElement>(".sc-export-preview")!
+  const previewEl = root.querySelector<HTMLElement>(".sc-save-preview")!
   const shareBtn = root.querySelector<HTMLButtonElement>(".sc-share")!
 
   let seal = loadInitial()
@@ -284,37 +289,44 @@ function setupSealcarver() {
     try {
       window.localStorage.setItem(STORAGE_KEY, encodeSeal(seal))
     } catch {
-      // storage full or unavailable: sharing and export still work
+      // storage full or unavailable: sharing and saving still work
     }
   }
 
   function download(filename: string, href: string): void {
-    const a = document.createElement("a")
-    a.href = href
-    a.download = filename
-    a.click()
+    // Programmatic downloads can be blocked in embedded browsers; treat the
+    // click as best-effort and never let it break the flow around it.
+    try {
+      const a = document.createElement("a")
+      a.href = href
+      a.download = filename
+      a.click()
+    } catch {
+      // the inline preview (PNG) or copied link still gives users a path
+    }
   }
 
-  function exportSvg(): void {
-    const svg = '<?xml version="1.0" encoding="UTF-8"?>\n' + composeForExport(seal, "transparent")
+  function saveSvg(): void {
+    const svg = '<?xml version="1.0" encoding="UTF-8"?>\n' + composeForSave(seal, "transparent")
     const url = URL.createObjectURL(new Blob([svg], { type: "image/svg+xml" }))
     download("seal.svg", url)
     setTimeout(() => URL.revokeObjectURL(url), 10_000)
   }
 
-  function exportPng(bg: "white" | "transparent"): void {
-    const svg = composeForExport(seal, bg)
+  function savePng(bg: "white" | "transparent"): void {
+    const svg = composeForSave(seal, bg)
     const img = new Image()
     img.onload = () => {
       const c = document.createElement("canvas")
-      c.width = EXPORT_SIZE
-      c.height = EXPORT_SIZE
+      c.width = SAVE_SIZE
+      c.height = SAVE_SIZE
       const ctx = c.getContext("2d")!
-      ctx.drawImage(img, 0, 0, EXPORT_SIZE, EXPORT_SIZE)
+      ctx.drawImage(img, 0, 0, SAVE_SIZE, SAVE_SIZE)
       const data = c.toDataURL("image/png")
+      // preview FIRST (iOS long-press save path), download as best-effort:
+      // a blocked download must never cost the user their image
+      previewEl.innerHTML = `<img alt="Saved seal" src="${data}">`
       download("seal.png", data)
-      // inline preview so iOS users can long-press to save
-      previewEl.innerHTML = `<img alt="Exported seal" src="${data}">`
     }
     img.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svg)
   }
@@ -398,9 +410,9 @@ function setupSealcarver() {
     if (!t || !root!.contains(t)) return
     if (t.classList.contains("sc-surprise")) apply("surprise")
     else if (t.classList.contains("sc-share")) share()
-    else if (t.classList.contains("sc-export-svg")) exportSvg()
-    else if (t.classList.contains("sc-export-png")) exportPng("white")
-    else if (t.classList.contains("sc-export-png-t")) exportPng("transparent")
+    else if (t.classList.contains("sc-save-svg")) saveSvg()
+    else if (t.classList.contains("sc-save-png")) savePng("white")
+    else if (t.classList.contains("sc-save-png-t")) savePng("transparent")
   }
 
   root.addEventListener("click", onClick)
