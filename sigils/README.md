@@ -89,7 +89,7 @@ generator script, and a generator is wanted regardless.
 
 On stroke widths, one trap is worth naming because it looks like the fix and is
 not: do **not** flatten every `stroke-width` to a single value. The artist varies
-weights deliberately (`functions/absorption.svg` carries 4.87px, 5.05px *and*
+weights deliberately (`functions/absorption.svg` carries 4.87px, 5.05px _and_
 15.7px strokes, the last being an arrowhead). Rescale proportionally so the
 ratios between strokes within one sigil survive.
 
