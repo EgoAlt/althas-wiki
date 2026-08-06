@@ -1,0 +1,677 @@
+{
+  "source": "Codex of Arcane Arts v1, Roc Humet Vidal, CC-BY 4.0",
+  "note": "width/height are the SVG's own viewBox dimensions, in its local units.",
+  "sigils": [
+    {
+      "id": "air-standalone",
+      "category": "elements",
+      "source_file": "Air (standalone).svg",
+      "width": 106.0,
+      "height": 101.0
+    },
+    {
+      "id": "body-create",
+      "category": "elements",
+      "source_file": "Body - create.svg",
+      "width": 288.0,
+      "height": 243.0
+    },
+    {
+      "id": "body-manipulate",
+      "category": "elements",
+      "source_file": "Body - manipulate.svg",
+      "width": 336.0,
+      "height": 243.0
+    },
+    {
+      "id": "body",
+      "category": "elements",
+      "source_file": "Body.svg",
+      "width": 192.0,
+      "height": 243.0
+    },
+    {
+      "id": "earth-standalone",
+      "category": "elements",
+      "source_file": "Earth (standalone).svg",
+      "width": 112.0,
+      "height": 106.0
+    },
+    {
+      "id": "fire-standalone",
+      "category": "elements",
+      "source_file": "Fire (standalone).svg",
+      "width": 82.0,
+      "height": 106.0
+    },
+    {
+      "id": "light-standalone",
+      "category": "elements",
+      "source_file": "Light (standalone).svg",
+      "width": 96.0,
+      "height": 97.0
+    },
+    {
+      "id": "magic-create",
+      "category": "elements",
+      "source_file": "Magic - create.svg",
+      "width": 183.0,
+      "height": 283.0
+    },
+    {
+      "id": "magic-manipulate",
+      "category": "elements",
+      "source_file": "Magic - manipulate.svg",
+      "width": 227.0,
+      "height": 283.0
+    },
+    {
+      "id": "magic",
+      "category": "elements",
+      "source_file": "Magic.svg",
+      "width": 158.0,
+      "height": 283.0
+    },
+    {
+      "id": "metal-standalone",
+      "category": "elements",
+      "source_file": "Metal (standalone).svg",
+      "width": 123.0,
+      "height": 80.0
+    },
+    {
+      "id": "mind-create",
+      "category": "elements",
+      "source_file": "Mind - create.svg",
+      "width": 328.0,
+      "height": 185.0
+    },
+    {
+      "id": "mind-manipulate",
+      "category": "elements",
+      "source_file": "Mind - manipulate.svg",
+      "width": 328.0,
+      "height": 281.0
+    },
+    {
+      "id": "mind",
+      "category": "elements",
+      "source_file": "Mind.svg",
+      "width": 328.0,
+      "height": 161.0
+    },
+    {
+      "id": "nature-air-create",
+      "category": "elements",
+      "source_file": "Nature (air) - create.svg",
+      "width": 262.0,
+      "height": 262.0
+    },
+    {
+      "id": "nature-air-manipulate",
+      "category": "elements",
+      "source_file": "Nature (air) - manipulate.svg",
+      "width": 336.0,
+      "height": 262.0
+    },
+    {
+      "id": "nature-air",
+      "category": "elements",
+      "source_file": "Nature (air).svg",
+      "width": 260.0,
+      "height": 262.0
+    },
+    {
+      "id": "nature-blank-create",
+      "category": "elements",
+      "source_file": "Nature (blank) - create.svg",
+      "width": 262.0,
+      "height": 262.0
+    },
+    {
+      "id": "nature-blank-manipulate",
+      "category": "elements",
+      "source_file": "Nature (blank) - manipulate.svg",
+      "width": 336.0,
+      "height": 262.0
+    },
+    {
+      "id": "nature-blank",
+      "category": "elements",
+      "source_file": "Nature (blank).svg",
+      "width": 260.0,
+      "height": 262.0
+    },
+    {
+      "id": "nature-earth-create",
+      "category": "elements",
+      "source_file": "Nature (earth) - create.svg",
+      "width": 262.0,
+      "height": 262.0
+    },
+    {
+      "id": "nature-earth-manipulate",
+      "category": "elements",
+      "source_file": "Nature (earth) - manipulate.svg",
+      "width": 336.0,
+      "height": 262.0
+    },
+    {
+      "id": "nature-earth",
+      "category": "elements",
+      "source_file": "Nature (earth).svg",
+      "width": 260.0,
+      "height": 262.0
+    },
+    {
+      "id": "nature-fire-create",
+      "category": "elements",
+      "source_file": "Nature (fire) - create.svg",
+      "width": 262.0,
+      "height": 262.0
+    },
+    {
+      "id": "nature-fire-manipulate",
+      "category": "elements",
+      "source_file": "Nature (fire) - manipulate.svg",
+      "width": 336.0,
+      "height": 262.0
+    },
+    {
+      "id": "nature-fire",
+      "category": "elements",
+      "source_file": "Nature (fire).svg",
+      "width": 260.0,
+      "height": 262.0
+    },
+    {
+      "id": "nature-light-create",
+      "category": "elements",
+      "source_file": "Nature (light) - create.svg",
+      "width": 262.0,
+      "height": 262.0
+    },
+    {
+      "id": "nature-light-manipulate",
+      "category": "elements",
+      "source_file": "Nature (light) - manipulate.svg",
+      "width": 336.0,
+      "height": 262.0
+    },
+    {
+      "id": "nature-light",
+      "category": "elements",
+      "source_file": "Nature (light).svg",
+      "width": 260.0,
+      "height": 262.0
+    },
+    {
+      "id": "nature-metal-create",
+      "category": "elements",
+      "source_file": "Nature (metal) - create.svg",
+      "width": 262.0,
+      "height": 262.0
+    },
+    {
+      "id": "nature-metal-manipulate",
+      "category": "elements",
+      "source_file": "Nature (metal) - manipulate.svg",
+      "width": 336.0,
+      "height": 262.0
+    },
+    {
+      "id": "nature-metal",
+      "category": "elements",
+      "source_file": "Nature (metal).svg",
+      "width": 260.0,
+      "height": 262.0
+    },
+    {
+      "id": "nature-plant-create",
+      "category": "elements",
+      "source_file": "Nature (plant) - create.svg",
+      "width": 262.0,
+      "height": 262.0
+    },
+    {
+      "id": "nature-plant-manipulate",
+      "category": "elements",
+      "source_file": "Nature (plant) - manipulate.svg",
+      "width": 336.0,
+      "height": 262.0
+    },
+    {
+      "id": "nature-plant",
+      "category": "elements",
+      "source_file": "Nature (plant).svg",
+      "width": 260.0,
+      "height": 262.0
+    },
+    {
+      "id": "nature-water-create",
+      "category": "elements",
+      "source_file": "Nature (water) - create.svg",
+      "width": 262.0,
+      "height": 262.0
+    },
+    {
+      "id": "nature-water-manipulate",
+      "category": "elements",
+      "source_file": "Nature (water) - manipulate.svg",
+      "width": 336.0,
+      "height": 262.0
+    },
+    {
+      "id": "nature-water",
+      "category": "elements",
+      "source_file": "Nature (water).svg",
+      "width": 260.0,
+      "height": 262.0
+    },
+    {
+      "id": "plant-standalone",
+      "category": "elements",
+      "source_file": "Plant (standalone).svg",
+      "width": 117.0,
+      "height": 115.0
+    },
+    {
+      "id": "space-create",
+      "category": "elements",
+      "source_file": "Space - create.svg",
+      "width": 363.0,
+      "height": 224.0
+    },
+    {
+      "id": "space-manipulate",
+      "category": "elements",
+      "source_file": "Space - manipulate.svg",
+      "width": 363.0,
+      "height": 294.0
+    },
+    {
+      "id": "space",
+      "category": "elements",
+      "source_file": "Space.svg",
+      "width": 363.0,
+      "height": 147.0
+    },
+    {
+      "id": "time-create",
+      "category": "elements",
+      "source_file": "Time - create.svg",
+      "width": 200.0,
+      "height": 242.0
+    },
+    {
+      "id": "time-manipulate",
+      "category": "elements",
+      "source_file": "Time - manipulate.svg",
+      "width": 200.0,
+      "height": 242.0
+    },
+    {
+      "id": "time",
+      "category": "elements",
+      "source_file": "Time.svg",
+      "width": 200.0,
+      "height": 242.0
+    },
+    {
+      "id": "water-standalone",
+      "category": "elements",
+      "source_file": "Water (standalone).svg",
+      "width": 112.0,
+      "height": 116.0
+    },
+    {
+      "id": "absorption",
+      "category": "functions",
+      "source_file": "Absorption.svg",
+      "width": 86.0,
+      "height": 86.0
+    },
+    {
+      "id": "break",
+      "category": "functions",
+      "source_file": "Break.svg",
+      "width": 110.0,
+      "height": 48.0
+    },
+    {
+      "id": "compress",
+      "category": "functions",
+      "source_file": "Compress.svg",
+      "width": 121.0,
+      "height": 52.0
+    },
+    {
+      "id": "disperse",
+      "category": "functions",
+      "source_file": "Disperse.svg",
+      "width": 50.0,
+      "height": 48.0
+    },
+    {
+      "id": "expel",
+      "category": "functions",
+      "source_file": "Expel.svg",
+      "width": 119.0,
+      "height": 38.0
+    },
+    {
+      "id": "fuse",
+      "category": "functions",
+      "source_file": "Fuse.svg",
+      "width": 112.0,
+      "height": 31.0
+    },
+    {
+      "id": "grasp",
+      "category": "functions",
+      "source_file": "Grasp.svg",
+      "width": 107.0,
+      "height": 34.0
+    },
+    {
+      "id": "movement-directional",
+      "category": "functions",
+      "source_file": "Movement (directional).svg",
+      "width": 60.0,
+      "height": 67.0
+    },
+    {
+      "id": "movement-omnidirectional",
+      "category": "functions",
+      "source_file": "Movement (omnidirectional).svg",
+      "width": 99.0,
+      "height": 81.0
+    },
+    {
+      "id": "movement-omnidirectional-surface",
+      "category": "functions",
+      "source_file": "Movement (omnidirectional, surface).svg",
+      "width": 125.0,
+      "height": 102.0
+    },
+    {
+      "id": "seek",
+      "category": "functions",
+      "source_file": "Seek.svg",
+      "width": 82.0,
+      "height": 82.0
+    },
+    {
+      "id": "shape",
+      "category": "functions",
+      "source_file": "Shape.svg",
+      "width": 118.0,
+      "height": 47.0
+    },
+    {
+      "id": "solidify",
+      "category": "functions",
+      "source_file": "Solidify.svg",
+      "width": 101.0,
+      "height": 84.0
+    },
+    {
+      "id": "surround",
+      "category": "functions",
+      "source_file": "Surround.svg",
+      "width": 128.0,
+      "height": 47.0
+    },
+    {
+      "id": "transfer",
+      "category": "functions",
+      "source_file": "Transfer.svg",
+      "width": 112.0,
+      "height": 31.0
+    },
+    {
+      "id": "wall",
+      "category": "functions",
+      "source_file": "Wall.svg",
+      "width": 86.0,
+      "height": 48.0
+    },
+    {
+      "id": "create",
+      "category": "modifiers",
+      "source_file": "Create.svg",
+      "width": 79.0,
+      "height": 29.0
+    },
+    {
+      "id": "delay",
+      "category": "modifiers",
+      "source_file": "Delay.svg",
+      "width": 166.0,
+      "height": 70.0
+    },
+    {
+      "id": "loop",
+      "category": "modifiers",
+      "source_file": "Loop.svg",
+      "width": 165.0,
+      "height": 162.0
+    },
+    {
+      "id": "manipulate",
+      "category": "modifiers",
+      "source_file": "Manipulate.svg",
+      "width": 74.0,
+      "height": 63.0
+    },
+    {
+      "id": "reset",
+      "category": "modifiers",
+      "source_file": "Reset.svg",
+      "width": 190.0,
+      "height": 188.0
+    },
+    {
+      "id": "senses",
+      "category": "modifiers",
+      "source_file": "Senses.svg",
+      "width": 81.0,
+      "height": 35.0
+    },
+    {
+      "id": "shape-sphere",
+      "category": "modifiers",
+      "source_file": "Shape (sphere).svg",
+      "width": 76.0,
+      "height": 76.0
+    },
+    {
+      "id": "shape-teardrop",
+      "category": "modifiers",
+      "source_file": "Shape (teardrop).svg",
+      "width": 76.0,
+      "height": 112.0
+    },
+    {
+      "id": "caster",
+      "category": "targets",
+      "source_file": "Caster.svg",
+      "width": 326.0,
+      "height": 50.0
+    },
+    {
+      "id": "close",
+      "category": "targets",
+      "source_file": "Close.svg",
+      "width": 326.0,
+      "height": 50.0
+    },
+    {
+      "id": "sensed",
+      "category": "targets",
+      "source_file": "Sensed.svg",
+      "width": 326.0,
+      "height": 50.0
+    },
+    {
+      "id": "thought",
+      "category": "targets",
+      "source_file": "Thought.svg",
+      "width": 326.0,
+      "height": 50.0
+    },
+    {
+      "id": "touched",
+      "category": "targets",
+      "source_file": "Touched.svg",
+      "width": 326.0,
+      "height": 50.0
+    }
+  ],
+  "reference_circles": [
+    {
+      "id": "adjust-reality",
+      "source_file": "Adjust reality.svg",
+      "width": 1000.0,
+      "height": 1000.0
+    },
+    {
+      "id": "arcane-reflection",
+      "source_file": "Arcane reflection.svg",
+      "width": 2000.0,
+      "height": 2000.0
+    },
+    {
+      "id": "blink-out",
+      "source_file": "Blink out.svg",
+      "width": 1000.0,
+      "height": 1000.0
+    },
+    {
+      "id": "chain-lightning",
+      "source_file": "Chain lightning.svg",
+      "width": 1000.0,
+      "height": 1000.0
+    },
+    {
+      "id": "cinder-grasp",
+      "source_file": "Cinder grasp.svg",
+      "width": 1000.0,
+      "height": 1000.0
+    },
+    {
+      "id": "cloaking-blast",
+      "source_file": "Cloaking blast.svg",
+      "width": 2000.0,
+      "height": 2000.0
+    },
+    {
+      "id": "confusing-aura",
+      "source_file": "Confusing aura.svg",
+      "width": 1000.0,
+      "height": 1000.0
+    },
+    {
+      "id": "counterspell-instant",
+      "source_file": "Counterspell (instant).svg",
+      "width": 1000.0,
+      "height": 1000.0
+    },
+    {
+      "id": "counterspell-simple",
+      "source_file": "Counterspell (simple).svg",
+      "width": 1000.0,
+      "height": 1000.0
+    },
+    {
+      "id": "earthquake",
+      "source_file": "Earthquake.svg",
+      "width": 1000.0,
+      "height": 1000.0
+    },
+    {
+      "id": "falling-sky-1",
+      "source_file": "Falling sky 1.svg",
+      "width": 2000.0,
+      "height": 2000.0
+    },
+    {
+      "id": "falling-sky-2",
+      "source_file": "Falling sky 2.svg",
+      "width": 2000.0,
+      "height": 2000.0
+    },
+    {
+      "id": "flight",
+      "source_file": "Flight.svg",
+      "width": 1000.0,
+      "height": 1000.0
+    },
+    {
+      "id": "floating-eye",
+      "source_file": "Floating eye.svg",
+      "width": 1500.0,
+      "height": 1500.0
+    },
+    {
+      "id": "premonition",
+      "source_file": "Premonition.svg",
+      "width": 1000.0,
+      "height": 1000.0
+    },
+    {
+      "id": "preservation-blast-1",
+      "source_file": "Preservation blast 1.svg",
+      "width": 1000.0,
+      "height": 1000.0
+    },
+    {
+      "id": "preservation-blast-2",
+      "source_file": "Preservation blast 2.svg",
+      "width": 1000.0,
+      "height": 1000.0
+    },
+    {
+      "id": "rift-walker-arcane-mark",
+      "source_file": "Rift walker (arcane mark).svg",
+      "width": 1000.0,
+      "height": 1000.0
+    },
+    {
+      "id": "rift-walker-teleportation",
+      "source_file": "Rift walker (teleportation).svg",
+      "width": 1000.0,
+      "height": 1000.0
+    },
+    {
+      "id": "rune-ward",
+      "source_file": "Rune ward.svg",
+      "width": 1000.0,
+      "height": 1000.0
+    },
+    {
+      "id": "sensory-projection",
+      "source_file": "Sensory projection.svg",
+      "width": 2000.0,
+      "height": 2000.0
+    },
+    {
+      "id": "telekinesis",
+      "source_file": "Telekinesis.svg",
+      "width": 1000.0,
+      "height": 1000.0
+    },
+    {
+      "id": "unleash-chaos",
+      "source_file": "Unleash chaos.svg",
+      "width": 1000.0,
+      "height": 1000.0
+    },
+    {
+      "id": "wall-walk",
+      "source_file": "Wall walk.svg",
+      "width": 1000.0,
+      "height": 1000.0
+    }
+  ]
+}
