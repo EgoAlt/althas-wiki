@@ -526,6 +526,22 @@
       "source_file": "Touched.svg",
       "width": 326.0,
       "height": 50.0
+    },
+    {
+      "id": "casters-will",
+      "category": "triggers",
+      "source_file": "p9 Triggers table, Caster's Will",
+      "width": 65.0,
+      "height": 23.0,
+      "provenance": "extracted from Codex_of_Arcane_Arts_v1.pdf p9 by scripts/extract-trigger-sigils.py, not from the author's asset pack"
+    },
+    {
+      "id": "targets-will",
+      "category": "triggers",
+      "source_file": "p9 Triggers table, Target's Will",
+      "width": 33.0,
+      "height": 25.0,
+      "provenance": "extracted from Codex_of_Arcane_Arts_v1.pdf p9 by scripts/extract-trigger-sigils.py, not from the author's asset pack"
     }
   ],
   "reference_circles": [

@@ -17,6 +17,7 @@ sigils/
   functions/   (16)    the Daggers: how the seal acts
   modifiers/    (8)    Create, Manipulate, Loop, Reset, Delay, Senses, 2 Shapes
   targets/      (5)    the Ring: who or what the seal acts on
+  triggers/     (2)    the Ring: when the seal fires (extracted, see below)
   reference-circles/ (24)  the author's own finished compositions, for comparison
 ```
 
@@ -109,7 +110,9 @@ how the source art actually behaves rather than how it might.
   pre-composed set does not cover.
 - **Finished circles use a normalized square canvas**, 1000x1000 for most and
   1500 or 2000 for the largest compound seals.
-- **The two trigger sigils are missing from the source pack.** Caster's Will and
-  Target's Will are documented on p9 of the PDF but ship no SVG. Anything needing
-  them has to trace or redraw them, and they are absent here rather than
-  overlooked.
+- **The two trigger sigils are not from the author's asset pack.** Caster's Will
+  and Target's Will ship no SVG in the pack; the files in `triggers/` were
+  extracted from the PDF's own p9 vector art by
+  `scripts/extract-trigger-sigils.py` (method validated against a known glyph,
+  approved by Lucas 2026-08-06). Their manifest entries carry a `provenance`
+  field saying exactly this.
