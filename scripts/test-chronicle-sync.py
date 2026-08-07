@@ -70,6 +70,43 @@ def test_render_omits_current_date_when_absent():
     out = sync.render("Althas", None, "body\n")
     assert "current-date" not in out
 
+PUBLIC_AFTER_GM = """## Codex Magic
+
+Public body.
+
+> [!gm-only]
+> A secret note.
+
+> [!note] Attribution
+> Adapted under CC-BY 4.0.
+"""
+
+def test_public_callout_after_gm_survives():
+    # Regression: a public callout following a GM block was being swallowed by
+    # the GM strip's blank-gap lookahead, silently dropping (e.g.) CC-BY attribution.
+    body = sync.strip_callouts(PUBLIC_AFTER_GM)
+    assert "A secret note." not in body, "GM callout must still be stripped"
+    assert "Attribution" in body, "public callout after a GM block must survive"
+    assert "CC-BY 4.0" in body
+
+CHAINED_GM = """## Secrets
+
+> [!gm-only]
+> First secret.
+
+> [!gm-notes]
+> Second secret.
+
+Public tail.
+"""
+
+def test_chained_gm_callouts_all_stripped():
+    # The blank-gap lookahead must still chain consecutive GM callouts.
+    body = sync.strip_callouts(CHAINED_GM)
+    assert "First secret." not in body
+    assert "Second secret." not in body
+    assert "Public tail." in body
+
 if __name__ == "__main__":
     for name, fn in sorted(globals().items()):
         if name.startswith("test_") and callable(fn):

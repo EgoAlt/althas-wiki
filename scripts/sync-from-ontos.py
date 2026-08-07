@@ -272,6 +272,9 @@ INFOBOX_KIND_FIELDS = {
 }
 
 CALLOUT_START_RE = re.compile(r"^>\s*\[!(gm-only|gm-notes)\]", re.IGNORECASE)
+# Any callout opener, GM or public. Used to stop stripping at a *public* callout
+# that follows a GM block, so it is never swallowed (e.g. a CC-BY attribution).
+CALLOUT_ANY_START_RE = re.compile(r"^>\s*\[!", re.IGNORECASE)
 HEADING_RE = re.compile(r"^#{1,6}\s")
 FRONTMATTER_RE = re.compile(r"^---\n(.*?\n)---\n?", re.DOTALL)
 
@@ -379,6 +382,10 @@ def strip_callouts(body):
         if CALLOUT_START_RE.match(line):
             i += 1
             while i < n:
+                # A new *public* callout ends the strip: it must survive (a GM
+                # block must never swallow the public callout that follows it).
+                if CALLOUT_ANY_START_RE.match(lines[i]) and not CALLOUT_START_RE.match(lines[i]):
+                    break
                 if lines[i].startswith(">"):
                     i += 1
                     continue
@@ -386,7 +393,9 @@ def strip_callouts(body):
                     j = i
                     while j < n and lines[j].strip() == "":
                         j += 1
-                    if j < n and lines[j].startswith(">"):
+                    # Only chain across a blank gap to another GM callout; stop at
+                    # a public callout or ordinary content so both survive.
+                    if j < n and CALLOUT_START_RE.match(lines[j]):
                         i = j
                         continue
                 break
