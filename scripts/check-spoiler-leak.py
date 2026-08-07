@@ -74,6 +74,13 @@ TIER2 = [
     r"\bspoiler",
     r"\bin disguise\b",
     r"\bpretend(s|ing|ed)?\b",
+    # Barrier/prison-wall leak class: a secret that a dangerous thing is held
+    # back behind a barrier (Codex's true source, the Ones Below seal). Caught
+    # live on 2026-08-07 in public codex-magic prose. Tight enough not to hit the
+    # in-world seal-grammar "Wall raises it as a barrier" dagger.
+    r"\bkeeps something worse\b",
+    r"\bbehind a barrier\b",
+    r"\bprison wall\b",
 ]
 
 TIER1_RE = [re.compile(p, re.IGNORECASE) for p in TIER1]
