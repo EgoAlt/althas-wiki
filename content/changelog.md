@@ -4,6 +4,10 @@ title: Changelog
 
 What's new on the wiki, most recent first.
 
+## 2026-08-07
+
+- **The grammar of Codex seals**: the [[codex-magic|Codex Magic]] page now spells out how a seal is built, its three zones (the Heart that names the element, the Daggers that say how it acts, and the Ring that sets the target and trigger), the six elements with their Create/Manipulate and Loop/Reset modifiers, and what separates a seal drawn well from one that just fizzles. You can practice carving your own on the new [[sealcarver|Sealcarver]] page.
+
 ## 2026-07-22
 
 - **The Diplomacy web maps the powers within the nations**: the [[diplomacy|Diplomacy]] graph now shows more than the five nations. It adds the [[parish-of-orthodoxy|Parish of Orthodoxy]] (the Holy See's doctrinal arm), Pontiff [[amalthus-cruoris|Amalthus Cruoris]] and the [[the-holy-see|Holy See]] he leads, Queen [[valis-voldis|Valis Voldis]] on the throne of [[voldaen|Voldaen]], [[aldric-voldis|Aldric Voldis]] who founded and leads the [[jesthaen|Jesthaen Republic]], and [[lael|Lael]], Lord Commander of the Inquisitors, each placed by where it currently stands toward the rest. Drag any power to rearrange the web.

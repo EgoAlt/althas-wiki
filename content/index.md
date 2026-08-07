@@ -15,6 +15,7 @@ Player-facing reference wiki for the *Ut Supra Sic Infra* campaign, set on the f
 - [[diplomacy|Diplomacy]]
 - [[worldbuilding-checklist|Worldbuilding Checklist]]
 - [[dice-roller|Dice Roller]]
+- [[sealcarver|Sealcarver]]
 - [[changelog|Changelog]]
 
 ## The Pitch
@@ -128,7 +129,7 @@ All communities are available across nations, but some have unique aspects withi
 
 - [[the-ones-below|The Ones Below]]: the gods the One Above fought in the Divine Age, sealed away
 - [[splendor-magic|Splendor Magic]]: incantation-based magic as a favor granted, not generated
-- [[codex-magic|Codex Magic]]: seal-drawn magic that tears into a parallel dimension
+- [[codex-magic|Codex Magic]]: seal-drawn magic that tears into the Source
 - [[miracles|Miracles]]: hereditary gifts from the One Above
 
 - [[divine-relics|Divine Relics]]: Divine Age relics any Miracle-holder can wield, whatever their Miracle
