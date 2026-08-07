@@ -301,10 +301,18 @@ export async function handleBuild(argv) {
                       path: "crypto",
                       namespace: "stub-node-crypto",
                     }))
-                    b.onLoad({ filter: /.*/, namespace: "stub-node-crypto" }, () => ({
-                      contents: "module.exports = {}",
-                      loader: "js",
-                    }))
+                    b.onLoad({ filter: /.*/, namespace: "stub-node-crypto" }, () => {
+                      // This stub is global to every inline-script bundle, not
+                      // just the dice roller. It is safe only for deps whose
+                      // crypto use sits behind a dead Node-only branch (random-js).
+                      // Warn at build time so a future inline dep that *actually*
+                      // needs crypto is not silently handed an empty module.
+                      console.warn(
+                        '[stub-node-crypto] resolved a browser require("crypto") to an empty ' +
+                          "stub; safe for random-js's dead branch, but verify any newly added inline dependency.",
+                      )
+                      return { contents: "module.exports = {}", loader: "js" }
+                    })
                   },
                 },
               ],

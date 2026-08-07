@@ -1,7 +1,11 @@
 import { DiceRoll } from "@dice-roller/rpg-dice-roller"
 
 // Player-facing dice roller behavior. The library is bundled into this file by
-// esbuild, so the page issues no runtime network requests. This script is
+// esbuild, so the page issues no runtime network requests. Like every Quartz
+// inline component script (Graph, d3), this is concatenated into the global
+// postscript.js and shipped on every page, not only the dice-roller page; the
+// rpg-dice-roller payload riding along everywhere is an accepted, framework-
+// standard size tradeoff, not a per-page split. This script is
 // included once per page load; the module-level "nav" listener re-runs on every
 // SPA navigation. Because Quartz replaces the page body on navigation, the
 // elements queried below are fresh each time, so element-level listeners never
