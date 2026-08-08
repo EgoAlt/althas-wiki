@@ -14,10 +14,18 @@ import {
   drag,
   zoom,
 } from "d3"
-import { Text, Graphics, Application, Container, Circle } from "pixi.js"
+import { Text, Graphics, Application, Container, Circle, Texture } from "pixi.js"
 import { Group as TweenGroup, Tween as Tweened } from "@tweenjs/tween.js"
 import { registerEscapeHandler, removeAllChildren } from "./util"
-import { FullSlug, SimpleSlug, getFullSlug, resolveRelative, simplifySlug } from "../../util/path"
+import {
+  FullSlug,
+  SimpleSlug,
+  getFullSlug,
+  resolveRelative,
+  simplifySlug,
+  pathToRoot,
+  joinSegments,
+} from "../../util/path"
 import { D3Config } from "../Graph"
 
 type GraphicsInfo = {
@@ -31,6 +39,7 @@ type NodeData = {
   id: SimpleSlug
   text: string
   tags: string[]
+  image?: string
 } & SimulationNodeDatum
 
 type SimpleLinkData = {
@@ -66,6 +75,49 @@ function addToVisited(slug: SimpleSlug) {
 type TweenNode = {
   update: (time: number) => void
   stop: () => void
+}
+
+// Circular-cropped portrait textures for nodes whose page declares an
+// `image:`. Each image is cover-cropped into a circle once, on a small
+// offscreen canvas, so the node's own Graphics can paint it as a plain
+// texture fill: no Sprite, no mask, no per-frame syncing. Decoding via an
+// Image element also sidesteps pixi's worker-based loader, which resolves
+// page-relative URLs against the wrong base and 404s. Module-level cache so
+// the local graph, the global graph, and every SPA navigation reuse one
+// texture per image instead of re-decoding.
+const PORTRAIT_TEXTURE_SIZE = 256
+const portraitTextureCache = new Map<string, Promise<Texture>>()
+function loadPortraitTexture(url: string): Promise<Texture> {
+  const cached = portraitTextureCache.get(url)
+  if (cached) return cached
+  const promise = (async () => {
+    const image = new Image()
+    image.src = url
+    await image.decode()
+    const size = PORTRAIT_TEXTURE_SIZE
+    const canvas = document.createElement("canvas")
+    canvas.width = size
+    canvas.height = size
+    const ctx = canvas.getContext("2d")
+    if (!ctx) throw new Error("canvas 2d context unavailable")
+    ctx.beginPath()
+    ctx.arc(size / 2, size / 2, size / 2, 0, Math.PI * 2)
+    ctx.clip()
+    const scale = size / Math.min(image.width, image.height)
+    ctx.drawImage(
+      image,
+      (size - image.width * scale) / 2,
+      (size - image.height * scale) / 2,
+      image.width * scale,
+      image.height * scale,
+    )
+    return Texture.from(canvas)
+  })()
+  // A failed load is evicted so a transient error can retry on a later
+  // render instead of caching the rejection forever.
+  promise.catch(() => portraitTextureCache.delete(url))
+  portraitTextureCache.set(url, promise)
+  return promise
 }
 
 async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
@@ -145,10 +197,12 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
 
   const nodes = [...neighbourhood].map((url) => {
     const text = url.startsWith("tags/") ? "#" + url.substring(5) : (data.get(url)?.title ?? url)
+    const image = data.get(url)?.image
     return {
       id: url,
       text,
       tags: data.get(url)?.tags ?? [],
+      image: typeof image === "string" ? image : undefined,
     }
   })
   const graphData: { nodes: NodeData[]; links: LinkData[] } = {
@@ -421,6 +475,39 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
 
     nodesContainer.addChild(gfx)
     labelsContainer.addChild(label)
+
+    // Portrait fill: a node whose page has an `image:` gets its circle
+    // repainted with the circular-cropped portrait once the texture resolves;
+    // until then (or on any load failure) the plain color circle stays as the
+    // fallback. Repainting the SAME Graphics object keeps position, hover
+    // dimming, alpha tweens, hitArea and click behavior untouched, with none
+    // of the per-frame cost a separate sprite-plus-mask would add. A fill
+    // paints only inside the path, so the circle is the crop. The thin ring
+    // in the node's state color preserves the current/visited signal the
+    // solid fill used to carry. The URL is absolutized so resolution never
+    // depends on a loader's base URL.
+    if (!isTagNode && n.image) {
+      const r = nodeRadius(n)
+      const imageUrl = new URL(
+        joinSegments(pathToRoot(fullSlug), "assets", n.image),
+        window.location.href,
+      ).href
+      loadPortraitTexture(imageUrl)
+        .then((texture) => {
+          if (gfx.destroyed) return
+          gfx
+            .clear()
+            .circle(0, 0, r)
+            .fill({ texture, textureSpace: "local" })
+            .stroke({ width: 1, color: color(n) })
+        })
+        .catch((err) => {
+          // The fallback circle stays. Debug-level so a missing asset never
+          // spams the console, but the failure is visible when investigating
+          // (a silent catch here masked a real loader bug once).
+          console.debug("graph portrait failed:", imageUrl, err)
+        })
+    }
 
     const nodeRenderDatum: NodeRenderData = {
       simulationData: n,

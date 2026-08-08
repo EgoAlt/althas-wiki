@@ -10,6 +10,7 @@ import {
   SimulationNodeDatum,
   select,
   drag,
+  BaseType,
 } from "d3"
 
 // Diplomacy force graph. Parses the page's diplomacy-graph block (raw text in
@@ -49,7 +50,12 @@ function parseGraph(text: string): { nodes: GNode[]; edges: GEdge[] } | null {
     const n = NODE_RE.exec(line)
     if (n) {
       if (!KNOWN_KINDS.includes(n[3])) {
-        console.warn("diplomacy-graph: unknown node kind, leaving text block visible:", n[3], "in", line)
+        console.warn(
+          "diplomacy-graph: unknown node kind, leaving text block visible:",
+          n[3],
+          "in",
+          line,
+        )
         return null
       }
       if (nodes.some((x) => x.id === n[1])) {
@@ -206,6 +212,47 @@ function setupDiplomacyGraph() {
     .attr("dy", (d) => (RADIUS[d.kind] ?? 14) + 14)
     .text((d) => d.name)
 
+  // Node portraits: for any node whose page has an `image:`, fill its circle
+  // with a circular-clipped portrait, inserted under the name label and over
+  // the plain circle. Reuses fetchData (the page-global content index that the
+  // main graph, Explorer and Search all read) and looks each node up by its
+  // `path`, so the diplomacy block needs no authoring change. Async and
+  // fire-and-forget: a slow or failed fetch just leaves the plain circles, and
+  // a node with no image keeps its circle. This page is slug-gated one level
+  // deep (setting/diplomacy), so "../assets/" resolves to the site asset root,
+  // the same assumption the drag-to-navigate "../" paths above already rely on.
+  void (async () => {
+    let index: Record<string, { image?: string }>
+    try {
+      index = (await fetchData) as Record<string, { image?: string }>
+    } catch {
+      return
+    }
+    const portraitFor = (path: string): string | undefined => {
+      const hit = index[path] ?? index[`${path}/index`]
+      return typeof hit?.image === "string" ? hit.image : undefined
+    }
+    const defs = svg.select("defs")
+    node.each(function (this: BaseType | SVGGElement, d: GNode) {
+      const image = portraitFor(d.path)
+      if (!image) return
+      const r = RADIUS[d.kind] ?? 14
+      const clipId = `dg-portrait-${d.id}`
+      defs.append("clipPath").attr("id", clipId).append("circle").attr("r", r)
+      select<SVGGElement, GNode>(this as SVGGElement)
+        .insert("image", "text")
+        .attr("class", "dg-portrait")
+        .attr("href", `../assets/${image}`)
+        .attr("x", -r)
+        .attr("y", -r)
+        .attr("width", r * 2)
+        .attr("height", r * 2)
+        .attr("clip-path", `url(#${clipId})`)
+        .attr("preserveAspectRatio", "xMidYMid slice")
+        .attr("pointer-events", "none")
+    })
+  })()
+
   // Keep name labels readable at every width. The SVG scales to the article
   // column (rendered px = user units * renderedWidth / 760), so at mobile
   // widths the stylesheet's 12-unit default would render around 5px. Measure
@@ -246,7 +293,10 @@ function setupDiplomacyGraph() {
         .id((d) => d.id)
         .distance(175),
     )
-    .force("collide", forceCollide<GNode>((d) => (RADIUS[d.kind] ?? 14) + 34))
+    .force(
+      "collide",
+      forceCollide<GNode>((d) => (RADIUS[d.kind] ?? 14) + 34),
+    )
     // Pull each node gently toward center so the growing graph stays inside the
     // viewBox instead of drifting off the edges; the tick clamp below is the hard
     // guarantee, these forces just keep nodes off the boundary so it rarely bites.

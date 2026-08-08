@@ -19,6 +19,10 @@ export type ContentDetails = {
   richContent?: string
   date?: Date
   description?: string
+  // Bare asset filename from the page's `image:` frontmatter (the same field
+  // the Infobox portrait uses). Carried into the emitted index so the graph
+  // views can render it as a node portrait; undefined for pages with no image.
+  image?: string
 }
 
 interface Options {
@@ -115,6 +119,10 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
               : undefined,
             date: date,
             description: file.data.description ?? "",
+            image:
+              typeof file.data.frontmatter?.image === "string"
+                ? file.data.frontmatter.image
+                : undefined,
           })
         }
       }
