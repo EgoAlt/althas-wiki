@@ -4,6 +4,11 @@ title: Changelog
 
 What's new on the wiki, most recent first.
 
+## 2026-08-13
+
+- **The Five Heroes have their own page**: the [[the-five-heroes|five who brought down the Ophanim]] in 334 VR, [[edrion-voldis|Edrion Voldis]], [[cassio|Saint Cassio]], [[aldric-voldis|Aldric Voldis]], [[lael|Lael the Reborn]], and [[lyra|Archmage Lyra]], now share a page telling how that battle remade the continent. Two of them arrive as new pages: [[lyra|Archmage Lyra]] of [[polaris|Polaris]], who set the whole account down in her book *Verba Ophanim*, and her brother [[cassio|Saint Cassio]] of [[the-holy-see|the Holy See]], who died bringing the angel down.
+- **Archmage Lyra joins the Diplomacy web**: as a sitting member of [[polaris|Polaris's]] Triumvirate, she now takes her place on the [[diplomacy|Diplomacy]] graph among the powers.
+
 ## 2026-08-07
 
 - **The grammar of Codex seals**: the [[codex-magic|Codex Magic]] page now spells out how a seal is built, its three zones (the Heart that names the element, the Daggers that say how it acts, and the Ring that sets the target and trigger), the six elements with their Create/Manipulate and Loop/Reset modifiers, and what separates a seal drawn well from one that just fizzles. You can practice carving your own on the new [[sealcarver|Sealcarver]] page.

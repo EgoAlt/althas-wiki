@@ -35,7 +35,7 @@ graph TD
     ALDRIC["Aldric Voldis<br/>baseborn; founds the Jesthaen Republic"]
     VALIS["Valis Voldis<br/>Queen, reigns as the council's figurehead"]
     GK --> K0 --> K1 --> K2 --> MAD --> BLESSED --> K3 --> K4 --> K5 --> K6 --> K7 --> VALTHIS
-    K6 -.->|younger brother| BRO
+    K6 -.->|elder brother| BRO
     VALTHIS --> EDRION
     VALTHIS -.->|baseborn| ALDRIC
     EDRION --> VALIS
@@ -49,7 +49,7 @@ graph TD
 ```
 
 > [!note] Reading the tree
-> House Voldis rules by claimed divine descent from the God King, rendered here as the house presents it. The individual names of the deep dynasty are largely lost to record, marked here only as kings of the line, save the two reigns the histories could not forget: the Mad King and the Blessed King. The named line resumes with [[valthis-voldis|Valthis Voldis]]. The dashed lines mark [[aldric-voldis|Aldric]]'s baseborn descent, acknowledged but never legitimized, and the younger prince who renounced his claim in the settlement that made [[polaris|Polaris]] independent.
+> House Voldis rules by claimed divine descent from the God King, rendered here as the house presents it. The individual names of the deep dynasty are largely lost to record, marked here only as kings of the line, save the two reigns the histories could not forget: the Mad King and the Blessed King. The named line resumes with [[valthis-voldis|Valthis Voldis]]. The dashed lines mark [[aldric-voldis|Aldric]]'s baseborn descent, acknowledged but never legitimized, and the elder prince who renounced his claim in the settlement that made [[polaris|Polaris]] independent.
 
 ## The ancient line
 

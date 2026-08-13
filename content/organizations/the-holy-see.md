@@ -16,7 +16,7 @@ Claimed authority over [[hilltop|Hilltop]] after the One Above departed, becomin
 
 Ratified the Jesthaen Treaty in 361 VR, ending active combat in the [[jesthaen|Jesthaen]] rebellion.
 
-The See has held its authority through fractures before, most sharply when a king of Voldaen proclaimed himself the One Above returned and the See named the claim heresy, breaking crown and church into war. The faith teaches that the One Above's return, when it comes, will be heralded by an Ophanim; the angel that fell on [[hilltop|Hilltop]] in 333 VR has thrown that teaching into question rather than settled it.
+The See has held its authority through fractures before, most sharply when a king of Voldaen proclaimed himself the One Above returned and the See named the claim heresy, breaking crown and church into war. The faith teaches that the One Above's return, when it comes, will be heralded by the Ophanim; the angel that fell on [[hilltop|Hilltop]] in 333 VR has thrown that teaching into question rather than settled it.
 
 The See's supreme authority is the Pontiff. The office is held now by [[amalthus-cruoris|Amalthus Cruoris]] of House Cruoris, raised from [[parish-of-orthodoxy|the Parish of Orthodoxy]] as one of the faith's foremost scriptural minds, and bearer of the [[miracles|Miracle of Viaticum]].
 

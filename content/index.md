@@ -113,6 +113,7 @@ All communities are available across nations, but some have unique aspects withi
 - [[parish-of-inquisition|Parish of Inquisition]]: the Holy See's feared investigative and judicial arm
 - [[parish-of-orthodoxy|Parish of Orthodoxy]]: the Holy See's doctrinal arm, keeper of scripture and the Splendor incantations
 - [[guild|The Guild]]: governs Armada, seats held by token possession, not inheritance or election
+- [[the-five-heroes|The Five Heroes]]: the five who brought down the Ophanim in 334 VR (Edrion Voldis, Saint Cassio, Aldric Voldis, Lael the Reborn, Archmage Lyra)
 
 ## Ancestries
 
@@ -146,6 +147,8 @@ All communities are available across nations, but some have unique aspects withi
 - [[izar-arcturus|Izar Arcturus]]: Hesper's son, a Polaris mage who challenged her for her Triumvirate seat
 - [[lael|Lael]]: one of the Five Heroes, slain fighting the Ophanim and returned by his Miracle of Rebirth
 - [[amalthus-cruoris|Amalthus Cruoris]]: reigning Pontiff of the Holy See, of House Cruoris, bearer of the Miracle of Viaticum
+- [[lyra|Archmage Lyra]] (stub): one of the Five Heroes, archmage of Polaris's Triumvirate, sister to Saint Cassio, author of *Verba Ophanim*
+- [[cassio|Saint Cassio]] (stub): one of the Five Heroes, scholar of the Holy See, brother to Archmage Lyra, died fighting the Ophanim
 
 ## Events
 
