@@ -25,7 +25,8 @@ node amalthus-cruoris | Amalthus Cruoris | people | npcs/amalthus-cruoris
 node valis-voldis | Valis Voldis | people | npcs/valis-voldis
 node aldric-voldis | Aldric Voldis | people | npcs/aldric-voldis
 node lael | Lael | people | npcs/lael
-node lyra | Archmage Lyra | people | npcs/lyra
+node lyra-aquila | Lyra Aquila | people | npcs/lyra-aquila
+node hesper-arcturus | Hesper Arcturus | people | npcs/hesper-arcturus
 
 # Edges: source -> target (arrow) or <-> (mutual) | type | label
 edge house-voldis -> voldaen | governance | royal dynasty, rules
@@ -42,11 +43,13 @@ edge polaris <-> armada | alliance | fragile wartime alliance
 edge jesthaen <-> voldaen | uneasy | revolution, then a tenuous peace
 edge parish-of-orthodoxy -> the-holy-see | governance | doctrinal arm of
 edge amalthus-cruoris -> the-holy-see | governance | Pontiff, leads
+edge amalthus-cruoris -> parish-of-orthodoxy | governance | leads
 edge valis-voldis -> voldaen | governance | reigning queen, council figurehead
 edge aldric-voldis -> jesthaen | governance | founder, leads
 edge aldric-voldis -> house-voldis | uneasy | spurned baseborn son
 edge lael -> parish-of-inquisition | governance | Lord Commander, leads
-edge lyra -> polaris | governance | Triumvirate archmage
+edge lyra-aquila -> polaris | governance | Triumvirate archmage
+edge hesper-arcturus -> polaris | governance | Triumvirate archmage
 ```
 
 ## The two sides of the war

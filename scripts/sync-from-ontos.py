@@ -78,6 +78,7 @@ TITLES = {
     "polaris.md": "Polaris",
     "voldaen.md": "Voldaen",
     "house-voldis.md": "House Voldis",
+    "house-aquila.md": "House Aquila",
     "aldric-voldis.md": "Aldric Voldis",
     "edrion-voldis.md": "Edrion Voldis",
     "eltanin.md": "Eltanin",
@@ -91,8 +92,8 @@ TITLES = {
     "the-mad-king.md": "The Mad King",
     "the-blessed-king.md": "The Blessed King",
     "lael.md": "Lael",
-    "lyra.md": "Archmage Lyra",
-    "cassio.md": "Saint Cassio",
+    "lyra-aquila.md": "Lyra Aquila",
+    "cassio-aquila.md": "Cassio Aquila",
     "thuban.md": "Thuban",
     "valis-voldis.md": "Valis Voldis",
     "valthis-voldis.md": "Valthis Voldis",
@@ -126,6 +127,7 @@ PAGE_MAP = {
     "the-holy-see.md": "organizations/the-holy-see.md",
     "guild.md": "organizations/guild.md",
     "house-voldis.md": "organizations/house-voldis.md",
+    "house-aquila.md": "organizations/house-aquila.md",
     "the-five-heroes.md": "organizations/the-five-heroes.md",
     "codex-magic.md": "magic/codex-magic.md",
     "divine-relics.md": "magic/divine-relics.md",
@@ -165,8 +167,8 @@ PAGE_MAP = {
     "jestha.md": "npcs/jestha.md",
     "kingslayer.md": "npcs/kingslayer.md",
     "lael.md": "npcs/lael.md",
-    "lyra.md": "npcs/lyra.md",
-    "cassio.md": "npcs/cassio.md",
+    "lyra-aquila.md": "npcs/lyra-aquila.md",
+    "cassio-aquila.md": "npcs/cassio-aquila.md",
     "the-god-king.md": "npcs/the-god-king.md",
     "the-mad-king.md": "npcs/the-mad-king.md",
     "the-blessed-king.md": "npcs/the-blessed-king.md",
@@ -199,6 +201,10 @@ RENAMES = {
     # slug moved with each step; keep every prior published URL redirecting.
     "npcs/hesper-arcturus.md": ["npcs/hesper", "npcs/hesper_arcturus"],
     "npcs/izar-arcturus.md": ["npcs/izar", "npcs/izar_arcturus"],
+    # 2026-08-13 House Aquila: lyra.md/cassio.md -> lyra-aquila/cassio-aquila
+    # (firstname-house, per the Arcturus precedent). Keep old URLs redirecting.
+    "npcs/lyra-aquila.md": ["npcs/lyra"],
+    "npcs/cassio-aquila.md": ["npcs/cassio"],
     # 2026-07-17 landing-page merge: the standalone overview at /setting/althas
     # was folded into the home page (index.md). Keep that old URL redirecting to
     # home so player bookmarks survive. All [[althas]] wikilinks in the source

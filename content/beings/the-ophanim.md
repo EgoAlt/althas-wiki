@@ -13,7 +13,7 @@ image_caption: "An artist's rendering, not a likeness. The Ophanim wore no fixed
 
 ---
 
-In 333 VR, the Ophanim landed in central Hilltop, instantly rendering much of the region uninhabitable. [[the-holy-see|The Holy See]] and its refugees relocated to central Althas, and each of the five nations mobilized a force to bring it down before its influence spread further. Seizing the moment, the merchant lords of the south declared the trade cities of Hilltop an independent nation: [[armada|Armada]]. In 334 VR, the Ophanim was brought down by the Five Heroes, among them [[edrion-voldis|Edrion Voldis]] of [[voldaen|Voldaen]] and Saint Cassio of the Holy See, both of whom perished in the fighting; [[aldric-voldis|Aldric Voldis]] fought and survived, and [[lael|Lael]], called the Reborn, fell in the battle and rose again through his Miracle of Rebirth.
+In 333 VR, the Ophanim landed in central Hilltop, instantly rendering much of the region uninhabitable. [[the-holy-see|The Holy See]] and its refugees relocated to central Althas, and each of the five nations mobilized a force to bring it down before its influence spread further. Seizing the moment, the merchant lords of the south declared the trade cities of Hilltop an independent nation: [[armada|Armada]]. In 334 VR, the Ophanim was brought down by the Five Heroes, among them [[edrion-voldis|Edrion Voldis]] of [[voldaen|Voldaen]] and [[cassio-aquila|Cassio Aquila]] of the Holy See, both of whom perished in the fighting; [[aldric-voldis|Aldric Voldis]] fought and survived, and [[lael|Lael]], called the Reborn, fell in the battle and rose again through his Miracle of Rebirth.
 
 ## What scripture says
 

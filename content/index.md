@@ -21,7 +21,7 @@ Player-facing reference wiki for the *Ut Supra Sic Infra* campaign, set on the f
 ## The Pitch
 
 > "Quod est inferius est sicut quod est superius, et quod est superius est sicut quod est inferius, ad perpetranda miracula rei unius."
-> From Verba Ophanim, as transcribed by Archmage Lyra
+> From Verba Ophanim, as transcribed by [[lyra-aquila|Lyra Aquila]]
 
 Five years after the Holy See's ratification of the Jesthaen Treaty ended a decade of warfare, the threat of renewed conflict once again looms over the fractured continent of Althas. Each nation finds itself in a delicate web of alliances and rivalries filled with opportunists seeking to exploit this period of rapid magical, political, and social change.
 
@@ -43,7 +43,7 @@ The continent of Althas once flew under one banner. In the Divine Age, the One A
 
 Over the next several centuries, factional differences within Voldaen grew untenable. With the One Above absent, [[the-holy-see|the Holy See]] asserted its authority as the divine regent of [[hilltop|Hilltop]]. The reign remembered as the Mad King's broke crown and church into open civil war; it ended only under his successor, the Blessed King, and out of that settlement Hilltop won full independence from the Voldis crown. Later, a group of scholars and mages who wished to push the boundaries of arcane knowledge broke away from Voldaen and founded the nation of [[polaris|Polaris]].
 
-In 333 VR, [[the-ophanim|the Ophanim]] landed in central [[hilltop|Hilltop]], instantly rendering much of the nation uninhabitable. As [[the-holy-see|the Holy See]] and its refugees relocated to central Althas, each nation mobilized a force to subdue the Ophanim before its influence could spread further. Seizing the opportunity, the merchant lords of the south declared the trade cities of Hilltop an independent nation, forming the federation of [[armada|Armada]]. Finally, in 334 VR, the Ophanim was brought down by the Five Heroes, including the Voldis High Prince, [[edrion-voldis|Edrion Voldis]], and Saint Cassio of the Holy See, who both perished in the fighting.
+In 333 VR, [[the-ophanim|the Ophanim]] landed in central [[hilltop|Hilltop]], instantly rendering much of the nation uninhabitable. As [[the-holy-see|the Holy See]] and its refugees relocated to central Althas, each nation mobilized a force to subdue the Ophanim before its influence could spread further. Seizing the opportunity, the merchant lords of the south declared the trade cities of Hilltop an independent nation, forming the federation of [[armada|Armada]]. Finally, in 334 VR, the Ophanim was brought down by the Five Heroes, including the Voldis High Prince, [[edrion-voldis|Edrion Voldis]], and [[cassio-aquila|Cassio Aquila]] of the Holy See, who both perished in the fighting.
 
 Just fifteen years ago, in 351 VR, a succession crisis in Voldaen boiled over into revolution. The baseborn war-hero [[aldric-voldis|Aldric Voldis]], cast out of the regency by the capital's nobles, led the common people of the south in secession and founded the republic of [[jesthaen|Jesthaen]]. This bloody revolution consumed the continent, with [[hilltop|Hilltop]] coming to Voldaen's aid while Polaris and Armada supported the Jesthaen rebels. Active combat ended in 361 VR with [[the-holy-see|the Holy See]]'s ratification of the Jesthaen Treaty, but the peace remains tenuous.
 
@@ -113,7 +113,8 @@ All communities are available across nations, but some have unique aspects withi
 - [[parish-of-inquisition|Parish of Inquisition]]: the Holy See's feared investigative and judicial arm
 - [[parish-of-orthodoxy|Parish of Orthodoxy]]: the Holy See's doctrinal arm, keeper of scripture and the Splendor incantations
 - [[guild|The Guild]]: governs Armada, seats held by token possession, not inheritance or election
-- [[the-five-heroes|The Five Heroes]]: the five who brought down the Ophanim in 334 VR (Edrion Voldis, Saint Cassio, Aldric Voldis, Lael the Reborn, Archmage Lyra)
+- [[the-five-heroes|The Five Heroes]]: the five who brought down the Ophanim in 334 VR (Edrion Voldis, Cassio Aquila, Aldric Voldis, Lael the Reborn, Lyra Aquila)
+- [[house-aquila|House Aquila]]: scholar-house of the twins Cassio and Lyra, esteemed in both Polaris and the Holy See, bearer of two Miracles (Pentecost and Anamnesis)
 
 ## Ancestries
 
@@ -147,8 +148,8 @@ All communities are available across nations, but some have unique aspects withi
 - [[izar-arcturus|Izar Arcturus]]: Hesper's son, a Polaris mage who challenged her for her Triumvirate seat
 - [[lael|Lael]]: one of the Five Heroes, slain fighting the Ophanim and returned by his Miracle of Rebirth
 - [[amalthus-cruoris|Amalthus Cruoris]]: reigning Pontiff of the Holy See, of House Cruoris, bearer of the Miracle of Viaticum
-- [[lyra|Archmage Lyra]] (stub): one of the Five Heroes, archmage of Polaris's Triumvirate, sister to Saint Cassio, author of *Verba Ophanim*
-- [[cassio|Saint Cassio]] (stub): one of the Five Heroes, scholar of the Holy See, brother to Archmage Lyra, died fighting the Ophanim
+- [[lyra-aquila|Lyra Aquila]]: one of the Five Heroes, archmage of Polaris's Triumvirate, of House Aquila, twin sister to Cassio Aquila, author of *Verba Ophanim*, bearer of the Miracle of Anamnesis
+- [[cassio-aquila|Cassio Aquila]]: one of the Five Heroes, scholar of the Holy See, of House Aquila, twin brother to Lyra Aquila, bearer of the Miracle of Pentecost, died fighting the Ophanim
 
 ## Events
 

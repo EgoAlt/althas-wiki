@@ -23,6 +23,8 @@ Not all Miracles are directly useful on the battlefield, but those that are cons
 - **The Miracle of Voldis**: [[voldaen|House Voldis]]'s own signature Miracle, said to let its bearer hold multiple Miracles at once.
 - **The Miracle of Rebirth**: at its bearer's death, the soul returns to reoccupy its own now-deathless body; only destroying the body ends the bearer for good. Carried by [[lael|Lael]], "the Reborn," one of the Five Heroes who fell fighting [[the-ophanim|the Ophanim]] and rose again.
 - **The Miracle of Viaticum**: the signature Miracle of **House Cruoris**, an oldblood house bound to [[the-holy-see|the Holy See]], and borne by [[amalthus-cruoris|the reigning Pontiff]] when a Cruoris sits the chair. Its bearer can lend a single Splendor working to another person: he writes a prayer in his own holy blood, seals it with wax mixed into that blood, and when the seal is broken the words speak themselves in his voice, so [[the-one-above|the One Above]] answers the bearer's ask once, as though the Pontiff had made it. See [[amalthus-cruoris|Pontiff Amalthus Cruoris]].
+- **The Miracle of Pentecost**: understanding of any word heard spoken, in any tongue, cipher, or voice, and of any notation set before the eye. One of the two signature Miracles of [[house-aquila|House Aquila]]; see [[cassio-aquila|Cassio Aquila]] and [[lyra-aquila|Lyra Aquila]].
+- **The Miracle of Anamnesis**: perfect, unfading memory of everything its bearer has perceived. [[house-aquila|House Aquila's]] other signature Miracle, borne by [[lyra-aquila|Lyra Aquila]].
 
 ## House Voldis's power
 
@@ -35,6 +37,10 @@ House Arcturus is a Polaris family of high standing: the power of the Miracle of
 ## House Cruoris's power
 
 House Cruoris is one of the faith's oldblood houses, ancient and bound tightly to [[the-holy-see|the Holy See]] and its history. Its signature Miracle is the **Miracle of Viaticum**: where most Miracles serve their bearer, Viaticum serves through its bearer, letting him extend a single Splendor working to someone else, sealed in his own blood and spent on one breaking. Cruoris's Miracle is powerful enough, and suited enough to the Church's work, that the house's name recurs across the roll of Pontiffs; the current bearer, [[amalthus-cruoris|Amalthus Cruoris]], holds the chair now. It is how the faith grants grace where no priest can go.
+
+## House Aquila's power
+
+[[house-aquila|House Aquila]] is a scholar-house esteemed in both [[polaris|Polaris]] and [[the-holy-see|the Holy See]], and alone among the houses it carries two Miracles in one bloodline: **Pentecost**, the understanding of any spoken word or written notation, and **Anamnesis**, perfect and unfading memory. Ordinarily a child of the house is born with one or neither. The twins [[cassio-aquila|Cassio Aquila]] and [[lyra-aquila|Lyra Aquila]] were the rare exception thrice over: twins, each born with a Miracle where one is a once-a-generation gift, and each with a *different* one, so that each had access to the other's and wielded both. [[polaris|Polaris]] and [[the-holy-see|the Holy See]] alike held that up as proof that great gifts are gifted by [[the-one-above|the One Above]], not the hoarded inheritance of one dynasty, a rebuke aimed at [[house-voldis|House Voldis]]. Cassio fell bringing down [[the-ophanim|the Ophanim]] in 334 VR. See [[house-aquila|House Aquila]].
 
 ## Related pages
 
@@ -50,3 +56,6 @@ House Cruoris is one of the faith's oldblood houses, ancient and bound tightly t
 - [[amalthus-cruoris|Pontiff Amalthus Cruoris]]
 - [[the-holy-see|The Holy See]]
 - [[parish-of-orthodoxy|Parish of Orthodoxy]]
+- [[house-aquila|House Aquila]]
+- [[cassio-aquila|Cassio Aquila]]
+- [[lyra-aquila|Lyra Aquila]]

@@ -19,7 +19,7 @@ Orthodox doctrine teaches that mortal eyes should be covered before the divine, 
 
 ## The Pontiff
 
-The faith's supreme authority is the Pontiff, chosen by election of the Church's clerics and, by long habit, from among the deepest scholars of Orthodoxy. Election has never been blind to blood: a few houses carry [[miracles|Miracles]] so suited to the office that their names recur across the roll of Pontiffs. The chair is held now by [[amalthus-cruoris|Amalthus Cruoris]], a scriptural scholar of rare depth and bearer of his house's [[miracles|Miracle of Viaticum]].
+The faith's supreme authority is the Pontiff, chosen by election of the Church's clerics and, by long habit, from among the deepest scholars of Orthodoxy. Election has never been blind to blood: a few houses carry [[miracles|Miracles]] so suited to the office that their names recur across the roll of Pontiffs. The chair is held now by [[amalthus-cruoris|Amalthus Cruoris]], a scriptural scholar of rare depth raised from Orthodoxy's own ranks and still its foremost voice, and bearer of his house's [[miracles|Miracle of Viaticum]].
 
 ## Related pages
 

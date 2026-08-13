@@ -29,6 +29,10 @@ Incantations aren't invented by casters. They're discovered. In Althas, this mea
 - Finding a new incantation is itself a narrative event: a discovery, not a training milestone. This is a strong hook for [[the-holy-see|the Holy See]] and [[parish-of-inquisition|the Parish of Inquisition]] as institutions: whoever controls incantation research controls what Splendor magic can even do.
 - Most known incantations are old and few in number.
 
+## The words, and the saying of them
+
+The correct words are fixed and pre-existing, and so is the correct *saying* of them. An incantation answers not to what it means but to its exact form, the precise enunciation and cadence the One Above's power will answer. Two casters may speak the same Divine sentence, meaning the same thing, and only the one whose performance is exact is answered. To understand Divine, then, is not to be able to cast it: a scholar may read all of scripture fluently and hold not one working incantation, because a spell is not its meaning but a found and exact performance. This is why discovering a new incantation is the recovery of a lost saying, painstaking and empirical, and never a matter of translation. It is also why the [[miracles|Miracle of Pentecost]], which lays bare a text's meaning, grants no shortcut to it: meaning is precisely the part that does not cast.
+
 ## Why this fits the One Above's absence
 
 [[the-one-above|The One Above]] has left Althas.

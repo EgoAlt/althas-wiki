@@ -38,7 +38,7 @@ The scholars and mages of the north, grown into a power of their own, broke away
 
 ## 334 VR
 
-The Five Heroes brought the Ophanim down. Among them, the Voldaen High Prince [[edrion-voldis|Edrion Voldis]] and Saint Cassio of the Holy See died in the fighting. Soon after, King [[valthis-voldis|Valthis Voldis]] was assassinated by a killer Voldaen has never identified, leaving Edrion's young daughter [[valis-voldis|Valis Voldis]] the last heir of the direct line before she was old enough to rule.
+The Five Heroes brought the Ophanim down. Among them, the Voldaen High Prince [[edrion-voldis|Edrion Voldis]] and [[cassio-aquila|Cassio Aquila]] of the Holy See died in the fighting. Soon after, King [[valthis-voldis|Valthis Voldis]] was assassinated by a killer Voldaen has never identified, leaving Edrion's young daughter [[valis-voldis|Valis Voldis]] the last heir of the direct line before she was old enough to rule.
 
 ## 351 VR
 

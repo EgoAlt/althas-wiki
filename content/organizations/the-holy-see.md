@@ -12,7 +12,7 @@ image: the-holy-see.webp
 
 ---
 
-Claimed authority over [[hilltop|Hilltop]] after the One Above departed, becoming the divine regent of a faith that no longer had its god visibly among mortals. Relocated to central Althas after [[the-ophanim|the Ophanim]]'s landing in 333 VR devastated Hilltop; Saint Cassio of the Holy See was one of the Five Heroes who died bringing it down the following year.
+Claimed authority over [[hilltop|Hilltop]] after the One Above departed, becoming the divine regent of a faith that no longer had its god visibly among mortals. Relocated to central Althas after [[the-ophanim|the Ophanim]]'s landing in 333 VR devastated Hilltop; [[cassio-aquila|Cassio Aquila]] of the Holy See was one of the Five Heroes who died bringing it down the following year.
 
 Ratified the Jesthaen Treaty in 361 VR, ending active combat in the [[jesthaen|Jesthaen]] rebellion.
 

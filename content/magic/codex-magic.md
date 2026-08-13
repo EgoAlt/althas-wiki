@@ -14,7 +14,7 @@ image: codex-magic.png
 
 ## The core idea
 
-Codex casters don't generate an effect, they open one. Drawing the correct seal tears a small hole in reality, and whatever bleeds through that hole expresses itself according to the seal's shape: a fireball is not a caster making fire, it's them tearing a hole shaped so that what comes out reads as fire. This is the deliberate opposite of [[splendor-magic|Splendor Magic]]: Splendor asks a person (a god) for an effect; Codex reaches past people entirely into a place.
+Codex casters don't generate an effect, they open one. Drawing the correct seal tears a small hole in reality, and whatever bleeds through that hole expresses itself according to the seal's shape: a fireball is not a caster making fire, it's them tearing a hole shaped so that what comes out reads as fire. This is the deliberate opposite of [[splendor-magic|Splendor Magic]]: Splendor asks a person (a god) for an effect; Codex reaches past people entirely into a place. And where a Splendor incantation answers to its exact spoken form rather than its meaning, a Codex seal is the reverse: its meaning is its mechanism, so to read a seal is, in principle, to command it. A caster who can read the grammar can reproduce the working. This is why the [[miracles|Miracle of Pentecost]], which lays bare the meaning of any notation, lets its bearer grasp any seal at a glance, however novel.
 
 ## The mechanic
 

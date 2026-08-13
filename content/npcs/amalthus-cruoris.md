@@ -31,7 +31,7 @@ Every Viaticum is made from the Pontiff's own blood, and the giving of it costs 
 
 The Miracle of Viaticum is not the Holy See's to hold: it is the Miracle of **House Cruoris**, one of the faith's oldblood houses, ancient and bound so tightly to the Church's history that the two can be hard to tell apart. The Miracle runs in Cruoris blood, and it has run there long before Amalthus.
 
-The Pontiff's chair is filled by election of the clerics, but election has never been blind to blood. A handful of houses carry Miracles so suited to the office that their names recur across the roll of Pontiffs, and Cruoris is one of them: a "Cruoris Pontiff" is a thing the faith has seen before, past bearers of Viaticum who dispensed the Church's grace much as Amalthus does now. He earned the chair on his own account as well, a scriptural mind of rare depth with real discoveries behind him, though the faith still remembers Saint Cassio, lost among the Five Heroes, as the greater scholar of the age.
+The Pontiff's chair is filled by election of the clerics, but election has never been blind to blood. A handful of houses carry Miracles so suited to the office that their names recur across the roll of Pontiffs, and Cruoris is one of them: a "Cruoris Pontiff" is a thing the faith has seen before, past bearers of Viaticum who dispensed the Church's grace much as Amalthus does now. He earned the chair on his own account as well, a scriptural mind of rare depth with real discoveries behind him, though the faith still remembers [[cassio-aquila|Cassio Aquila]], lost among the Five Heroes, as the greater scholar of the age.
 
 ## Related pages
 
