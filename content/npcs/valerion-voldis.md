@@ -1,5 +1,5 @@
 ---
-title: Valerion, the Mad King
+title: Valerion Voldis
 aliases:
   - npcs/the-mad-king
 kind: person

@@ -1,5 +1,5 @@
 ---
-title: Voldis, the God King
+title: Voldis
 aliases:
   - npcs/the-god-king
 kind: person

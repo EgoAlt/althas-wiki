@@ -1,5 +1,6 @@
 ---
 title: Augustus Corvus
+image: augustus-corvus.png
 kind: person
 house: "[[house-corvus|House Corvus]]"
 allegiance: "[[voldaen|Voldaen]]"

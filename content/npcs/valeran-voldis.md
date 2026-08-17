@@ -1,5 +1,5 @@
 ---
-title: Valeran, the Blessed King
+title: Valeran Voldis
 aliases:
   - npcs/the-blessed-king
 kind: person
