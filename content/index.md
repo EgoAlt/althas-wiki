@@ -13,6 +13,7 @@ Player-facing reference wiki for the *Ut Supra Sic Infra* campaign, set on the f
 - [[calendar|Calendar]]
 - [[chronicle|Chronicle]]
 - [[diplomacy|Diplomacy]]
+- [[organizations|Organizations]]
 - [[worldbuilding-checklist|Worldbuilding Checklist]]
 - [[dice-roller|Dice Roller]]
 - [[sealcarver|Sealcarver]]
@@ -115,6 +116,7 @@ All communities are available across nations, but some have unique aspects withi
 - [[guild|The Guild]]: governs Armada, seats held by token possession, not inheritance or election
 - [[the-five-heroes|The Five Heroes]]: the five who brought down the Ophanim in 334 VR (Edrion Voldis, Cassio Aquila, Aldric Voldis, Lael the Reborn, Lyra Aquila)
 - [[house-aquila|House Aquila]]: scholar-house of the twins Cassio and Lyra, esteemed in both Polaris and the Holy See, bearer of two Miracles (Pentecost and Anamnesis)
+- [[house-corvus|House Corvus]]: Great House of Voldaen holding the hereditary office of Minister of War, risen at Valerion's Heresy, bearer of the Miracle of Auspex
 
 ## Ancestries
 
@@ -150,18 +152,19 @@ All communities are available across nations, but some have unique aspects withi
 - [[amalthus-cruoris|Amalthus Cruoris]]: reigning Pontiff of the Holy See, of House Cruoris, bearer of the Miracle of Viaticum
 - [[lyra-aquila|Lyra Aquila]]: one of the Five Heroes, archmage of Polaris's Triumvirate, of House Aquila, twin sister to Cassio Aquila, author of *Verba Ophanim*, bearer of the Miracle of Anamnesis
 - [[cassio-aquila|Cassio Aquila]]: one of the Five Heroes, scholar of the Holy See, of House Aquila, twin brother to Lyra Aquila, bearer of the Miracle of Pentecost, died fighting the Ophanim
+- [[augustus-corvus|Augustus Corvus]]: Minister of War of Voldaen and lord of [[house-corvus|House Corvus]], called the Red Raven; undefeated commander and bearer of the Miracle of Auspex
 
 ## Events
 
 - [[the-divine-age|The Divine Age]]: the founding era, the One Above's war against the Ones Below
-- [[the-mad-kings-war|The Mad King's War]]: the 93-117 VR civil war between crown and church
-- [[the-polaris-secession|The Polaris Secession]]: the ~241 VR partition that founded Polaris
+- [[valerions-heresy|Valerion's Heresy]]: the 93-117 VR civil war between crown and church
+- [[the-lodestar-pact|The Lodestar Pact]]: the ~241 VR partition that founded Polaris
 - See the [[timeline|Timeline]] for the full chronology and the [[chronicle|Chronicle]] for the day-by-day record
 
 ## History (Voldaen)
 
 - [[house-voldis|House Voldis]]: the royal dynasty, with the family tree from the God King to Valis
-- [[the-god-king|The God King]], [[the-mad-king|The Mad King]], [[the-blessed-king|The Blessed King]]: the founding king and the two ancient reigns the histories remember
+- [[god-king-voldis|Voldis, the God King]], [[valerion-voldis|Valerion, the Mad King]], [[valeran-voldis|Valeran, the Blessed King]], and King [[castus-voldis|Castus]]: the founding king and the ancient reigns the histories remember
 - [[valthis-voldis|Valthis Voldis]], [[edrion-voldis|Edrion Voldis]], [[valis-voldis|Valis Voldis]], [[aldric-voldis|Aldric Voldis]]: the Voldis Succession Crisis cast
 - [[jestha|Jestha]]: the common woman Aldric's Jesthaen Republic is named for
 - [[kingslayer|The Kingslayer]]: unidentified killer of Valthis Voldis, tavern legend in Voldaen

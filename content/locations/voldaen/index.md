@@ -29,6 +29,6 @@ Queen [[valis-voldis|Valis Voldis]] wears its crown following the Voldis Success
 - [[edrion-voldis|Edrion Voldis]]
 - [[aldric-voldis|Aldric Voldis]]
 - [[house-voldis|House Voldis]]
-- [[the-mad-kings-war|The Mad King's War]]
-- [[the-polaris-secession|The Polaris Secession]]
+- [[valerions-heresy|Valerion's Heresy]]
+- [[the-lodestar-pact|The Lodestar Pact]]
 - [[diplomacy|Diplomacy]]

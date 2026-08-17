@@ -15,7 +15,7 @@ With victory secured, the people of Althas crowned their first God King and foun
 
 - [[the-one-above|The One Above]]
 - [[the-ones-below|The Ones Below]]
-- [[the-god-king|The God King]]
+- [[god-king-voldis|The God King]]
 - [[crater-lake|Crater Lake]]
 - [[voldaen|Voldaen]]
 - [[hilltop|Hilltop]]

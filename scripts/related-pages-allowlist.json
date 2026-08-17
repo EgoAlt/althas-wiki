@@ -3,6 +3,10 @@
   "hub_targets": ["diplomacy", "timeline", "calendar", "index"],
   "public_names": {},
   "pages": {
+    "organizations/house-corvus.md": {
+      "house-voldis": "peer navigation: Althas's Great Houses cross-reference each other",
+      "house-aquila": "peer navigation: Althas's Great Houses cross-reference each other"
+    },
     "ancestries/clanks.md": {
       "faeries": "peer navigation: the four Althas ancestries cross-reference each other",
       "giants": "peer navigation: the four Althas ancestries cross-reference each other",

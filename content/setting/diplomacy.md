@@ -27,6 +27,7 @@ node aldric-voldis | Aldric Voldis | people | npcs/aldric-voldis
 node lael | Lael | people | npcs/lael
 node lyra-aquila | Lyra Aquila | people | npcs/lyra-aquila
 node hesper-arcturus | Hesper Arcturus | people | npcs/hesper-arcturus
+node augustus-corvus | Augustus Corvus | people | npcs/augustus-corvus
 
 # Edges: source -> target (arrow) or <-> (mutual) | type | label
 edge house-voldis -> voldaen | governance | royal dynasty, rules
@@ -50,11 +51,14 @@ edge aldric-voldis -> house-voldis | uneasy | spurned baseborn son
 edge lael -> parish-of-inquisition | governance | Lord Commander, leads
 edge lyra-aquila -> polaris | governance | Triumvirate archmage
 edge hesper-arcturus -> polaris | governance | Triumvirate archmage
+edge augustus-corvus -> voldaen | governance | Minister of War
+edge augustus-corvus -> jesthaen | rivalry | led Voldaen's armies against, wants the war renewed
+edge augustus-corvus -> aldric-voldis | war-history | brothers-in-arms in the Ophanim War, then enemies
 ```
 
 ## The two sides of the war
 
-The fighting that the Jesthaen Treaty ended had two sides. [[voldaen|Voldaen]] held the old monarchy, [[hilltop|Hilltop]] sent aid to it, and [[the-holy-see|the Holy See]] stood with it as well. Against them stood [[jesthaen|Jesthaen]], the republic that had broken away from Voldaen during the Voldis Succession Crisis, with [[polaris|Polaris]] and [[armada|Armada]] backing the rebels. The treaty stopped active combat in 361 VR without resolving what had caused it, and the peace between Voldaen and Jesthaen remains tenuous.
+The fighting that the Jesthaen Treaty ended had two sides. [[voldaen|Voldaen]] held the old monarchy, [[hilltop|Hilltop]] sent aid to it, and [[the-holy-see|the Holy See]] stood with it as well. Against them stood [[jesthaen|Jesthaen]], the republic that had broken away from Voldaen during the Voldis Succession Crisis, with [[polaris|Polaris]] and [[armada|Armada]] backing the rebels. The treaty stopped active combat in 361 VR without resolving what had caused it, and the peace between Voldaen and Jesthaen remains tenuous. [[voldaen|Voldaen's]] Minister of War, [[augustus-corvus|Augustus Corvus]], the undefeated commander who lost no battle in that war, is the loudest voice in the capital for renewed conflict. He once fought beside [[aldric-voldis|Aldric]] as a brother-in-arms, in the years before the two nations were set against each other.
 
 ## Rivalries and alliances
 

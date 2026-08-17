@@ -4,6 +4,13 @@ title: Changelog
 
 What's new on the wiki, most recent first.
 
+## 2026-08-17
+
+- **The old Voldis kings have names.** The founder the histories kept only as the God King is now recorded as [[god-king-voldis|Voldis]], the name his house and his nation both carry. The two reigns that fractured the realm are named too: [[valerion-voldis|Valerion the Mad King]], who declared himself [[the-one-above|the One Above]] returned, and his son [[valeran-voldis|Valeran the Blessed King]], who struck him down. [[castus-voldis|King Castus]] joins the line as well, the monarch under whom the north broke away to become [[polaris|Polaris]].
+- **Two ancient wars, named at last.** The civil war between crown and church is now [[valerions-heresy|Valerion's Heresy]], and the peaceful partition that founded Polaris is [[the-lodestar-pact|the Lodestar Pact]].
+- **The Red Raven of Voldaen.** [[augustus-corvus|Augustus Corvus]] (new page, with a portrait), Minister of War and the undefeated commander who has never made peace with the loss of the south, together with his [[house-corvus|House Corvus]] (new page), the war-house famed for its Miracle of Auspex, the gift of reading a fight before it is fought.
+- **A register of the powers.** A new [[organizations|Organizations]] page maps the known groups of Althas, filed by nation and ranked by standing, a companion to the [[diplomacy|Diplomacy]] web.
+
 ## 2026-08-13
 
 - **The Five Heroes have their own page**: the [[the-five-heroes|five who brought down the Ophanim]] in 334 VR, [[edrion-voldis|Edrion Voldis]], [[cassio-aquila|Saint Cassio]], [[aldric-voldis|Aldric Voldis]], [[lael|Lael the Reborn]], and [[lyra-aquila|Archmage Lyra]], now share a page telling how that battle remade the continent. Two of them arrive as new pages: [[lyra-aquila|Archmage Lyra]] of [[polaris|Polaris]], who set the whole account down in her book *Verba Ophanim*, and her brother [[cassio-aquila|Saint Cassio]] of [[the-holy-see|the Holy See]], who died bringing the angel down.
@@ -32,13 +39,13 @@ What's new on the wiki, most recent first.
 
 ## 2026-07-20
 
-- **The House of Voldis history runs much deeper**: the [[house-voldis|family tree]] now traces the long line of kings between the God King and today, and the two reigns the histories never forgot get their own pages, [[the-mad-king|the Mad King]], who proclaimed himself the One Above returned and split the realm into civil war between crown and church, and [[the-blessed-king|the Blessed King]], who ended that war and won [[hilltop|Hilltop]] its independence. The founding [[the-god-king|God King]] has a page too, and you can click any of them in the family tree.
-- **New art**: portraits for the [[the-god-king|God King]], [[the-mad-king|the Mad King]], [[the-blessed-king|the Blessed King]], and Queen [[valis-voldis|Valis]], plus a new portrait for [[edrion-voldis|Edrion Voldis]].
+- **The House of Voldis history runs much deeper**: the [[house-voldis|family tree]] now traces the long line of kings between the God King and today, and the two reigns the histories never forgot get their own pages, the Mad King, who proclaimed himself the One Above returned and split the realm into civil war between crown and church, and the Blessed King, who ended that war and won [[hilltop|Hilltop]] its independence. The founding God King has a page too, and you can click any of them in the family tree.
+- **New art**: portraits for the God King, the Mad King, the Blessed King, and Queen [[valis-voldis|Valis]], plus a new portrait for [[edrion-voldis|Edrion Voldis]].
 - **The Voldis Succession Crisis, retold**: [[aldric-voldis|Aldric Voldis]], the baseborn war-hero spurned by the capital's noble houses, is now the founder of the [[jesthaen|Republic of Jesthaen]], the nation he raised for the common people and named for his mother, [[jestha|Jestha]] (new page). [[valis-voldis|Valis Voldis]] reigns over a diminished [[voldaen|Voldaen]] as the noble council's crowned queen.
 - **The histories have been re-dated**: the timeline now places the Ophanim's arrival at 333 VR and the present day at 366 VR, with every dated page updated to match.
 - **More ancient history on the [[timeline|Timeline]]**: the Mad King's civil war (93-117 VR) and the founding of [[polaris|Polaris]], which broke away from [[voldaen|Voldaen]] by treaty around 241 VR rather than by war, now sit on the timeline alongside the modern events, with fuller tellings on [[voldaen|Voldaen]] and in the home-page history. (Polaris's origin is corrected too: it broke from Voldaen, not Hilltop.)
 - **A new page for the hero [[lael|Lael]], "the Reborn"**: one of the Five Heroes, slain fighting the Ophanim and returned to life by his Miracle of Rebirth, which binds his soul to a body that no longer dies. His page carries a portrait and more of his art.
-- **New Events pages, gathered under an Events heading**: [[the-divine-age|the Divine Age]], [[the-mad-kings-war|the Mad King's War]], and [[the-polaris-secession|the Polaris Secession]] each get their own page, linked from the [[timeline|Timeline]].
+- **New Events pages, gathered under an Events heading**: [[the-divine-age|the Divine Age]], the Mad King's War, and the Polaris Secession each get their own page, linked from the [[timeline|Timeline]].
 - **The [[the-ophanim|Ophanim]] page now carries what the faith teaches of it**: scripture's foretelling of a herald of the One Above's return, to come when the Ones Below strain their seal, and the Parish of Orthodoxy's rule that mortal eyes be covered before an angel. It also records that no one agrees why the Ophanim came, and the **OphDreams**, the shared nightly visions of ruin that haunt everyone who saw it alive.
 - **The [[house-voldis|House Voldis]] family tree, refined**: the God King now shows as ruling from the Divine Age to year 0, and the younger prince who renounced his claim in the Polaris settlement joins the tree.
 - **[[miracles|Miracles]] reorganized**, with the publicly known Miracles gathered up front, now including the Miracle of Rebirth.

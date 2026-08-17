@@ -43,16 +43,18 @@ CONTENT_DIR = Path(__file__).resolve().parent.parent / "content"
 # from the filename) so it always matches Lucas's own naming choices exactly.
 TITLES = {
     "diplomacy.md": "Diplomacy",
+    "organizations.md": "Organizations",
     "calendar.md": "Calendar",
     "chronicle.md": "Chronicle",
     "timeline.md": "Timeline",
     "the-divine-age.md": "The Divine Age",
-    "the-mad-kings-war.md": "The Mad King's War",
-    "the-polaris-secession.md": "The Polaris Secession",
+    "valerions-heresy.md": "Valerion's Heresy",
+    "the-lodestar-pact.md": "The Lodestar Pact",
     "worldbuilding-checklist.md": "Worldbuilding Checklist",
     "parish-of-inquisition.md": "Parish of Inquisition",
     "parish-of-orthodoxy.md": "Parish of Orthodoxy",
     "amalthus-cruoris.md": "Amalthus Cruoris",
+    "augustus-corvus.md": "Augustus Corvus",
     "codex-magic.md": "Codex Magic",
     "faeries.md": "Faeries",
     "giants.md": "Giants",
@@ -71,7 +73,7 @@ TITLES = {
     "crater-lake.md": "Crater Lake",
     "draconis.md": "Draconis",
     "hilltop.md": "Hilltop",
-    "hilltop-night-zone.md": "The Hilltop Night Zone",
+    "andaluria.md": "Andaluria",
     "convent-of-saint-trefan.md": "Convent of Saint Trefan",
     "drinmery.md": "Drinmery",
     "jesthaen.md": "Jesthaen",
@@ -79,6 +81,7 @@ TITLES = {
     "voldaen.md": "Voldaen",
     "house-voldis.md": "House Voldis",
     "house-aquila.md": "House Aquila",
+    "house-corvus.md": "House Corvus",
     "aldric-voldis.md": "Aldric Voldis",
     "edrion-voldis.md": "Edrion Voldis",
     "eltanin.md": "Eltanin",
@@ -88,9 +91,10 @@ TITLES = {
     "immanuel-greene.md": "Immanuel Greene",
     "jestha.md": "Jestha",
     "kingslayer.md": "The Kingslayer",
-    "the-god-king.md": "The God King",
-    "the-mad-king.md": "The Mad King",
-    "the-blessed-king.md": "The Blessed King",
+    "god-king-voldis.md": "Voldis, the God King",
+    "valerion-voldis.md": "Valerion, the Mad King",
+    "valeran-voldis.md": "Valeran, the Blessed King",
+    "castus-voldis.md": "Castus Voldis",
     "lael.md": "Lael",
     "lyra-aquila.md": "Lyra Aquila",
     "cassio-aquila.md": "Cassio Aquila",
@@ -114,12 +118,13 @@ PAGE_MAP = {
     # moved in that reorg has a RENAMES entry below so its old URL keeps
     # redirecting.
     "diplomacy.md": "setting/diplomacy.md",
+    "organizations.md": "setting/organizations.md",
     "calendar.md": "setting/calendar.md",
     "chronicle.md": "setting/chronicle.md",
     "timeline.md": "setting/timeline.md",
     "the-divine-age.md": "setting/the-divine-age.md",
-    "the-mad-kings-war.md": "setting/the-mad-kings-war.md",
-    "the-polaris-secession.md": "setting/the-polaris-secession.md",
+    "valerions-heresy.md": "setting/valerions-heresy.md",
+    "the-lodestar-pact.md": "setting/the-lodestar-pact.md",
     "worldbuilding-checklist.md": "worldbuilding-checklist.md",
     "parish-of-inquisition.md": "organizations/parish-of-inquisition.md",
     "parish-of-orthodoxy.md": "organizations/parish-of-orthodoxy.md",
@@ -128,6 +133,7 @@ PAGE_MAP = {
     "guild.md": "organizations/guild.md",
     "house-voldis.md": "organizations/house-voldis.md",
     "house-aquila.md": "organizations/house-aquila.md",
+    "house-corvus.md": "organizations/house-corvus.md",
     "the-five-heroes.md": "organizations/the-five-heroes.md",
     "codex-magic.md": "magic/codex-magic.md",
     "divine-relics.md": "magic/divine-relics.md",
@@ -156,6 +162,7 @@ PAGE_MAP = {
     "voldaen.md": "locations/voldaen/index.md",
     "aldric-voldis.md": "npcs/aldric-voldis.md",
     "edrion-voldis.md": "npcs/edrion-voldis.md",
+    "augustus-corvus.md": "npcs/augustus-corvus.md",
     # 2026-07-18: the Ontos source files became hesper-arcturus.md / izar-arcturus.md
     # (House Arcturus canon). First renamed to hesper_arcturus/izar_arcturus via Cowork,
     # then to kebab-case the same day to satisfy the vault's kebab-case audit. The
@@ -169,9 +176,10 @@ PAGE_MAP = {
     "lael.md": "npcs/lael.md",
     "lyra-aquila.md": "npcs/lyra-aquila.md",
     "cassio-aquila.md": "npcs/cassio-aquila.md",
-    "the-god-king.md": "npcs/the-god-king.md",
-    "the-mad-king.md": "npcs/the-mad-king.md",
-    "the-blessed-king.md": "npcs/the-blessed-king.md",
+    "god-king-voldis.md": "npcs/god-king-voldis.md",
+    "valerion-voldis.md": "npcs/valerion-voldis.md",
+    "valeran-voldis.md": "npcs/valeran-voldis.md",
+    "castus-voldis.md": "npcs/castus-voldis.md",
     "valis-voldis.md": "npcs/valis-voldis.md",
     "valthis-voldis.md": "npcs/valthis-voldis.md",
     "rastaban.md": "player-characters/rastaban.md",
@@ -205,6 +213,14 @@ RENAMES = {
     # (firstname-house, per the Arcturus precedent). Keep old URLs redirecting.
     "npcs/lyra-aquila.md": ["npcs/lyra"],
     "npcs/cassio-aquila.md": ["npcs/cassio"],
+    # 2026-08-17 Voldis dynasty naming + war renames. Old public URLs keep
+    # redirecting, and carry_forward_source uses these to preserve each page's
+    # content-side image:/marker: block across the rename.
+    "npcs/god-king-voldis.md": ["npcs/the-god-king"],
+    "npcs/valerion-voldis.md": ["npcs/the-mad-king"],
+    "npcs/valeran-voldis.md": ["npcs/the-blessed-king"],
+    "setting/valerions-heresy.md": ["setting/the-mad-kings-war"],
+    "setting/the-lodestar-pact.md": ["setting/the-polaris-secession"],
     # 2026-07-17 landing-page merge: the standalone overview at /setting/althas
     # was folded into the home page (index.md). Keep that old URL redirecting to
     # home so player bookmarks survive. All [[althas]] wikilinks in the source
@@ -247,17 +263,21 @@ RENAMES = {
 # night zone joined this list as a result.
 NOT_YET_PUBLIC = {
     "the-threnodies.md",
-    "the-co-existers.md",
+    "the-threnodites.md",
     "the-fallen-houses.md",
     "sage-magic.md",
     "ophanim-heresies.md",
+    "the-seven.md",
+    "heresies.md",
     "old-blood.md",
     "draconis.md",
     "eltanin.md",
     "thuban.md",
     "guilmore-fleming.md",
     "immanuel-greene.md",
-    "hilltop-night-zone.md",
+    "andaluria.md",
+    "castorius-voldis.md",
+    "the-stargazers.md",
 }
 
 # The public-fields contract for the typed-infobox pilot (see the campaign's

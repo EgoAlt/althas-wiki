@@ -25,6 +25,7 @@ Not all Miracles are directly useful on the battlefield, but those that are cons
 - **The Miracle of Viaticum**: the signature Miracle of **House Cruoris**, an oldblood house bound to [[the-holy-see|the Holy See]], and borne by [[amalthus-cruoris|the reigning Pontiff]] when a Cruoris sits the chair. Its bearer can lend a single Splendor working to another person: he writes a prayer in his own holy blood, seals it with wax mixed into that blood, and when the seal is broken the words speak themselves in his voice, so [[the-one-above|the One Above]] answers the bearer's ask once, as though the Pontiff had made it. See [[amalthus-cruoris|Pontiff Amalthus Cruoris]].
 - **The Miracle of Pentecost**: understanding of any word heard spoken, in any tongue, cipher, or voice, and of any notation set before the eye. One of the two signature Miracles of [[house-aquila|House Aquila]]; see [[cassio-aquila|Cassio Aquila]] and [[lyra-aquila|Lyra Aquila]].
 - **The Miracle of Anamnesis**: perfect, unfading memory of everything its bearer has perceived. [[house-aquila|House Aquila's]] other signature Miracle, borne by [[lyra-aquila|Lyra Aquila]].
+- **The Miracle of Auspex**: lets its bearer read the immediate future of a fight, every blow and maneuver an instant before it comes, so no move against them goes unseen. The signature Miracle of [[house-corvus|House Corvus]], Voldaen's hereditary Ministers of War; borne now by [[augustus-corvus|Augustus Corvus]], "the Red Raven."
 
 ## House Voldis's power
 
@@ -42,9 +43,15 @@ House Cruoris is one of the faith's oldblood houses, ancient and bound tightly t
 
 [[house-aquila|House Aquila]] is a scholar-house esteemed in both [[polaris|Polaris]] and [[the-holy-see|the Holy See]], and alone among the houses it carries two Miracles in one bloodline: **Pentecost**, the understanding of any spoken word or written notation, and **Anamnesis**, perfect and unfading memory. Ordinarily a child of the house is born with one or neither. The twins [[cassio-aquila|Cassio Aquila]] and [[lyra-aquila|Lyra Aquila]] were the rare exception thrice over: twins, each born with a Miracle where one is a once-a-generation gift, and each with a *different* one, so that each had access to the other's and wielded both. [[polaris|Polaris]] and [[the-holy-see|the Holy See]] alike held that up as proof that great gifts are gifted by [[the-one-above|the One Above]], not the hoarded inheritance of one dynasty, a rebuke aimed at [[house-voldis|House Voldis]]. Cassio fell bringing down [[the-ophanim|the Ophanim]] in 334 VR. See [[house-aquila|House Aquila]].
 
+## House Corvus's power
+
+[[house-corvus|House Corvus]] is one of [[voldaen|Voldaen's]] Great Houses, holder of the hereditary office of Minister of War. Its signature Miracle is **Auspex**: the gift of reading the shape of a fight before it comes, every blow and maneuver an instant before it lands. It has made the Corvus lords the finest commanders and duelists of their generations, and it is why the house boasts it has never once backed a loser. Its present head, [[augustus-corvus|Augustus Corvus]], "the Red Raven," bears it now.
+
 ## Related pages
 
 - [[voldaen|Voldaen]]
+- [[house-corvus|House Corvus]]
+- [[augustus-corvus|Augustus Corvus]]
 - [[edrion-voldis|Edrion Voldis]]
 - [[valthis-voldis|Valthis Voldis]]
 - [[valis-voldis|Valis Voldis]]

@@ -1,0 +1,24 @@
+---
+title: Valerion's Heresy
+aliases:
+  - setting/the-mad-kings-war
+kind: event
+---
+
+**Summary**: **Valerion's Heresy**, the civil war of 93-117 VR and the first great fracture of Althas, when [[valerion-voldis|Valerion]], a king of [[voldaen|Voldaen]], proclaimed himself [[the-one-above|the One Above]] returned and broke crown and church into open war. It ended when his own son put him down and won [[hilltop|Hilltop]] its independence.
+
+---
+
+Generations after the founding, [[valerion-voldis|Valerion]] of [[house-voldis|House Voldis]], the king the histories remember as the Mad King, declared before the realm that he was [[the-one-above|the One Above]] returned to Althas in the flesh. [[the-holy-see|The Holy See]], whose authority rested on serving an absent god, named the claim heresy at once, and crown and church fell into open war. It was the first time the continent, which had flown under a single banner since the Divine Age, broke against itself.
+
+The war ran until 117 VR, when the Mad King's own son and successor, [[valeran-voldis|the Blessed King]], struck his father down and denounced his heresy before the faithful. Out of the settlement that ended the war, [[hilltop|Hilltop]], long the seat of the Holy See, passed fully into the Church's keeping as a sovereign nation rather than a holding of the Voldis crown.
+
+## Related pages
+
+- [[valerion-voldis|Valerion (the Mad King)]]
+- [[valeran-voldis|Valeran (the Blessed King)]]
+- [[house-voldis|House Voldis]]
+- [[voldaen|Voldaen]]
+- [[hilltop|Hilltop]]
+- [[the-holy-see|The Holy See]]
+- [[timeline|Timeline]]
