@@ -1,10 +1,10 @@
 ---
 title: Augustus Corvus
-image: augustus-corvus.png
 kind: person
 house: "[[house-corvus|House Corvus]]"
 allegiance: "[[voldaen|Voldaen]]"
 role: "Minister of War of Voldaen"
+image: augustus-corvus.png
 ---
 
 **Summary**: Lord of [[house-corvus|House Corvus]] and Minister of War of [[voldaen|Voldaen]], called the Red Raven. Bearer of his house's Miracle of Auspex, an undefeated field commander and peerless duelist, and a hero of the war against [[the-ophanim|the Ophanim]] who has never made peace with the loss of the south to [[jesthaen|Jesthaen]].

@@ -9,7 +9,7 @@ image: the-ophanim.webp
 image_caption: "An artist's rendering, not a likeness. The Ophanim wore no fixed form, and no two who beheld it ever agreed on its shape. No true image of it can exist; this is one soul's guess, set down after the looking."
 ---
 
-**Summary**: The angelic being that descended on [[hilltop|Hilltop]] in 333 VR and was slain a year later by the Five Heroes. Its arrival and death reshaped the continent's politics and its faith, and left the land around its corpse permanently, unnaturally dark.
+**Summary**: The angelic being that descended on [[hilltop|Hilltop]] in 333 VR and was slain a year later by the Five Heroes. Its arrival and death reshaped the continent's politics and its faith, and left an unnatural wound over the land around its corpse, whose nights have of late begun to lengthen without end (see [[andaluria|Andaluria]]).
 
 ---
 

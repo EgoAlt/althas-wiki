@@ -5,7 +5,7 @@ pc: true
 image: rosestripe.webp
 ---
 
-**Summary**: Player character. An Orderborne [[faeries|Faerie]], Poisoner Assassin.
+**Summary**: Player character. An Orderborne [[aetheris|Aetheris]], Poisoner Assassin.
 
 ---
 
@@ -18,8 +18,8 @@ Female, with the angelic look common to her kind: a small frame, a childlike fac
 
 ## Character
 
-Ancestry: [[faeries|Faerie]]. Community: Orderborne. Class: Assassin, subclass Poisoner.
+Ancestry: [[aetheris|Aetheris]]. Community: Orderborne. Class: Assassin, subclass Poisoner.
 
 ## Related pages
 
-- [[faeries|Faeries]]
+- [[aetheris|Aetheris]]

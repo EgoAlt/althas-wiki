@@ -15,7 +15,7 @@ Where most oldblood houses carry a single signature [[miracles|Miracle]], the Aq
 - **The Miracle of Pentecost**: its bearer understands, in full, any word they hear spoken, in any tongue, cipher, or voice, and any notation set before the eye. It grants understanding, not command. It renders meaning transparent and confers no power the bearer did not already have, but for a scholar that is power enough: a bearer reads any [[codex-magic|Codex]] seal at a glance, however novel, because a seal's meaning is its mechanism, and reads the [[splendor-magic|Splendor]] scriptures as plainly as speech.
 - **The Miracle of Anamnesis**: its bearer forgets nothing they have perceived. Every word heard, every seal seen, every face, is kept perfectly and forever.
 
-As with any holy bloodline, a Miracle surfaces rarely, once or twice in a generation, and a given child of the house is born carrying one of the two, or, as most are, with neither.
+As with any holyblood line, a Miracle surfaces rarely, once or twice in a generation, and a given child of the house is born carrying one of the two, or, as most are, with neither.
 
 ## The twins
 

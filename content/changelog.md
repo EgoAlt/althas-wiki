@@ -4,6 +4,14 @@ title: Changelog
 
 What's new on the wiki, most recent first.
 
+## 2026-08-19
+
+- **The Faeries are now the Aetheris.** The church's winged message-carriers are recorded under their proper name, [[aetheris|Aetheris]], the angels of Althas and the exalted mirror of the [[infernis|Infernis]]. Their old page redirects here, so nothing breaks.
+- **A new ancestry, the [[elves|Elves]].** Long-lived, and longer-lived still in the Divine Age, when the eldest of them did not die of age at all. That grace faded when [[the-one-above|the One Above]] left the world.
+- **[[andaluria|Andaluria]], the wine country at the heart of Hilltop.** A new page for the capital region around [[the-ophanim|the Ophanim's]] corpse: volcanic vineyards and returning festivals, and, of late, nights that lengthen without end, monsters in the fields, and the Sombral Spade taking up the hunt where lord and church will not.
+- **The Ophanim's wound is spreading.** The [[the-ophanim|Ophanim]] page now notes that the dark it left over the land has begun to deepen, its nights lengthening toward an unending night.
+- **[[armada|Armada]] and the Caio.** The merchant federation's page now tells of the Caio who founded it, a caravaning people who hold family loosely and welcome any who learn their ways, and of their drabardi, the revered fortune-tellers who read fate in cards, bones, and tea leaves.
+
 ## 2026-08-17
 
 - **The old Voldis kings have names.** The founder the histories kept only as the God King is now recorded as [[god-king-voldis|Voldis]], the name his house and his nation both carry. The two reigns that fractured the realm are named too: [[valerion-voldis|Valerion the Mad King]], who declared himself [[the-one-above|the One Above]] returned, and his son [[valeran-voldis|Valeran the Blessed King]], who struck him down. [[castus-voldis|King Castus]] joins the line as well, the monarch under whom the north broke away to become [[polaris|Polaris]].
@@ -77,14 +85,14 @@ What's new on the wiki, most recent first.
 
 ## 2026-07-16
 
-- **The wiki got reorganized**: pages now live in folders by what they are ([[guild|organizations]], [[miracles|magic]], [[the-one-above|beings]], [[faeries|ancestries]], and purely geographic locations, with [[crater-lake|Crater Lake]] filed under [[hilltop|Hilltop]] where it belongs), and every nation's page now ends with a generated "In this nation" section listing the organizations, people, and places tied to it. Old links and bookmarks still work: they redirect to each page's new home.
+- **The wiki got reorganized**: pages now live in folders by what they are ([[guild|organizations]], [[miracles|magic]], [[the-one-above|beings]], ancestries, and purely geographic locations, with [[crater-lake|Crater Lake]] filed under [[hilltop|Hilltop]] where it belongs), and every nation's page now ends with a generated "In this nation" section listing the organizations, people, and places tied to it. Old links and bookmarks still work: they redirect to each page's new home.
 - **The map learned two tricks**: pins are now grouped into toggleable layers (Settlements, Holy sites, Nations; use the control in the corner), and [[drinmery|Drinmery]] and the [[convent-of-saint-trefan|Convent of Saint Trefan]] have their own local maps you can open straight from their pins. Local cartography is still underway; in the meantime, an annoying dog stole the map.
 - **Infoboxes**: most pages now carry a quick-reference card (who or what something is, key dates, allegiances) beside the article, in the style of a classic wiki infobox.
-- **New pages**: the ancestries of Althas each get their own entry: [[giants|Giants]], [[clanks|Clanks]], and [[infernis|Infernis]] join [[faeries|Faeries]].
+- **New pages**: the ancestries of Althas each get their own entry: [[giants|Giants]], [[clanks|Clanks]], and [[infernis|Infernis]] join Faeries.
 - Added art to all four ancestry pages.
 - **New page**: [[house-voldis|House Voldis]], the royal dynasty of Voldaen, with a full family tree from the God King's claimed line down to [[valis-voldis|Valis Voldis]], and the story of the succession crisis in one place.
 - **New player characters**: [[uriel-kenan|Uriel Kenan]] and [[rosestripe|Rosestripe]] join [[rastaban|Rastaban]] on the wiki (appearance and mechanics only for now, each with a portrait).
-- **New pages**: [[faeries|Faeries]], the [[convent-of-saint-trefan|Convent of Saint Trefan]], and [[drinmery|Drinmery]].
+- **New pages**: Faeries, the [[convent-of-saint-trefan|Convent of Saint Trefan]], and [[drinmery|Drinmery]].
 - [[the-holy-see|The Holy See]] now lays out how it's organized into Cantons, and the Canton of Inquisition entry was rewritten.
 - Added portraits for [[hesper-arcturus|Hesper]], Uriel, and Rosestripe.
 - Added art to [[divine-relics|Divine Relics]], [[aldric-voldis|Aldric Voldis]], [[edrion-voldis|Edrion Voldis]], [[the-ophanim|The Ophanim]], [[the-one-above|The One Above]], and [[the-ones-below|The Ones Below]]. The last three carry a note that the image is only an artist's rendering, since no true likeness of them is possible.

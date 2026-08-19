@@ -27,7 +27,7 @@ Daggerheart invites players into the worldbuilding, and much of Althas is still 
 
 ## Peoples
 
-- [ ] Flesh out [[faeries|Faerie]] message-carrier culture: how a courier is hired and trusted, their etiquette, and the folklore around them.
+- [ ] Flesh out [[aetheris|Aetheris]] message-carrier culture: how a courier is hired and trusted, their etiquette, and the folklore around them.
 - [ ] Describe [[infernis|Infernis]] caravan life: the goods, news, and rumors they carry, their music and customs, and why they are feared.
 - [ ] Describe the working-class culture of the [[giants|Giants]] in [[polaris|Polaris]]: their labor, their songs, their community.
 - [ ] Which other ancestries of Althas deserve a fuller place in the world, and how would you expand them (their history, communities, and daily life)?

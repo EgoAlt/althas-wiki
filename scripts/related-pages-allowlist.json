@@ -1,29 +1,35 @@
 {
-  "_comment": "Human-owned exceptions to the grounding gate (check-related-pages-grounding.py). Each entry is a connection that is genuinely public but not restated as prose on the linking page, reviewed and cleared by Lucas 2026-07-17. hub_targets: overview/utility pages any page may link. public_names: NOT_YET_PUBLIC entities whose name is public (currently none; Izar was promoted to a full public page instead). pages: per-page target exceptions with reasons.",
+  "_comment": "Human-owned exceptions to the grounding gate (check-related-pages-grounding.py). Each entry is a connection that is genuinely public but not restated as prose on the linking page, reviewed and cleared by Lucas. hub_targets: overview/utility pages any page may link. public_names: NOT_YET_PUBLIC entities whose name is public (only their page is withheld). pages: per-page target exceptions with reasons.",
   "hub_targets": ["diplomacy", "timeline", "calendar", "index"],
-  "public_names": {},
+  "public_names": {
+    "oldblood": "the term 'oldblood house' denotes an ancient holy bloodline and is long-standing public lore across the Miracles and Houses pages; the gm-only oldblood.md page holds the SECRET of what oldblood truly is. The public term is not the withheld concept, so its appearance in public prose is not a leak (2026-08-19, faeries->aetheris / oldblood migration).",
+    "Sombral Spade": "Andaluria's people's monster-hunter order, openly named on the public Andaluria page; the sombral-spade.md page is withheld only because its leader's secret nature is not yet public (Lucas, 2026-08-19).",
+    "The Council of Five": "Andaluria's visible reconstruction government, named on the public Andaluria page; the-council-of-five.md is withheld because the SECRET (that they are the corrupted Fallen Houses) stays gm-only, not because the council's existence is hidden (Lucas, 2026-08-19)."
+  },
   "pages": {
     "organizations/house-corvus.md": {
       "house-voldis": "peer navigation: Althas's Great Houses cross-reference each other",
       "house-aquila": "peer navigation: Althas's Great Houses cross-reference each other"
     },
     "ancestries/clanks.md": {
-      "faeries": "peer navigation: the four Althas ancestries cross-reference each other",
+      "aetheris": "peer navigation: the Althas ancestries cross-reference each other",
       "giants": "peer navigation: the four Althas ancestries cross-reference each other",
       "infernis": "peer navigation: the four Althas ancestries cross-reference each other"
     },
-    "ancestries/faeries.md": {
-      "giants": "peer navigation: the four Althas ancestries cross-reference each other",
-      "clanks": "peer navigation: the four Althas ancestries cross-reference each other",
-      "infernis": "peer navigation: the four Althas ancestries cross-reference each other"
+    "ancestries/aetheris.md": {
+      "the-one-above": "public: aetheris are the church's angelic messengers, bound to the faith of the One Above (public lore), not restated verbatim in the ancestry summary",
+      "giants": "peer navigation: the Althas ancestries cross-reference each other",
+      "clanks": "peer navigation: the Althas ancestries cross-reference each other"
+    },
+    "ancestries/elves.md": {
+      "uriel-kenan": "public: Uriel Kenan is a published Orderborne Elf player character, the page's example elf; public, not restated in the ancestry prose"
     },
     "ancestries/giants.md": {
-      "faeries": "peer navigation: the four Althas ancestries cross-reference each other",
+      "aetheris": "peer navigation: the Althas ancestries cross-reference each other",
       "clanks": "peer navigation: the four Althas ancestries cross-reference each other",
       "infernis": "peer navigation: the four Althas ancestries cross-reference each other"
     },
     "ancestries/infernis.md": {
-      "faeries": "peer navigation: the four Althas ancestries cross-reference each other",
       "giants": "peer navigation: the four Althas ancestries cross-reference each other",
       "clanks": "peer navigation: the four Althas ancestries cross-reference each other"
     },

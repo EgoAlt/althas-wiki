@@ -32,7 +32,7 @@ CONTENT = Path(__file__).resolve().parent.parent / "content"
 # Titles that are also ordinary common nouns and are correctly lowercased
 # mid-sentence ("a flock of faeries"), matching how their own page writes them.
 # The proper-noun casing gate is skipped for these slugs.
-COMMON_NOUN_SLUGS = {"faeries"}
+COMMON_NOUN_SLUGS = {"aetheris", "elves"}
 TITLE_RE = re.compile(r"^title:\s*(.+?)\s*$", re.MULTILINE)
 # [[target|display]] or [[target]] ; target may carry a path and/or #anchor
 WIKILINK_RE = re.compile(r"\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|([^\]]+))?\]\]")

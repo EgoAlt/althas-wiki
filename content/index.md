@@ -121,7 +121,8 @@ All communities are available across nations, but some have unique aspects withi
 ## Ancestries
 
 - [[clanks|Clanks]]: the newest ancestry, first built in Polaris's labs and Hilltop's sacred workshops; sentient Clanks are rare and politically dangerous
-- [[faeries|Faeries]]: ancestry lore, origin theory, and their role as message carriers
+- [[aetheris|Aetheris]]: the angels of Althas, church-bound message carriers, the exalted mirror of Infernis
+- [[elves|Elves]]: long-lived, their old Divine-Age deathlessness faded when the One Above departed
 - [[giants|Giants]]: builders of Polaris's industrial rise, now treated as its lowly working class
 - [[infernis|Infernis]]: banned from most settlements, living in traveling caravans that trade goods, news, and rumors
 
@@ -142,7 +143,7 @@ All communities are available across nations, but some have unique aspects withi
 
 - [[rastaban|Rastaban]]: Loreborne Giant, School of Knowledge Wizard. Appearance and mechanics only, campaign hasn't started yet.
 - [[uriel-kenan|Uriel Kenan]]: Orderborne Elf, Divine Wielder Seraph. Appearance and mechanics only.
-- [[rosestripe|Rosestripe]]: Orderborne Faerie, Poisoner Assassin. Appearance and mechanics only.
+- [[rosestripe|Rosestripe]]: Orderborne Aetheris, Poisoner Assassin. Appearance and mechanics only.
 
 ## NPCs
 

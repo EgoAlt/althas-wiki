@@ -21,9 +21,9 @@ Tall and gaunt beneath heavy vestments of deep red, his face hidden behind a pal
 
 ## The Miracle of Viaticum
 
-Amalthus bears his house's signature [[miracles|Miracle]], the **Miracle of Viaticum**: the power to lend a single Splendor working to another. He writes a prayer in his own holy blood and seals the page with wax mixed into that blood; the words wait, silent, until the seal is broken. Then they speak themselves in his voice, wherever the bearer stands, and [[the-one-above|the One Above]] answers the ask as though the Pontiff himself had spoken it, once. The seal cannot be broken twice. Spent, the page crumbles to nothing.
+Amalthus bears his house's signature [[miracles|Miracle]], the **Miracle of Viaticum**: the power to lend a single Splendor working to another. He writes a prayer in his own holyblood and seals the page with wax mixed into that blood; the words wait, silent, until the seal is broken. Then they speak themselves in his voice, wherever the bearer stands, and [[the-one-above|the One Above]] answers the ask as though the Pontiff himself had spoken it, once. The seal cannot be broken twice. Spent, the page crumbles to nothing.
 
-A Viaticum works because an incantation needs a living channel to carry it, and holy blood is one (see [[splendor-magic|Splendor Magic]]). The prayer he seals into his own blood is his living ask, sent ahead of him, still able to reach the One Above when he is nowhere near. It is by this that the Church grants grace at a distance: a blessing pressed into the hand of a knight before a hopeless errand, a single mercy carried where no priest can follow.
+A Viaticum works because an incantation needs a living channel to carry it, and holyblood is one (see [[splendor-magic|Splendor Magic]]). The prayer he seals into his own blood is his living ask, sent ahead of him, still able to reach the One Above when he is nowhere near. It is by this that the Church grants grace at a distance: a blessing pressed into the hand of a knight before a hopeless errand, a single mercy carried where no priest can follow.
 
 Every Viaticum is made from the Pontiff's own blood, and the giving of it costs him. Each sealed prayer is a measure of himself spent and not returned, and the toll shows in the gaunt frame and the wasted hands. The faithful read it as devotion worn openly. He has never said otherwise.
 

@@ -23,6 +23,6 @@ The arrangement has grown more volatile recently. When the archmage [[hesper-arc
 - [[index|Althas]]
 - [[polaris|Polaris]]
 - [[hesper-arcturus|Hesper]]
-- [[faeries|Faeries]]
+- [[aetheris|Aetheris]]
 - [[clanks|Clanks]]
 - [[infernis|Infernis]]

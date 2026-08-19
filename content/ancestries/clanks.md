@@ -21,6 +21,6 @@ Sentient Clanks are rare, and each one is controversial and politically dangerou
 - [[index|Althas]]
 - [[polaris|Polaris]]
 - [[hilltop|Hilltop]]
-- [[faeries|Faeries]]
+- [[aetheris|Aetheris]]
 - [[giants|Giants]]
 - [[infernis|Infernis]]
