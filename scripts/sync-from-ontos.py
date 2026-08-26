@@ -123,9 +123,13 @@ PAGE_MAP = {
     "calendar.md": "setting/calendar.md",
     "chronicle.md": "setting/chronicle.md",
     "timeline.md": "setting/timeline.md",
-    "the-divine-age.md": "setting/the-divine-age.md",
-    "valerions-heresy.md": "setting/valerions-heresy.md",
-    "the-lodestar-pact.md": "setting/the-lodestar-pact.md",
+    # Lore/event pages live in their own events/ section, kept apart from the
+    # mechanical setting/ pages above (calendar, chronicle, diplomacy,
+    # organizations, timeline). Reorg 2026-08-22 at Lucas's request; the old
+    # setting/ URLs keep redirecting via RENAMES below.
+    "the-divine-age.md": "events/the-divine-age.md",
+    "valerions-heresy.md": "events/valerions-heresy.md",
+    "the-lodestar-pact.md": "events/the-lodestar-pact.md",
     "worldbuilding-checklist.md": "worldbuilding-checklist.md",
     "parish-of-inquisition.md": "organizations/parish-of-inquisition.md",
     "parish-of-orthodoxy.md": "organizations/parish-of-orthodoxy.md",
@@ -222,8 +226,13 @@ RENAMES = {
     "npcs/god-king-voldis.md": ["npcs/the-god-king"],
     "npcs/valerion-voldis.md": ["npcs/the-mad-king"],
     "npcs/valeran-voldis.md": ["npcs/the-blessed-king"],
-    "setting/valerions-heresy.md": ["setting/the-mad-kings-war"],
-    "setting/the-lodestar-pact.md": ["setting/the-polaris-secession"],
+    # 2026-08-22 events/ reorg: the three lore/event pages moved out of
+    # setting/ into their own events/ section. Old slugs listed oldest-first
+    # (the newly-old setting/ slug appended last), so carry_forward_source
+    # reads the just-superseded content/setting/ file for image:/marker: data.
+    "events/valerions-heresy.md": ["setting/the-mad-kings-war", "setting/valerions-heresy"],
+    "events/the-lodestar-pact.md": ["setting/the-polaris-secession", "setting/the-lodestar-pact"],
+    "events/the-divine-age.md": ["setting/the-divine-age"],
     # 2026-07-17 landing-page merge: the standalone overview at /setting/althas
     # was folded into the home page (index.md). Keep that old URL redirecting to
     # home so player bookmarks survive. All [[althas]] wikilinks in the source

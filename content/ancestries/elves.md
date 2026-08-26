@@ -1,6 +1,7 @@
 ---
 title: Elves
 kind: ancestry
+image: elf.webp
 ---
 
 **Summary**: A long-lived ancestry of Althas who once carried the deathlessness of the Divine Age, lost when [[the-one-above|the One Above]] departed the world.

@@ -4,6 +4,7 @@ aliases:
   - locations/armada/guild
 kind: organization
 seat: "[[armada|Armada]]"
+image: guild.svg
 ---
 
 **Summary**: The governing institution of [[armada|Armada]]: a collection of city-state rulers who each hold their seat through possession of a physical token, not inheritance or election.

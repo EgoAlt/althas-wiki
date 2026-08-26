@@ -101,6 +101,7 @@ export const defaultContentPageLayout: PageLayout = {
               npcs: "NPCs",
               "player-characters": "Player Characters",
               setting: "Setting",
+              events: "Events",
             }[node.displayName] ?? node.displayName
         }
       },
@@ -172,6 +173,7 @@ export const defaultListPageLayout: PageLayout = {
               npcs: "NPCs",
               "player-characters": "Player Characters",
               setting: "Setting",
+              events: "Events",
             }[node.displayName] ?? node.displayName
         }
       },

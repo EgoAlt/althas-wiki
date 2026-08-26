@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1000 1000">
+  <!-- Generator: Adobe Illustrator 29.3.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 151)  -->
+  <!-- Fill tinted for theme visibility: dark sigil on light cards, light sigil on dark cards (prefers-color-scheme). Added 2026-08-22. -->
+  <style>
+    polygon { fill: #2b2b2b; }
+    @media (prefers-color-scheme: dark) { polygon { fill: #ebebeb; } }
+  </style>
+  <polygon points="321.7 534.9 439.8 739.4 494.1 645.4 384.4 455.3 499.5 255.8 614.7 455.3 568.8 534.9 677.8 534.9 723.7 455.3 499.5 67 275.3 455.3 321.3 534.9 321.7 534.9"/>
+  <polygon points="555.7 746.4 611.9 649 503.4 649 439.8 759.1 439.8 759.1 393.9 838.6 163.5 838.6 278.7 639.1 370.1 639.1 315.6 544.7 224.2 544.7 0 933 448.4 933 495.7 851 555.7 746.4"/>
+  <polygon points="1000 933 775.8 544.7 683.5 544.7 551.7 544.7 447.3 544.7 465.7 576.5 499.5 635.1 499.8 634.8 502.3 639.1 629 639.1 721.3 639.1 836.5 838.6 606.1 838.6 560.2 759.1 505.7 853.5 551.6 933 1000 933"/>
+</svg>
