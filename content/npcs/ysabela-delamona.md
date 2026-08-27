@@ -3,6 +3,7 @@ title: Ysabela Delamoña
 kind: person
 role: Condesa of Andaluria
 house: House Delamoña
+image: ysabela-delamona.webp
 ---
 
 **Summary**: Condesa **Ysabela Delamoña IV**, the wealthiest noble of [[andaluria|Andaluria]] and head of House Delamoña, the one great house of the old holy capital that did not leave when [[the-ophanim|the Ophanim]] fell. Beloved as the patron who stayed, she pours her wine-fortune into the region's reconstruction and is betrothed to Archbishop [[mateo-veyra|Mateo Veyra]].
