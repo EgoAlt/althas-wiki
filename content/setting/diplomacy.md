@@ -28,6 +28,7 @@ node lael | Lael | people | npcs/lael
 node lyra-aquila | Lyra Aquila | people | npcs/lyra-aquila
 node hesper-arcturus | Hesper Arcturus | people | npcs/hesper-arcturus
 node augustus-corvus | Augustus Corvus | people | npcs/augustus-corvus
+node zhenya-azimuth | Zhenya Azimuth | people | npcs/zhenya-azimuth
 
 # Edges: source -> target (arrow) or <-> (mutual) | type | label
 edge house-voldis -> voldaen | governance | royal dynasty, rules
@@ -54,6 +55,7 @@ edge hesper-arcturus -> polaris | governance | Triumvirate archmage
 edge augustus-corvus -> voldaen | governance | Minister of War
 edge augustus-corvus -> jesthaen | rivalry | led Voldaen's armies against, wants the war renewed
 edge augustus-corvus -> aldric-voldis | war-history | brothers-in-arms in the Ophanim War, then enemies
+edge zhenya-azimuth -> voldaen | governance | Minister of the Royal Household
 ```
 
 ## The two sides of the war

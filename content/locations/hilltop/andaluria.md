@@ -15,16 +15,17 @@ Since [[valerion-voldis|Valerion's]] Heresy, Andaluria was the seat of [[the-hol
 
 ## The nights grow long
 
-Of late, something has gone wrong with Andaluria's nights. They lengthen with each sunset, the moon lingers overhead where it should set, and monsters prowl the fields where revelers once danced. The old defenses, the folk rites and the Church's sacred rites alike, have lost their bite. People whisper that death has come to Andaluria, and fear what the coming Midsummer Festival will bring. The wealthy hide from the horror in masquerades at the hilltop castillo of the Condesa Ysabela Delamoña IV, while ordinary folk fend for themselves and the Sombral Spade takes up the hunt where lord and church will not.
+Of late, something has gone wrong with Andaluria's nights. They lengthen with each sunset, the moon lingers overhead where it should set, and monsters prowl the fields where revelers once danced. The old defenses, the folk rites and the Church's sacred rites alike, have lost their bite. People whisper that death has come to Andaluria, and fear what the coming Midsummer Festival will bring. The wealthy hide from the horror in masquerades at the hilltop castillo of the Condesa [[ysabela-delamona|Ysabela Delamoña IV]], while ordinary folk fend for themselves and the Sombral Spade takes up the hunt where lord and church will not.
 
 ## Governed and rebuilt
 
-Andaluria is governed by its Council of Five, seated at Jesaña's Plaza del Sol, and rebuilt on the taxes [[the-holy-see|the Holy See]] gathers from the merchant-roads at the continent's centre, in begrudging trade with the now-independent [[armada|Armada]] to the south. Wine remains its lifeblood and its chief export.
+Andaluria is governed by its [[the-council-of-five|Council of Five]], seated at Jesaña's Plaza del Sol, and rebuilt on the taxes [[the-holy-see|the Holy See]] gathers from the merchant-roads at the continent's centre, in begrudging trade with the now-independent [[armada|Armada]] to the south. Wine remains its lifeblood and its chief export.
 
 ## Related pages
 
 - [[hilltop|Hilltop]]
 - [[the-ophanim|The Ophanim]]
+- [[the-council-of-five|The Council of Five]]
 - [[armada|Armada]]
 - [[the-holy-see|The Holy See]]
 - [[index|Althas]]

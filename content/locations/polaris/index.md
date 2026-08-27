@@ -14,7 +14,7 @@ marker:
 
 ---
 
-A nation of scholars and mages who broke away from [[voldaen|Voldaen]] to pursue arcane ambition, winning their independence by negotiated partition rather than the open war that had scarred the continent generations earlier. Home to the continent's magic academies (Loreborne communities) and a magocratic industrial rise built on [[giants|Giant]] labor. Rival of [[voldaen|Voldaen]], supported the [[jesthaen|Jesthaen]] rebels.
+A nation of scholars and mages who broke away from [[voldaen|Voldaen]] to pursue arcane ambition, winning their independence by negotiated partition rather than the open war that had scarred the continent half a century earlier. Home to the continent's magic academies (Loreborne communities) and a magocratic industrial rise built on [[giants|Giant]] labor. Rival of [[voldaen|Voldaen]], supported the [[jesthaen|Jesthaen]] rebels.
 
 See [[index|Althas]] for the full history and the Giants' role in Polaris society.
 

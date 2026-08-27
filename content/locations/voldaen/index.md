@@ -20,6 +20,8 @@ The oldest nation has fractured before. Generations after its founding, the reig
 
 Queen [[valis-voldis|Valis Voldis]] wears its crown following the Voldis Succession Crisis, in which her baseborn uncle [[aldric-voldis|Aldric Voldis]] broke the realm's southern half away to found the breakaway republic of Jesthaen. See [[index|Althas]] for the full history.
 
+Far in the northwest, Voldaen also keeps the [[the-witherwatch|Witherwatch]], the frontier garrison that holds the [[godless-gate|Godless Gate]] against the blighted [[witherwild-continent|Witherwild]] beyond. It is a grim, thankless posting, and the reason the ruin of the Folly has never spilled into Althas.
+
 ## Related pages
 
 - [[index|Althas]]
@@ -31,4 +33,7 @@ Queen [[valis-voldis|Valis Voldis]] wears its crown following the Voldis Success
 - [[house-voldis|House Voldis]]
 - [[valerions-heresy|Valerion's Heresy]]
 - [[the-lodestar-pact|The Lodestar Pact]]
+- [[the-witherwatch|The Witherwatch]]
+- [[godless-gate|The Godless Gate]]
+- [[witherwild-continent|The Witherwild]]
 - [[diplomacy|Diplomacy]]

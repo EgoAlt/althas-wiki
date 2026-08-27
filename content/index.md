@@ -107,6 +107,9 @@ All communities are available across nations, but some have unique aspects withi
 - [[drinmery|Drinmery]]: city in Jesthaen, home of the Convent of Saint Trefan
 - [[convent-of-saint-trefan|Convent of Saint Trefan]]: a convent in Drinmery prized for its rare library
 - [[crater-lake|Crater Lake]]: a massive crater lake at the center of Althas, left by the Divine Age
+- [[witherwild-continent|The Witherwild]]: the blighted second continent beyond the northwest pass, grave of the Haven colony ("the Folly")
+- [[haven|Haven]]: the three-power colony lost in the Witherwild to plague and the wild, remembered as "the Folly"
+- [[godless-gate|The Godless Gate]]: the northwest mountain pass joining Althas to the Witherwild, held by the Witherwatch
 
 ## Factions
 
@@ -116,7 +119,10 @@ All communities are available across nations, but some have unique aspects withi
 - [[guild|The Guild]]: governs Armada, seats held by token possession, not inheritance or election
 - [[the-five-heroes|The Five Heroes]]: the five who brought down the Ophanim in 334 VR (Edrion Voldis, Cassio Aquila, Aldric Voldis, Lael the Reborn, Lyra Aquila)
 - [[house-aquila|House Aquila]]: scholar-house of the twins Cassio and Lyra, esteemed in both Polaris and the Holy See, bearer of two Miracles (Pentecost and Anamnesis)
-- [[house-corvus|House Corvus]]: Great House of Voldaen holding the hereditary office of Minister of War, risen at Valerion's Heresy, bearer of the Miracle of Auspex
+- [[house-corvus|House Corvus]]: Great House of Voldaen holding the hereditary office of Minister of War, risen at [[valerions-heresy|Valerion's Heresy]], bearer of the Miracle of Auspex
+- [[house-azimuth|House Azimuth]]: Great House of Voldaen, hereditary Minister of the Royal Household, bearer of the Miracle of Parashiel and the Rule of The Divider; current head Novak Azimuth
+- [[house-olnir|House Olnir]]: ancient Voldaen Great House, bearer of the Miracle of Fames and keeper of the Famesfeast, its ministry stripped after [[lorkhan-olnir|Lorkhan's]] treason
+- [[the-witherwatch|The Witherwatch]]: Voldaen's grim frontier garrison holding the Godless Gate against the blighted Witherwild
 
 ## Ancestries
 
@@ -125,6 +131,7 @@ All communities are available across nations, but some have unique aspects withi
 - [[elves|Elves]]: long-lived, their old Divine-Age deathlessness faded when the One Above departed
 - [[giants|Giants]]: builders of Polaris's industrial rise, now treated as its lowly working class
 - [[infernis|Infernis]]: banned from most settlements, living in traveling caravans that trade goods, news, and rumors
+- [[drakona|The Drakona]]: the dragon-blooded people, a scarce ancestry cut down for lost-to-history Divine-Age crimes, rumored in greater numbers in the Witherwild
 
 ## Concepts
 
@@ -154,12 +161,19 @@ All communities are available across nations, but some have unique aspects withi
 - [[lyra-aquila|Lyra Aquila]]: one of the Five Heroes, archmage of Polaris's Triumvirate, of House Aquila, twin sister to Cassio Aquila, author of *Verba Ophanim*, bearer of the Miracle of Anamnesis
 - [[cassio-aquila|Cassio Aquila]]: one of the Five Heroes, scholar of the Holy See, of House Aquila, twin brother to Lyra Aquila, bearer of the Miracle of Pentecost, died fighting the Ophanim
 - [[augustus-corvus|Augustus Corvus]]: Minister of War of Voldaen and lord of [[house-corvus|House Corvus]], called the Red Raven; undefeated commander and bearer of the Miracle of Auspex
+- [[mateo-veyra|Mateo Veyra]]: Archbishop of [[andaluria|Andaluria]] and the highest [[the-holy-see|Holy See]] authority to remain after the Ophanim's fall, betrothed to the Condesa [[ysabela-delamona|Ysabela Delamoña IV]]
+- [[cornelia-azimuth|Cornelia Azimuth]]: late matriarch of [[house-azimuth|House Azimuth]], peerless warrior and master of Splendor magic, fell facing Aldric at Jesthaen in 358 VR
+- [[victerius-azimuth|Victerius Azimuth]]: born of [[house-olnir|House Olnir]], superb duelist and consort-head of House Azimuth, fell in 358 VR cutting down his brother Lorkhan
+- [[agathia-azimuth|Agathia Azimuth]]: the intrepid, martial twin daughter of House Azimuth
+- [[hestia-azimuth|Hestia Azimuth]]: the quiet, calculating twin daughter of House Azimuth
+- [[zhenya-azimuth|Zhenya Azimuth]]: elder of House Azimuth and Minister of the Royal Household, Novak's grandmother
+- [[lorkhan-olnir|Lorkhan Olnir]]: eldest of House Olnir and bearer of the Miracle of Fames, defected to Aldric and now missing
 
 ## Events
 
 - [[the-divine-age|The Divine Age]]: the founding era, the One Above's war against the Ones Below
 - [[valerions-heresy|Valerion's Heresy]]: the 93-117 VR civil war between crown and church
-- [[the-lodestar-pact|The Lodestar Pact]]: the ~241 VR partition that founded Polaris
+- [[the-lodestar-pact|The Lodestar Pact]]: the 167 VR partition that founded Polaris
 - See the [[timeline|Timeline]] for the full chronology and the [[chronicle|Chronicle]] for the day-by-day record
 
 ## History (Voldaen)

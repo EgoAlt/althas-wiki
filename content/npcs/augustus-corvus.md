@@ -19,7 +19,7 @@ When the capital's houses drove Aldric into exile and he raised the [[jesthaen|J
 
 ## Depictions
 
-![[augustus-corvus-turnaround.webp|480]]
+![[augustus-corvus-turnaround.webp|360]] ![[augustus-corvus-tarot.webp|240]]
 
 *Augustus Corvus in the crimson and white of [[house-corvus|House Corvus]], the greatsword of a duelist who has never lost a field.*
 

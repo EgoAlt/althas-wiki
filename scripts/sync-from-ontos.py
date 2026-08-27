@@ -105,6 +105,29 @@ TITLES = {
     "rastaban.md": "Rastaban",
     "rosestripe.md": "Rosestripe",
     "uriel-kenan.md": "Uriel Kenan",
+    # 2026-08-27 Andaluria frame decisions
+    "mateo-veyra.md": "Mateo Veyra",
+    "ysabela-delamona.md": "Ysabela Delamoña",
+    "the-council-of-five.md": "The Council of Five",
+    # 2026-08-27 Witherwild continent
+    "witherwild-continent.md": "The Witherwild",
+    "haven.md": "Haven",
+    "godless-gate.md": "The Godless Gate",
+    "the-witherwatch.md": "The Witherwatch",
+    # 2026-08-27 Weredragon lift
+    "drakona.md": "Drakona",
+    # 2026-08-26 Novak Azimuth ingest (public pages)
+    "house-azimuth.md": "House Azimuth",
+    "house-olnir.md": "House Olnir",
+    "agathia-azimuth.md": "Agathia Azimuth",
+    "cornelia-azimuth.md": "Cornelia Azimuth",
+    "hestia-azimuth.md": "Hestia Azimuth",
+    "victerius-azimuth.md": "Victerius Azimuth",
+    "zhenya-azimuth.md": "Zhenya Azimuth",
+    "lorkhan-olnir.md": "Lorkhan Olnir",
+    # The hidden-identity fourth PC: name-free public title (source file is
+    # novak-pc-stub.md, but its slug/title must never carry "novak").
+    "novak-pc-stub.md": "???",
     "index.md": "Althas",
 }
 
@@ -192,6 +215,44 @@ PAGE_MAP = {
     "rastaban.md": "player-characters/rastaban.md",
     "rosestripe.md": "player-characters/rosestripe.md",
     "uriel-kenan.md": "player-characters/uriel-kenan.md",
+    # 2026-08-27 Andaluria frame decisions: the public Archbishop of Andaluria
+    # (his vampirism / cult leadership is gm-only on the page).
+    "mateo-veyra.md": "npcs/mateo-veyra.md",
+    # The Condesa and Andaluria's reconstruction government: public figures the
+    # region openly knows (Delamoña's patronage, the Council's offices). Their
+    # true natures (Ysabela the vampire progenitor, the Council the Fallen
+    # Houses) stay gm-only on the pages.
+    "ysabela-delamona.md": "npcs/ysabela-delamona.md",
+    "the-council-of-five.md": "organizations/the-council-of-five.md",
+    # 2026-08-27 Witherwild continent. The Witherwild is a second landmass, its
+    # own locations/ folder mirroring the five nations' folder-is-the-page
+    # pattern (locations/witherwild/index.md IS the continent page). Its places
+    # sit under it; the Faunus/Nikta/Reaping-Eye cosmology stays gm-only.
+    "witherwild-continent.md": "locations/witherwild-continent/index.md",
+    "haven.md": "locations/witherwild-continent/haven.md",
+    "godless-gate.md": "locations/witherwild-continent/godless-gate.md",
+    # The frontier order that garrisons the Gate (a military order, so it lives
+    # with the other organizations).
+    "the-witherwatch.md": "organizations/the-witherwatch.md",
+    # 2026-08-27 Weredragon lift: the dragon-blooded ancestry (the Weredragon /
+    # Pride / unbinding truth is gm-only on the page).
+    "drakona.md": "ancestries/drakona.md",
+    # 2026-08-26 Novak Azimuth ingest. Two Voldaen Great Houses and the Azimuth
+    # family; the houses' secrets (Parashiel's true nature, the Famesfeast
+    # cannibalism) and Novak's own designs stay gm-only. House members follow
+    # the npcs/ convention used for the Voldis and Corvus families.
+    "house-azimuth.md": "organizations/house-azimuth.md",
+    "house-olnir.md": "organizations/house-olnir.md",
+    "agathia-azimuth.md": "npcs/agathia-azimuth.md",
+    "cornelia-azimuth.md": "npcs/cornelia-azimuth.md",
+    "hestia-azimuth.md": "npcs/hestia-azimuth.md",
+    "victerius-azimuth.md": "npcs/victerius-azimuth.md",
+    "zhenya-azimuth.md": "npcs/zhenya-azimuth.md",
+    "lorkhan-olnir.md": "npcs/lorkhan-olnir.md",
+    # The hidden-identity fourth PC. Source is novak-pc-stub.md, but the public
+    # slug is name-free (never "novak"): the page and its assets deliberately
+    # carry no identifying name. The novak-azimuth dossier stays off the map.
+    "novak-pc-stub.md": "player-characters/highborne-warrior.md",
     "index.md": "index.md",
 }
 
@@ -279,7 +340,6 @@ RENAMES = {
 NOT_YET_PUBLIC = {
     "the-threnodies.md",
     "the-threnodites.md",
-    "the-council-of-five.md",
     "sage-magic.md",
     "ophanim-heresies.md",
     "the-seven.md",
@@ -292,8 +352,21 @@ NOT_YET_PUBLIC = {
     "immanuel-greene.md",
     "castorius-voldis.md",
     "the-stargazers.md",
-    "ysabela-delamona.md",
     "sombral-spade.md",
+    # 2026-08-27 Witherwild: the cosmology and its keystone secrets. Everything
+    # on these is [!gm-only] (the Faunus, the Old Magic Observer, the Reaping
+    # Eye theft), so nothing survives the strip. Public Witherwild surface is
+    # only witherwild-continent/haven/godless-gate/the-witherwatch above.
+    "nikta.md",
+    "reaping-eye.md",
+    "the-observers.md",
+    # 2026-08-26 Novak Azimuth ingest, held back. novak-azimuth is the full GM
+    # dossier for the PC (personality, designs on the crown); his public face
+    # is the identity-blind PC stub, not this page. parashiel is the House
+    # Azimuth Miracle's true nature (its public outline lives on miracles / the
+    # house page). Both stay off the map entirely.
+    "novak-azimuth.md",
+    "parashiel.md",
 }
 
 # The public-fields contract for the typed-infobox pilot (see the campaign's

@@ -4,6 +4,18 @@ title: Changelog
 
 What's new on the wiki, most recent first.
 
+## 2026-08-27
+
+- **The [[witherwild-continent|Witherwild]], the blighted second continent.** Beyond the northwestern pass lies a second landmass, a wilderness of endless, choking growth where the seasons have stalled and the wildlife has turned. Four new pages open it up: the continent itself, the lost colony of [[haven|Haven]] that Althas remembers as "the Folly," the [[godless-gate|Godless Gate]] that is the one way in, and the [[the-witherwatch|Witherwatch]], the thankless frontier garrison [[voldaen|Voldaen]] keeps to hold the blight back.
+- **[[mateo-veyra|Archbishop Mateo Veyra]], the shepherd who stayed.** A new page for the spiritual head of [[andaluria|Andaluria]], the highest [[the-holy-see|Holy See]] authority to remain after [[the-ophanim|the Ophanim's]] fall drove the Church to central Althas. Beloved for staying among the ruins, he is betrothed to the Condesa [[ysabela-delamona|Ysabela Delamoña IV]], whose fortune funds the region's rebuilding.
+- **Andaluria's Condesa and its Council.** New pages for [[ysabela-delamona|Condesa Ysabela Delamoña IV]], the wine-lord whose house alone among the great families stayed when the Ophanim fell and who now bankrolls the region's rebuilding, and the [[the-council-of-five|Council of Five]], the hereditary offices that govern the reconstruction from Jesaña's Plaza del Sol.
+- **The [[drakona|Drakona]], the dragon-blooded.** A new ancestry: a scaled, horned, long-lived people, once many and now scarce, cut down in ages past for some great wrong the histories no longer record. Of late there are rumors of them gathering, and changed, in the Witherwild.
+- **Two Great Houses of [[voldaen|Voldaen]].** [[house-azimuth|House Azimuth]] (new page), hereditary Minister of the Royal Household, bearer of the Miracle of Parashiel and the Rule of The Divider. [[house-olnir|House Olnir]] (new page), keeper of the Miracle of Fames and the Famesfeast, a rite it keeps to itself, stripped of its own ministry after its heir defected to [[aldric-voldis|Aldric]]. Both Miracles now sit on the [[miracles|Miracles]] page.
+- **The House Azimuth family, in six new pages.** The late matriarch [[cornelia-azimuth|Cornelia Azimuth]], a peerless warrior who fell facing Aldric at [[jesthaen|Jesthaen]]; her consort [[victerius-azimuth|Victerius]], the duelist born of House Olnir; the twin daughters [[agathia-azimuth|Agathia]] and [[hestia-azimuth|Hestia]]; the House elder and minister [[zhenya-azimuth|Zhenya]]; and the missing Olnir heir [[lorkhan-olnir|Lorkhan]].
+- **A fourth adventurer.** A new player-character page joins [[uriel-kenan|Uriel]], [[rastaban|Ras]], and [[rosestripe|Rosestripe]]: a warrior whose name the tale has not yet told.
+- **The [[calendar|Calendar]] has its months and holy days.** Its ten months, Vigilia through Vesper, walk the liturgical year from the first watch of the Divine Age to the eve of its last battle, and the three closing holidays, Bellum, Sigillum, and Regnum, mark that battle itself.
+- **The old kings' reigns now carry dates.** The [[house-voldis|House Voldis]] line and the [[timeline|Timeline]] now set the Voldis reigns and the founding of [[polaris|Polaris]] (167 VR) on a firm footing, and [[zhenya-azimuth|Zhenya Azimuth]] joins the [[diplomacy|Diplomacy]] web as Minister of the Royal Household.
+
 ## 2026-08-19
 
 - **The Faeries are now the Aetheris.** The church's winged message-carriers are recorded under their proper name, [[aetheris|Aetheris]], the angels of Althas and the exalted mirror of the [[infernis|Infernis]]. Their old page redirects here, so nothing breaks.

@@ -1,5 +1,7 @@
 ---
 title: The Divine Age
+aliases:
+  - setting/the-divine-age
 kind: event
 ---
 

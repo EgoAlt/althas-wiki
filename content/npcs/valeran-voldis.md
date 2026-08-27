@@ -14,7 +14,7 @@ image: the-blessed-king.jpg
 
 Valeran, son of [[valerion-voldis|the Mad King]], ended the civil war his father had started by striking the man down himself and denouncing his heresy before the faithful. For turning against a blasphemer king, even his own father, the [[the-holy-see|Holy See]] and the common people named him the Blessed King, and the epithet outlasted his birth name.
 
-Out of the settlement that ended the war, [[hilltop|Hilltop]], long the seat of the [[the-holy-see|Holy See]], passed fully into the Church's keeping as a sovereign nation rather than a holding of the Voldis crown. The [[house-voldis|House Voldis]] line continued through him.
+Out of the settlement that ended the war, [[hilltop|Hilltop]], long the seat of the [[the-holy-see|Holy See]], passed fully into the Church's keeping as a sovereign nation rather than a holding of the Voldis crown. The [[house-voldis|House Voldis]] line continued through his sons. Breaking the house's ancient habit of names begun with Vol and Val, he called them [[castus-voldis|Castus]] and Castorius, setting his heirs apart from the disgraced father he had struck down. Under Castus the northern academies seceded to found [[polaris|Polaris]] by [[the-lodestar-pact|the Lodestar Pact]]; Castorius, the younger, renounced his claim in that same settlement.
 
 ## Related pages
 

@@ -34,14 +34,33 @@ So each week gives two weekend days at its ends, one day of prayer at its middle
 
 A month is three of these weeks laid end to end, 33 days in all. Ten months make up the year proper. The calendar therefore keeps a steady rhythm from the first day of the first month to the last day of the tenth: three weeks to a month, and the same eleven-day pattern repeating throughout.
 
+### The names of the months
+
+The ten months carry the names of the faith's liturgical year, which walks the course of the Divine Age from the first watch to the eve of the last battle. In order:
+
+1. **Vigilia**, the watch kept over the world.
+2. **Sacratio**, the hallowing of the One Above's champions.
+3. **Oblatio**, the offering they made of themselves.
+4. **Certamen**, the long struggle of the war.
+5. **Passio**, its deepest suffering.
+6. **Requiem**, the mourning of the fallen.
+7. **Paenitentia**, the season of atonement.
+8. **Gratia**, the grace by which the faithful endure.
+9. **Adventus**, the coming of the final battle.
+10. **Vesper**, the last evening before it breaks.
+
+So the year is itself a telling of the Divine Age: the faithful pass from vigil through the war to its eve, and the three days that follow are the final battle's own.
+
 ## The closing holidays
 
-After the tenth month come three days of holiday. They mark the three days [[the-one-above|the One Above]] spent fighting [[the-ones-below|the Ones Below]] in the final battle of the Divine Age. That battle ended when the One Above cast the Ones Below down and sealed them away, and the blow left the crater that became [[crater-lake|the Crater Lake]] at the center of Althas. The same victory crowned the first God King and founded [[voldaen|Voldaen]], so the days that close the year also recall the war from which the era itself is counted.
+After the tenth month come three days of holiday, each with its own name, that together mark the final battle of the Divine Age.
 
-The years of this calendar are numbered in the Voldaen Reckoning, written VR, reckoned from the founding of Voldaen at the close of the Divine Age.
+The first is **Bellum**, the War, for the battle [[the-one-above|the One Above]] fought against [[the-ones-below|the Ones Below]]. The second is **Sigillum**, the Seal, for the casting-down: the One Above sealed the Ones Below away, and the blow left the crater that became [[crater-lake|the Crater Lake]] at the center of Althas. The third is **Regnum**, the Reign, for the victory that crowned the first God King and founded [[voldaen|Voldaen]], the founding from which the era itself is counted.
+
+The years of this calendar are numbered in the Voldaen Reckoning, written VR, reckoned from that founding at the close of the Divine Age.
 
 > [!note] Still to come
-> The names of the ten months have not yet been set down here, nor have any feast days beyond the three that close the year.
+> The eleven days of the week are not yet named, nor are the Saints to whom the prayer days are given, nor any feast days beyond the three that close the year.
 
 ## Related pages
 

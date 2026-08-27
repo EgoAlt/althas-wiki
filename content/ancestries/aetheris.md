@@ -21,7 +21,7 @@ Aetheris not bound to a cleric are extremely rare. When it happens, it is usuall
 ## Related pages
 
 - [[the-holy-see|The Holy See]]
-- [[infernis|Infernis]]: their ill-omened mirror
+- [[infernis|Infernis]]
 - [[convent-of-saint-trefan|Convent of Saint Trefan]]
 - [[the-one-above|The One Above]]
 - [[index|Althas]]

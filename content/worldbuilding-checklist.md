@@ -12,9 +12,9 @@ Daggerheart invites players into the worldbuilding, and much of Althas is still 
 
 ## Faith, calendar, and time
 
-- [ ] Name the ten months of the [[calendar|Calendar]] year.
+- [x] Name the ten months of the [[calendar|Calendar]] year. (Done 2026-08-24: Vigilia, Sacratio, Oblatio, Certamen, Passio, Requiem, Paenitentia, Gratia, Adventus, Vesper.)
 - [ ] Name the eleven days of the week (they currently carry only roles: weekend, prayer, work).
-- [ ] Name the three Closing Holidays that end the year and mark the final battle of the Divine Age.
+- [x] Name the three Closing Holidays that end the year and mark the final battle of the Divine Age. (Done 2026-08-24: Bellum, Sigillum, Regnum.)
 - [ ] Describe how people mark the three Closing Holidays: what is done, eaten, mourned, or celebrated.
 - [ ] Name the thirty Saints of the Divine Age, one for each prayer day of the year: who each was and what they are patron of.
 - [ ] Set out the [[the-holy-see|Parish of Orthodoxy]]'s rules for prayer and conduct in church, its common rites (naming, confession, marriage, funeral), and the everyday beliefs and superstitions of the faithful.

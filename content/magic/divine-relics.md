@@ -28,6 +28,10 @@ These Relics are extraordinarily powerful, passed down within families rather th
 
 [[voldaen|House Voldis's]] own hereditary Relic is a suit of armor as strong as it is ancient. It was lost when [[edrion-voldis|Edrion Voldis]] fell fighting [[the-ophanim|the Ophanim]] in 334 VR, and has not been recovered since.
 
+## Another example: the Rule of The Divider
+
+[[house-azimuth|House Azimuth's]] own hereditary Relic is the Rule of The Divider, a weapon that takes a different form for each generation that carries it. That the House holds such a Relic is known; what it does is not, guarded as closely as the Miracle it was granted alongside.
+
 ## Related pages
 
 - [[miracles|Miracles]]

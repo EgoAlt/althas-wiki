@@ -13,7 +13,7 @@ timeline
     title A history of Althas
     Founding Era : The Divine Age, the One Above casts down the Ones Below : Voldaen founded under the God King
     93-117 VR : The Mad King's civil war : Hilltop wins independence under the Blessed King
-    241 VR : Polaris secedes from Voldaen
+    167 VR : Polaris secedes under the Lodestar Pact : the three powers begin the Witherwild colony
     333 VR : The Ophanim lands on Hilltop : Armada secedes
     334 VR : The Five Heroes slay the Ophanim : The king is assassinated
     351 VR : Aldric's revolution founds the Jesthaen Republic
@@ -28,9 +28,9 @@ Althas once flew under a single banner. In the Divine Age [[the-one-above|the On
 
 Generations after the founding, [[valerion-voldis|Valerion]], the king remembered as the Mad King, proclaimed himself [[the-one-above|the One Above]] returned in the flesh. [[the-holy-see|The Holy See]] named the claim heresy, and crown and church fell into open civil war, the first fracture of a continent that had flown under one banner since the Divine Age. It ended in 117 VR when his own son and successor, [[valeran-voldis|Valeran]] the Blessed King, struck him down and denounced him before the faithful. Out of that settlement [[hilltop|Hilltop]] won full independence from the Voldis crown. See [[house-voldis|House Voldis]] for the dynasty across these reigns, and [[valerions-heresy|Valerion's Heresy]] for the event in full.
 
-## 241 VR
+## The Lodestar Pact (167 VR)
 
-The scholars and mages of the north, grown into a power of their own, broke away from [[voldaen|Voldaen]] by negotiated partition rather than repeat the last war's bloodshed, founding [[polaris|Polaris]] under its Triumvirate of Archmages. See [[the-lodestar-pact|the Lodestar Pact]].
+Half a century after the civil war, the northern academies and their mages, a cadre of codexcasters forged into a political power during [[valerions-heresy|Valerion's Heresy]] itself, had grown too great to sit easily under the crown. Rather than repeat the bloodshed so recently ended, [[valeran-voldis|Valeran]]'s heir King [[castus-voldis|Castus]] and the north settled their split by negotiated partition, ratified by the Pontiff of [[the-holy-see|the Holy See]] on the fiftieth anniversary of the Blessed King's victory. Out of it came [[polaris|Polaris]] under its Triumvirate of Archmages. The same treaty also committed the three powers of Althas, [[voldaen|Voldaen]], Polaris, and [[hilltop|Hilltop]], to a shared venture: the joint colonization of the untouched Witherwild. Castus's younger brother, Castorius, renounced his own claim as part of the settlement and afterward passed out of the record. See [[the-lodestar-pact|the Lodestar Pact]].
 
 ## 333 VR
 

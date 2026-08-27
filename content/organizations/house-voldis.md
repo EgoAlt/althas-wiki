@@ -24,25 +24,26 @@ graph TD
     K2["A king of the line<br/>r. 63-93 VR"]
     MAD["Valerion, the Mad King<br/>r. 93-117 VR<br/>proclaimed himself the One Above returned"]
     BLESSED["Valeran, the Blessed King<br/>r. 117-149 VR<br/>ended the war, Hilltop wins independence"]
-    K3["A king of the line<br/>r. 149-178 VR"]
-    K4["A king of the line<br/>r. 178-209 VR"]
-    K5["A king of the line<br/>r. 209-241 VR"]
-    K6["Castus<br/>r. 241-272 VR<br/>Polaris secedes"]
-    BRO["Castorius<br/>renounced his claim in the Lodestar Pact"]
-    K7["A king of the line<br/>r. 272-302 VR"]
+    CASTUS["Castus<br/>r. 149-180 VR<br/>Polaris secedes 167 VR"]
+    BRO["Castorius<br/>younger son; renounced his claim in the Lodestar Pact"]
+    K3["A king of the line<br/>r. 180-210 VR"]
+    K4["A king of the line<br/>r. 210-241 VR"]
+    K5["A king of the line<br/>r. 241-272 VR"]
+    K6["A king of the line<br/>r. 272-302 VR"]
     VALTHIS["Valthis Voldis<br/>King, assassinated 334 VR"]
     EDRION["Edrion Voldis<br/>High Prince, died 334 VR"]
     ALDRIC["Aldric Voldis<br/>baseborn; founds the Jesthaen Republic"]
     VALIS["Valis Voldis<br/>Queen, reigns as the council's figurehead"]
-    GK --> K0 --> K1 --> K2 --> MAD --> BLESSED --> K3 --> K4 --> K5 --> K6 --> K7 --> VALTHIS
-    K6 -.->|younger brother| BRO
+    GK --> K0 --> K1 --> K2 --> MAD --> BLESSED --> CASTUS --> K3 --> K4 --> K5 --> K6 --> VALTHIS
+    BLESSED -.->|younger son| BRO
     VALTHIS --> EDRION
     VALTHIS -.->|baseborn| ALDRIC
     EDRION --> VALIS
     click GK "../npcs/god-king-voldis" "Voldis, the God King"
     click MAD "../npcs/valerion-voldis" "Valerion, the Mad King"
     click BLESSED "../npcs/valeran-voldis" "Valeran, the Blessed King"
-    click K6 "../npcs/castus-voldis" "Castus Voldis"
+    click CASTUS "../npcs/castus-voldis" "Castus Voldis"
+    click BRO "../npcs/castorius-voldis" "Castorius Voldis"
     click VALTHIS "../npcs/valthis-voldis" "Valthis Voldis"
     click EDRION "../npcs/edrion-voldis" "Edrion Voldis"
     click ALDRIC "../npcs/aldric-voldis" "Aldric Voldis"
@@ -50,13 +51,13 @@ graph TD
 ```
 
 > [!note] Reading the tree
-> House Voldis rules by claimed divine descent from the God King, [[god-king-voldis|Voldis]] himself, rendered here as the house presents it. Most of the deep dynasty is lost to record, marked only as kings of the line, save the reigns the histories could not forget: [[valerion-voldis|Valerion]] the Mad King and [[valeran-voldis|Valeran]] the Blessed King. The named line resumes with [[valthis-voldis|Valthis Voldis]]. The dashed lines mark [[aldric-voldis|Aldric]]'s baseborn descent, acknowledged but never legitimized, and Castorius, the younger prince who renounced his claim in the settlement that made [[polaris|Polaris]] independent.
+> House Voldis rules by claimed divine descent from the God King, [[god-king-voldis|Voldis]] himself, rendered here as the house presents it. The named reigns are [[valerion-voldis|Valerion]] the Mad King, his son [[valeran-voldis|Valeran]] the Blessed King, and Valeran's own sons [[castus-voldis|Castus]], in whose reign [[polaris|Polaris]] seceded, and Castorius, the younger prince who renounced his claim in that same settlement. The line runs on to [[valthis-voldis|Valthis Voldis]] and the modern succession crisis. The dashed lines mark [[aldric-voldis|Aldric]]'s baseborn descent, acknowledged but never legitimized, and Castorius's renunciation of his claim.
 
 ## The ancient line
 
-Voldaen's crown has passed down the House of Voldis since the God King founded the nation at the close of the Divine Age. Most of that long line is remembered only as a succession of kings; two reigns the histories could not forget.
+Voldaen's crown has passed down the House of Voldis since the God King founded the nation at the close of the Divine Age. From that long line, two reigns the histories could not forget.
 
-The first is [[valerion-voldis|Valerion]], the Mad King, who proclaimed himself the One Above returned to Althas. The Holy See named the claim heresy, and the realm broke into civil war between crown and church. The war ended under his successor, [[valeran-voldis|Valeran]] the Blessed King, who put down his own father and denounced him before the faithful. Out of that settlement Hilltop, long the Holy See's own seat, won its full independence from the Voldis crown. Generations later, under King [[castus-voldis|Castus]], the scholars and mages of the north broke from Voldaen in their turn to found [[polaris|Polaris]] by [[the-lodestar-pact|the Lodestar Pact]].
+The first is [[valerion-voldis|Valerion]], the Mad King, who proclaimed himself the One Above returned to Althas. The Holy See named the claim heresy, and the realm broke into civil war between crown and church. The war ended under his successor and son, [[valeran-voldis|Valeran]] the Blessed King, who put down his own father and denounced him before the faithful. Out of that settlement Hilltop, long the Holy See's own seat, won its full independence from the Voldis crown. In the reign of Valeran's own son and heir, King [[castus-voldis|Castus]], the scholars and mages of the north broke from Voldaen in their turn to found [[polaris|Polaris]] by [[the-lodestar-pact|the Lodestar Pact]], ratified in 167 VR.
 
 ## The succession crisis
 

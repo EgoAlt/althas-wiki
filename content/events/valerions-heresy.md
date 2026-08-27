@@ -2,6 +2,7 @@
 title: Valerion's Heresy
 aliases:
   - setting/the-mad-kings-war
+  - setting/valerions-heresy
 kind: event
 ---
 
@@ -13,10 +14,12 @@ Generations after the founding, [[valerion-voldis|Valerion]] of [[house-voldis|H
 
 The war ran until 117 VR, when the Mad King's own son and successor, [[valeran-voldis|the Blessed King]], struck his father down and denounced his heresy before the faithful. Out of the settlement that ended the war, [[hilltop|Hilltop]], long the seat of the Holy See, passed fully into the Church's keeping as a sovereign nation rather than a holding of the Voldis crown.
 
+The war also forged a new power. A cadre of codexcasters distinguished themselves in the fighting and grew, over the generations after, into the northern academies that would secede as [[polaris|Polaris]] by [[the-lodestar-pact|the Lodestar Pact]].
+
 ## Related pages
 
-- [[valerion-voldis|Valerion (the Mad King)]]
-- [[valeran-voldis|Valeran (the Blessed King)]]
+- [[valerion-voldis|Valerion]]
+- [[valeran-voldis|Valeran]]
 - [[house-voldis|House Voldis]]
 - [[voldaen|Voldaen]]
 - [[hilltop|Hilltop]]
