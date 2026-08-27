@@ -369,6 +369,20 @@ NOT_YET_PUBLIC = {
     "parashiel.md",
 }
 
+# Pages that live in the Ontos setting/ folder but are DELIBERATELY never synced:
+# their content/ counterparts are hand-maintained interactive pages (the dice
+# roller, the Leaflet map, the Sealcarver sigil tool) whose embedded HTML/JS the
+# sync would strip or mangle, so they are edited directly in content/ (the same
+# rule-26 exception that content/changelog.md relies on). The setting/ copies are
+# the GM's Obsidian-side reference. Listed here so "why isn't this page in
+# PAGE_MAP?" is a visible decision, not a silent gap: these are already live via
+# their own content/ files, not withheld like NOT_YET_PUBLIC.
+CONTENT_ONLY = {
+    "dice-roller.md",
+    "map.md",
+    "sealcarver.md",
+}
+
 # The public-fields contract for the typed-infobox pilot (see the campaign's
 # specs/althas-article-templates-design.md in Ontos). These are the ONLY
 # frontmatter keys, besides `title:` and the carried-forward `marker:` block,
@@ -700,6 +714,10 @@ def main():
 
     print(f"\nNot public (everything on the page is GM-only; kept out of PAGE_MAP):")
     for name in sorted(NOT_YET_PUBLIC):
+        print(f"  {name}")
+
+    print(f"\nContent-only (hand-maintained in content/, not synced; already live):")
+    for name in sorted(CONTENT_ONLY):
         print(f"  {name}")
     return 0
 
