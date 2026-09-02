@@ -2,7 +2,7 @@
 
 Public, spoiler-safe wiki and interactive map for the homebrew Daggerheart campaign *Ut Supra Sic Infra*, published with [Quartz v4](https://quartz.jzhao.xyz/).
 
-Live at: https://egoalt.github.io/althas-wiki/
+Live at: https://egoaltorg.github.io/althas-wiki/
 
 ## How this repo works
 
