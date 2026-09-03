@@ -3,14 +3,19 @@ title: Valerion Voldis
 aliases:
   - npcs/the-mad-king
 kind: person
-house: "[[house-voldis|House Voldis]]"
 role: King of Voldaen
+pronouns: he/him
+house: "[[house-voldis|House Voldis]]"
+nation: "[[voldaen|Voldaen]]"
+died: 117 VR
 image: the-mad-king.png
 ---
 
 **Summary**: **Valerion Voldis**, remembered as the Mad King (r. 93-117 VR), who proclaimed himself the One Above returned, and whose heresy plunged the realm into civil war between crown and church.
 
 ---
+
+## History
 
 Generations after the founding, Valerion, a king of [[house-voldis|House Voldis]], declared before the realm that he was [[the-one-above|the One Above]] returned to Althas in the flesh. The [[the-holy-see|Holy See]], whose whole authority rested on serving an absent god, named the claim heresy at once. Crown and church fell into open war, the first great fracturing of a continent that had flown under one banner since the Divine Age.
 

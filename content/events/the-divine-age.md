@@ -3,6 +3,10 @@ title: The Divine Age
 aliases:
   - setting/the-divine-age
 kind: event
+category: Era
+when: Ended 0 VR
+parties: "[[the-one-above|the One Above]] against [[the-ones-below|the Ones Below]]"
+outcome: "The Ones Below sealed away; the first God King crowned and [[voldaen|Voldaen]] founded"
 ---
 
 **Summary**: The founding era of Althas, when [[the-one-above|the One Above]] fought and cast down [[the-ones-below|the Ones Below]], sealing them away. Its close crowned the first God King, founded [[voldaen|Voldaen]], and set year 0 of the Voldaen Reckoning.

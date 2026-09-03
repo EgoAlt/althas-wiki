@@ -1,15 +1,19 @@
 ---
 title: Augustus Corvus
 kind: person
-house: "[[house-corvus|House Corvus]]"
-allegiance: "[[voldaen|Voldaen]]"
 role: "Minister of War of Voldaen"
+pronouns: he/him
+house: "[[house-corvus|House Corvus]]"
+nation: "[[voldaen|Voldaen]]"
+allegiance: "[[voldaen|Voldaen]]"
 image: augustus-corvus.png
 ---
 
 **Summary**: Lord of [[house-corvus|House Corvus]] and Minister of War of [[voldaen|Voldaen]], called the Red Raven. Bearer of his house's Miracle of Auspex, an undefeated field commander and peerless duelist, and a hero of the war against [[the-ophanim|the Ophanim]] who has never made peace with the loss of the south to [[jesthaen|Jesthaen]].
 
 ---
+
+## History
 
 Augustus Corvus holds the hereditary office his house has kept since [[valerions-heresy|Valerion's Heresy]]: Minister of War of [[voldaen|Voldaen]]. Men call him the Red Raven, for the crimson of [[house-corvus|House Corvus]] and for the [[miracles|Miracle]] his line is famed for, Auspex, which lets its bearer read the shape of a fight before it is fought. In the field he has never been beaten, whether crossing blades alone or moving armies, and Voldaen has leaned on that gift in every war within living memory.
 

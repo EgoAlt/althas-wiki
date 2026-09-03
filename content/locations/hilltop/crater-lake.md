@@ -3,6 +3,7 @@ title: Crater Lake
 aliases:
   - locations/crater-lake
 kind: location
+category: Lake
 region: Central Althas
 ---
 
@@ -10,7 +11,9 @@ region: Central Althas
 
 ---
 
-## What it is
+## Overview
+
+### What it is
 
 The lake sits at the center of the map of Althas, a crater left by the Divine Age's decisive moment: [[the-one-above|the One Above]] casting [[the-ones-below|the Ones Below]] down and sealing them away.
 

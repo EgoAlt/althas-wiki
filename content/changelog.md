@@ -4,6 +4,12 @@ title: Changelog
 
 What's new on the wiki, most recent first.
 
+## 2026-09-03
+
+- **A new ancestry, the [[firbolg|Firbolg]].** The bovine folk of the [[witherwild-continent|Witherwild]], broad-horned and pastel-furred, carried across the sea in bondage to work the southern vineyards and freed generations ago. Most now travel the roads with the Caio, keeping the Wickling faith of their homeland beside the ways of the road.
+- **The [[aetheris|Aetheris]] have a face.** The church's winged messengers now carry a portrait.
+- **Every page now opens with an info card.** Character, house, place, magic, and ancestry pages carry a card summarizing the essentials at a glance, drawn straight from each page.
+
 ## 2026-08-27
 
 - **The [[witherwild-continent|Witherwild]], the blighted second continent.** Beyond the northwestern pass lies a second landmass, a wilderness of endless, choking growth where the seasons have stalled and the wildlife has turned. Four new pages open it up: the continent itself, the lost colony of [[haven|Haven]] that Althas remembers as "the Folly," the [[godless-gate|Godless Gate]] that is the one way in, and the [[the-witherwatch|Witherwatch]], the thankless frontier garrison [[voldaen|Voldaen]] keeps to hold the blight back.

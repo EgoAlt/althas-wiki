@@ -1,15 +1,19 @@
 ---
 title: Valis Voldis
 kind: person
-house: "[[house-voldis|House Voldis]]"
-allegiance: "[[voldaen|Voldaen]]"
 role: "Queen of [[voldaen|Voldaen]]"
+pronouns: she/her
+house: "[[house-voldis|House Voldis]]"
+nation: "[[voldaen|Voldaen]]"
+allegiance: "[[voldaen|Voldaen]]"
 image: valis-voldis.jpg
 ---
 
 **Summary**: Daughter of [[edrion-voldis|Edrion Voldis]] and reigning Queen of [[voldaen|Voldaen]], crowned as a child after the Voldis Succession Crisis and ruling since as a figurehead for the noble council that holds the realm's true power.
 
 ---
+
+## History
 
 The only child of High Prince [[edrion-voldis|Edrion Voldis]]. When her father fell fighting [[the-ophanim|the Ophanim]] and her grandfather King [[valthis-voldis|Valthis Voldis]] was assassinated soon after, Valis, then only a girl, was left the last heir of the direct Voldis line. Her father's will had named his bastard half-brother [[aldric-voldis|Aldric Voldis]] her regent, but the capital's great houses drove Aldric out and took the regency for themselves, crowning Valis and ruling in her name.
 

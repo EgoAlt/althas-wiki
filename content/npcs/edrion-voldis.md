@@ -1,14 +1,18 @@
 ---
 title: Edrion Voldis
 kind: person
-died: 334 VR
-house: "[[house-voldis|House Voldis]]"
 role: High Prince of Voldaen
+pronouns: he/him
+house: "[[house-voldis|House Voldis]]"
+nation: "[[voldaen|Voldaen]]"
+died: 334 VR
 ---
 
 **Summary**: High Prince of [[voldaen|Voldaen]], father of Queen [[valis-voldis|Valis Voldis]], and one of the Five Heroes who died fighting [[the-ophanim|the Ophanim]] in 334 VR, which set off the Voldis Succession Crisis.
 
 ---
+
+## History
 
 Son of King [[valthis-voldis|Valthis Voldis]] and father of [[valis-voldis|Valis Voldis]]. Fought as one of the Five Heroes against [[the-ophanim|the Ophanim]] at [[hilltop|Hilltop]] in 334 VR, and died in the fighting alongside [[cassio-aquila|Cassio Aquila]] of [[the-holy-see|the Holy See]].
 

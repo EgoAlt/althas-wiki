@@ -3,14 +3,18 @@ title: Valeran Voldis
 aliases:
   - npcs/the-blessed-king
 kind: person
-house: "[[house-voldis|House Voldis]]"
 role: King of Voldaen
+pronouns: he/him
+house: "[[house-voldis|House Voldis]]"
+nation: "[[voldaen|Voldaen]]"
 image: the-blessed-king.jpg
 ---
 
 **Summary**: **Valeran Voldis**, remembered as the Blessed King (r. 117-149 VR), who ended his father's heretical war by slaying [[valerion-voldis|the Mad King]] and won [[hilltop|Hilltop]] its independence. Remembered by the faithful as blessed for it.
 
 ---
+
+## History
 
 Valeran, son of [[valerion-voldis|the Mad King]], ended the civil war his father had started by striking the man down himself and denouncing his heresy before the faithful. For turning against a blasphemer king, even his own father, the [[the-holy-see|Holy See]] and the common people named him the Blessed King, and the epithet outlasted his birth name.
 

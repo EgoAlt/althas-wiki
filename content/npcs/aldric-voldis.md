@@ -1,14 +1,18 @@
 ---
 title: Aldric Voldis
 kind: person
-house: "[[house-voldis|House Voldis]]"
 role: Founder of the Jesthaen Republic
+pronouns: he/him
+house: "[[house-voldis|House Voldis]]"
+nation: "[[jesthaen|Jesthaen]]"
 image: aldric-voldis.jpg
 ---
 
 **Summary**: Baseborn half-brother of High Prince [[edrion-voldis|Edrion Voldis]] and one of the Five Heroes who fought [[the-ophanim|the Ophanim]]. Spurned by the capital's nobles, he became the champion of the common people and founded the [[jesthaen|Jesthaen Republic]], named for his mother, Jestha.
 
 ---
+
+## History
 
 Aldric is the bastard son of King [[valthis-voldis|Valthis Voldis]] of [[voldaen|Voldaen]] by a common woman, [[jestha|Jestha]], and so the half-brother of the legitimate heir, [[edrion-voldis|Edrion Voldis]]. He fought beside Edrion as one of the Five Heroes against [[the-ophanim|the Ophanim]] in 334 VR and survived, honored by the soldiery and the smallfolk for it, but never accepted by the capital's oldest noble families, who saw only his birth and his open talk of reform.
 

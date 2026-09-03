@@ -1,12 +1,17 @@
 ---
 title: Drakona
 kind: ancestry
+category: Draconic people
+homeland: the mountains and margins of Althas
+standing: Scarce and diminished
 image: drakona.webp
 ---
 
 **Summary**: **The Drakona**, the dragon-blooded people of Althas, once numerous and now a scarce and scattered ancestry. Their kind was cut down for crimes committed in the Divine Age, the nature of which has been lost to history, and today a Drakona is a rare sight anywhere in the settled world.
 
 ---
+
+## Overview
 
 The Drakona are a draconic people, scaled and horned, long-lived and proud, and rare. Where once they were many, their numbers in Althas were reduced to a scattered few, punishment, the oldest tellings agree, for some great wrong their kind committed in the Divine Age. What that wrong was, no record now holds; only the diminishment remains, an ancestry that never recovered its old numbers and keeps to the mountains and the margins of the world.
 

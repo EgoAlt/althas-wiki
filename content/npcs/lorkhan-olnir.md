@@ -1,15 +1,18 @@
 ---
 title: Lorkhan Olnir
 kind: person
+role: "Heir of House Olnir (attainted, missing)"
+pronouns: he/him
 house: "[[house-olnir|House Olnir]]"
 allegiance: "[[jesthaen|Jesthaen]] (defected)"
-role: "Heir of House Olnir (attainted, missing)"
 image: lorkhan-olnir.jpg
 ---
 
 **Summary**: The eldest son of [[house-olnir|House Olnir]] and bearer of its [[miracles|Miracle of Fames]], elder brother of [[victerius-azimuth|Victerius]]. He defected to [[aldric-voldis|Aldric]] in the [[jesthaen|Jesthaen]] rebellion, costing his House its ministry, mortally fought Victerius in the war, and has been missing ever since.
 
 ---
+
+## History
 
 Lorkhan is the eldest son of Eularia and Magnus of [[house-olnir|House Olnir]] and the bearer of its [[miracles|Miracle of Fames]], the one child of his generation the gift chose. His own father resented the inheritance, thinking him unbefitting the headship it promised, a sentiment well known within the House. His younger brother [[victerius-azimuth|Victerius]] sought exile in [[hilltop|Hilltop]] rather than let that resentment set the House against itself.
 

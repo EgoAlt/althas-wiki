@@ -66,6 +66,7 @@ TITLES = {
     "codex-magic.md": "Codex Magic",
     "aetheris.md": "Aetheris",
     "elves.md": "Elves",
+    "firbolg.md": "Firbolg",
     "giants.md": "Giants",
     "clanks.md": "Clanks",
     "infernis.md": "Infernis",
@@ -180,6 +181,7 @@ PAGE_MAP = {
     "the-ophanim.md": "beings/the-ophanim.md",
     "aetheris.md": "ancestries/aetheris.md",
     "elves.md": "ancestries/elves.md",
+    "firbolg.md": "ancestries/firbolg.md",
     "giants.md": "ancestries/giants.md",
     "clanks.md": "ancestries/clanks.md",
     "infernis.md": "ancestries/infernis.md",
@@ -368,6 +370,11 @@ NOT_YET_PUBLIC = {
     "nikta.md",
     "reaping-eye.md",
     "the-observers.md",
+    # phylax is a decision-capture stub for a future dedicated Phylax/Witherwild
+    # session: its whole body is frame-canon notes and gm-only/gm-notes material,
+    # nothing public-ready. Listed here so its absence from PAGE_MAP is a visible
+    # decision, not a silent gap.
+    "phylax.md",
     # 2026-08-26 Novak Azimuth ingest, held back. novak-azimuth is the full GM
     # dossier for the PC (personality, designs on the crown); his public face
     # is the identity-blind PC stub, not this page. parashiel is the House

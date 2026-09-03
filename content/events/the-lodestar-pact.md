@@ -4,6 +4,10 @@ aliases:
   - setting/the-polaris-secession
   - setting/the-lodestar-pact
 kind: event
+category: Treaty
+when: 167 VR
+parties: "[[voldaen|Voldaen]], [[polaris|Polaris]], and [[hilltop|Hilltop]]"
+outcome: Polaris founded as an independent magocracy
 ---
 
 **Summary**: **The Lodestar Pact**, the treaty of 167 VR by which the scholars and mages of the north broke away from [[voldaen|Voldaen]] to found [[polaris|Polaris]], and by which Voldaen, Polaris, and [[hilltop|Hilltop]] bound themselves to jointly colonize the Witherwild, settled peacefully rather than by the war that had scarred the continent half a century earlier.

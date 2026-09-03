@@ -3,8 +3,8 @@ title: Codex Magic
 aliases:
   - setting/codex-magic
 kind: magic-system
-practitioners: Codex casters
 source: "[[the-one-above|The One Above]]"
+practitioners: Codex casters
 image: codex-magic.png
 ---
 
@@ -12,18 +12,22 @@ image: codex-magic.png
 
 ---
 
-## The core idea
+## Overview
+
+### The core idea
 
 Codex casters don't generate an effect, they open one. Drawing the correct seal tears a small hole in reality, and whatever bleeds through that hole expresses itself according to the seal's shape: a fireball is not a caster making fire, it's them tearing a hole shaped so that what comes out reads as fire. This is the deliberate opposite of [[splendor-magic|Splendor Magic]]: Splendor asks a person (a god) for an effect; Codex reaches past people entirely into a place. And where a Splendor incantation answers to its exact spoken form rather than its meaning, a Codex seal is the reverse: its meaning is its mechanism, so to read a seal is, in principle, to command it. A caster who can read the grammar can reproduce the working. This is why the [[miracles|Miracle of Pentecost]], which lays bare the meaning of any notation, lets its bearer grasp any seal at a glance, however novel.
 
-## The mechanic
+## How It Works
+
+### The mechanic
 
 Two principles govern how a seal works, and they combine cleanly:
 
 - **Shape determines effect**: a seal has a central sigil (the element/nature of the effect) and surrounding signs (how it manifests: as a column, a burst, a wall, etc.), enclosed in a ring that must be complete for the seal to activate. Seals can be linked, nested inside one another, or drawn in reverse to produce the opposite effect. An incorrectly drawn seal just fizzles rather than doing something unpredictable, magic here is precise, not chaotic.
 - **A keyed, distance-limited conduit**: the power isn't infinite or freely available everywhere, it's drawn through shapes tuned to a specific source and weakening the further a caster strays from wherever that source is anchored. This gives Codex magic a natural geographic or ritual constraint worth using: a caster far from Codex's anchor point should be measurably weaker at it.
 
-## The seal grammar
+### The seal grammar
 
 A seal is read in three zones. Between them they say what the seal reaches for, how it acts, and what it acts upon.
 
@@ -35,7 +39,7 @@ A seal is read in three zones. Between them they say what the seal reaches for, 
 
 A working too complex for one circle is built as several, linked and feeding one another through Fuse, Transfer and Disperse. Elemental sigils keep their meaning wherever they appear, so a Space sigil in the Ring narrows a target to a place as readily as the same sigil in the Heart names it the element.
 
-### Drawing well
+#### Drawing well
 
 Precision of intent comes first. A caster drawing fire is expected to understand how burning actually works, and one who does not will find the seal either dead on the page or obedient in some way they never wanted.
 
@@ -48,7 +52,7 @@ Players can practice carving seals of their own on the wiki's [[sealcarver|Sealc
 > [!info] On this notation
 > The seal grammar described above follows the system set out in *Codex of Arcane Arts* by Roc Humet Vidal, adapted here under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
-## Where the power comes from
+### Where the power comes from
 
 In Althas, Codex magic is understood as a gift from [[the-one-above|the One Above]], granted to his creation before he departed the world.
 

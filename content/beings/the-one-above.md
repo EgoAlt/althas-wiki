@@ -14,9 +14,15 @@ image_caption: "An artist's rendering, not a likeness. The One Above held no sha
 
 ---
 
+## Overview
+
 In the Divine Age, the One Above protected Althas's mortal creations, clashing with the primordial powers of chaos, the ones below, and striking them down.
 
+## Worship
+
 He is worshipped throughout Althas as the source of [[splendor-magic|Splendor Magic]] (see that page for how incantation-based magic works as a favor granted rather than a caster's own power) and of [[miracles|Miracles]], the hereditary gifts bestowed on his allies during the Divine Age's war.
+
+## History
 
 The One Above has left Althas. Why, the faithful cannot say.
 

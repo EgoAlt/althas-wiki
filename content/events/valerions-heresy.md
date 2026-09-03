@@ -4,6 +4,10 @@ aliases:
   - setting/the-mad-kings-war
   - setting/valerions-heresy
 kind: event
+category: Civil war
+when: 93-117 VR
+parties: "The Voldis crown against [[the-holy-see|the Holy See]]"
+outcome: "Valerion struck down by his son; [[hilltop|Hilltop]] passed to the Church as a sovereign nation"
 ---
 
 **Summary**: **Valerion's Heresy**, the civil war of 93-117 VR and the first great fracture of Althas, when [[valerion-voldis|Valerion]], a king of [[voldaen|Voldaen]], proclaimed himself [[the-one-above|the One Above]] returned and broke crown and church into open war. It ended when his own son put him down and won [[hilltop|Hilltop]] its independence.

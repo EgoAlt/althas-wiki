@@ -3,14 +3,18 @@ title: Voldis
 aliases:
   - npcs/the-god-king
 kind: person
-house: "[[house-voldis|House Voldis]]"
 role: First King of Voldaen
+pronouns: he/him
+house: "[[house-voldis|House Voldis]]"
+nation: "[[voldaen|Voldaen]]"
 image: the-god-king.jpg
 ---
 
 **Summary**: **Voldis**, the founder and first king of [[voldaen|Voldaen]], crowned at the close of the Divine Age. Both [[house-voldis|House Voldis]] and the nation of Voldaen take their name from him, and the house rules by claimed divine descent from him.
 
 ---
+
+## History
 
 When [[the-one-above|the One Above]] cast down [[the-ones-below|the Ones Below]] and ended the Divine Age, the people of Althas crowned Voldis their first God King and founded [[voldaen|Voldaen]] beneath him. Every monarch of [[house-voldis|House Voldis]] since claims rule by divine descent from him, and holds the crown as a sacred inheritance rather than a worldly one.
 

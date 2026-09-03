@@ -1,7 +1,9 @@
 ---
 title: Uriel Kenan
 kind: person
-pc: true
+ancestry: elf
+culture: Orderborne
+pronouns: he/him
 image: uriel-kenan.png
 ---
 
@@ -16,6 +18,8 @@ image: uriel-kenan.png
 
 Male, with a scarred face and long white hair.
 
-## Character
+## Personality
+
+### Character
 
 Ancestry: Elf. Community: Orderborne. Class: Seraph, subclass Divine Wielder.

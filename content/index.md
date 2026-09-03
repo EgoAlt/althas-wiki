@@ -132,6 +132,7 @@ All communities are available across nations, but some have unique aspects withi
 - [[giants|Giants]]: builders of Polaris's industrial rise, now treated as its lowly working class
 - [[infernis|Infernis]]: banned from most settlements, living in traveling caravans that trade goods, news, and rumors
 - [[drakona|The Drakona]]: the dragon-blooded people, a scarce ancestry cut down for lost-to-history Divine-Age crimes, rumored in greater numbers in the Witherwild
+- [[firbolg|Firbolg]]: bovine folk of the Witherwild, brought to Hilltop in bondage and freed, now road-folk among the Caio
 
 ## Concepts
 

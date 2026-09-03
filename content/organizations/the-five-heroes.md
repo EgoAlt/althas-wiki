@@ -1,16 +1,21 @@
 ---
 title: The Five Heroes
+kind: organization
 ---
 
 **Summary**: The five heroes who fought and brought down [[the-ophanim|the Ophanim]] at [[hilltop|Hilltop]] in 333-334 VR, the event that reshaped Althas's politics and its faith: the Voldaen High Prince [[edrion-voldis|Edrion Voldis]], [[cassio-aquila|Cassio Aquila]] of [[the-holy-see|the Holy See]], [[aldric-voldis|Aldric Voldis]], [[lael|Lael the Reborn]], and [[lyra-aquila|Lyra Aquila]] of [[polaris|Polaris]].
 
 ---
 
-## The battle
+## History
+
+### The battle
 
 In 333 VR the [[the-ophanim|Ophanim]] landed at [[hilltop|Hilltop]] and devastated it, forcing [[the-holy-see|the Holy See]] to relocate to central Althas. The following year, 334 VR, the Five Heroes brought the Ophanim down. Its death shook the faith and Althas itself to their roots. The land around its corpse is still permanently, unnaturally dark.
 
-## The heroes
+## Notable Members
+
+### The heroes
 
 - **[[edrion-voldis|Edrion Voldis]]**, High Prince of [[voldaen|Voldaen]] and father of Queen [[valis-voldis|Valis Voldis]], died in the fighting, setting off the Voldis Succession Crisis.
 - **[[cassio-aquila|Cassio Aquila]]** of [[the-holy-see|the Holy See]] and [[house-aquila|House Aquila]], a scholar of the age and bearer of the [[miracles|Miracle of Pentecost]], also died bringing the Ophanim down.

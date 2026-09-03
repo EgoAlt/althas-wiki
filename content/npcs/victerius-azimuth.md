@@ -1,9 +1,13 @@
 ---
 title: Victerius Azimuth
 kind: person
-house: "[[house-azimuth|House Azimuth]]"
-allegiance: "[[voldaen|Voldaen]]"
 role: "Former consort-head of House Azimuth"
+pronouns: he/him
+house: "[[house-azimuth|House Azimuth]]"
+nation: "[[voldaen|Voldaen]]"
+allegiance: "[[voldaen|Voldaen]]"
+born: 318 VR
+died: 358 VR
 image: victerius-azimuth.jpg
 ---
 
@@ -11,17 +15,19 @@ image: victerius-azimuth.jpg
 
 ---
 
+## History
+
 The second son of Eularia and Magnus of [[house-olnir|House Olnir]], Victerius was born in [[voldaen|Voldaen]] in 318 VR. His House stood among the oldest and most privileged of the Great Houses, known both for siding with [[valeran-voldis|the Blessed King]] against [[valerion-voldis|the Mad King's]] heresy and for bearing the [[miracles|Miracle of Fames]]. Victerius carried no such gift. A magnificent warrior and a charming figure by every account, greatly envied by his siblings, he could never claim the headship of his House, and had no wish to. He was favored by his father, who bitterly resented the Miracle's falling to [[lorkhan-olnir|Lorkhan]], Victerius' older brother, whom the old patriarch thought unbefitting the position he would come to hold.
 
 Such feelings, well known within the House, might have turned brother against brother, had Victerius not chosen to seek exile in [[hilltop|Hilltop]] under the pretext of furthering his studies. It did not spare him the marks of a childhood in the fortress of Mambaril, where, like all Olnir children, he was bound to the House's [[house-olnir|weekly rite]].
 
-## Hilltop, the Ophanim, and Cornelia
+### Hilltop, the Ophanim, and Cornelia
 
 In Hilltop, Victerius drew notice for his qualities rather than his heritage. Tall and resilient, strong-framed, with flaxen hair and chestnut eyes and a brim-full wit, he earned a lasting name as a superb duelist. It was there he met [[cornelia-azimuth|Cornelia]], heir to House Azimuth, whose affection he came to cherish and returned in full. The companionship did not go undisturbed for long: [[the-ophanim|the Ophanim]] descended on central Hilltop in 333 VR, and the Houses of Voldaen were summoned. Both Olnir and Azimuth answered, and Victerius fought at last alongside Cornelia beneath deep blue banners. Though he never directly faced the being in its slaying, he, like all who laid eyes on it, would suffer the [[the-ophanim|OphDreams]] to the end of his days.
 
 He married Cornelia in 337 VR, formally joining House Azimuth in perpetuity, and fathered Novak in 345 VR and [[agathia-azimuth|Agathia]] and [[hestia-azimuth|Hestia]] five years later. Through those years he took on the formal duties of head of the House, freeing Cornelia to devote herself to Novak's upbringing, and he grew closest to the twin girls.
 
-## The last campaign
+### The last campaign
 
 When war broke out in 351 VR against [[aldric-voldis|Aldric Voldis]] and the newly founded [[jesthaen|Jesthaen Republic]], Lorkhan stood among the enemy. Commanding the Azimuth army alongside Cornelia, the two distinguished themselves across a long sequence of battles. Years into the conflict, the position of the Olnir army became known under favorable conditions, and Victerius was permitted to pursue it with his regiment. He marched through the South Bakhaaran Mountains, and there he faced his brother at last.
 

@@ -1,7 +1,9 @@
 ---
 title: Rastaban
 kind: person
-pc: true
+ancestry: giant
+culture: Loreborne
+pronouns: he/him
 ---
 
 **Summary**: Player character. A Loreborne Giant, School of Knowledge Wizard.
@@ -15,6 +17,8 @@ pc: true
 
 Big and strong. His right arm is missing. His left eye is hidden under a headband. Long, unkempt hair.
 
-## Character
+## Personality
+
+### Character
 
 Ancestry: Giant. Community: Loreborne. Class: Wizard, subclass School of Knowledge.

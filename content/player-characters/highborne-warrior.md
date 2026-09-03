@@ -1,7 +1,9 @@
 ---
 title: ???
 kind: person
-pc: true
+ancestry: human
+culture: Highborne
+pronouns: he/him
 image: mystery-pc-portrait.png
 ---
 
@@ -16,7 +18,9 @@ image: mystery-pc-portrait.png
 
 A tall, athletic young man of pale complexion, with wavy white hair and sky-blue eyes, often shadowed by faint dark circles. He carries himself with a stern, high-headed bearing and speaks in a low, strong voice.
 
-## Character
+## Personality
+
+### Character
 
 Class: Warrior, "Call of the Slayer". Ancestry: human. Community: highborne.
 

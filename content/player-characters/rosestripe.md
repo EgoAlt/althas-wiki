@@ -1,7 +1,9 @@
 ---
 title: Rosestripe
 kind: person
-pc: true
+ancestry: aetheris
+culture: Orderborne
+pronouns: she/her
 image: rosestripe.webp
 ---
 
@@ -16,7 +18,9 @@ image: rosestripe.webp
 
 Female, with the angelic look common to her kind: a small frame, a childlike face, and white feathered wings.
 
-## Character
+## Personality
+
+### Character
 
 Ancestry: [[aetheris|Aetheris]]. Community: Orderborne. Class: Assassin, subclass Poisoner.
 

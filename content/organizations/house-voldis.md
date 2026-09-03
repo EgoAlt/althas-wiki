@@ -3,8 +3,9 @@ title: House Voldis
 aliases:
   - locations/voldaen/house-voldis
 kind: organization
-seat: "[[voldaen|Voldaen]]"
+category: Royal house
 leader: "[[valis-voldis|Valis Voldis]]"
+seat: "[[voldaen|Voldaen]]"
 founded: "Divine Age"
 ---
 
@@ -12,9 +13,13 @@ founded: "Divine Age"
 
 ---
 
+## Overview
+
 The House of Voldis has ruled [[voldaen|Voldaen]] since the nation's founding in the Divine Age. Its monarchs claim rule not by conquest or law, but by divine descent from the God King, and the family holds itself custodian of a sacred inheritance. The house is also known across Althas for holding many [[miracles|Miracles]] at once, the real source of Voldaen's strength.
 
-## Family tree
+## History
+
+### Family tree
 
 ```mermaid
 graph TD
@@ -53,13 +58,13 @@ graph TD
 > [!note] Reading the tree
 > House Voldis rules by claimed divine descent from the God King, [[god-king-voldis|Voldis]] himself, rendered here as the house presents it. The named reigns are [[valerion-voldis|Valerion]] the Mad King, his son [[valeran-voldis|Valeran]] the Blessed King, and Valeran's own sons [[castus-voldis|Castus]], in whose reign [[polaris|Polaris]] seceded, and Castorius, the younger prince who renounced his claim in that same settlement. The line runs on to [[valthis-voldis|Valthis Voldis]] and the modern succession crisis. The dashed lines mark [[aldric-voldis|Aldric]]'s baseborn descent, acknowledged but never legitimized, and Castorius's renunciation of his claim.
 
-## The ancient line
+### The ancient line
 
 Voldaen's crown has passed down the House of Voldis since the God King founded the nation at the close of the Divine Age. From that long line, two reigns the histories could not forget.
 
 The first is [[valerion-voldis|Valerion]], the Mad King, who proclaimed himself the One Above returned to Althas. The Holy See named the claim heresy, and the realm broke into civil war between crown and church. The war ended under his successor and son, [[valeran-voldis|Valeran]] the Blessed King, who put down his own father and denounced him before the faithful. Out of that settlement Hilltop, long the Holy See's own seat, won its full independence from the Voldis crown. In the reign of Valeran's own son and heir, King [[castus-voldis|Castus]], the scholars and mages of the north broke from Voldaen in their turn to found [[polaris|Polaris]] by [[the-lodestar-pact|the Lodestar Pact]], ratified in 167 VR.
 
-## The succession crisis
+### The succession crisis
 
 The modern line's story is the founding wound of the campaign's present day. In 334 VR the High Prince, [[edrion-voldis|Edrion Voldis]], died fighting the Ophanim as one of the Five Heroes. King [[valthis-voldis|Valthis Voldis]] was assassinated soon after by a killer Voldaen has never identified, remembered only as [[kingslayer|the Kingslayer]]. Both deaths fell within a year, leaving Edrion's young daughter, [[valis-voldis|Valis Voldis]], the last heir of the direct line before she was old enough to rule.
 
