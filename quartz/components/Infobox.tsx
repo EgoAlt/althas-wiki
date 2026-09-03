@@ -26,6 +26,7 @@ const KIND_FIELDS: Record<string, string[]> = {
 const FIELD_LABELS: Record<string, string> = {
   category: "Type",
   faith: "Dominant faith",
+  ruler: "Ruling Power",
 }
 
 // Fields whose VALUE must render exactly as authored, not title-cased.
