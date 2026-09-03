@@ -13,11 +13,11 @@ const KIND_FIELDS: Record<string, string[]> = {
   nation: ["capital", "ruler", "government", "founded"],
   location: ["category", "nation", "region", "ruler", "population", "faith"],
   organization: ["category", "leader", "seat", "region", "allegiance", "office", "heir", "words", "relic", "founded"],
-  "magic-system": ["practitioners", "source"],
+  "magic-system": ["category", "source", "practitioners"],
   being: ["nature", "domain", "fate"],
-  artifact: ["wielder", "origin"],
+  artifact: ["category", "origin", "wielder"],
   event: ["category", "when", "place", "parties", "commanders", "strength", "casualties", "outcome", "part-of"],
-  ancestry: ["homeland", "standing"],
+  ancestry: ["category", "homeland", "standing"],
 }
 
 // Row labels that a plain first-letter capitalization would get wrong.
