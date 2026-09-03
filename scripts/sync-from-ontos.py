@@ -32,11 +32,19 @@ folder's name, and a matching patch in check-broken-links.py's own
 existing_targets(). If either patch is ever reverted, [[armada]] (and the
 other four) will break across the whole site.
 """
+import os
 import re
 import sys
 from pathlib import Path
 
-ONTOS_SETTING = Path.home() / "Desktop/Ontos/Projects/rpgs-and-gest/daggerheart/campaigns/ut-supra-sic-infra/setting"
+# Defaults to the GM's live vault; override via ONTOS_SETTING_DIR to sync from a
+# branch worktree (used to preview restructuring work before it merges to main).
+ONTOS_SETTING = Path(
+    os.environ.get(
+        "ONTOS_SETTING_DIR",
+        str(Path.home() / "Desktop/Ontos/Projects/rpgs-and-gest/daggerheart/campaigns/ut-supra-sic-infra/setting"),
+    )
+)
 CONTENT_DIR = Path(__file__).resolve().parent.parent / "content"
 
 # Display title for each source page. Kept as an explicit table (not derived
@@ -395,7 +403,7 @@ CONTENT_ONLY = {
 # Kept in step with quartz/components/Infobox.tsx, scripts/check-infobox-fields.py,
 # and the authoring reference (notes/article-templates.md in the campaign folder).
 INFOBOX_KIND_FIELDS = {
-    "person": ("born", "died", "house", "allegiance", "role", "pc"),
+    "person": ("role", "ancestry", "culture", "pronouns", "house", "nation", "allegiance", "born", "died", "introduced", "pc"),
     "nation": ("capital", "ruler", "government", "founded"),
     "location": ("nation", "region"),
     "organization": ("seat", "leader", "founded"),

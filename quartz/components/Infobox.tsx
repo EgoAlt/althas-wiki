@@ -9,7 +9,7 @@ import { classNames } from "../util/lang"
 // in scripts/sync-from-ontos.py), the gate (scripts/check-infobox-fields.py),
 // and the authoring reference in the Ontos campaign folder.
 const KIND_FIELDS: Record<string, string[]> = {
-  person: ["born", "died", "house", "allegiance", "role", "pc"],
+  person: ["role", "ancestry", "culture", "pronouns", "house", "nation", "allegiance", "born", "died", "introduced", "pc"],
   nation: ["capital", "ruler", "government", "founded"],
   location: ["nation", "region"],
   organization: ["seat", "leader", "founded"],
@@ -24,6 +24,10 @@ const KIND_FIELDS: Record<string, string[]> = {
 const FIELD_LABELS: Record<string, string> = {
   pc: "Player character",
 }
+
+// Fields whose VALUE must render exactly as authored, not title-cased.
+// Pronouns are lowercase by convention ("she/her", not "She/her").
+const NO_CAPITALIZE = new Set(["pronouns"])
 
 const kindLabel = (kind: string): string =>
   kind
@@ -107,6 +111,7 @@ const renderValue = (
   value: unknown,
   slug: FullSlug,
   allSlugs: FullSlug[],
+  capitalize = true,
 ): (string | JSX.Element)[] => {
   if (typeof value === "boolean") {
     return [value ? "Yes" : "No"]
@@ -117,12 +122,13 @@ const renderValue = (
       if (i > 0) {
         parts.push(", ")
       }
-      parts.push(...renderValue(item, slug, allSlugs))
+      parts.push(...renderValue(item, slug, allSlugs, capitalize))
     })
     return parts
   }
   if (typeof value === "string") {
-    return capitalizeFirst(renderString(value, slug, allSlugs))
+    const rendered = renderString(value, slug, allSlugs)
+    return capitalize ? capitalizeFirst(rendered) : rendered
   }
   return [String(value)]
 }
@@ -171,7 +177,7 @@ export default (() => {
             {rows.map(([field, value]) => (
               <>
                 <dt>{fieldLabel(field)}</dt>
-                <dd>{renderValue(value, fileData.slug!, ctx.allSlugs)}</dd>
+                <dd>{renderValue(value, fileData.slug!, ctx.allSlugs, !NO_CAPITALIZE.has(field))}</dd>
               </>
             ))}
           </dl>
