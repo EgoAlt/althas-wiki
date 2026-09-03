@@ -11,7 +11,7 @@ import { classNames } from "../util/lang"
 const KIND_FIELDS: Record<string, string[]> = {
   person: ["role", "ancestry", "culture", "pronouns", "house", "nation", "allegiance", "born", "died"],
   nation: ["capital", "ruler", "government", "founded"],
-  location: ["nation", "region"],
+  location: ["category", "nation", "region", "ruler", "population", "faith"],
   organization: ["category", "leader", "seat", "region", "allegiance", "office", "heir", "words", "relic", "founded"],
   "magic-system": ["practitioners", "source"],
   being: ["nature", "domain", "fate"],
@@ -25,6 +25,7 @@ const KIND_FIELDS: Record<string, string[]> = {
 // `type:` field, but reads as "Type" (a church, a house, a guild).
 const FIELD_LABELS: Record<string, string> = {
   category: "Type",
+  faith: "Dominant faith",
 }
 
 // Fields whose VALUE must render exactly as authored, not title-cased.
