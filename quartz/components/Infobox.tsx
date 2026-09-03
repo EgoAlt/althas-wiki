@@ -16,7 +16,7 @@ const KIND_FIELDS: Record<string, string[]> = {
   "magic-system": ["practitioners", "source"],
   being: ["nature", "domain", "fate"],
   artifact: ["wielder", "origin"],
-  event: ["when", "outcome"],
+  event: ["category", "when", "place", "parties", "commanders", "strength", "casualties", "outcome", "part-of"],
   ancestry: ["homeland", "standing"],
 }
 
@@ -27,6 +27,8 @@ const FIELD_LABELS: Record<string, string> = {
   category: "Type",
   faith: "Dominant faith",
   ruler: "Ruling Power",
+  when: "Date",
+  "part-of": "Part of",
 }
 
 // Fields whose VALUE must render exactly as authored, not title-cased.

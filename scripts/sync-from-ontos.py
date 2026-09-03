@@ -410,7 +410,7 @@ INFOBOX_KIND_FIELDS = {
     "magic-system": ("practitioners", "source"),
     "being": ("nature", "domain", "fate"),
     "artifact": ("wielder", "origin"),
-    "event": ("when", "outcome"),
+    "event": ("category", "when", "place", "parties", "commanders", "strength", "casualties", "outcome", "part-of"),
     "ancestry": ("homeland", "standing"),
 }
 
