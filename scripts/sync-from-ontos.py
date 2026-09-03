@@ -403,7 +403,7 @@ CONTENT_ONLY = {
 # Kept in step with quartz/components/Infobox.tsx, scripts/check-infobox-fields.py,
 # and the authoring reference (notes/article-templates.md in the campaign folder).
 INFOBOX_KIND_FIELDS = {
-    "person": ("role", "ancestry", "culture", "pronouns", "house", "nation", "allegiance", "born", "died", "introduced", "pc"),
+    "person": ("role", "ancestry", "culture", "pronouns", "house", "nation", "allegiance", "born", "died"),
     "nation": ("capital", "ruler", "government", "founded"),
     "location": ("nation", "region"),
     "organization": ("seat", "leader", "founded"),

@@ -33,7 +33,7 @@ from pathlib import Path
 CONTENT = Path(__file__).resolve().parent.parent / "content"
 
 KIND_FIELDS = {
-    "person": ("role", "ancestry", "culture", "pronouns", "house", "nation", "allegiance", "born", "died", "introduced", "pc"),
+    "person": ("role", "ancestry", "culture", "pronouns", "house", "nation", "allegiance", "born", "died"),
     "nation": ("capital", "ruler", "government", "founded"),
     "location": ("nation", "region"),
     "organization": ("seat", "leader", "founded"),

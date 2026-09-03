@@ -9,7 +9,7 @@ import { classNames } from "../util/lang"
 // in scripts/sync-from-ontos.py), the gate (scripts/check-infobox-fields.py),
 // and the authoring reference in the Ontos campaign folder.
 const KIND_FIELDS: Record<string, string[]> = {
-  person: ["role", "ancestry", "culture", "pronouns", "house", "nation", "allegiance", "born", "died", "introduced", "pc"],
+  person: ["role", "ancestry", "culture", "pronouns", "house", "nation", "allegiance", "born", "died"],
   nation: ["capital", "ruler", "government", "founded"],
   location: ["nation", "region"],
   organization: ["seat", "leader", "founded"],
@@ -21,9 +21,8 @@ const KIND_FIELDS: Record<string, string[]> = {
 }
 
 // Row labels that a plain first-letter capitalization would get wrong.
-const FIELD_LABELS: Record<string, string> = {
-  pc: "Player character",
-}
+// (None currently; kept as the hook for multi-word or specially-cased labels.)
+const FIELD_LABELS: Record<string, string> = {}
 
 // Fields whose VALUE must render exactly as authored, not title-cased.
 // Pronouns are lowercase by convention ("she/her", not "She/her").
