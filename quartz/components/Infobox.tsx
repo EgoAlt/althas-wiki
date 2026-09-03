@@ -12,7 +12,7 @@ const KIND_FIELDS: Record<string, string[]> = {
   person: ["role", "ancestry", "culture", "pronouns", "house", "nation", "allegiance", "born", "died"],
   nation: ["capital", "ruler", "government", "founded"],
   location: ["nation", "region"],
-  organization: ["seat", "leader", "founded"],
+  organization: ["category", "leader", "seat", "region", "allegiance", "titles", "heir", "words", "relic", "founded"],
   "magic-system": ["practitioners", "source"],
   being: ["nature", "domain", "fate"],
   artifact: ["wielder", "origin"],
@@ -21,8 +21,11 @@ const KIND_FIELDS: Record<string, string[]> = {
 }
 
 // Row labels that a plain first-letter capitalization would get wrong.
-// (None currently; kept as the hook for multi-word or specially-cased labels.)
-const FIELD_LABELS: Record<string, string> = {}
+// `category` is keyed to avoid colliding with the universal bookkeeping
+// `type:` field, but reads as "Type" (a church, a house, a guild).
+const FIELD_LABELS: Record<string, string> = {
+  category: "Type",
+}
 
 // Fields whose VALUE must render exactly as authored, not title-cased.
 // Pronouns are lowercase by convention ("she/her", not "She/her").

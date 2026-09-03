@@ -406,7 +406,7 @@ INFOBOX_KIND_FIELDS = {
     "person": ("role", "ancestry", "culture", "pronouns", "house", "nation", "allegiance", "born", "died"),
     "nation": ("capital", "ruler", "government", "founded"),
     "location": ("nation", "region"),
-    "organization": ("seat", "leader", "founded"),
+    "organization": ("category", "leader", "seat", "region", "allegiance", "titles", "heir", "words", "relic", "founded"),
     "magic-system": ("practitioners", "source"),
     "being": ("nature", "domain", "fate"),
     "artifact": ("wielder", "origin"),
@@ -559,25 +559,35 @@ def strip_meta_lines(body):
 
 
 def drop_empty_headings(body):
+    """Drop a heading whose entire subtree (down to the next heading of the
+    same or higher level) has no surviving content. Subtree-aware: a section
+    kept alive only by a non-empty subsection survives (a `## Beliefs` whose
+    sole child is a `### The Sleepless Vigil` with prose), while a heading
+    whose subsections are all empty after the gm-only strip is dropped along
+    with them (a deep-secret character's `## Abilities` of only gm-only text)."""
     lines = body.splitlines()
-    out = []
-    i, n = 0, len(lines)
-    while i < n:
-        line = lines[i]
-        if HEADING_RE.match(line):
-            j = i + 1
-            has_content = False
-            while j < n and not HEADING_RE.match(lines[j]):
+    n = len(lines)
+    levels = [0] * n
+    for i, line in enumerate(lines):
+        m = re.match(r"^(#{1,6})\s", line)
+        if m:
+            levels[i] = len(m.group(1))
+    drop = [False] * n
+    for i in range(n):
+        level = levels[i]
+        if not level:
+            continue
+        j = i + 1
+        has_content = False
+        while j < n and not (levels[j] and levels[j] <= level):
+            if not levels[j]:
                 s = lines[j].strip()
                 if s and s != "---":
                     has_content = True
-                j += 1
-            if not has_content:
-                i = j
-                continue
-        out.append(line)
-        i += 1
-    return "\n".join(out)
+            j += 1
+        if not has_content:
+            drop[i] = True
+    return "\n".join(line for i, line in enumerate(lines) if not drop[i])
 
 
 def clean_blank_runs(text):
