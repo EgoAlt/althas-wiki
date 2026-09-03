@@ -33,15 +33,15 @@ from pathlib import Path
 CONTENT = Path(__file__).resolve().parent.parent / "content"
 
 KIND_FIELDS = {
-    "person": ("born", "died", "house", "allegiance", "role", "pc"),
+    "person": ("role", "ancestry", "culture", "pronouns", "house", "nation", "allegiance", "born", "died"),
     "nation": ("capital", "ruler", "government", "founded"),
-    "location": ("nation", "region"),
-    "organization": ("seat", "leader", "founded"),
-    "magic-system": ("practitioners", "source"),
+    "location": ("category", "nation", "region", "ruler", "population", "faith"),
+    "organization": ("category", "leader", "seat", "region", "allegiance", "office", "heir", "words", "relic", "founded"),
+    "magic-system": ("category", "source", "practitioners"),
     "being": ("nature", "domain", "fate"),
-    "artifact": ("wielder", "origin"),
-    "event": ("when", "outcome"),
-    "ancestry": ("homeland", "standing"),
+    "artifact": ("category", "origin", "wielder"),
+    "event": ("category", "when", "place", "parties", "commanders", "strength", "casualties", "outcome", "part-of"),
+    "ancestry": ("category", "homeland", "standing"),
 }
 ALL_FIELDS = {f for fields in KIND_FIELDS.values() for f in fields}
 

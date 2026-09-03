@@ -32,11 +32,19 @@ folder's name, and a matching patch in check-broken-links.py's own
 existing_targets(). If either patch is ever reverted, [[armada]] (and the
 other four) will break across the whole site.
 """
+import os
 import re
 import sys
 from pathlib import Path
 
-ONTOS_SETTING = Path.home() / "Desktop/Ontos/Projects/rpgs-and-gest/daggerheart/campaigns/ut-supra-sic-infra/setting"
+# Defaults to the GM's live vault; override via ONTOS_SETTING_DIR to sync from a
+# branch worktree (used to preview restructuring work before it merges to main).
+ONTOS_SETTING = Path(
+    os.environ.get(
+        "ONTOS_SETTING_DIR",
+        str(Path.home() / "Desktop/Ontos/Projects/rpgs-and-gest/daggerheart/campaigns/ut-supra-sic-infra/setting"),
+    )
+)
 CONTENT_DIR = Path(__file__).resolve().parent.parent / "content"
 
 # Display title for each source page. Kept as an explicit table (not derived
@@ -395,15 +403,15 @@ CONTENT_ONLY = {
 # Kept in step with quartz/components/Infobox.tsx, scripts/check-infobox-fields.py,
 # and the authoring reference (notes/article-templates.md in the campaign folder).
 INFOBOX_KIND_FIELDS = {
-    "person": ("born", "died", "house", "allegiance", "role", "pc"),
+    "person": ("role", "ancestry", "culture", "pronouns", "house", "nation", "allegiance", "born", "died"),
     "nation": ("capital", "ruler", "government", "founded"),
-    "location": ("nation", "region"),
-    "organization": ("seat", "leader", "founded"),
-    "magic-system": ("practitioners", "source"),
+    "location": ("category", "nation", "region", "ruler", "population", "faith"),
+    "organization": ("category", "leader", "seat", "region", "allegiance", "office", "heir", "words", "relic", "founded"),
+    "magic-system": ("category", "source", "practitioners"),
     "being": ("nature", "domain", "fate"),
-    "artifact": ("wielder", "origin"),
-    "event": ("when", "outcome"),
-    "ancestry": ("homeland", "standing"),
+    "artifact": ("category", "origin", "wielder"),
+    "event": ("category", "when", "place", "parties", "commanders", "strength", "casualties", "outcome", "part-of"),
+    "ancestry": ("category", "homeland", "standing"),
 }
 
 CALLOUT_START_RE = re.compile(r"^>\s*\[!(gm-only|gm-notes)\]", re.IGNORECASE)
@@ -551,25 +559,35 @@ def strip_meta_lines(body):
 
 
 def drop_empty_headings(body):
+    """Drop a heading whose entire subtree (down to the next heading of the
+    same or higher level) has no surviving content. Subtree-aware: a section
+    kept alive only by a non-empty subsection survives (a `## Beliefs` whose
+    sole child is a `### The Sleepless Vigil` with prose), while a heading
+    whose subsections are all empty after the gm-only strip is dropped along
+    with them (a deep-secret character's `## Abilities` of only gm-only text)."""
     lines = body.splitlines()
-    out = []
-    i, n = 0, len(lines)
-    while i < n:
-        line = lines[i]
-        if HEADING_RE.match(line):
-            j = i + 1
-            has_content = False
-            while j < n and not HEADING_RE.match(lines[j]):
+    n = len(lines)
+    levels = [0] * n
+    for i, line in enumerate(lines):
+        m = re.match(r"^(#{1,6})\s", line)
+        if m:
+            levels[i] = len(m.group(1))
+    drop = [False] * n
+    for i in range(n):
+        level = levels[i]
+        if not level:
+            continue
+        j = i + 1
+        has_content = False
+        while j < n and not (levels[j] and levels[j] <= level):
+            if not levels[j]:
                 s = lines[j].strip()
                 if s and s != "---":
                     has_content = True
-                j += 1
-            if not has_content:
-                i = j
-                continue
-        out.append(line)
-        i += 1
-    return "\n".join(out)
+            j += 1
+        if not has_content:
+            drop[i] = True
+    return "\n".join(line for i, line in enumerate(lines) if not drop[i])
 
 
 def clean_blank_runs(text):
