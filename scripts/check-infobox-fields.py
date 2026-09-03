@@ -36,7 +36,7 @@ KIND_FIELDS = {
     "person": ("role", "ancestry", "culture", "pronouns", "house", "nation", "allegiance", "born", "died"),
     "nation": ("capital", "ruler", "government", "founded"),
     "location": ("nation", "region"),
-    "organization": ("category", "leader", "seat", "region", "allegiance", "titles", "heir", "words", "relic", "founded"),
+    "organization": ("category", "leader", "seat", "region", "allegiance", "office", "heir", "words", "relic", "founded"),
     "magic-system": ("practitioners", "source"),
     "being": ("nature", "domain", "fate"),
     "artifact": ("wielder", "origin"),
